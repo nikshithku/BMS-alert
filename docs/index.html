@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark light" />
+    <title>BMS Alert — never miss a show</title>
+    <meta
+      name="description"
+      content="Get alerted the moment a movie opens for booking in the cinema and format you actually want."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <!-- decorative animated backdrop -->
+    <div class="aurora" aria-hidden="true">
+      <span class="aurora__blob aurora__blob--1"></span>
+      <span class="aurora__blob aurora__blob--2"></span>
+      <span class="aurora__blob aurora__blob--3"></span>
+      <span class="aurora__grain"></span>
+    </div>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="topbar">
+      <div class="shell topbar__inner">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2.5" y="5.5" width="19" height="14" rx="2.5" />
+              <path d="M7 5.5v14M17 5.5v14M2.5 12h19" stroke-linecap="round" />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <strong>BMS<span class="brand__accent">Alert</span></strong>
+            <small>showtime watcher</small>
+          </span>
+        </div>
+
+        <div class="topbar__actions">
+          <button class="btn btn--ghost" id="btn-theme" type="button" aria-label="Switch to light theme">
+            <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke-linecap="round" />
+            </svg>
+            <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path d="M12 2.5v2.2M12 19.3v2.2M4.2 12H2M22 12h-2.2M6.3 6.3 4.8 4.8M19.2 19.2l-1.5-1.5M17.7 6.3l1.5-1.5M4.8 19.2l1.5-1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+
+          <button class="btn btn--ghost" id="btn-settings" type="button">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="12" cy="12" r="3.2" />
+              <path d="M12 2.8v2.4M12 18.8v2.4M3.6 12H6M18 12h2.4M6.1 6.1l1.7 1.7M16.2 16.2l1.7 1.7M17.9 6.1l-1.7 1.7M7.8 16.2l-1.7 1.7" stroke-linecap="round" />
+            </svg>
+            <span>Settings</span>
+          </button>
+
+          <button class="btn btn--primary" id="btn-new" type="button">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <path d="M12 5v14M5 12h14" stroke-linecap="round" />
+            </svg>
+            <span>New watch</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="shell">
+      <!-- ---------------------------------------------------------------- -->
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="hero__eyebrow">
+          <span class="pulse" aria-hidden="true"></span>
+          <span id="hero-status">Checking every 15 minutes</span>
+        </p>
+        <h1 id="hero-title">
+          Never miss a <span class="grad">first day, first show</span> again.
+        </h1>
+        <p class="hero__sub">
+          BookMyShow tells you when booking opens. It won't tell you when
+          <strong>IMAX at your cinema</strong> opens. This will.
+        </p>
+      </section>
+
+      <!-- ---------------------------------------------------------------- -->
+      <section class="stats" aria-label="Summary">
+        <article class="stat" style="--i: 0">
+          <span class="stat__label">Active watches</span>
+          <span class="stat__value" id="stat-watches" data-count="0">—</span>
+          <span class="stat__foot" id="stat-watches-foot">no watches yet</span>
+        </article>
+        <article class="stat" style="--i: 1">
+          <span class="stat__label">Shows spotted</span>
+          <span class="stat__value" id="stat-seen" data-count="0">—</span>
+          <span class="stat__foot">already alerted on</span>
+        </article>
+        <article class="stat" style="--i: 2">
+          <span class="stat__label">Last check</span>
+          <span class="stat__value stat__value--sm" id="stat-checked">—</span>
+          <span class="stat__foot" id="stat-checked-foot">waiting for first run</span>
+        </article>
+        <article class="stat" style="--i: 3">
+          <span class="stat__label">Alerts go to</span>
+          <span class="stat__value stat__value--sm" id="stat-channels">Issues</span>
+          <span class="stat__foot">Telegram optional</span>
+        </article>
+      </section>
+
+      <!-- ---------------------------------------------------------------- -->
+      <section aria-labelledby="watches-title">
+        <div class="section-head">
+          <h2 id="watches-title">Your watches</h2>
+          <div class="section-head__tools">
+            <button class="btn btn--ghost btn--sm" id="btn-refresh" type="button">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+                <path d="M20 11a8 8 0 1 0-2.3 5.7" stroke-linecap="round" />
+                <path d="M20 4.5V11h-6.2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>Refresh</span>
+            </button>
+            <button class="btn btn--ghost btn--sm" id="btn-run" type="button" hidden>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+                <path d="M7 4.8v14.4L19 12 7 4.8Z" stroke-linejoin="round" />
+              </svg>
+              <span>Check now</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="watches" class="cards" aria-busy="true">
+          <div class="card card--skeleton" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="card card--skeleton" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+
+        <!-- empty state -->
+        <div class="empty" id="empty" hidden>
+          <div class="empty__art" aria-hidden="true">🍿</div>
+          <h3>No watches yet</h3>
+          <p>
+            Add one and you'll get a message the moment your movie shows up in the
+            format and cinema you want.
+          </p>
+          <button class="btn btn--primary" type="button" data-action="new">
+            Create your first watch
+          </button>
+        </div>
+
+        <!-- needs-token state -->
+        <div class="empty" id="needs-token" hidden>
+          <div class="empty__art" aria-hidden="true">🔑</div>
+          <h3>Connect your GitHub account</h3>
+          <p>
+            Watches are stored as issues in your repo. Add a token once and you can
+            manage them all from here.
+          </p>
+          <button class="btn btn--primary" type="button" data-action="settings">
+            Add token
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot shell">
+      <p>
+        Runs free on GitHub Actions ·
+        <a id="repo-link" href="#" rel="noopener">repo</a> ·
+        <a id="issues-link" href="#" rel="noopener">all watches</a>
+      </p>
+      <p class="foot__fine">
+        Polls public BookMyShow pages on a schedule. Not affiliated with BookMyShow.
+      </p>
+    </footer>
+
+    <!-- ================================================================== -->
+    <!-- Watch editor                                                        -->
+    <!-- ================================================================== -->
+    <dialog class="modal" id="modal-watch" aria-labelledby="modal-watch-title">
+      <form id="form-watch" method="dialog">
+        <header class="modal__head">
+          <h2 id="modal-watch-title">New watch</h2>
+          <button class="icon-btn" type="button" data-close aria-label="Close">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 6l12 12M18 6 6 18" stroke-linecap="round" />
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal__body">
+          <!-- step: link -->
+          <div class="field">
+            <label for="f-url">BookMyShow movie link <span class="req">required</span></label>
+            <p class="hint">
+              Open the movie on BookMyShow in any city and paste the address. The
+              city and movie code are read straight out of it.
+            </p>
+            <input
+              id="f-url"
+              name="url"
+              type="url"
+              inputmode="url"
+              autocomplete="off"
+              spellcheck="false"
+              placeholder="https://in.bookmyshow.com/movies/bengaluru/…/ET00369074"
+              required
+            />
+            <div class="parsed" id="url-parsed" role="status" aria-live="polite"></div>
+          </div>
+
+          <div class="field">
+            <label for="f-city">City <span class="opt">optional override</span></label>
+            <p class="hint">Only needed to watch a different city than the link.</p>
+            <input
+              id="f-city"
+              name="city"
+              list="city-list"
+              autocomplete="off"
+              spellcheck="false"
+              placeholder="bengaluru"
+            />
+            <datalist id="city-list">
+              <option value="mumbai"></option>
+              <option value="bengaluru"></option>
+              <option value="national-capital-region-ncr"></option>
+              <option value="hyderabad"></option>
+              <option value="chennai"></option>
+              <option value="pune"></option>
+              <option value="kolkata"></option>
+              <option value="ahmedabad"></option>
+              <option value="kochi"></option>
+              <option value="chandigarh"></option>
+              <option value="jaipur"></option>
+              <option value="lucknow"></option>
+            </datalist>
+          </div>
+
+          <!-- formats -->
+          <fieldset class="field">
+            <legend>Formats</legend>
+            <p class="hint">
+              Pick what you'd accept. Choose none to be alerted about any format.
+            </p>
+            <div class="chips" id="f-formats" role="group" aria-label="Formats"></div>
+            <input
+              id="f-formats-other"
+              name="formatsOther"
+              autocomplete="off"
+              placeholder="Anything else, comma separated — EPIQ, Superplex"
+            />
+          </fieldset>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="f-venues">Cinemas <span class="opt">optional</span></label>
+              <p class="hint">One per line. Partial names work.</p>
+              <textarea id="f-venues" name="venues" rows="3" placeholder="PVR IMAX Orion&#10;INOX Garuda"></textarea>
+            </div>
+            <div class="field">
+              <label for="f-languages">Languages <span class="opt">optional</span></label>
+              <p class="hint">Comma separated. Blank means any.</p>
+              <input id="f-languages" name="languages" autocomplete="off" placeholder="English, Hindi" />
+            </div>
+          </div>
+
+          <!-- window -->
+          <fieldset class="field">
+            <legend>How far ahead to look</legend>
+            <p class="hint">Each extra day is one more page fetch per check.</p>
+            <div class="segment" id="f-days" role="radiogroup" aria-label="How far ahead to look"></div>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-dates">Specific dates <span class="opt">optional</span></label>
+            <p class="hint">
+              Comma separated. Replaces the window above — good for a known release date.
+            </p>
+            <input id="f-dates" name="dates" autocomplete="off" placeholder="2026-09-18, 2026-09-19" />
+          </div>
+
+          <!-- granularity -->
+          <fieldset class="field">
+            <legend>How often should it alert?</legend>
+            <div class="options" id="f-alert" role="radiogroup" aria-label="Alert frequency"></div>
+          </fieldset>
+
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+        </div>
+
+        <footer class="modal__foot">
+          <button class="btn btn--ghost" type="button" data-close>Cancel</button>
+          <button class="btn btn--primary" type="submit" id="btn-save">
+            <span class="btn__label">Create watch</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+        </footer>
+      </form>
+    </dialog>
+
+    <!-- ================================================================== -->
+    <!-- Settings                                                            -->
+    <!-- ================================================================== -->
+    <dialog class="modal modal--sm" id="modal-settings" aria-labelledby="modal-settings-title">
+      <form id="form-settings" method="dialog">
+        <header class="modal__head">
+          <h2 id="modal-settings-title">Settings</h2>
+          <button class="icon-btn" type="button" data-close aria-label="Close">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 6l12 12M18 6 6 18" stroke-linecap="round" />
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal__body">
+          <div class="grid-2">
+            <div class="field">
+              <label for="s-owner">GitHub user</label>
+              <input id="s-owner" autocomplete="off" spellcheck="false" placeholder="nikshithku" />
+            </div>
+            <div class="field">
+              <label for="s-repo">Repository</label>
+              <input id="s-repo" autocomplete="off" spellcheck="false" placeholder="BMS-alert" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="s-token">Personal access token</label>
+            <p class="hint">
+              Needed only to create and close watches. Reading works without it.
+            </p>
+            <div class="input-row">
+              <input
+                id="s-token"
+                type="password"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="github_pat_…"
+              />
+              <button class="btn btn--ghost btn--sm" type="button" id="btn-reveal" aria-label="Show token">
+                Show
+              </button>
+            </div>
+            <div class="token-status" id="token-status" role="status" aria-live="polite"></div>
+          </div>
+
+          <details class="note">
+            <summary>How to create the token</summary>
+            <ol>
+              <li>
+                Open
+                <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">
+                  fine-grained token settings</a>.
+              </li>
+              <li>Under <strong>Repository access</strong>, pick only this one repo.</li>
+              <li>
+                Under <strong>Permissions → Repository</strong>, set
+                <strong>Issues</strong> to <em>Read and write</em>. Add
+                <strong>Actions: Read and write</strong> if you want the
+                “Check now” button.
+              </li>
+              <li>Set an expiry — 90 days is sensible — then generate and paste it here.</li>
+            </ol>
+          </details>
+
+          <div class="callout callout--warn">
+            <strong>Where this token lives.</strong> It's kept in this browser's
+            local storage and sent only to api.github.com. It is never committed.
+            Anyone with access to this browser profile can read it, so scope it to
+            this single repo and give it an expiry.
+          </div>
+        </div>
+
+        <footer class="modal__foot">
+          <button class="btn btn--danger-ghost" type="button" id="btn-forget">Forget token</button>
+          <span class="spacer"></span>
+          <button class="btn btn--ghost" type="button" data-close>Close</button>
+          <button class="btn btn--primary" type="submit">
+            <span class="btn__label">Save</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+        </footer>
+      </form>
+    </dialog>
+
+    <!-- confirm -->
+    <dialog class="modal modal--xs" id="modal-confirm" aria-labelledby="confirm-title">
+      <div class="modal__head">
+        <h2 id="confirm-title">Stop this watch?</h2>
+      </div>
+      <div class="modal__body">
+        <p id="confirm-body">
+          This closes the issue, so checks stop. You can reopen it on GitHub later.
+        </p>
+      </div>
+      <div class="modal__foot">
+        <button class="btn btn--ghost" type="button" data-close>Keep it</button>
+        <button class="btn btn--danger" type="button" id="btn-confirm">
+          <span class="btn__label">Stop watching</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+      </div>
+    </dialog>
+
+    <div class="toasts" id="toasts" role="region" aria-label="Notifications" aria-live="polite"></div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

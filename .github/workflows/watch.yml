@@ -1,0 +1,80 @@
+name: Check watches
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub's documented floor is 5, but scheduled runs get
+    # delayed under platform load, so a tighter cron buys less than it looks.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "How to run"
+        type: choice
+        default: check
+        options: [check, dry-run, seed]
+
+# Two runs must never race on state.json, or one clobbers the other's commit.
+concurrency:
+  group: check-watches
+  cancel-in-progress: false
+
+permissions:
+  contents: write # commit state.json
+  issues: write # post alert comments
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check for new shows
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional. Alerts still land as issue comments without these.
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Passed as an env var rather than interpolated into the script, so
+          # the input can never be treated as shell syntax.
+          MODE: ${{ github.event.inputs.mode || 'check' }}
+        run: |
+          set -euo pipefail
+          case "$MODE" in
+            dry-run) python -m bmswatch.cli check --dry-run ;;
+            seed)    python -m bmswatch.cli check --seed ;;
+            *)       python -m bmswatch.cli check ;;
+          esac
+
+      - name: Commit updated state
+        if: ${{ github.event.inputs.mode != 'dry-run' }}
+        run: |
+          set -euo pipefail
+          if [[ -z "$(git status --porcelain state.json)" ]]; then
+            echo "state.json unchanged, nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json
+          git commit -m "state: update seen shows [skip ci]"
+          # A concurrent run may have pushed while we worked; rebase and retry.
+          for i in 1 2 3; do
+            if git push; then
+              echo "pushed"
+              exit 0
+            fi
+            echo "push rejected, rebasing (attempt $i)"
+            git pull --rebase --autostash || true
+          done
+          echo "could not push state after 3 attempts" >&2
+          exit 1

@@ -1,0 +1,4 @@
+# Only needed to run verify_contract.py, which reads the issue-form YAML.
+# The watcher itself needs nothing beyond requirements.txt.
+-r requirements.txt
+PyYAML==6.0.2

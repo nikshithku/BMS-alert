@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.tmp
+
+# Never commit credentials. Telegram token and chat ID belong in
+# GitHub Actions secrets, not in the repo.
+.env
+.env.*

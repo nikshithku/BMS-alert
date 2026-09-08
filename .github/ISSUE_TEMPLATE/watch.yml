@@ -1,0 +1,142 @@
+name: "🎬 Watch a show"
+description: "Get alerted when a movie gets listed in a cinema/format you care about."
+title: "[watch] "
+labels: ["watch"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill this in and an alert will be set up automatically.
+
+        **This issue *is* the watch.** While it stays open, checks keep running.
+        Close it to stop the alerts. Edit it to change the filters.
+
+        A bot will reply within a minute confirming exactly what it understood.
+
+  - type: input
+    id: url
+    attributes:
+      label: BookMyShow movie link
+      description: >-
+        Open the movie on BookMyShow (any city) and paste the address here.
+        The city and movie code are read straight out of the link, so you don't
+        need to look anything up.
+      placeholder: https://in.bookmyshow.com/movies/bengaluru/avatar-fire-and-ash/ET00369074
+    validations:
+      required: true
+
+  - type: input
+    id: city
+    attributes:
+      label: City override
+      description: >-
+        Only needed if you want alerts for a different city than the link, or if
+        the link had no city in it. Use the spelling from the BookMyShow URL,
+        e.g. `mumbai`, `bengaluru`, `national-capital-region-ncr`.
+      placeholder: bengaluru
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: formats
+    attributes:
+      label: Formats
+      description: >-
+        Tick the ones you'd accept. Leave everything unticked to be alerted
+        about **any** format. Matching is a case-insensitive text match against
+        what BookMyShow reports for each showtime.
+      options:
+        - label: IMAX
+        - label: IMAX 3D
+        - label: "4DX"
+        - label: ICE
+        - label: PXL
+        - label: LUXE
+        - label: INSIGNIA
+        - label: AUROMAX
+        - label: Dolby Atmos
+        - label: "3D"
+        - label: "2D"
+        - label: Recliner
+
+  - type: input
+    id: formats_other
+    attributes:
+      label: Other formats
+      description: Comma separated, for anything not in the list above.
+      placeholder: EPIQ, Superplex
+    validations:
+      required: false
+
+  - type: textarea
+    id: venues
+    attributes:
+      label: Cinemas
+      description: >-
+        One per line. Partial names are fine — `Orion` matches
+        "PVR: Orion Mall, Rajajinagar". Leave blank for all cinemas in the city.
+      placeholder: |
+        PVR IMAX Orion
+        INOX Garuda
+    validations:
+      required: false
+
+  - type: input
+    id: languages
+    attributes:
+      label: Languages
+      description: Comma separated. Leave blank for any language.
+      placeholder: English, Hindi
+    validations:
+      required: false
+
+  - type: dropdown
+    id: days_ahead
+    attributes:
+      label: How far ahead to look
+      description: >-
+        Each extra day is one more page fetch per check, so keep this tight
+        unless you need the wider window.
+      options:
+        - "1 day (today only)"
+        - "3 days"
+        - "7 days"
+        - "14 days"
+      default: 1
+    validations:
+      required: true
+
+  - type: input
+    id: dates
+    attributes:
+      label: Specific dates
+      description: >-
+        Optional. Comma separated `YYYY-MM-DD`. If set, this replaces the
+        window above — useful when you know the release date.
+      placeholder: 2026-09-18, 2026-09-19
+    validations:
+      required: false
+
+  - type: dropdown
+    id: alert_on
+    attributes:
+      label: How often should it alert?
+      description: Controls how chatty this watch is.
+      options:
+        - "Once — just tell me when booking opens"
+        - "Once per cinema"
+        - "Once per cinema and format"
+        - "Every single new showtime"
+      default: 2
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: >-
+            I understand this polls a public BookMyShow page on a schedule and
+            that BookMyShow may change their site or block requests at any time.
+          required: true

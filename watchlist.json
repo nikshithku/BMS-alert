@@ -1,0 +1,13 @@
+[
+  {
+    "name": "LOCAL TEST ONLY - premium formats, Mumbai",
+    "event_code": "ET00417686",
+    "region": "mumbai",
+    "formats": ["IMAX", "LUXE", "INSIGNIA"],
+    "venues": [],
+    "languages": [],
+    "days_ahead": 2,
+    "alert_on": "format",
+    "enabled": true
+  }
+]

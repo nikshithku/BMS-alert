@@ -1,0 +1,3 @@
+# Pinned: curl_cffi is the whole reason we get past Cloudflare's TLS
+# fingerprinting, so an unexpected upgrade is a real risk to this tool working.
+curl_cffi==0.16.3

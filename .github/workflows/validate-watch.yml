@@ -1,0 +1,45 @@
+name: Validate watch issue
+
+on:
+  issues:
+    # Deliberately NOT triggering on `labeled`. This workflow adds the
+    # watch:active label itself, which would fire `labeled`, which would run
+    # this again and post another comment — an endless comment loop. Humans
+    # re-validate by editing the issue, which fires `edited`.
+    types: [opened, edited, reopened]
+
+concurrency:
+  group: validate-watch-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+permissions:
+  issues: write
+
+jobs:
+  validate:
+    # Watch-form issues only, and only from the repo owner. This repo is public
+    # so anyone can open an issue; without the author check a stranger could
+    # create watches, burn Actions minutes, and send alerts to the owner's
+    # Telegram. cli.py enforces the same rule independently.
+    if: >-
+      contains(github.event.issue.labels.*.name, 'watch') &&
+      github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate and reply
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: python -m bmswatch.cli validate --issue "$ISSUE_NUMBER"
