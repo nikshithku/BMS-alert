@@ -143,9 +143,17 @@ def parse_link(url: str) -> tuple[str | None, str | None]:
     return region, event_code
 
 
-def normalise_dates(raw: str) -> list[str]:
-    """Accept YYYY-MM-DD / YYYYMMDD / DD-MM-YYYY, emit YYYYMMDD."""
-    out = []
+def normalise_dates(raw: str, today: dt.date | None = None) -> list[str]:
+    """Accept YYYY-MM-DD / YYYYMMDD / DD-MM-YYYY, emit YYYYMMDD.
+
+    Refuses a date list that is entirely in the past. Explicit dates override
+    the rolling window, so an all-past list leaves the watcher with nothing to
+    fetch: it runs forever, finds nothing, and reports success. Better to reject
+    it and explain than to look healthy while doing no work.
+    """
+    today = today or dt.date.today()
+    out: list[str] = []
+    past: list[str] = []
     for token in _csv(raw):
         t = token.strip()
         parsed = None
@@ -157,9 +165,23 @@ def normalise_dates(raw: str) -> list[str]:
                 continue
         if parsed is None:
             raise IssueFormError(
-                f"Could not read the date `{token}`. Use `YYYY-MM-DD`, e.g. `2026-09-18`."
+                f"Could not read the date `{token}`. Use `YYYY-MM-DD`, e.g. "
+                f"`{(today + dt.timedelta(days=7)).isoformat()}`."
             )
-        out.append(parsed.strftime("%Y%m%d"))
+        if parsed < today:
+            past.append(parsed.isoformat())
+        else:
+            out.append(parsed.strftime("%Y%m%d"))
+
+    if past and not out:
+        raise IssueFormError(
+            f"Every date given is in the past ({', '.join('`' + p + '`' for p in past)}), "
+            f"and today is `{today.isoformat()}`.\n\n"
+            "BookMyShow doesn't list past dates, so this watch would never match "
+            "anything. Either pick a future date, or clear the **Specific dates** "
+            "field to fall back on the rolling window."
+        )
+
     return out
 
 
