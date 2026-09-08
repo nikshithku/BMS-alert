@@ -63,6 +63,22 @@ class IssueFormError(ValueError):
     """The issue body could not be turned into a usable watch."""
 
 
+# The one heading that must be present for a body to count as a watch form.
+# Derived from FIELDS so it can't drift from the label the parser looks for.
+FORM_ANCHOR = "### BookMyShow movie link"
+
+
+def looks_like_watch_form(body: str) -> bool:
+    """Whether this body is an attempt at the watch form at all.
+
+    Lets validation distinguish "someone opened an unrelated issue" (ignore it
+    silently) from "someone used the watch form but got a field wrong" (explain
+    what to fix). Without this, every unrelated issue the owner opened would get
+    a bot comment telling them it isn't a valid watch.
+    """
+    return FORM_ANCHOR in (body or "")
+
+
 def split_sections(body: str) -> dict[str, str]:
     """Split an issue-form body into {label: raw_value}."""
     if not body:

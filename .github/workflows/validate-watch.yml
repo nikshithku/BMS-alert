@@ -17,13 +17,15 @@ permissions:
 
 jobs:
   validate:
-    # Watch-form issues only, and only from the repo owner. This repo is public
-    # so anyone can open an issue; without the author check a stranger could
-    # create watches, burn Actions minutes, and send alerts to the owner's
-    # Telegram. cli.py enforces the same rule independently.
-    if: >-
-      contains(github.event.issue.labels.*.name, 'watch') &&
-      github.event.issue.user.login == github.repository_owner
+    # Owner-only: this repo is public, so anyone can open an issue. Without the
+    # author check a stranger could create watches, burn Actions minutes, and
+    # push alerts into the owner's Telegram. cli.py re-checks independently.
+    #
+    # Deliberately NOT filtering on the 'watch' label here. GitHub's issue forms
+    # silently skip labels that don't exist in the repo yet, so requiring the
+    # label made the very first watch invisible to this workflow. Validation
+    # applies the label instead, and ignores bodies that aren't watch forms.
+    if: github.event.issue.user.login == github.repository_owner
     runs-on: ubuntu-latest
     timeout-minutes: 10
 

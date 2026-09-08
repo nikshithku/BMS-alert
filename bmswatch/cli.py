@@ -17,8 +17,8 @@ from typing import NamedTuple
 
 from . import notify
 from .fetch import FetchBlocked, FetchFailed, get, polite_pause, showtimes_url
-from .github import ACTIVE_LABEL, INVALID_LABEL, GitHub, GitHubError
-from .issueform import IssueFormError, watch_from_issue
+from .github import ACTIVE_LABEL, INVALID_LABEL, WATCH_LABEL, GitHub, GitHubError
+from .issueform import IssueFormError, looks_like_watch_form, watch_from_issue
 from .match import filter_shows, new_shows, target_dates
 from .models import Show, Watch
 from .parse import ParseError, parse_shows
@@ -110,12 +110,22 @@ def cmd_validate(args: argparse.Namespace) -> int:
         )
         return 0
 
+    body = issue.get("body") or ""
+
+    # An unrelated issue is not an error; stay quiet rather than commenting on it.
+    if not looks_like_watch_form(body):
+        log.info("issue #%s is not a watch form; ignoring", number)
+        return 0
+
     try:
-        watch = watch_from_issue(issue.get("body") or "", number, issue.get("title") or "")
+        watch = watch_from_issue(body, number, issue.get("title") or "")
     except IssueFormError as e:
         log.warning("issue #%s invalid: %s", number, e)
         gh.comment(number, notify.markdown_invalid(str(e)))
-        gh.add_labels(number, [INVALID_LABEL])
+        # Apply WATCH_LABEL too: GitHub's issue forms silently skip labels that
+        # don't exist yet, so the label has to be applied by us or the poller
+        # would never find this issue.
+        gh.add_labels(number, [WATCH_LABEL, INVALID_LABEL])
         gh.remove_label(number, ACTIVE_LABEL)
         return 0  # a bad form is user error, not a workflow failure
 
@@ -134,7 +144,10 @@ def cmd_validate(args: argparse.Namespace) -> int:
 
     gh.comment(number, notify.markdown_confirmation(watch, movie_hint))
     gh.remove_label(number, INVALID_LABEL)
-    gh.add_labels(number, [ACTIVE_LABEL])
+    # WATCH_LABEL is what the poller filters on. Adding it here rather than
+    # relying on the issue template means a missing label can't silently stop
+    # everything: the API creates the label if it doesn't exist yet.
+    gh.add_labels(number, [WATCH_LABEL, ACTIVE_LABEL])
     log.info("issue #%s validated: %s", number, watch.describe())
     return 0
 

@@ -131,14 +131,27 @@ const api = {
     const data = text ? JSON.parse(text) : null;
 
     if (!res.ok) {
-      // Rate limiting on unauthenticated reads is the common failure; say so
-      // rather than surfacing a bare 403.
+      // GitHub's own messages here are terse to the point of being unhelpful
+      // ("Resource not accessible by personal access token" for a missing
+      // permission), so translate the ones that actually happen.
       if (res.status === 403 && res.headers.get("x-ratelimit-remaining") === "0") {
         throw new Error("GitHub rate limit reached. Add a token in Settings, or wait an hour.");
       }
-      if (res.status === 401) throw new Error("Token rejected. It may be expired or revoked.");
+      if (res.status === 401) {
+        throw new Error("Token rejected — it may be expired, revoked, or mistyped.");
+      }
       if (res.status === 404) {
-        throw new Error(`Not found: ${config.slug}. Check the user and repository in Settings.`);
+        throw new Error(
+          `Can't see ${config.slug}. Either the name is wrong in Settings, or the token wasn't granted access to this repository.`
+        );
+      }
+      if (res.status === 403 && /not accessible by personal access token/i.test(data?.message || "")) {
+        const needed = path.includes("/actions/")
+          ? "Actions: Read and write"
+          : "Issues: Read and write";
+        throw new Error(
+          `Token is missing a permission. Edit it on GitHub and set ${needed}, and make sure ${config.repo} is listed under Repository access. Changes apply immediately, no new token needed.`
+        );
       }
       throw new Error(data?.message || `GitHub returned ${res.status}`);
     }
