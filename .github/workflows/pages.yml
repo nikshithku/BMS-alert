@@ -28,7 +28,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # enablement:true creates the Pages site on first run. Without it this
+      # step 404s until someone flips Settings -> Pages -> Source by hand.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       # Static site, no build step: the folder is uploaded as-is.
       - uses: actions/upload-pages-artifact@v3
