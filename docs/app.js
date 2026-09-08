@@ -7,7 +7,125 @@
    can be verified outside a browser.
    ========================================================================== */
 
+import { catalog, upcomingDates } from "./catalog.js";
 import { CONTRACT, fromIssueBody, parseLink, toIssueBody } from "./issue-body.js";
+
+/* --- searchable select ---------------------------------------------------- */
+
+/**
+ * Minimal accessible combobox over a static list.
+ *
+ * Exists because the city list is ~2,000 entries: a plain <select> is unusable
+ * at that size, and a <datalist> can't show poster art or be styled.
+ */
+function combobox(rootId, inputId, listId, { onPick, render, placeholder }) {
+  const root = $(`#${rootId}`);
+  const input = $(`#${inputId}`);
+  const list = $(`#${listId}`);
+  let items = [];
+  let filtered = [];
+  let active = -1;
+
+  const close = () => {
+    list.hidden = true;
+    input.setAttribute("aria-expanded", "false");
+    active = -1;
+  };
+
+  const open = () => {
+    if (!filtered.length) return;
+    list.hidden = false;
+    input.setAttribute("aria-expanded", "true");
+  };
+
+  function draw() {
+    list.replaceChildren();
+    if (!filtered.length) {
+      list.append(el("li", { className: "combo__opt combo__opt--empty", textContent: "No matches" }));
+      open();
+      return;
+    }
+    filtered.slice(0, 60).forEach((item, i) => {
+      const li = el("li", {
+        className: "combo__opt",
+        role: "option",
+        ariaSelected: String(i === active),
+        onmousedown: (e) => {
+          // mousedown, not click: blur would close the list first.
+          e.preventDefault();
+          pick(item);
+        },
+      });
+      render(li, item);
+      list.append(li);
+    });
+    open();
+  }
+
+  function filter(q) {
+    const needle = q.trim().toLowerCase();
+    filtered = !needle
+      ? items
+      : items.filter((it) => api.text(it).toLowerCase().includes(needle));
+    active = filtered.length ? 0 : -1;
+    draw();
+  }
+
+  function pick(item) {
+    input.value = api.text(item);
+    close();
+    onPick(item);
+  }
+
+  input.addEventListener("focus", () => filter(""));
+  input.addEventListener("input", () => filter(input.value));
+  input.addEventListener("blur", () => setTimeout(close, 120));
+
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault();
+      if (list.hidden) filter(input.value);
+      const max = Math.min(filtered.length, 60) - 1;
+      active = e.key === "ArrowDown" ? Math.min(active + 1, max) : Math.max(active - 1, 0);
+      draw();
+      $$(".combo__opt", list)[active]?.scrollIntoView({ block: "nearest" });
+    } else if (e.key === "Enter") {
+      if (!list.hidden && filtered[active]) {
+        e.preventDefault();
+        pick(filtered[active]);
+      }
+    } else if (e.key === "Escape") {
+      if (!list.hidden) {
+        e.stopPropagation(); // don't let the dialog close too
+        close();
+      }
+    }
+  });
+
+  const api = {
+    text: (item) => String(item),
+    setItems(next, { enabled = true, hint } = {}) {
+      items = next;
+      filtered = next;
+      input.disabled = !enabled;
+      if (hint !== undefined) input.placeholder = hint;
+      else if (placeholder) input.placeholder = placeholder;
+    },
+    setText(v) {
+      input.value = v || "";
+    },
+    get value() {
+      return input.value;
+    },
+    clear() {
+      input.value = "";
+      close();
+    },
+    root,
+    input,
+  };
+  return api;
+}
 
 const ALERT_HELP = {
   "Once — just tell me when booking opens": "One message when tickets first appear anywhere.",
@@ -201,6 +319,14 @@ const api = {
     });
   },
 
+  /** Ask the catalog workflow to rebuild, optionally adding a city. */
+  runCatalog(cities = "") {
+    return this.call(`/repos/${config.slug}/actions/workflows/catalog.yml/dispatches`, {
+      method: "POST",
+      body: { ref: config.branch, inputs: { cities, refresh_cached: "true" } },
+    });
+  },
+
   async state() {
     // Public raw file, so no token and no API quota consumed.
     const url = `https://raw.githubusercontent.com/${config.slug}/${config.branch}/state.json?t=${Date.now()}`;
@@ -261,16 +387,29 @@ $$("dialog.modal").forEach((dlg) => {
 
 /* --- editor form building ------------------------------------------------ */
 
-const state = { watches: [], editing: null, confirmFn: null };
+const state = {
+  watches: [],
+  editing: null,
+  confirmFn: null,
+  city: null, // chosen city slug
+  movie: null, // chosen movie object
+  venues: [], // chosen venue names
+};
 
-function buildChips() {
-  const box = $("#f-formats");
+let cityCombo;
+let movieCombo;
+let venueCombo;
+
+/** Toggle chips built from a list of strings. */
+function buildChipGroup(boxId, values, { scroll = false } = {}) {
+  const box = $(`#${boxId}`);
+  box.classList.toggle("chips--scroll", scroll && values.length > 14);
   box.replaceChildren(
-    ...CONTRACT.formats.map((f) =>
+    ...values.map((v) =>
       el("button", {
         type: "button",
         className: "chip",
-        textContent: f,
+        textContent: v,
         ariaPressed: "false",
         onclick(e) {
           const on = e.currentTarget.getAttribute("aria-pressed") === "true";
@@ -279,6 +418,121 @@ function buildChips() {
       })
     )
   );
+}
+
+function chosenChips(boxId) {
+  return $$(`#${boxId} .chip[aria-pressed=true]`).map((c) => c.dataset.value ?? c.textContent);
+}
+
+/** Future-only date chips. No free text, so a past date can't be entered. */
+function buildDateChips() {
+  const box = $("#f-dates");
+  box.replaceChildren(
+    ...upcomingDates(21).map((d) =>
+      el(
+        "button",
+        {
+          type: "button",
+          className: "chip chip--date",
+          ariaPressed: "false",
+          title: d.value,
+          onclick(e) {
+            const on = e.currentTarget.getAttribute("aria-pressed") === "true";
+            e.currentTarget.setAttribute("aria-pressed", String(!on));
+          },
+        },
+        [el("span", { textContent: d.weekday }), el("span", { textContent: d.label })]
+      )
+    )
+  );
+  $$("#f-dates .chip").forEach((c, i) => (c.dataset.value = upcomingDates(21)[i].value));
+}
+
+/** Chosen cinemas, shown as removable chips. */
+function renderVenueChips() {
+  const box = $("#f-venues");
+  box.replaceChildren(
+    ...state.venues.map((name) =>
+      el(
+        "button",
+        {
+          type: "button",
+          className: "chip chip--remove",
+          title: "Remove",
+          ariaLabel: `Remove ${name}`,
+          onclick() {
+            state.venues = state.venues.filter((v) => v !== name);
+            renderVenueChips();
+          },
+        },
+        [
+          el("span", { textContent: name }),
+          (() => {
+            const ns = "http://www.w3.org/2000/svg";
+            const svg = document.createElementNS(ns, "svg");
+            svg.setAttribute("viewBox", "0 0 24 24");
+            svg.setAttribute("fill", "none");
+            svg.setAttribute("stroke", "currentColor");
+            svg.setAttribute("stroke-width", "2.4");
+            svg.setAttribute("aria-hidden", "true");
+            const p = document.createElementNS(ns, "path");
+            p.setAttribute("d", "M6 6l12 12M18 6 6 18");
+            p.setAttribute("stroke-linecap", "round");
+            svg.append(p);
+            return svg;
+          })(),
+        ]
+      )
+    )
+  );
+}
+
+/** Load a city's cinemas/formats/languages into the pickers. */
+async function applyCity(slug) {
+  state.city = slug;
+  const note = $("#city-note");
+
+  // Movies are national, so they're available the moment a city is chosen.
+  movieCombo.setItems(catalog.moviesForDisplay(), { hint: "Search for a movie…" });
+
+  if (!catalog.hasCity(slug)) {
+    note.textContent =
+      "No cinema list for this city yet. Formats and cinemas will be open text until the catalog picks it up — or hit Refresh catalog in Settings.";
+    buildChipGroup("f-formats", CONTRACT.formats, { scroll: true });
+    buildChipGroup("f-languages", ["Hindi", "English", "Tamil", "Telugu", "Kannada", "Malayalam"]);
+    venueCombo.setItems([], { enabled: false, hint: "No cinema list for this city yet" });
+    maybeRequestCity(slug);
+    return;
+  }
+
+  const data = await catalog.city(slug);
+  if (!data) {
+    note.textContent = "Couldn't load this city's cinemas.";
+    return;
+  }
+
+  note.textContent = `${data.venues.length} cinemas · ${data.formats.length} formats seen here`;
+  buildChipGroup("f-formats", data.formats, { scroll: true });
+  buildChipGroup("f-languages", data.languages.length ? data.languages : ["Hindi", "English"]);
+  $("#lang-field").hidden = data.languages.length === 0;
+  venueCombo.setItems(data.venues, { hint: `Search ${data.venues.length} cinemas…` });
+  $("#formats-note").textContent = `Taken from what ${data.venues.length} screens in this city actually run.`;
+}
+
+/** Ask the catalog workflow to build a city we don't have yet. */
+async function maybeRequestCity(slug) {
+  if (!config.canWrite || state._requested === slug) return;
+  state._requested = slug;
+  try {
+    await api.runCatalog(slug);
+    toast(
+      "info",
+      "Building this city's cinema list",
+      "Takes a minute or two. Reopen this form afterwards to pick exact cinemas."
+    );
+  } catch {
+    // Not fatal: the watch still works, just without cinema pick-lists.
+  }
 }
 
 function buildSegment() {
@@ -331,68 +585,117 @@ function buildOptions() {
 }
 
 function readForm() {
+  const usingDates = $("#f-datemode button[aria-checked=true]")?.dataset.mode === "dates";
+  const code = state.movie?.code || "";
+  const city = state.city || "";
+
   return {
-    url: $("#f-url").value.trim(),
-    city: $("#f-city").value.trim().toLowerCase().replace(/\s+/g, "-"),
-    formats: $$("#f-formats .chip[aria-pressed=true]").map((c) => c.textContent),
-    formatsOther: $("#f-formats-other").value.trim(),
-    venues: lines($("#f-venues").value).join("\n"),
-    languages: csv($("#f-languages").value).join(", "),
+    // Synthesised rather than typed. The slug segment is cosmetic — BookMyShow
+    // resolves the page from the event code alone (verified) — so selecting a
+    // movie and a city is enough to build a link the parser accepts.
+    url: code && city ? `https://in.bookmyshow.com/movies/${city}/x/${code}` : "",
+    city,
+    formats: chosenChips("f-formats"),
+    formatsOther: "",
+    venues: state.venues.join("\n"),
+    languages: chosenChips("f-languages").join(", "),
     days: $("#f-days button[aria-checked=true]")?.dataset.value || CONTRACT.days[1],
-    dates: csv($("#f-dates").value).join(", "),
+    dates: usingDates ? chosenChips("f-dates").join(", ") : "",
     alert: $("#f-alert .option[aria-checked=true]")?.dataset.value || CONTRACT.alerts[2],
   };
 }
 
-function fillForm(w) {
-  $("#f-url").value = w.url || "";
-  $("#f-city").value = w.city || "";
-  $("#f-formats-other").value = w.formatsOther || "";
-  $("#f-venues").value = w.venues || "";
-  $("#f-languages").value = w.languages || "";
-  $("#f-dates").value = w.dates || "";
+async function fillForm(w) {
+  const { region, eventCode } = parseLink(w.url || "");
+  const city = w.city || region || "";
 
+  // City first: it decides which cinemas and formats are offered.
+  if (city) {
+    const known = catalog.cities.find((c) => c.slug === city);
+    cityCombo.setText(known ? known.name : city);
+    await applyCity(city);
+  } else {
+    cityCombo.clear();
+    state.city = null;
+  }
+
+  const movie = catalog.movies.find((m) => m.code === eventCode);
+  state.movie = movie || (eventCode ? { code: eventCode, title: eventCode, poster: "" } : null);
+  movieCombo.setText(state.movie ? state.movie.title : "");
+  renderPickedMovie();
+
+  // Formats from the issue may include values this city no longer reports, so
+  // add any missing ones rather than dropping the user's existing filter.
+  const wanted = [...(w.formats || []), ...csv(w.formatsOther)];
+  const present = $$("#f-formats .chip").map((c) => c.textContent);
+  for (const f of wanted) {
+    if (!present.includes(f)) {
+      $("#f-formats").append(
+        el("button", {
+          type: "button",
+          className: "chip",
+          textContent: f,
+          ariaPressed: "false",
+          onclick(e) {
+            const on = e.currentTarget.getAttribute("aria-pressed") === "true";
+            e.currentTarget.setAttribute("aria-pressed", String(!on));
+          },
+        })
+      );
+    }
+  }
   $$("#f-formats .chip").forEach((c) =>
-    c.setAttribute("aria-pressed", String((w.formats || []).includes(c.textContent)))
+    c.setAttribute("aria-pressed", String(wanted.includes(c.textContent)))
   );
+
+  state.venues = lines(w.venues);
+  renderVenueChips();
+
+  const langs = csv(w.languages);
+  $$("#f-languages .chip").forEach((c) =>
+    c.setAttribute("aria-pressed", String(langs.includes(c.textContent)))
+  );
+
+  const hasDates = Boolean((w.dates || "").trim());
+  setDateMode(hasDates ? "dates" : "window");
+  const wantDates = csv(w.dates);
+  $$("#f-dates .chip").forEach((c) =>
+    c.setAttribute("aria-pressed", String(wantDates.includes(c.dataset.value)))
+  );
+
   $$("#f-days button").forEach((b) =>
     b.setAttribute("aria-checked", String(b.dataset.value === w.days))
   );
   $$("#f-alert .option").forEach((b) =>
     b.setAttribute("aria-checked", String(b.dataset.value === w.alert))
   );
-  showParsed();
 }
 
-function showParsed() {
-  const box = $("#url-parsed");
-  const raw = $("#f-url").value.trim();
-  if (!raw) {
-    box.dataset.state = "";
+function renderPickedMovie() {
+  const box = $("#movie-picked");
+  if (!state.movie) {
+    box.hidden = true;
     box.replaceChildren();
     return;
   }
-  const { region, eventCode } = parseLink(raw);
-  const city = $("#f-city").value.trim().toLowerCase() || region;
+  box.hidden = false;
+  box.replaceChildren(
+    state.movie.poster
+      ? el("img", { src: state.movie.poster, alt: "", loading: "lazy" })
+      : el("div", { className: "picked__ph", ariaHidden: "true", textContent: "🎬" }),
+    el("div", { className: "picked__meta" }, [
+      el("strong", { textContent: state.movie.title }),
+      el("code", { textContent: state.movie.code }),
+    ])
+  );
+}
 
-  if (eventCode && city) {
-    box.dataset.state = "ok";
-    box.replaceChildren(
-      el("span", { textContent: "✓ Reading" }),
-      el("code", { textContent: eventCode }),
-      el("span", { textContent: "in" }),
-      el("code", { textContent: city })
-    );
-  } else {
-    box.dataset.state = "bad";
-    box.replaceChildren(
-      el("span", {
-        textContent: !eventCode
-          ? "No movie code (ET…) in that link yet"
-          : "No city in that link — fill in the City field",
-      })
-    );
-  }
+function setDateMode(mode) {
+  $$("#f-datemode button").forEach((b) =>
+    b.setAttribute("aria-checked", String(b.dataset.mode === mode))
+  );
+  $("#pane-window").hidden = mode !== "window";
+  $("#pane-dates").hidden = mode !== "dates";
 }
 
 /* --- rendering ----------------------------------------------------------- */
@@ -572,23 +875,39 @@ async function refresh() {
 
 /* --- actions ------------------------------------------------------------- */
 
-function startCreate() {
+async function startCreate() {
   state.editing = null;
+  state.movie = null;
+  state.venues = [];
+  state.city = null;
   $("#modal-watch-title").textContent = "New watch";
   $(".btn__label", $("#btn-save")).textContent = "Create watch";
-  $("#form-watch").reset();
   $("#form-error").hidden = true;
-  fillForm({ days: CONTRACT.days[1], alert: CONTRACT.alerts[2], formats: [] });
+  cityCombo.clear();
+  movieCombo.clear();
+  movieCombo.setItems([], { enabled: false, hint: "Choose a city first" });
+  venueCombo.setItems([], { enabled: false, hint: "Choose a city first" });
+  renderPickedMovie();
+  renderVenueChips();
+  buildChipGroup("f-formats", []);
+  buildChipGroup("f-languages", []);
+  setDateMode("window");
+  $$("#f-days button").forEach((b, i) => b.setAttribute("aria-checked", String(i === 1)));
+  $$("#f-alert .option").forEach((b, i) => b.setAttribute("aria-checked", String(i === 2)));
+  $$("#f-dates .chip").forEach((c) => c.setAttribute("aria-pressed", "false"));
+  $("#city-note").textContent = "Pick a city to load its movies and cinemas.";
   openModal("#modal-watch");
 }
 
-function startEdit(issue) {
+async function startEdit(issue) {
   state.editing = issue;
+  state.movie = null;
+  state.venues = [];
   $("#modal-watch-title").textContent = "Edit watch";
   $(".btn__label", $("#btn-save")).textContent = "Save changes";
   $("#form-error").hidden = true;
-  fillForm(fromIssueBody(issue.body));
   openModal("#modal-watch");
+  await fillForm(fromIssueBody(issue.body));
 }
 
 function askStop(issue, name) {
@@ -621,8 +940,10 @@ function wire() {
   $$("[data-action=new]").forEach((b) => b.addEventListener("click", startCreate));
   $$("[data-action=settings]").forEach((b) => b.addEventListener("click", openSettings));
 
-  $("#f-url").addEventListener("input", showParsed);
-  $("#f-city").addEventListener("input", showParsed);
+  // date mode toggle
+  $$("#f-datemode button").forEach((b) =>
+    b.addEventListener("click", () => setDateMode(b.dataset.mode))
+  );
 
   // theme
   $("#btn-theme").addEventListener("click", () => {
@@ -641,22 +962,20 @@ function wire() {
     const w = readForm();
     const { eventCode, region } = parseLink(w.url);
 
-    if (!eventCode) {
-      err.textContent = "That link has no movie code (like ET00369074) in it. Open the movie on BookMyShow and copy the address bar.";
+    if (!state.city) {
+      err.textContent = "Pick a city first.";
       err.hidden = false;
       return;
     }
-    if (!w.city && !region) {
-      err.textContent = "Couldn't find the city in that link. Fill in the City field.";
+    if (!state.movie) {
+      err.textContent = "Pick a movie from the list.";
       err.hidden = false;
       return;
     }
-    for (const d of csv(w.dates)) {
-      if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) {
-        err.textContent = `Date “${d}” should look like 2026-09-18.`;
-        err.hidden = false;
-        return;
-      }
+    if ($("#f-datemode button[aria-checked=true]")?.dataset.mode === "dates" && !w.dates) {
+      err.textContent = "Choose at least one date, or switch back to a rolling window.";
+      err.hidden = false;
+      return;
     }
     if (!config.canWrite) {
       err.textContent = "Add a GitHub token in Settings first — that's what lets this create the watch.";
@@ -780,6 +1099,79 @@ function updateLinks() {
 
 /* --- boot ---------------------------------------------------------------- */
 
+function initCombos() {
+  cityCombo = combobox("combo-city", "f-city", "city-list", {
+    placeholder: "Start typing to find your city…",
+    render: (li, c) => {
+      li.append(el("strong", { textContent: c.name }));
+      if (catalog.hasCity(c.slug)) {
+        li.append(el("small", { textContent: "cinemas ready" }));
+      }
+    },
+    onPick: (c) => applyCity(c.slug),
+  });
+  cityCombo.text = (c) => c.name;
+
+  movieCombo = combobox("combo-movie", "f-movie", "movie-list", {
+    placeholder: "Search for a movie…",
+    render: (li, m) => {
+      li.append(
+        m.poster
+          ? el("img", { src: m.poster, alt: "", loading: "lazy" })
+          : el("span", { textContent: "🎬", ariaHidden: "true" })
+      );
+      li.append(el("strong", { textContent: m.title }));
+    },
+    onPick: (m) => {
+      state.movie = m;
+      renderPickedMovie();
+    },
+  });
+  movieCombo.text = (m) => m.title;
+
+  venueCombo = combobox("combo-venue", "f-venue-search", "venue-list", {
+    placeholder: "Search cinemas…",
+    render: (li, v) => {
+      li.append(el("strong", { textContent: v.name }));
+      li.append(el("small", { textContent: v.code }));
+    },
+    onPick: (v) => {
+      if (!state.venues.includes(v.name)) state.venues.push(v.name);
+      renderVenueChips();
+      venueCombo.clear();
+    },
+  });
+  venueCombo.text = (v) => v.name;
+}
+
+async function loadCatalog() {
+  const ok = await catalog.load(config.slug, config.branch);
+  if (!ok) {
+    $("#city-note").textContent =
+      "Catalog hasn't been built yet. Run the “Refresh catalog” workflow once.";
+    return;
+  }
+
+  cityCombo.setItems(catalog.cities);
+  const age = catalog.ageHours;
+  $("#hero-status").textContent =
+    age < 1
+      ? "Catalog just refreshed · checking every 15 minutes"
+      : `Catalog ${Math.round(age)}h old · checking every 15 minutes`;
+
+  // "Refresh when the site opens" can't mean scraping from the browser (BMS
+  // sends no CORS headers), so kick off the workflow instead and let the next
+  // visit see the result.
+  if (catalog.stale && config.canWrite) {
+    try {
+      await api.runCatalog("");
+      toast("info", "Refreshing the catalog", "New movies and cinemas will appear shortly.");
+    } catch {
+      /* stale data is still usable */
+    }
+  }
+}
+
 function boot() {
   const savedTheme = localStorage.getItem("bms-alert:theme");
   if (savedTheme) document.documentElement.dataset.theme = savedTheme;
@@ -788,9 +1180,10 @@ function boot() {
   }
 
   config.load();
-  buildChips();
+  initCombos();
   buildSegment();
   buildOptions();
+  buildDateChips();
   wire();
   updateLinks();
 
@@ -798,6 +1191,7 @@ function boot() {
   $("#stat-channels").textContent = "Issues";
 
   refresh();
+  loadCatalog();
 }
 
 boot();

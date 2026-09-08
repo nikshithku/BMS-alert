@@ -1,0 +1,633 @@
+{
+ "city": "national-capital-region-ncr",
+ "name": "Delhi NCR",
+ "sampled_date": "20260909",
+ "venues": [
+  {
+   "code": "ONEG",
+   "name": "1 Cinema Powered by Mukta A2, Star Mall: Gurugram"
+  },
+  {
+   "code": "AKRC",
+   "name": "AKR Cinemas,TDI Mall: Kundli"
+  },
+  {
+   "code": "AKRF",
+   "name": "AKR Cinemas: SLF Mall, Faridabad"
+  },
+  {
+   "code": "AMCD",
+   "name": "Amba Cinema: Delhi 4K Laser Projector Dolby Atmos"
+  },
+  {
+   "code": "BCWG",
+   "name": "B18 Cinemas (Bhutani Cineplex) City Center GZB"
+  },
+  {
+   "code": "BTFD",
+   "name": "Batra Reels Cinemas: New Friends Colony"
+  },
+  {
+   "code": "CRGM",
+   "name": "Cinepolis: Airia Mall, Sohna Road, Gurgaon"
+  },
+  {
+   "code": "CUNT",
+   "name": "Cinepolis: City Centre Dwarka,Delhi (Newly Opened)"
+  },
+  {
+   "code": "FNSD",
+   "name": "Cinepolis: Cross River Mall, Shahdara"
+  },
+  {
+   "code": "CIPS",
+   "name": "Cinepolis: DLF Avenue, Saket"
+  },
+  {
+   "code": "CPGV",
+   "name": "Cinepolis: Grand Venice Mall, Greater Noida"
+  },
+  {
+   "code": "CNVG",
+   "name": "Cinepolis: Grand View High Street, Gurugram"
+  },
+  {
+   "code": "CIJA",
+   "name": "Cinepolis: Janak Cinema, New Delhi"
+  },
+  {
+   "code": "SPIA",
+   "name": "Cinepolis: Modi Mall (Formerly Spice Mall)"
+  },
+  {
+   "code": "CPMF",
+   "name": "Cinepolis: Pacific Mall, Faridabad"
+  },
+  {
+   "code": "CPNS",
+   "name": "Cinepolis: Pacific NSP2, Delhi"
+  },
+  {
+   "code": "CIGK",
+   "name": "Cinepolis: Savitri Complex GK2"
+  },
+  {
+   "code": "CTEE",
+   "name": "Cinepolis: The Esplanade, Gurugram"
+  },
+  {
+   "code": "CPUM",
+   "name": "Cinepolis: Unity One Mall Rohini, Delhi"
+  },
+  {
+   "code": "CEST",
+   "name": "Cinepolis: V3S East Centre (New)"
+  },
+  {
+   "code": "FNLN",
+   "name": "Cinepolis: V3S Mall, Laxmi Nagar"
+  },
+  {
+   "code": "HVCD",
+   "name": "Cineport Cinemas: SVH Metro Street, Sector 83"
+  },
+  {
+   "code": "DPDC",
+   "name": "Delhi: PVR Director`s Cut, Ambience Mall"
+  },
+  {
+   "code": "DVDC",
+   "name": "Delite Cinema: Asaf Ali Road"
+  },
+  {
+   "code": "NYCG",
+   "name": "Devgn CineX: Elan Epic, Gurugram"
+  },
+  {
+   "code": "NYDU",
+   "name": "Devgn CineX: Ghaziabad"
+  },
+  {
+   "code": "EEBC",
+   "name": "eBox Cinema: Ansal Plaza Mall, Greater Noida"
+  },
+  {
+   "code": "EBCA",
+   "name": "eBox Cinema: Parker Mall, Kundli"
+  },
+  {
+   "code": "SCUR",
+   "name": "eBox Cinema: Sonic World Mall, Surajpur"
+  },
+  {
+   "code": "PMPM",
+   "name": "Fun Cinemas: PM Cinemas, Parsvnath Mall, Manhattan"
+  },
+  {
+   "code": "G3SR",
+   "name": "G3S Cinema: Rohini (Newly Renovated)"
+  },
+  {
+   "code": "GAGC",
+   "name": "Gagan Theatre: Nand Nagri, Delhi"
+  },
+  {
+   "code": "GMGX",
+   "name": "Galaxie Multiplex: Ghaziabad"
+  },
+  {
+   "code": "GRNG",
+   "name": "Grand Cinemaz@Choudhry Mall"
+  },
+  {
+   "code": "PAEG",
+   "name": "Gurugram Pepsi PVR Ambience"
+  },
+  {
+   "code": "GPDC",
+   "name": "Gurugram: PVR Director`s Cut, Ambience Mall"
+  },
+  {
+   "code": "PGGM",
+   "name": "HDFC Millennia PVR: MGF, Gurugram"
+  },
+  {
+   "code": "INSG",
+   "name": "INOX Sapphire 90 Mall: Gurugram"
+  },
+  {
+   "code": "IAJS",
+   "name": "INOX: AIPL Joy Street, Gurgaon"
+  },
+  {
+   "code": "IGAM",
+   "name": "INOX: Ardee Mall, Gurugram"
+  },
+  {
+   "code": "IZOP",
+   "name": "INOX: COCA-COLA IMAX Paras, Nehru Place, Delhi"
+  },
+  {
+   "code": "INFR",
+   "name": "INOX: Crown Interiorz Mall, Delhi Mathura Road"
+  },
+  {
+   "code": "IEFM",
+   "name": "INOX: EF3 Mall, Faridabad"
+  },
+  {
+   "code": "ISML",
+   "name": "INOX: Gurgaon Sapphire 83"
+  },
+  {
+   "code": "IDEN",
+   "name": "INOX: Insignia At Epicuria, Nehru Place"
+  },
+  {
+   "code": "IBYG",
+   "name": "INOX: IRIS Broadway Gurugram"
+  },
+  {
+   "code": "SCJN",
+   "name": "INOX: Janak Place"
+  },
+  {
+   "code": "SCND",
+   "name": "INOX: Nehru Place"
+  },
+  {
+   "code": "IOCP",
+   "name": "INOX: Odeon, Connaught Place"
+  },
+  {
+   "code": "IOMG",
+   "name": "INOX: Omaxe Connaught Place Mall, Greater Noida"
+  },
+  {
+   "code": "IPMJ",
+   "name": "INOX: Pacific Mall, Jasola"
+  },
+  {
+   "code": "SCPT",
+   "name": "INOX: Patel Nagar"
+  },
+  {
+   "code": "INRD",
+   "name": "INOX: RCube, Monad Mall: Delhi"
+  },
+  {
+   "code": "ISMG",
+   "name": "INOX: Shipra Mall, Ghaziabad"
+  },
+  {
+   "code": "INVM",
+   "name": "INOX: Vishal Mall, Rajouri Garden"
+  },
+  {
+   "code": "INWM",
+   "name": "INOX: World Mark, Gurugram"
+  },
+  {
+   "code": "LSCM",
+   "name": "Legend Cinema Lounges: Mall Fifty One, Gurgaon"
+  },
+  {
+   "code": "LBDL",
+   "name": "Liberty Cinema: Karol Bagh"
+  },
+  {
+   "code": "M2PP",
+   "name": "M2K: Pitampura"
+  },
+  {
+   "code": "M2RH",
+   "name": "M2K: Rohini"
+  },
+  {
+   "code": "MDCD",
+   "name": "Madhuban Cinema: Dasna"
+  },
+  {
+   "code": "MENL",
+   "name": "Meenakshi Multiplex Cinema: Loni"
+  },
+  {
+   "code": "MCAZ",
+   "name": "Miraj Cinemas: Aakash, Azadpur"
+  },
+  {
+   "code": "ATSM",
+   "name": "Miraj Cinemas: ATS Khyber Range Mall, Ghaziabad"
+  },
+  {
+   "code": "MCVM",
+   "name": "Miraj Cinemas: Chand, Mayur Vihar Phase 1"
+  },
+  {
+   "code": "MCEF",
+   "name": "Miraj Cinemas: Eldeco mall, Faridabad"
+  },
+  {
+   "code": "MCIX",
+   "name": "Miraj Cinemas: India Expo Plaza (Newly Opened)"
+  },
+  {
+   "code": "MCDE",
+   "name": "Miraj Cinemas: Ivory Tower, Subhash Nagar"
+  },
+  {
+   "code": "MKLJ",
+   "name": "Miraj Cinemas: KLJ Square, Gurugram"
+  },
+  {
+   "code": "MIMU",
+   "name": "Miraj Cinemas: M4U, Sahibabad"
+  },
+  {
+   "code": "MCTI",
+   "name": "Miraj Cinemas: TGIP, Noida"
+  },
+  {
+   "code": "MDDC",
+   "name": "Miraj Cinemas: Vikas Cinemall, Shahdara"
+  },
+  {
+   "code": "MJMM",
+   "name": "Miraj Maximum: Metropollis Mall, Gurgaon"
+  },
+  {
+   "code": "MERM",
+   "name": "MovieMax Edition (Luxe): Rcube Monad Mall, Noida"
+  },
+  {
+   "code": "MXGN",
+   "name": "MovieMax Laserplex: Gulshan One 29 Mall, Noida"
+  },
+  {
+   "code": "MMAP",
+   "name": "MovieMax: Ansal Plaza, Gurgaon"
+  },
+  {
+   "code": "MMZG",
+   "name": "MovieMax: Pacific Mall Ghaziabad"
+  },
+  {
+   "code": "MWMG",
+   "name": "Moviemax: Sector 56, Metro World Mall, Gurugram"
+  },
+  {
+   "code": "MTCV",
+   "name": "Movietime Cinema: VSR 114 Avenue Sec 114 Gurgaon"
+  },
+  {
+   "code": "MCGN",
+   "name": "Movietime Cinemas: Celebration Mall, Gurgaon"
+  },
+  {
+   "code": "MTPP",
+   "name": "Movietime Cinemas: Pitampura"
+  },
+  {
+   "code": "MTND",
+   "name": "Movietime Cinemas: Sector 18, Noida"
+  },
+  {
+   "code": "MXCS",
+   "name": "MSX Cinemas: Greater Noida"
+  },
+  {
+   "code": "RNMT",
+   "name": "MSX Silvercity, Haldiram Citymall Sec12: Faridabad"
+  },
+  {
+   "code": "PCCF",
+   "name": "Pristine Mall: Sec-31, Faridabad"
+  },
+  {
+   "code": "DCMV",
+   "name": "PVR Directors Cut, DLF Mall Of India: Noida"
+  },
+  {
+   "code": "PVPU",
+   "name": "PVR IMAX with Laser, Priya: Delhi"
+  },
+  {
+   "code": "PDEI",
+   "name": "PVR: 3CS Lajpat Nagar, Delhi"
+  },
+  {
+   "code": "PVKS",
+   "name": "PVR: Anupam Saket, Delhi"
+  },
+  {
+   "code": "PCEL",
+   "name": "PVR: Cinemagic, Unity One Elegante, NSP, Pitampura"
+  },
+  {
+   "code": "CCPZ",
+   "name": "PVR: City Centre, Gurgaon"
+  },
+  {
+   "code": "PECD",
+   "name": "PVR: ECX Chanakyapuri, Delhi"
+  },
+  {
+   "code": "EDMP",
+   "name": "PVR: EDM, Ghaziabad"
+  },
+  {
+   "code": "PVMS",
+   "name": "PVR: Elan Mercado, Sec 80, Gurugram"
+  },
+  {
+   "code": "EMPS",
+   "name": "PVR: Elan Miracle, Sec 84, Gurugram"
+  },
+  {
+   "code": "PETA",
+   "name": "PVR: Elan Town Centre, Sec 67, Gurugram"
+  },
+  {
+   "code": "PGND",
+   "name": "PVR: Gaur City, Greater Noida"
+  },
+  {
+   "code": "MHNU",
+   "name": "PVR: Mahagun, Ghaziabad"
+  },
+  {
+   "code": "PMGU",
+   "name": "PVR: Mega Mall, Gurgaon"
+  },
+  {
+   "code": "PMTN",
+   "name": "PVR: Midtown, Moti Nagar, Delhi"
+  },
+  {
+   "code": "PNAD",
+   "name": "PVR: Naraina, Delhi"
+  },
+  {
+   "code": "IOTG",
+   "name": "PVR: Opulent, Ghaziabad"
+  },
+  {
+   "code": "PPMF",
+   "name": "PVR: Pacific Mall (The Mall of Faridabad NIT)"
+  },
+  {
+   "code": "PPDA",
+   "name": "PVR: Pacific, Dwarka"
+  },
+  {
+   "code": "PCSN",
+   "name": "PVR: Pacific, Subhash Nagar, Delhi"
+  },
+  {
+   "code": "PBLL",
+   "name": "PVR: Pebble Downtown Sec-12, Faridabad"
+  },
+  {
+   "code": "PCPL",
+   "name": "PVR: Plaza-CP, Delhi"
+  },
+  {
+   "code": "PVPD",
+   "name": "PVR: Prashant Vihar, Delhi"
+  },
+  {
+   "code": "PPGV",
+   "name": "PVR: Promenade, Vasant Kunj"
+  },
+  {
+   "code": "PSDD",
+   "name": "PVR: Sangam, Delhi"
+  },
+  {
+   "code": "PTCW",
+   "name": "PVR: Select City Walk, Delhi"
+  },
+  {
+   "code": "PMMS",
+   "name": "PVR: Shalimar Bagh"
+  },
+  {
+   "code": "PVLE",
+   "name": "PVR: Superplex Logix, Noida"
+  },
+  {
+   "code": "DTYN",
+   "name": "PVR: Superplex Mall Of India, Noida"
+  },
+  {
+   "code": "PVVW",
+   "name": "PVR: Vegas Dwarka"
+  },
+  {
+   "code": "PDIV",
+   "name": "PVR: Vikaspuri, Delhi"
+  },
+  {
+   "code": "VVGZ",
+   "name": "PVR: VVIP, Ghaziabad"
+  },
+  {
+   "code": "QLAC",
+   "name": "QLA Cinemas: Dremz Mall, Gurugram"
+  },
+  {
+   "code": "RVCV",
+   "name": "Rajhans Cinemas: Ocus Medley, Sec-99, Gurugram"
+  },
+  {
+   "code": "RONC",
+   "name": "Rajhans Cinemas:Galaxy Diamond Plaza,Greater Noida"
+  },
+  {
+   "code": "RCGD",
+   "name": "ROONGTA CINEMAS: SHOPPRIX Mall, Ghaziabad"
+  },
+  {
+   "code": "RRJM",
+   "name": "RR Cinema: Jaipuria Mall, Indirapuram"
+  },
+  {
+   "code": "RRCO",
+   "name": "RR Cinema: Omaxe Gurgaon Mall, Gurgaon"
+  },
+  {
+   "code": "SCGZ",
+   "name": "Silvercity Multiplex: Ghaziabad"
+  },
+  {
+   "code": "SLCU",
+   "name": "Skylit Cinemas: Sahara Mall, Gurugram (Gurgaon)"
+  },
+  {
+   "code": "MWSS",
+   "name": "US Cinemas, Movie World, Ghaziabad (All New)"
+  },
+  {
+   "code": "USCO",
+   "name": "US CINEMAS: Aditya Mall, Indirapuram"
+  },
+  {
+   "code": "USCG",
+   "name": "US CINEMAS: Eros Mall, Indirapuram"
+  },
+  {
+   "code": "USEB",
+   "name": "US CINEMAS: Galaxy Blue Sapphire, Noida Ext"
+  },
+  {
+   "code": "VBOR",
+   "name": "Vibhor Chitralok: Pilkhuwa"
+  },
+  {
+   "code": "WATG",
+   "name": "Wave Cinema: iThum Galleria Mall, Greater Noida"
+  },
+  {
+   "code": "WVRN",
+   "name": "Wave Cinemas: Gaur Central Mall, RDC"
+  },
+  {
+   "code": "WVND",
+   "name": "Wave: Noida"
+  },
+  {
+   "code": "WVRG",
+   "name": "Wave: Raja Garden"
+  },
+  {
+   "code": "WVKS",
+   "name": "Wave: The Wave Mall, Kaushambi"
+  },
+  {
+   "code": "WUPG",
+   "name": "Wave: Urbana Premium, Sector 67 Gurugram"
+  }
+ ],
+ "formats": [
+  "2D",
+  "2K LASER DOLBY 7.1",
+  "DIRECTORS CUT",
+  "LASER",
+  "INSIGNIA",
+  "Laser Projector",
+  "2K DOLBY 7.1",
+  "GOLD",
+  "KOTAK INSIGNIA",
+  "Laser & 7.1",
+  "IMAX",
+  "DOLBY 7.1",
+  "EMINENCE CUT RECLINER",
+  "EUROPA LUX",
+  "DOLBY SLS 7.1",
+  "Renovated",
+  "PXL",
+  "DOLBY ATMOS",
+  "ATMOS",
+  "4K DOLBY",
+  "DOLBY 7.1 (2K PROJECTOR",
+  "2K DOLBY",
+  "Laser",
+  "PLAYHOUSE",
+  "Atmos",
+  "NORMAL",
+  "LASER & 7.1",
+  "LASER 2K",
+  "2K LASER",
+  "7.1",
+  "KOTAK LUXE",
+  "ICE",
+  "LUXE",
+  "LASER DOLBY ATMOS",
+  "MAXX SCREEN",
+  "AMOR BY DEVGN CINEX",
+  "DOLBY",
+  "LASER DOLBY",
+  "Laser Dolby",
+  "Largest Screen",
+  "RITZ DOLBY 7.1",
+  "RECLINER LASER ATMOS",
+  "4K ATMOS",
+  "New Audi",
+  "EMINENCE-CUT RECLINER",
+  "RECLINER ATMOS",
+  "OPERA DOLBY 7.1",
+  "Maximum-Atmos",
+  "SIGNATURE RECLINER",
+  "4DX",
+  "BROADWAY DOLBY 7.1",
+  "LARGEST SCN DOLBY",
+  "DTSx",
+  "ONYX",
+  "4K LASER ATMOS",
+  "BIGPIX",
+  "VIP GOLD CLASS",
+  "Laser Atmos",
+  "MACRO XE",
+  "2K BIG SCREEN",
+  "4K",
+  "Dolby Atmos",
+  "Gold Class",
+  "LEGACY DOLBY 7.1",
+  "LASER & DOLBY",
+  "4K LASER",
+  "Dolby Digital",
+  "LARGE SCREEN",
+  "LASER 9K",
+  "4K DOLBY OG 7.1",
+  "5.1",
+  "Elysium By Cineport",
+  "2K/Dolby",
+  "DIAMOND",
+  "JUNIOR"
+ ],
+ "languages": [
+  "Hindi",
+  "English"
+ ],
+ "generated_at": "2026-09-08T10:30:59+00:00"
+}

@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 from typing import NamedTuple
 
-from . import notify
+from . import catalog, notify
 from .fetch import FetchBlocked, FetchFailed, get, polite_pause, showtimes_url
 from .github import ACTIVE_LABEL, INVALID_LABEL, WATCH_LABEL, GitHub, GitHubError
 from .issueform import IssueFormError, looks_like_watch_form, watch_from_issue
@@ -162,6 +162,48 @@ class CollectResult(NamedTuple):
     movie: str
     listed: int  # total listed across dates, before filtering
     problems: list[str]
+
+
+def cmd_catalog(args: argparse.Namespace) -> int:
+    out = Path(args.out)
+    wanted: list[str] = [c.strip().lower() for c in args.cities.split(",") if c.strip()]
+
+    if args.refresh_cached:
+        for existing in (out / "city").glob("*.json"):
+            if existing.stem != "index":
+                wanted.append(existing.stem)
+
+    if args.from_watches:
+        gh = GitHub()
+        if gh.configured:
+            try:
+                wanted += [w.region for w in watches_from_issues(gh)]
+            except GitHubError as e:
+                log.warning("could not read watches for city list: %s", e)
+        else:
+            log.info("no GitHub credentials; skipping --from-watches")
+
+    # Always keep a few majors warm so a first-time visitor sees real options
+    # rather than an empty picker.
+    wanted += ["mumbai", "bengaluru", "national-capital-region-ncr", "hyderabad", "chennai", "pune"]
+
+    unique = list(dict.fromkeys(wanted))
+    log.info("building catalog for %d city/cities: %s", len(unique), ", ".join(unique))
+
+    try:
+        summary = catalog.build(out, unique)
+    except FetchBlocked as e:
+        log.error("blocked while building catalog: %s", e)
+        return 2
+
+    log.info(
+        "catalog done: %d cities listed, %d movies, %d city file(s) built, %d cached",
+        summary["cities"],
+        summary["movies"],
+        len(summary["built"]),
+        len(summary["cached"]),
+    )
+    return 0
 
 
 def collect(watch: Watch) -> CollectResult:
@@ -343,6 +385,28 @@ def main(argv: list[str] | None = None) -> int:
     v = sub.add_parser("validate", help="validate one watch issue and reply to it")
     v.add_argument("--issue", type=int, required=True)
     v.set_defaults(func=cmd_validate)
+
+    cat = sub.add_parser(
+        "catalog",
+        help="build the pickable options (cities, movies, cinemas, formats) for the dashboard",
+    )
+    cat.add_argument("--out", default=str(ROOT / "docs" / "data"))
+    cat.add_argument(
+        "--cities",
+        default="",
+        help="comma-separated city slugs to build cinema lists for",
+    )
+    cat.add_argument(
+        "--from-watches",
+        action="store_true",
+        help="also build cities referenced by open watch issues",
+    )
+    cat.add_argument(
+        "--refresh-cached",
+        action="store_true",
+        help="also rebuild every city already present in the catalog",
+    )
+    cat.set_defaults(func=cmd_catalog)
 
     p.add_argument("-v", "--verbose", action="store_true")
     args = p.parse_args(argv)

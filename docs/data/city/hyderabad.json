@@ -1,0 +1,271 @@
+{
+ "city": "hyderabad",
+ "name": "Hyderabad",
+ "sampled_date": "20260909",
+ "venues": [
+  {
+   "code": "ACAS",
+   "name": "AAA Cinemas: Ameerpet"
+  },
+  {
+   "code": "ALUC",
+   "name": "ALLU Cinemas: Kokapet"
+  },
+  {
+   "code": "AMBH",
+   "name": "AMB Cinemas: Gachibowli"
+  },
+  {
+   "code": "AACN",
+   "name": "Aparna Cinemas: Nallagandla"
+  },
+  {
+   "code": "APNS",
+   "name": "Aparna Cinemas: Shamshabad"
+  },
+  {
+   "code": "ACEV",
+   "name": "ART CINEMAS: Vanasthalipuram"
+  },
+  {
+   "code": "ASHN",
+   "name": "Asian Cinemart: RC Puram"
+  },
+  {
+   "code": "CPHY",
+   "name": "Asian Cineplanet Multiplex: Kompally"
+  },
+  {
+   "code": "ACPM",
+   "name": "Asian Lakshmikala Cinepride: Moosapet"
+  },
+  {
+   "code": "AMCA",
+   "name": "Asian M Cube Mall: Attapur"
+  },
+  {
+   "code": "SNKH",
+   "name": "Asian Mukta A2 Sensation Cinema: Kairathabad"
+  },
+  {
+   "code": "ARMH",
+   "name": "Asian Radhika Multiplex: ECIL"
+  },
+  {
+   "code": "ACHI",
+   "name": "Asian Sha & Shahensha: Chintal"
+  },
+  {
+   "code": "TRHY",
+   "name": "Asian Tarakarama Cineplex: Kachiguda"
+  },
+  {
+   "code": "INKM",
+   "name": "Cine Town Indra Nagendra: Karmanghat"
+  },
+  {
+   "code": "CPCL",
+   "name": "Cinepolis: CCPL Mall Malkajgiri, Hyderabad"
+  },
+  {
+   "code": "ABCS",
+   "name": "Cinepolis: DSL Virtue Mall Uppal, Hyderabad"
+  },
+  {
+   "code": "CPMH",
+   "name": "Cinepolis: Lulu Mall, Hyderabad"
+  },
+  {
+   "code": "CMMA",
+   "name": "Cinepolis: Mantra Mall, Attapur"
+  },
+  {
+   "code": "STHD",
+   "name": "Cinepolis: Sudha Cinemas, Hyderabad"
+  },
+  {
+   "code": "CTNR",
+   "name": "Cinepolis: TNR North City, Suchitra, Hyderabad"
+  },
+  {
+   "code": "CPLK",
+   "name": "CONNPLEX Luxuriance Cinemas: Mpm Mall, Banjara Hil"
+  },
+  {
+   "code": "VRKC",
+   "name": "Indra Venkataramana Padmavati Cinema: Kachiguda"
+  },
+  {
+   "code": "INHY",
+   "name": "INOX GVK One, Banjara Hills: Hyderabad"
+  },
+  {
+   "code": "AKYJ",
+   "name": "INOX: Ashoka One, 4K LASER Dolby ATMOS: Kukatpally"
+  },
+  {
+   "code": "IGMH",
+   "name": "INOX: GSM Mall, Hyderabad"
+  },
+  {
+   "code": "INMH",
+   "name": "INOX: Maheshwari Parmeshwari Mall, Kachiguda"
+  },
+  {
+   "code": "IOMH",
+   "name": "INOX: Odeon 4K, LASER, ATMOS, DTS-X: RTC X Roads"
+  },
+  {
+   "code": "IPRS",
+   "name": "INOX: Prism Mall, Hyderabad"
+  },
+  {
+   "code": "ISTN",
+   "name": "INOX: Sattva Necklace Mall, Kavadiguda"
+  },
+  {
+   "code": "JJPP",
+   "name": "JP Cinemas: Chandanagar"
+  },
+  {
+   "code": "MCBH",
+   "name": "Metro Cinema: Bahadurpura"
+  },
+  {
+   "code": "MRAA",
+   "name": "Miraj Cinemas: A2A Central Mall, Balanagar"
+  },
+  {
+   "code": "MRAD",
+   "name": "Miraj Cinemas: Anand Mall and Movies, Narsingi"
+  },
+  {
+   "code": "MMCA",
+   "name": "Miraj Cinemas: CineTown, Miyapur"
+  },
+  {
+   "code": "MRGT",
+   "name": "Miraj Cinemas: Geeta, Chandanagar"
+  },
+  {
+   "code": "MRRG",
+   "name": "Miraj Cinemas: Raghavendra, Malkajgiri"
+  },
+  {
+   "code": "MCSS",
+   "name": "Miraj Cinemas: Shalini Shivani, Kothapet"
+  },
+  {
+   "code": "MMAH",
+   "name": "MovieMax: AMR, ECIL Secunderabad"
+  },
+  {
+   "code": "MTHY",
+   "name": "Platinum Movietime Cinema: Gachibowli SLN Terminus"
+  },
+  {
+   "code": "PRHN",
+   "name": "Prasads Multiplex: Hyderabad"
+  },
+  {
+   "code": "PVHM",
+   "name": "PVR ICON: Hitech, Madhapur, Hyderabad"
+  },
+  {
+   "code": "ILKS",
+   "name": "PVR Lakeshore PXL 4K Laser ATMOS DTS-X Y Junction"
+  },
+  {
+   "code": "PIIC",
+   "name": "PVR Superplex Inorbit: LUXE, PXL, 4DX: Cyberabad"
+  },
+  {
+   "code": "PVTS",
+   "name": "PVR: Atrium Gachibowli, Hyderabad"
+  },
+  {
+   "code": "PVYH",
+   "name": "PVR: Central Mall, Panjagutta"
+  },
+  {
+   "code": "PIMH",
+   "name": "PVR: Irrum Manzil, Hyderabad"
+  },
+  {
+   "code": "PVUM",
+   "name": "PVR: Musarambagh, Hyderabad"
+  },
+  {
+   "code": "PNNG",
+   "name": "PVR: Next Galleria Mall, Panjagutta"
+  },
+  {
+   "code": "PVFS",
+   "name": "PVR: Nexus Mall Kukatpally, Hyderabad"
+  },
+  {
+   "code": "PVTP",
+   "name": "PVR: Preston, Gachibowli Hyderabad"
+  },
+  {
+   "code": "PRCX",
+   "name": "PVR: RK Cineplex, Hyderabad"
+  },
+  {
+   "code": "RMKN",
+   "name": "Ramakrishna 35mm: Abids"
+  },
+  {
+   "code": "RCNH",
+   "name": "ROONGTA CINEMAS: NOVUM, NAMPALLY"
+  },
+  {
+   "code": "TVHY",
+   "name": "Tivoli Cinemas: Secunderabad"
+  },
+  {
+   "code": "UKCC",
+   "name": "UK Cineplex: Nacharam, Hyderabad"
+  }
+ ],
+ "formats": [
+  "2D",
+  "ATMOS",
+  "DOLBY 7.1",
+  "VIP SCREEN",
+  "BARCO FLAGSHIP LASER DOLBY ATMOS",
+  "PLAYHOUSE",
+  "RECLINER",
+  "LASER DOLBY 7.1",
+  "BARCO LASER 4K ATMOS",
+  "DOLBY ATMOS",
+  "PCX SCREEN",
+  "INFINITY VISION DOLBY ATMOS",
+  "2K",
+  "4K DOLBY 7.1",
+  "4K DOLBY ATMOS",
+  "PXL",
+  "Infinity Vision Dolby Atmos",
+  "LASER & 7.1",
+  "4K",
+  "2K AIR COOLED",
+  "Barco Dolby 7.1",
+  "BARCO 4K SMART LASER",
+  "SCREEN 4",
+  "AIR COOLED",
+  "BARCO 4K LASER",
+  "4K ATMOS",
+  "MACRO XE",
+  "Atmos",
+  "LALITHA AIR CONDITIONED",
+  "LED SCREEN DOLBY ATMOS",
+  "LASER DOLBY DIGITAL 7.1",
+  "SCREEN 3"
+ ],
+ "languages": [
+  "Hindi",
+  "English",
+  "Malayalam"
+ ],
+ "generated_at": "2026-09-08T10:30:59+00:00"
+}

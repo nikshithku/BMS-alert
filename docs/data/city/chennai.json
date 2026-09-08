@@ -1,0 +1,112 @@
+{
+ "city": "chennai",
+ "name": "Chennai",
+ "sampled_date": "20260909",
+ "venues": [
+  {
+   "code": "ACON",
+   "name": "AGS Cinemas OMR: Navlur"
+  },
+  {
+   "code": "AGSM",
+   "name": "AGS Cinemas: Maduravoyal"
+  },
+  {
+   "code": "ACTN",
+   "name": "AGS Cinemas: T. Nagar"
+  },
+  {
+   "code": "ACVM",
+   "name": "AGS Cinemas: Villivakkam"
+  },
+  {
+   "code": "CBMC",
+   "name": "Cinepolis: BSR Mall, OMR, Thoraipakkam"
+  },
+  {
+   "code": "PVES",
+   "name": "HDFC Millennia PVR: Escape-Express Avenue Mall"
+  },
+  {
+   "code": "INCH",
+   "name": "INOX: Chennai Citi Centre, Dr. RK Salai"
+  },
+  {
+   "code": "INPR",
+   "name": "INOX: LUXE Phoenix Market City, Velachery"
+  },
+  {
+   "code": "INTO",
+   "name": "INOX: The Marina Mall, OMR"
+  },
+  {
+   "code": "MAYJ",
+   "name": "MAYAJAAL Multiplex: ECR, Chennai"
+  },
+  {
+   "code": "MCSK",
+   "name": "Miraj Cinemas: Sekaran Mall, Perrumbakkam"
+  },
+  {
+   "code": "MMPR",
+   "name": "MovieMax: PR Mall, Wall Tax Road, Chennai"
+  },
+  {
+   "code": "PABC",
+   "name": "PVR: Aerohub, Chennai"
+  },
+  {
+   "code": "PVHC",
+   "name": "PVR: Ampa Mall, Nelson Manickam Road"
+  },
+  {
+   "code": "PGRA",
+   "name": "PVR: Grand Galada, Pallavaram"
+  },
+  {
+   "code": "PGMV",
+   "name": "PVR: Grand Mall, Velachery"
+  },
+  {
+   "code": "PVHR",
+   "name": "PVR: Heritage RSL ECR, Chennai"
+  },
+  {
+   "code": "PVPZ",
+   "name": "PVR: Palazzo, The Nexus Vijaya Mall"
+  },
+  {
+   "code": "PBRM",
+   "name": "PVR: Perambur, Spectrum Mall"
+  },
+  {
+   "code": "PVSR",
+   "name": "PVR: Sathyam, Royapettah"
+  },
+  {
+   "code": "PSKL",
+   "name": "PVR: SKLS Galaxy Mall, Red Hills Chennai"
+  },
+  {
+   "code": "PCAN",
+   "name": "PVR: VR Chennai, Anna Nagar"
+  },
+  {
+   "code": "TVHP",
+   "name": "The Vijay Park Multiplex: Injambakkam ECR 4K Atmos"
+  }
+ ],
+ "formats": [
+  "2D",
+  "4K DOLBY 7.1",
+  "4K LASER DOLBY 7.1",
+  "4K DOLBY ATMOS",
+  "PXL"
+ ],
+ "languages": [
+  "Hindi",
+  "Malayalam",
+  "English"
+ ],
+ "generated_at": "2026-09-08T10:30:59+00:00"
+}

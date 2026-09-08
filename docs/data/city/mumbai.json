@@ -1,0 +1,463 @@
+{
+ "city": "mumbai",
+ "name": "Mumbai",
+ "sampled_date": "20260909",
+ "venues": [
+  {
+   "code": "ONEB",
+   "name": "1 Cinema Powered by Mukta A2: Bharatmata"
+  },
+  {
+   "code": "AAAS",
+   "name": "Ajanta Cinema Cinex: Borivali (W) Newly Renovated"
+  },
+  {
+   "code": "AETE",
+   "name": "Anand Cinema: Thane"
+  },
+  {
+   "code": "BRVP",
+   "name": "Bahar Cinema: Vile Parle (E)"
+  },
+  {
+   "code": "KURL",
+   "name": "Bharat Cineplex: Kurla (W)"
+  },
+  {
+   "code": "KKMB",
+   "name": "BMX Cinemas (Balaji Movieplex): Koparkhairane"
+  },
+  {
+   "code": "BMXC",
+   "name": "BMX Cinemas(BalajiMovieplex): Littleworld Kharghar"
+  },
+  {
+   "code": "BMXA",
+   "name": "BMX Cinemas: Ambernath (New)"
+  },
+  {
+   "code": "CTRR",
+   "name": "Chitra Cinema: Dadar (Newly Renovated)"
+  },
+  {
+   "code": "CAGL",
+   "name": "Cinepolis: Aurum, Ghansoli, Navi Mumbai"
+  },
+  {
+   "code": "FNAN",
+   "name": "Cinepolis: Fun Republic Mall, Andheri (W)"
+  },
+  {
+   "code": "THAB",
+   "name": "Cinepolis: High Street Mall, Thane (EX Cinemastar)"
+  },
+  {
+   "code": "CPVM",
+   "name": "Cinepolis: Lake Shore, Thane (EX Viviana Mall)"
+  },
+  {
+   "code": "CPNM",
+   "name": "Cinepolis: Magnet Mall, Bhandup (W)"
+  },
+  {
+   "code": "CSWO",
+   "name": "Cinepolis: Nexus Seawoods, Nerul, Navi Mumbai"
+  },
+  {
+   "code": "CPVV",
+   "name": "Cinepolis: VIP Lake Shore, Thane (EX Viviana Mall)"
+  },
+  {
+   "code": "NYMD",
+   "name": "Devgn Cinex: Mulund"
+  },
+  {
+   "code": "DCTW",
+   "name": "Devgn CineX: The Walk, Thane"
+  },
+  {
+   "code": "EMNC",
+   "name": "EROS INOX IMAX Cinema: Churchgate"
+  },
+  {
+   "code": "FNCM",
+   "name": "Fun Cinemas: K Star Mall, Chembur"
+  },
+  {
+   "code": "GDTH",
+   "name": "Gold  Cinema: Shivaji Road, Thane (W)"
+  },
+  {
+   "code": "GCMG",
+   "name": "Gold Cinema: Malad Malvani"
+  },
+  {
+   "code": "GOCS",
+   "name": "Gold Cinema: Santacruz (W)"
+  },
+  {
+   "code": "SNGL",
+   "name": "Gold Cinema: Sona Borivali (E)"
+  },
+  {
+   "code": "GCDM",
+   "name": "Gopi Cinema: Dombivali"
+  },
+  {
+   "code": "POVI",
+   "name": "HDFC Millennia PVR ICON: Oberoi Mall, Goregaon (E)"
+  },
+  {
+   "code": "CNTX",
+   "name": "ICONIX CINEMAS: (OLD AARADHANA TALKIES) THANE"
+  },
+  {
+   "code": "INNP",
+   "name": "INOX Laserplex: CR2, Nariman Point"
+  },
+  {
+   "code": "IMOB",
+   "name": "INOX Megaplex: Sky City Mall, Borivali"
+  },
+  {
+   "code": "WAML",
+   "name": "INOX: Insignia at Atria Mall, Worli"
+  },
+  {
+   "code": "IRGT",
+   "name": "INOX: Insignia at R Mall, Thane"
+  },
+  {
+   "code": "INKO",
+   "name": "INOX: Korum Mall, Eastern Express Highway, Thane"
+  },
+  {
+   "code": "FMMA",
+   "name": "INOX: Megaplex, Inorbit Mall, Malad"
+  },
+  {
+   "code": "FMKY",
+   "name": "INOX: Metro Mall Junction, Kalyan (E)"
+  },
+  {
+   "code": "FMDR",
+   "name": "INOX: Nakshatra Mall, Dadar (W) (Newly Renovated)"
+  },
+  {
+   "code": "IPBG",
+   "name": "INOX: Palm Beach Galleria Mall, Navi Mumbai"
+  },
+  {
+   "code": "INRC",
+   "name": "INOX: R-City, Ghatkopar"
+  },
+  {
+   "code": "FMRL",
+   "name": "INOX: Raghuleela Mall, Kandivali (W)"
+  },
+  {
+   "code": "FMDA",
+   "name": "INOX: Thakur Mall, Dahisar"
+  },
+  {
+   "code": "KMMV",
+   "name": "K Movie Star Multiplex: Vasai (W)"
+  },
+  {
+   "code": "KCMA",
+   "name": "Kasturba Cinema (Newly Renovated): Malad"
+  },
+  {
+   "code": "KTMV",
+   "name": "KT Vision Cinema: Vasai (Screens)"
+  },
+  {
+   "code": "IMJW",
+   "name": "Maison INOX: Jio World Plaza, BKC"
+  },
+  {
+   "code": "PVWJ",
+   "name": "Maison PVR: Jio World Drive, Mumbai"
+  },
+  {
+   "code": "PJDW",
+   "name": "Maison PVR: Jio World Drive-IN, Mumbai"
+  },
+  {
+   "code": "MXBY",
+   "name": "Maxus Cinemas: Bhayander"
+  },
+  {
+   "code": "MXBO",
+   "name": "Maxus Cinemas: Borivali (W)"
+  },
+  {
+   "code": "MXCK",
+   "name": "Maxus Cinemas: Kandivali (E) Newly Opened"
+  },
+  {
+   "code": "MXSN",
+   "name": "Maxus Cinemas: Saki Naka"
+  },
+  {
+   "code": "IMCM",
+   "name": "Metro INOX Cinemas: Marine Lines"
+  },
+  {
+   "code": "MACE",
+   "name": "Miraj Cinemas: Anupam Mall Goregaon (E)"
+  },
+  {
+   "code": "CCMP",
+   "name": "Miraj Cinemas: Cineraj, Panvel (Newly Renovated)"
+  },
+  {
+   "code": "MDVA",
+   "name": "Miraj Cinemas: Dattani Mall, Vasai (W)"
+  },
+  {
+   "code": "MIDO",
+   "name": "Miraj Cinemas: Dombivali (E)"
+  },
+  {
+   "code": "MCFF",
+   "name": "Miraj Cinemas: Funfiesta, Nalasopara (W)"
+  },
+  {
+   "code": "MCIW",
+   "name": "Miraj Cinemas: IMAX, Wadala"
+  },
+  {
+   "code": "MCRM",
+   "name": "Miraj Cinemas: R Mall, Mulund"
+  },
+  {
+   "code": "MCAN",
+   "name": "Miraj Cinemas: Star, Ambernath (Newly Renovated)"
+  },
+  {
+   "code": "MMCV",
+   "name": "Movie Max V Cinema: Virar (E)"
+  },
+  {
+   "code": "MMAA",
+   "name": "MovieMax: Andheri (E)"
+  },
+  {
+   "code": "MMET",
+   "name": "MovieMax: Eternity Mall, Thane (Seats Renovated)"
+  },
+  {
+   "code": "MMHA",
+   "name": "MovieMax: Huma, Kanjurmarg (Seats Renovated)"
+  },
+  {
+   "code": "MMMR",
+   "name": "MovieMax: Mira Road (Seats Renovated)"
+  },
+  {
+   "code": "MMSZ",
+   "name": "MovieMax: Sion"
+  },
+  {
+   "code": "SMFV",
+   "name": "MovieMax: SM5 Kalyan, Newly Renovated"
+  },
+  {
+   "code": "MMWM",
+   "name": "MovieMax: Wonder Mall, Thane"
+  },
+  {
+   "code": "MTCR",
+   "name": "MOVIETIME Cubic Mall: Chembur"
+  },
+  {
+   "code": "MTSC",
+   "name": "MOVIETIME Star City: Matunga (W)"
+  },
+  {
+   "code": "MTSU",
+   "name": "MOVIETIME Suburbia: Bandra (W)"
+  },
+  {
+   "code": "MTGD",
+   "name": "MOVIETIME: Dahisar (E)"
+  },
+  {
+   "code": "MTHB",
+   "name": "MOVIETIME: HUB, Goregaon (E)"
+  },
+  {
+   "code": "MTMA",
+   "name": "MOVIETIME: MALAD (WEST)"
+  },
+  {
+   "code": "OMCS",
+   "name": "Mukta A2 Cinemas Orion: Santacruz"
+  },
+  {
+   "code": "MAJB",
+   "name": "Mukta A2 Cinemas: Jai Hind, Lalbaugh"
+  },
+  {
+   "code": "MCNE",
+   "name": "Mukta A2 Cinemas: New Excelsior, Fort"
+  },
+  {
+   "code": "MUCK",
+   "name": "Mukta A2 Cinemas: Triveni Grande, Kalyan (West)"
+  },
+  {
+   "code": "NNNX",
+   "name": "Nazrana Cinema: Bhiwandi"
+  },
+  {
+   "code": "NHCG",
+   "name": "Nishat Cinema: Grant Road"
+  },
+  {
+   "code": "PZCD",
+   "name": "Plaza Cinema: Dadar"
+  },
+  {
+   "code": "PRCW",
+   "name": "PVR ICON: Infiniti Andheri (W)"
+  },
+  {
+   "code": "PIPP",
+   "name": "PVR ICON: Phoenix Palladium, Lower Parel Mumbai"
+  },
+  {
+   "code": "PITI",
+   "name": "PVR: Citi Mall, Andheri (W)"
+  },
+  {
+   "code": "PDDV",
+   "name": "PVR: Dynamix, Juhu"
+  },
+  {
+   "code": "HPVR",
+   "name": "PVR: Haseen, Bhiwandi"
+  },
+  {
+   "code": "PVMI",
+   "name": "PVR: Infiniti, Malad Mumbai"
+  },
+  {
+   "code": "LEPV",
+   "name": "PVR: Le Reve-Globus Mall, Bandra West, Mumbai"
+  },
+  {
+   "code": "PLUS",
+   "name": "PVR: Lido, Juhu Mumbai"
+  },
+  {
+   "code": "PLXP",
+   "name": "PVR: Lodha Xperia, Palava"
+  },
+  {
+   "code": "PMKM",
+   "name": "PVR: Market City, Kurla (Premiere)"
+  },
+  {
+   "code": "PMPK",
+   "name": "PVR: Milap, Kandivali (W)"
+  },
+  {
+   "code": "POLM",
+   "name": "PVR: Odeon Mall, Ghatkopar"
+  },
+  {
+   "code": "POPE",
+   "name": "PVR: Orion Mall, Panvel"
+  },
+  {
+   "code": "PCMM",
+   "name": "PVR: The Capital Mall, Nalasopara (E)"
+  },
+  {
+   "code": "PVAE",
+   "name": "PVR:C&B Square Chakala Andheri E(Formerly Sangam)"
+  },
+  {
+   "code": "RCHG",
+   "name": "Rajhans Cinemas: Helix 3, Ghatkopar (W)"
+  },
+  {
+   "code": "RSMI",
+   "name": "Rassaz Multiplex: Mira Road"
+  },
+  {
+   "code": "RGCM",
+   "name": "Regal Cinema: Colaba"
+  },
+  {
+   "code": "STER",
+   "name": "Sterling Cineplex: Fort"
+  },
+  {
+   "code": "TCDM",
+   "name": "Tilak Cineplex (Pooja Newly Renovated): Dombivali"
+  },
+  {
+   "code": "MCTG",
+   "name": "Topiwala Mukta A2 Cinemas, Goregaon"
+  },
+  {
+   "code": "VVVM",
+   "name": "Vaishali Cinema: Badlapur"
+  },
+  {
+   "code": "VECU",
+   "name": "Venus Cinema: Ulhasnagar"
+  },
+  {
+   "code": "WCVR",
+   "name": "Woodland Cinemas: Virar (W)"
+  }
+ ],
+ "formats": [
+  "2D",
+  "INSIGNIA",
+  "LASER",
+  "Renovated",
+  "Atmos",
+  "KOTAK INSIGNIA",
+  "2K LASER DOLBY 7.1",
+  "LUXE",
+  "Dolby 5.1",
+  "Newly Renovated",
+  "ATMOS",
+  "4K LASER DOLBY",
+  "KOTAK LUXE",
+  "AUROMAX",
+  "DOLBY ATMOS",
+  "PXL",
+  "DOLBY 7.1",
+  "KIDDLES",
+  "PLAYHOUSE",
+  "AQUA",
+  "MAXUS PLUS",
+  "Gold Class",
+  "DOLBY - SOFA",
+  "ONYX DINER",
+  "AMPLIX",
+  "Emerald Class",
+  "AMOR BY DEVGN CINEX",
+  "DIRECTOR LOUNGE",
+  "Sofa Seat",
+  "IMAX",
+  "DOLBY 9.5",
+  "Madhuban",
+  "LASER / DOLBY 7.1",
+  "Dolby 7.1/5.1",
+  "Pooja",
+  "RECLINER",
+  "JIO DRIVEIN"
+ ],
+ "languages": [
+  "Hindi",
+  "English"
+ ],
+ "generated_at": "2026-09-08T10:30:59+00:00"
+}

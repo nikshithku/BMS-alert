@@ -1,0 +1,79 @@
+name: Refresh catalog
+
+on:
+  schedule:
+    # Once a day, early morning IST. The catalog is only pick-lists (cities,
+    # movies, cinemas, formats) so it doesn't need to be fresh by the minute —
+    # the actual show polling is a separate, 15-minute workflow.
+    - cron: "45 22 * * *"
+  workflow_dispatch:
+    inputs:
+      cities:
+        description: "Comma-separated city slugs to (re)build, e.g. kochi,jaipur"
+        required: false
+        default: ""
+      refresh_cached:
+        description: "Also rebuild every city already in the catalog"
+        type: boolean
+        default: true
+
+concurrency:
+  group: catalog
+  cancel-in-progress: false
+
+permissions:
+  contents: write # commit docs/data
+  issues: read # discover which cities have watches
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build catalog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CITIES: ${{ github.event.inputs.cities || '' }}
+          # Default to true on the scheduled run, where inputs are absent.
+          REFRESH: ${{ github.event.inputs.refresh_cached || 'true' }}
+        run: |
+          set -euo pipefail
+          args=(--from-watches)
+          [[ -n "$CITIES" ]] && args+=(--cities "$CITIES")
+          [[ "$REFRESH" == "true" ]] && args+=(--refresh-cached)
+          python -m bmswatch.cli catalog "${args[@]}"
+
+      - name: Commit catalog
+        run: |
+          set -euo pipefail
+          if [[ -z "$(git status --porcelain docs/data)" ]]; then
+            echo "catalog unchanged, nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          # No [skip ci] here on purpose: this commit must trigger the Pages
+          # deploy so the dashboard actually serves the refreshed catalog.
+          git commit -m "catalog: refresh cities, movies and cinemas"
+          for i in 1 2 3; do
+            if git push; then
+              echo "pushed"
+              exit 0
+            fi
+            echo "push rejected, rebasing (attempt $i)"
+            git pull --rebase --autostash || true
+          done
+          echo "could not push catalog after 3 attempts" >&2
+          exit 1

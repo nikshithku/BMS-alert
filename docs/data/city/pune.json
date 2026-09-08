@@ -1,0 +1,237 @@
+{
+ "city": "pune",
+ "name": "Pune",
+ "sampled_date": "20260909",
+ "venues": [
+  {
+   "code": "CPAR",
+   "name": "Abhiruchi City Pride: Sinhagad Road"
+  },
+  {
+   "code": "ASHC",
+   "name": "Ashok Theatre: Pimpri"
+  },
+  {
+   "code": "ESBW",
+   "name": "Bollywood Multiplex: Kharadi"
+  },
+  {
+   "code": "CMVP",
+   "name": "Chhotu Maharaj Cine Cafe, Vasuli Phata: Pune"
+  },
+  {
+   "code": "CKPP",
+   "name": "Cinemark 24 Proxima: Indryani Nagar, Bhosari-Pune"
+  },
+  {
+   "code": "CNWE",
+   "name": "Cinepolis: Nexus WESTEND Mall Aundh, Pune"
+  },
+  {
+   "code": "PUNB",
+   "name": "Cinepolis: Seasons Mall, Pune"
+  },
+  {
+   "code": "PUVB",
+   "name": "Cinepolis: VIP Seasons Mall, Pune"
+  },
+  {
+   "code": "CEPO",
+   "name": "CinePRO: Vasant Cinema, Pune"
+  },
+  {
+   "code": "CPRP",
+   "name": "City Pride Royal Cinemas: Rahatani"
+  },
+  {
+   "code": "CYKR",
+   "name": "City Pride, Nyati Plaza: Kharadi"
+  },
+  {
+   "code": "CPKT",
+   "name": "City Pride: Kothrud"
+  },
+  {
+   "code": "CTMP",
+   "name": "City Pride: Mangala Cinema"
+  },
+  {
+   "code": "CTRD",
+   "name": "City Pride: R Deccan"
+  },
+  {
+   "code": "CTSR",
+   "name": "City Pride: Satara Road"
+  },
+  {
+   "code": "CLTP",
+   "name": "CONNPLEX Luxuriance Cinemas: Tribeca Highstreet"
+  },
+  {
+   "code": "DCCP",
+   "name": "Dharmatma Cinemark: Chakan, Pune"
+  },
+  {
+   "code": "NPSE",
+   "name": "E-SQUARE: University Road, Pune (Newly Renovated)"
+  },
+  {
+   "code": "VJHS",
+   "name": "E-SQUARE: VJ Happiness Street, Hinjawadi"
+  },
+  {
+   "code": "ESEM",
+   "name": "E-SQUARE: Xion Mall, Hinjawadi"
+  },
+  {
+   "code": "CPFT",
+   "name": "Fun Time Multiplex: Sinhagad Road"
+  },
+  {
+   "code": "FSCW",
+   "name": "Funsquare Cinema: Ghotawade Phata"
+  },
+  {
+   "code": "FTDP",
+   "name": "Funtime Deluxe: Pimpri, Pune"
+  },
+  {
+   "code": "PMPW",
+   "name": "INOX Megaplex Phoenix Mall of the Millennium Wakad"
+  },
+  {
+   "code": "INPN",
+   "name": "INOX: Bund Garden Road"
+  },
+  {
+   "code": "ECPP",
+   "name": "INOX: Elpro City Square, Chinchwad"
+  },
+  {
+   "code": "FMJP",
+   "name": "INOX: Jai Ganesh, Akurdi"
+  },
+  {
+   "code": "RHMN",
+   "name": "INOX: Royal Heritage Mall, NIBM Ext"
+  },
+  {
+   "code": "LCPC",
+   "name": "Laxmi Cineplex: Narayangaon"
+  },
+  {
+   "code": "MSCM",
+   "name": "Miraj Cinemas: Spine City Mall, Pune"
+  },
+  {
+   "code": "MMXA",
+   "name": "MovieMax Edition (Luxe): Amanora Town Center, Pune"
+  },
+  {
+   "code": "MKML",
+   "name": "MovieMax Gold: Mariplex Mall, Kalyani Nagar"
+  },
+  {
+   "code": "MATK",
+   "name": "MovieMax: Amanora Town Centre, Pune(Now Renovated)"
+  },
+  {
+   "code": "PDCP",
+   "name": "PVR: Directors Cut, KOPA, Pune"
+  },
+  {
+   "code": "PGHM",
+   "name": "PVR: Grand Highstreet Mall, Hinjawadi"
+  },
+  {
+   "code": "PIPO",
+   "name": "PVR: Icon, The Pavillion Pune"
+  },
+  {
+   "code": "PKPU",
+   "name": "PVR: Kumar Pacific, Pune"
+  },
+  {
+   "code": "PCMZ",
+   "name": "PVR: Phoenix Market City, Pune"
+  },
+  {
+   "code": "RAHU",
+   "name": "Rahul 70 MM: Shivajinagar, Pune"
+  },
+  {
+   "code": "RFNP",
+   "name": "Rajhans Cinemas: 93 Avenue Mall,Fatima Nagar, Pune"
+  },
+  {
+   "code": "SARN",
+   "name": "Satyam Theatre: Rajgurunagar (Pune)"
+  },
+  {
+   "code": "SHEV",
+   "name": "Shevanta Cinema: Junnar"
+  },
+  {
+   "code": "STTG",
+   "name": "Shri Shivaji Talkies: Talegaon"
+  },
+  {
+   "code": "VBCT",
+   "name": "Vaibhav Chitramandir: Hadapsar"
+  },
+  {
+   "code": "ESVP",
+   "name": "Victory Theatre: Camp, Pune"
+  },
+  {
+   "code": "VCMP",
+   "name": "Vikas Cinema: Manchar"
+  },
+  {
+   "code": "VLCX",
+   "name": "Vilux Talkies: Khadki"
+  },
+  {
+   "code": "VCPM",
+   "name": "Vishal Cinemaas: Pimpri"
+  }
+ ],
+ "formats": [
+  "2D",
+  "DOLBY 7.1",
+  "QSC 7.1",
+  "LASER & 7.1",
+  "DIRECTORS CUT",
+  "DOLBY ATMOS",
+  "Atmos",
+  "Renovated",
+  "4K DOLBY",
+  "GOLD",
+  "KOTAK INSIGNIA",
+  "INSIGNIA",
+  "QSC 7.1 RECLINER",
+  "ATMOS",
+  "DOLBY 950",
+  "4K ATMOS",
+  "SPECTRA X",
+  "KIDDLES",
+  "PREMIER",
+  "4K DOLBY ATMOS",
+  "DOLBY ATMOS 4K LASER",
+  "EPIQ ATMOS 64 CH",
+  "PXL",
+  "4K DOLBY 7.1",
+  "Newly Opened",
+  "ELEGANZA",
+  "ELEGANZA ATMOS",
+  "Now Renovated",
+  "DOLBY CINEMA",
+  "COUPLE SEATS"
+ ],
+ "languages": [
+  "Hindi",
+  "English",
+  "Malayalam"
+ ],
+ "generated_at": "2026-09-08T10:30:59+00:00"
+}

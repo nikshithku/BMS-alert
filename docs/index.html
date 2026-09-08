@@ -196,95 +196,105 @@
         </header>
 
         <div class="modal__body">
-          <!-- step: link -->
+          <!-- city -->
           <div class="field">
-            <label for="f-url">BookMyShow movie link <span class="req">required</span></label>
-            <p class="hint">
-              Open the movie on BookMyShow in any city and paste the address. The
-              city and movie code are read straight out of it.
-            </p>
-            <input
-              id="f-url"
-              name="url"
-              type="url"
-              inputmode="url"
-              autocomplete="off"
-              spellcheck="false"
-              placeholder="https://in.bookmyshow.com/movies/bengaluru/…/ET00369074"
-              required
-            />
-            <div class="parsed" id="url-parsed" role="status" aria-live="polite"></div>
+            <label for="f-city">City <span class="req">required</span></label>
+            <div class="combo" id="combo-city">
+              <input
+                id="f-city"
+                class="combo__input"
+                role="combobox"
+                aria-expanded="false"
+                aria-controls="city-list"
+                aria-autocomplete="list"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="Start typing to find your city…"
+              />
+              <ul class="combo__list" id="city-list" role="listbox" aria-label="Cities" hidden></ul>
+            </div>
+            <p class="hint" id="city-note">Pick a city to load its movies and cinemas.</p>
           </div>
 
+          <!-- movie -->
           <div class="field">
-            <label for="f-city">City <span class="opt">optional override</span></label>
-            <p class="hint">Only needed to watch a different city than the link.</p>
-            <input
-              id="f-city"
-              name="city"
-              list="city-list"
-              autocomplete="off"
-              spellcheck="false"
-              placeholder="bengaluru"
-            />
-            <datalist id="city-list">
-              <option value="mumbai"></option>
-              <option value="bengaluru"></option>
-              <option value="national-capital-region-ncr"></option>
-              <option value="hyderabad"></option>
-              <option value="chennai"></option>
-              <option value="pune"></option>
-              <option value="kolkata"></option>
-              <option value="ahmedabad"></option>
-              <option value="kochi"></option>
-              <option value="chandigarh"></option>
-              <option value="jaipur"></option>
-              <option value="lucknow"></option>
-            </datalist>
+            <label for="f-movie">Movie <span class="req">required</span></label>
+            <div class="combo" id="combo-movie">
+              <input
+                id="f-movie"
+                class="combo__input"
+                role="combobox"
+                aria-expanded="false"
+                aria-controls="movie-list"
+                aria-autocomplete="list"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="Choose a city first"
+                disabled
+              />
+              <ul class="combo__list combo__list--rich" id="movie-list" role="listbox" aria-label="Movies" hidden></ul>
+            </div>
+            <div class="picked" id="movie-picked" hidden></div>
           </div>
 
           <!-- formats -->
           <fieldset class="field">
-            <legend>Formats</legend>
-            <p class="hint">
-              Pick what you'd accept. Choose none to be alerted about any format.
-            </p>
+            <legend>Formats <span class="opt">any, if none picked</span></legend>
+            <p class="hint" id="formats-note">Taken from what this city's screens actually run.</p>
             <div class="chips" id="f-formats" role="group" aria-label="Formats"></div>
-            <input
-              id="f-formats-other"
-              name="formatsOther"
-              autocomplete="off"
-              placeholder="Anything else, comma separated — EPIQ, Superplex"
-            />
           </fieldset>
 
-          <div class="grid-2">
-            <div class="field">
-              <label for="f-venues">Cinemas <span class="opt">optional</span></label>
-              <p class="hint">One per line. Partial names work.</p>
-              <textarea id="f-venues" name="venues" rows="3" placeholder="PVR IMAX Orion&#10;INOX Garuda"></textarea>
-            </div>
-            <div class="field">
-              <label for="f-languages">Languages <span class="opt">optional</span></label>
-              <p class="hint">Comma separated. Blank means any.</p>
-              <input id="f-languages" name="languages" autocomplete="off" placeholder="English, Hindi" />
-            </div>
-          </div>
-
-          <!-- window -->
+          <!-- cinemas -->
           <fieldset class="field">
-            <legend>How far ahead to look</legend>
-            <p class="hint">Each extra day is one more page fetch per check.</p>
-            <div class="segment" id="f-days" role="radiogroup" aria-label="How far ahead to look"></div>
+            <legend>Cinemas <span class="opt">any, if none picked</span></legend>
+            <div class="combo" id="combo-venue">
+              <input
+                id="f-venue-search"
+                class="combo__input"
+                role="combobox"
+                aria-expanded="false"
+                aria-controls="venue-list"
+                aria-autocomplete="list"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="Choose a city first"
+                disabled
+              />
+              <ul class="combo__list" id="venue-list" role="listbox" aria-label="Cinemas" hidden></ul>
+            </div>
+            <div class="chips chips--picked" id="f-venues" role="group" aria-label="Chosen cinemas"></div>
           </fieldset>
 
-          <div class="field">
-            <label for="f-dates">Specific dates <span class="opt">optional</span></label>
-            <p class="hint">
-              Comma separated. Replaces the window above — good for a known release date.
-            </p>
-            <input id="f-dates" name="dates" autocomplete="off" placeholder="2026-09-18, 2026-09-19" />
-          </div>
+          <!-- languages -->
+          <fieldset class="field" id="lang-field">
+            <legend>Languages <span class="opt">any, if none picked</span></legend>
+            <div class="chips" id="f-languages" role="group" aria-label="Languages"></div>
+          </fieldset>
+
+          <!-- when -->
+          <fieldset class="field">
+            <legend>Which dates?</legend>
+            <div class="segment" id="f-datemode" role="radiogroup" aria-label="Date mode">
+              <button type="button" role="radio" aria-checked="true" data-mode="window">
+                Rolling window
+              </button>
+              <button type="button" role="radio" aria-checked="false" data-mode="dates">
+                Pick exact dates
+              </button>
+            </div>
+
+            <div id="pane-window">
+              <p class="hint">From today onwards. Each extra day is one more fetch per run.</p>
+              <div class="segment" id="f-days" role="radiogroup" aria-label="How far ahead to look"></div>
+            </div>
+
+            <div id="pane-dates" hidden>
+              <p class="hint">
+                Only upcoming dates are offered. Good for a known release date.
+              </p>
+              <div class="chips chips--dates" id="f-dates" role="group" aria-label="Dates"></div>
+            </div>
+          </fieldset>
 
           <!-- granularity -->
           <fieldset class="field">

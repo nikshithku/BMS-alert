@@ -1,0 +1,471 @@
+{
+ "city": "bengaluru",
+ "name": "Bengaluru",
+ "sampled_date": "20260909",
+ "venues": [
+  {
+   "code": "ATGN",
+   "name": "Abhinay Theatre 4K A/C: Gandhinagar"
+  },
+  {
+   "code": "ADCR",
+   "name": "Akash Cinemas: Laggere"
+  },
+  {
+   "code": "ACKB",
+   "name": "AMB Cinemas Kapali: Bengaluru"
+  },
+  {
+   "code": "ASTB",
+   "name": "Ashoka Cinemas - Dolby Laser: Chikkabanavara"
+  },
+  {
+   "code": "BHAC",
+   "name": "Bharathi Theatre (Peenya) A/C 4K 7.1 Dolby Digital"
+  },
+  {
+   "code": "BKDV",
+   "name": "Brundha RGB Laser 4K Projection: Hongasandra DMart"
+  },
+  {
+   "code": "CHTH",
+   "name": "Chandrodaya Cinemas 4K Dolby A/C:Vidyapeeta Circle"
+  },
+  {
+   "code": "CEHR",
+   "name": "Cinephile HSR Layout: PNR Felicity Mall Haralur Rd"
+  },
+  {
+   "code": "CVLG",
+   "name": "Cinepolis VIP: Lulu Mall, Bengaluru"
+  },
+  {
+   "code": "CPEB",
+   "name": "Cinepolis: Binnypet Mall"
+  },
+  {
+   "code": "CLGM",
+   "name": "Cinepolis: Lulu Mall, Bengaluru"
+  },
+  {
+   "code": "CFBS",
+   "name": "Cinepolis: Nexus Shantiniketan, Bengaluru"
+  },
+  {
+   "code": "CPOE",
+   "name": "Cinepolis: Orion Avenue Mall, Banaswadi"
+  },
+  {
+   "code": "CNRM",
+   "name": "Cinepolis: Royal Meenakshi Mall"
+  },
+  {
+   "code": "CPJR",
+   "name": "Cinepolis: SJR (Central Mall) Arekere, Bannergatta"
+  },
+  {
+   "code": "DKTI",
+   "name": "Deepak Talkies: Bidadi"
+  },
+  {
+   "code": "GPTB",
+   "name": "Galaxy Paradise (Miniplex): Begur Road"
+  },
+  {
+   "code": "GTYT",
+   "name": "Ganesh Theatre: Yelahanka"
+  },
+  {
+   "code": "GPAM",
+   "name": "Gopalan Cinemas: Arcade Mall, Mysore Road"
+  },
+  {
+   "code": "GPBR",
+   "name": "Gopalan Cinemas: Bannerghatta Road"
+  },
+  {
+   "code": "GPGM",
+   "name": "Gopalan Grand Mall: Old Madras Road"
+  },
+  {
+   "code": "GPMY",
+   "name": "Gopalan Mall: Sirsi Circle"
+  },
+  {
+   "code": "GPSM",
+   "name": "Gopalan Miniplex: Signature Mall, Old Madras Road"
+  },
+  {
+   "code": "GDTY",
+   "name": "Goverdhan Theatre: Yeshwantpur"
+  },
+  {
+   "code": "FMLB",
+   "name": "INOX Lido: Off MG Road, Ulsoor"
+  },
+  {
+   "code": "AMNH",
+   "name": "INOX: Arcadia, Brigade Utopia, Bengaluru"
+  },
+  {
+   "code": "INBM",
+   "name": "INOX: Brookefield Mall"
+  },
+  {
+   "code": "INBC",
+   "name": "INOX: Central, JP Nagar, Mantri Junction"
+  },
+  {
+   "code": "INRZ",
+   "name": "INOX: Galleria Mall, Yelahanka"
+  },
+  {
+   "code": "INBG",
+   "name": "INOX: Garuda Mall, Magrath Road"
+  },
+  {
+   "code": "INBJ",
+   "name": "INOX: Garuda Swagath Mall, Jayanagar"
+  },
+  {
+   "code": "GYBU",
+   "name": "INOX: Garuda Yelahanka, Bengaluru"
+  },
+  {
+   "code": "IMCB",
+   "name": "INOX: M5 Ecity, Bengaluru"
+  },
+  {
+   "code": "INMB",
+   "name": "INOX: Mantri Square, Malleshwaram"
+  },
+  {
+   "code": "IMMO",
+   "name": "INOX: Megaplex Mall of Asia Bangalore"
+  },
+  {
+   "code": "FMFB",
+   "name": "INOX: Nexus, Whitefield"
+  },
+  {
+   "code": "NSBR",
+   "name": "INOX:SBR Horizon, Seegehalli Whitefield-Hoskote Rd"
+  },
+  {
+   "code": "KCBI",
+   "name": "Kamakya 4K Dolby Atmos 3D A/C Cinema: Banashankari"
+  },
+  {
+   "code": "SMHP",
+   "name": "KRG Soundarya Mahal A/C 4K Dolby Doddaballapura"
+  },
+  {
+   "code": "LKTH",
+   "name": "Lakshmi Cinema 4K Dolby Atmos RGB Laser Tavarekere"
+  },
+  {
+   "code": "MDKI",
+   "name": "Mahadeshwara Cinema 4K Dolby ATMOS AC Banashankari"
+  },
+  {
+   "code": "MRGB",
+   "name": "Manasa RGB Laser ATMOS: Konanakunte"
+  },
+  {
+   "code": "SMRN",
+   "name": "Maruthi Cinemas 4K AC Dolby 7.1: RajgopalNagar"
+  },
+  {
+   "code": "MSMD",
+   "name": "MIRAJ CINEMAS: TGN Lotus Elite, Sunkadakatte"
+  },
+  {
+   "code": "MLDT",
+   "name": "Mohan Cinema Barco 4K A/C 7.1: Sunkadakatte"
+  },
+  {
+   "code": "PMMC",
+   "name": "Movietime Cinemas: YGR Signature Mall, RR Nagar"
+  },
+  {
+   "code": "MKBG",
+   "name": "Mukunda 4K Dolby Atmos: M.S.Nagar"
+  },
+  {
+   "code": "SNGN",
+   "name": "Narthaki 4K Dolby 7.1 Digital S R: Gandhi Nagar"
+  },
+  {
+   "code": "NRBL",
+   "name": "Navrang Theatre: Rajaji Nagar"
+  },
+  {
+   "code": "NFGD",
+   "name": "Newfangled Miniplex (TWIN SEATED): MG Road"
+  },
+  {
+   "code": "PDRD",
+   "name": "Prasanna Digital 4K Cinema: Magadi Road"
+  },
+  {
+   "code": "PDYA",
+   "name": "Pushpanjali Sultanpalya:AC 2K LASER 3D Dolby Atmos"
+  },
+  {
+   "code": "PAAS",
+   "name": "PVR: Aura Park Square, Whitefield"
+  },
+  {
+   "code": "PBMM",
+   "name": "PVR: Bhartiya Mall of Bengaluru"
+  },
+  {
+   "code": "PDWR",
+   "name": "PVR: Directors Cut, Forum Rex Walk Bengaluru"
+  },
+  {
+   "code": "PGFD",
+   "name": "PVR: Global Mall, Mysore Road, Bengaluru"
+  },
+  {
+   "code": "PGWB",
+   "name": "PVR: GT World Mall, Magadi Road"
+  },
+  {
+   "code": "PMSR",
+   "name": "PVR: MSR Elements Mall, Tanisandhra Main Road"
+  },
+  {
+   "code": "PVFF",
+   "name": "PVR: Nexus (Formerly Forum), Koramangala"
+  },
+  {
+   "code": "PVOO",
+   "name": "PVR: Orion Mall, Dr Rajkumar Road"
+  },
+  {
+   "code": "PMBR",
+   "name": "PVR: Orion Uptown, Old Madras Road, Bengaluru"
+  },
+  {
+   "code": "PPNX",
+   "name": "PVR: Phoenix Marketcity Mall, Whitefield Road"
+  },
+  {
+   "code": "PSLC",
+   "name": "PVR: Soul Spirit Central Mall, Bellandur"
+  },
+  {
+   "code": "PSPR",
+   "name": "PVR: Superplex Forum Mall, Kanakapura Road"
+  },
+  {
+   "code": "PZVK",
+   "name": "PVR: Vaishnavi Sapphire Mall, Yeshwanthpur"
+  },
+  {
+   "code": "PVER",
+   "name": "PVR: Vega City, Bannerghatta Road"
+  },
+  {
+   "code": "PVWW",
+   "name": "PVR: VR Bengaluru, Whitefield Road"
+  },
+  {
+   "code": "RATK",
+   "name": "Robin Theater 4K Dolby Atmos: Kengeri Upanagara"
+  },
+  {
+   "code": "RKCL",
+   "name": "Rockline Cinemas: Jalahalli Cross"
+  },
+  {
+   "code": "ROON",
+   "name": "Roopa Cinema 4K Dolby Atmos 3D A/C: Nelamangala"
+  },
+  {
+   "code": "STGR",
+   "name": "Santosh 4K Dolby Theatre: Gandhinagar"
+  },
+  {
+   "code": "STSV",
+   "name": "Savitha Theatre:2K Dolby A/C Malleshwaram"
+  },
+  {
+   "code": "SCPR",
+   "name": "Sharada Cinemas A/C Laser Projector DTS Sound"
+  },
+  {
+   "code": "SDSD",
+   "name": "Siddeshwara 4K Dolby Atmos 3D 7.1 Cinema: JP Nagar"
+  },
+  {
+   "code": "SLND",
+   "name": "SLN Theatre RGB Laser Projector: Hesaraghatta"
+  },
+  {
+   "code": "SBCR",
+   "name": "Sri Balaji 4K A/C Dolby Atmos: Dommasandra"
+  },
+  {
+   "code": "SKMM",
+   "name": "Sri Krishna Lazer Projection 4K: Bomanahalli"
+  },
+  {
+   "code": "SLTB",
+   "name": "Sri Lakshmi A/C 4k Dolby 7.1: Gottigere"
+  },
+  {
+   "code": "SKHK",
+   "name": "Sri Lakshmi Narasimha Theatre: Anekal"
+  },
+  {
+   "code": "SNNN",
+   "name": "Sri Nandeeshwara Theatre: Jigani"
+  },
+  {
+   "code": "SNDC",
+   "name": "Sri Narayan Theatre 4K lazer Atoms: Kolar"
+  },
+  {
+   "code": "SRHK",
+   "name": "Sri Rajmurali Theatre: Sahakar Nagar, Kodigehalli"
+  },
+  {
+   "code": "SRPJ",
+   "name": "Sri Renuka Prasanna Theatre: J P Nagar"
+  },
+  {
+   "code": "SSPA",
+   "name": "Sri Srinivasa 4K Dolby Digital 7.1 Padmanabanagara"
+  },
+  {
+   "code": "TDCA",
+   "name": "Sri Thirumala 4K A/C Dolby Atmos: Agara"
+  },
+  {
+   "code": "VTBE",
+   "name": "Sri Vajreshwari Cinemas AC 4K Dolby ATMOS: Ullal"
+  },
+  {
+   "code": "VTBR",
+   "name": "Sri Venkateshwara Digital 4K Cinema: Girinagar"
+  },
+  {
+   "code": "SDJH",
+   "name": "Sri Vinayaka 2K Digital 7.1 D J Halli"
+  },
+  {
+   "code": "HASV",
+   "name": "Sri Vinayaka Theatre: Harohalli"
+  },
+  {
+   "code": "PTBC",
+   "name": "Swagath Poornima 4K Dolby Atmos: JC Road (New)"
+  },
+  {
+   "code": "SSNR",
+   "name": "Swagath ShankarNag (ONYX) LED Cinema: MG Road"
+  },
+  {
+   "code": "VTGB",
+   "name": "V Cinema (Vijayalakshmi Theatre): Garudacharpalya"
+  },
+  {
+   "code": "VCTP",
+   "name": "V Cinemas: T.C Palya Main Road, Ramamurthy Nagar"
+  },
+  {
+   "code": "VTSK",
+   "name": "Vaibhav Digital 4k Dolby 7.1: Sanjaynagar"
+  },
+  {
+   "code": "VDCS",
+   "name": "Vainidhi Cinemas Dolby Lazer: Singapura"
+  },
+  {
+   "code": "VOIB",
+   "name": "Vaishnavi and Vaibhavi Cinema: Uttarahalli"
+  },
+  {
+   "code": "VBWT",
+   "name": "Veerabhadreshwara Theatre 4KDOLBY 7.1 Kamala Nagar"
+  },
+  {
+   "code": "VRBL",
+   "name": "Veeresh Cinemas: Magadi Road"
+  },
+  {
+   "code": "VECG",
+   "name": "Venkateshwara Cinemas 4K, A/C Screen1: Gollarahati"
+  },
+  {
+   "code": "VCCB",
+   "name": "Victory Cinema Barco-4K RGB-Laser: Kamakshipalya"
+  },
+  {
+   "code": "VYCH",
+   "name": "Vinayaka Cinemas 4K Dolby 11.5 A/C 3D: Harinagar"
+  },
+  {
+   "code": "SRRT",
+   "name": "VR Cinemas 4K A/C 7.1 Dolby Atmos: Mallathalli"
+  }
+ ],
+ "formats": [
+  "2D",
+  "DOLBY 7.1",
+  "GOLD",
+  "LASER",
+  "2K LASER DOLBY 7.1",
+  "4K DOLBY 7.1",
+  "4K ATMOS",
+  "ATMOS",
+  "INSIGNIA",
+  "Couple Seats",
+  "PLAYHOUSE",
+  "LASER ATMOS",
+  "QSC 5.1",
+  "LUXE",
+  "Atmos",
+  "JUNIOR",
+  "PXL",
+  "4K LASER DOLBY 7.1",
+  "SCREEN X",
+  "4K DOLBY ATMOS",
+  "4K LASER ATMOS MACRO XE",
+  "DOLBY 7.1 (2K PROJECTER)",
+  "BARCO LASER PROJECTION",
+  "CLUB",
+  "KOTAK INSIGNIA",
+  "DINE-IN",
+  "LASER DOLBY ATMOS",
+  "LASER DOLBY 7.1",
+  "RGB LASER 4K ATMOS",
+  "4K RGB LASER",
+  "BIGPIX",
+  "ONYX LED SCREEN",
+  "4K DOLBY 7.1 A/C",
+  "4K Dolby 11.5",
+  "KIDDLES",
+  "BARCO LASER DOLBY ATMOS",
+  "4K QSC 7.1",
+  "4K QSC 5.1",
+  "ATMOS REAL D",
+  "2K LASER",
+  "MB LUXE",
+  "RGB LASER 4K DOLBY ATMOS",
+  "4K DOLBY A/C",
+  "ICE",
+  "LASER QSC 7.1",
+  "IMAX",
+  "4K DOLBY  ATMOS",
+  "1.90:1 LARGE SCREEN FORMAT"
+ ],
+ "languages": [
+  "Hindi",
+  "Kannada",
+  "English"
+ ],
+ "generated_at": "2026-09-08T10:30:59+00:00"
+}
