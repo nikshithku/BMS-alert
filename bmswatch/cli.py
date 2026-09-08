@@ -129,10 +129,24 @@ def cmd_validate(args: argparse.Namespace) -> int:
         gh.remove_label(number, ACTIVE_LABEL)
         return 0  # a bad form is user error, not a workflow failure
 
+    # A watch whose every chosen date has passed polls nothing and can never
+    # alert. Catch it here rather than letting it sit quietly forever.
+    dates = target_dates(watch)
+    if watch.dates and not dates:
+        reason = (
+            f"Every date picked has already passed (`{'`, `'.join(watch.dates)}`), "
+            "so there's nothing left to check.\n\nEdit the issue and choose an "
+            "upcoming date, or switch to a rolling window."
+        )
+        log.warning("issue #%s has only past dates", number)
+        gh.comment(number, notify.markdown_invalid(reason))
+        gh.add_labels(number, [WATCH_LABEL, INVALID_LABEL])
+        gh.remove_label(number, ACTIVE_LABEL)
+        return 0
+
     # Confirm the movie really resolves, so typos surface now rather than as
     # silence later.
     movie_hint = ""
-    dates = target_dates(watch)
     if dates:
         try:
             html_text = get(showtimes_url(watch.region, watch.event_code, dates[0]))
@@ -217,7 +231,18 @@ def collect(watch: Watch) -> CollectResult:
     movie = ""
     listed_total = 0
 
-    for i, date in enumerate(target_dates(watch)):
+    dates = target_dates(watch)
+    if not dates:
+        # Every chosen date is in the past, so there is nothing to poll and no
+        # alert could ever fire. Silent zeros look identical to "not listed yet",
+        # so say it plainly.
+        problems.append(
+            f"every date on this watch has passed ({', '.join(watch.dates)}); "
+            "nothing will be checked until the dates are updated"
+        )
+        return CollectResult([], "", 0, problems)
+
+    for i, date in enumerate(dates):
         if i:
             polite_pause()
         url = showtimes_url(watch.region, watch.event_code, date)
