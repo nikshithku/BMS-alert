@@ -1,0 +1,12 @@
+{
+  "schema": 2,
+  "updated_at": "2026-09-08T08:20:55+00:00",
+  "watches": {
+    "issue-1": {
+      "last_checked": "2026-09-08T08:20:55+00:00",
+      "last_listed": 0,
+      "last_matched": 0,
+      "seen": {}
+    }
+  }
+}
