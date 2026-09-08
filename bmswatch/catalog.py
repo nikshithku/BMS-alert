@@ -153,6 +153,82 @@ def fetch_movies() -> list[dict]:
     return sorted(movies.values(), key=lambda m: m["title"].lower())
 
 
+# How many of a city's cinemas to read when discovering what plays there.
+# One request each. This finds the regional long tail the national list misses.
+VENUE_SAMPLE = 16
+
+
+def mine_venue_pages(city: str, venue_codes: list[str], date: str | None = None) -> dict:
+    """Read a city's cinema pages to learn what is genuinely playing there.
+
+    Two problems this solves, both verified against live data.
+
+    The explore listing only server-renders for the default region, so the movie
+    list was national. Sampling six Bengaluru cinemas surfaced eleven films
+    absent from it, every one of them Kannada, Telugu or Tamil.
+
+    And languages were wrong. BookMyShow issues a *separate event code per
+    language*: Bethlehem Kudumba Unit is ET00502829 in Malayalam and ET00515244
+    in Telugu. Language is therefore a property of the movie you pick, not a
+    filter to apply afterwards. Reading it here lets the picker say
+    "(Malayalam)" rather than offering a city-wide guess.
+    """
+    if date is None:
+        date = (dt.date.today() + dt.timedelta(days=1)).strftime("%Y%m%d")
+
+    movies: dict[str, dict] = {}
+
+    for vcode in venue_codes[:VENUE_SAMPLE]:
+        url = f"https://in.bookmyshow.com/cinemas/{city}/x/buytickets/{vcode}/{date}"
+        try:
+            state = extract_initial_state(fetch.get(url))
+        except fetch.FetchBlocked:
+            raise
+        except (fetch.FetchFailed, ParseError) as e:
+            log.warning("catalog: venue %s in %s: %s", vcode, city, e)
+            continue
+        finally:
+            fetch.polite_pause()
+
+        queries = (state.get("venueShowtimesFunctionalApi") or {}).get("queries") or {}
+        detail = next(
+            (
+                ((q or {}).get("data") or {}).get("showDetailsTransformed")
+                for q in queries.values()
+                if ((q or {}).get("data") or {}).get("showDetailsTransformed")
+            ),
+            None,
+        )
+        if not detail:
+            continue
+
+        for event in detail.get("Event") or []:
+            title = (event.get("EventTitle") or "").strip()
+            for child in event.get("ChildEvents") or []:
+                code = (child.get("EventCode") or "").strip().upper()
+                if not code:
+                    continue
+                entry = movies.setdefault(
+                    code,
+                    {
+                        "code": code,
+                        "title": title or (child.get("EventName") or "").strip(),
+                        "languages": [],
+                        "dimensions": [],
+                        "venues": [],
+                    },
+                )
+                for key, field in (("EventLanguage", "languages"), ("EventDimension", "dimensions")):
+                    val = (child.get(key) or "").strip()
+                    if val and val not in entry[field]:
+                        entry[field].append(val)
+                if vcode not in entry["venues"]:
+                    entry["venues"].append(vcode)
+
+    log.info("catalog: %s venue scan -> %d movie(s) with languages", city, len(movies))
+    return movies
+
+
 def fetch_city_facets(
     city: str,
     movie_codes: list[str],
@@ -229,16 +305,37 @@ def fetch_city_facets(
         if fetched >= 2 and gained < FACET_PLATEAU and len(venues) >= FACET_MIN_VENUES:
             break
 
+    venue_list = [
+        {"code": c, "name": n} for c, n in sorted(venues.items(), key=lambda kv: kv[1].lower())
+    ]
+
+    # Now that the city's cinemas are known, read a sample of them to find what
+    # is actually playing here and in which language. Merged with anything
+    # previously known so a quiet day never shrinks the picker.
+    local = mine_venue_pages(city, [v["code"] for v in venue_list], date)
+    for prev in (previous or {}).get("movies") or []:
+        code = prev.get("code")
+        if not code:
+            continue
+        if code in local:
+            merged = local[code]
+            for field in ("languages", "dimensions", "venues"):
+                for val in prev.get(field) or []:
+                    if val not in merged[field]:
+                        merged[field].append(val)
+        else:
+            local[code] = prev
+
     return {
         "city": city,
         "name": _pretty_city(city),
         "sampled_date": date,
-        "venues": [
-            {"code": c, "name": n} for c, n in sorted(venues.items(), key=lambda kv: kv[1].lower())
-        ],
+        "venues": venue_list,
         # Most-common first so the UI can show the useful ones without scrolling.
         "formats": [f for f, _ in formats.most_common()],
         "languages": [l for l, _ in languages.most_common()],
+        # Per-movie truth: language comes from here, never from the city union.
+        "movies": sorted(local.values(), key=lambda m: (m["title"].lower(), m["code"])),
     }
 
 

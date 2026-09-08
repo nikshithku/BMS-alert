@@ -77,7 +77,9 @@ function combobox(rootId, inputId, listId, { onPick, render, placeholder }) {
     onPick(item);
   }
 
-  input.addEventListener("focus", () => filter(""));
+  // Deliberately no open-on-focus. With ~2,000 cities, dropping the whole list
+  // open the moment the field is focused reads as a broken page rather than a
+  // helpful one. Typing filters; ArrowDown opens deliberately.
   input.addEventListener("input", () => filter(input.value));
   input.addEventListener("blur", () => setTimeout(close, 120));
 
@@ -1018,6 +1020,16 @@ function wire() {
   );
 
   // check now
+  $("#btn-catalog").addEventListener("click", (e) =>
+    busy(e.currentTarget, async () => {
+      try {
+        await refreshCatalog();
+      } catch (err) {
+        toast("err", "Couldn't refresh listings", `${err.message} (needs Actions: write on the token)`);
+      }
+    })
+  );
+
   $("#btn-run").addEventListener("click", (e) =>
     busy(e.currentTarget, async () => {
       try {
@@ -1045,6 +1057,7 @@ function wire() {
     $("#token-status").dataset.state = "";
     $("#token-status").textContent = "Token removed from this browser.";
     $("#btn-run").hidden = true;
+    $("#btn-catalog").hidden = true;
     toast("info", "Token forgotten", "Reading still works; creating watches won't.");
   });
 
@@ -1063,6 +1076,7 @@ function wire() {
         status.dataset.state = "ok";
         status.textContent = `Connected as ${me.login}.`;
         $("#btn-run").hidden = false;
+        $("#btn-catalog").hidden = false;
         if (config.owner && me.login.toLowerCase() !== config.owner.toLowerCase()) {
           toast(
             "err",
@@ -1159,6 +1173,8 @@ async function loadCatalog() {
       ? "Catalog just refreshed · checking every 15 minutes"
       : `Catalog ${Math.round(age)}h old · checking every 15 minutes`;
 
+  updateCatalogButton();
+
   // "Refresh when the site opens" can't mean scraping from the browser (BMS
   // sends no CORS headers), so kick off the workflow instead and let the next
   // visit see the result.
@@ -1170,6 +1186,53 @@ async function loadCatalog() {
       /* stale data is still usable */
     }
   }
+}
+
+/** Put the catalog's age on the button so staleness is visible, not guessed. */
+function updateCatalogButton() {
+  const btn = $("#btn-catalog");
+  btn.hidden = !config.canWrite;
+  if (!catalog.generatedAt) return;
+  const age = catalog.ageHours;
+  const when = age < 1 ? "just now" : age < 24 ? `${Math.round(age)}h ago` : `${Math.round(age / 24)}d ago`;
+  $(".btn__label", btn).textContent = `Listings · ${when}`;
+  btn.title = `Movie and cinema lists were built ${when}. Click to re-scan BookMyShow.`;
+}
+
+/** Trigger a catalog rebuild and wait for the result to actually appear.
+ *
+ * The workflow commits new JSON to the repo, so completion isn't observable
+ * from the response. Poll the published timestamp instead and reload the
+ * pickers in place once it moves.
+ */
+async function refreshCatalog() {
+  const before = catalog.generatedAt;
+  await api.runCatalog("");
+  toast("info", "Re-scanning BookMyShow", "Fetching new movies and cinemas. This takes a minute or two.");
+
+  const deadline = Date.now() + 5 * 60 * 1000;
+  while (Date.now() < deadline) {
+    await new Promise((r) => setTimeout(r, 15000));
+    const previousMovies = catalog.movies.length;
+    await catalog.load(config.slug, config.branch);
+    if (catalog.generatedAt && catalog.generatedAt !== before) {
+      cityCombo.setItems(catalog.cities);
+      catalog.cityData.clear(); // per-city files were rebuilt too
+      updateCatalogButton();
+      const delta = catalog.movies.length - previousMovies;
+      toast(
+        "ok",
+        "Listings updated",
+        `${catalog.movies.length} movies available${delta > 0 ? ` (${delta} new)` : ""}.`
+      );
+      return;
+    }
+  }
+  toast(
+    "err",
+    "Still building",
+    "The refresh is taking longer than expected. Check the Actions tab, then reload."
+  );
 }
 
 function boot() {
@@ -1188,6 +1251,7 @@ function boot() {
   updateLinks();
 
   $("#btn-run").hidden = !config.canWrite;
+  $("#btn-catalog").hidden = !config.canWrite;
   $("#stat-channels").textContent = "Issues";
 
   refresh();

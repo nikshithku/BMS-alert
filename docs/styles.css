@@ -58,6 +58,19 @@
   box-sizing: border-box;
 }
 
+/* The UA stylesheet gives [hidden] display:none, but any author `display`
+   rule beats it — which left `.picked` and `.chips--picked` rendering as empty
+   bordered boxes while supposedly hidden. Make the attribute authoritative. */
+[hidden] {
+  display: none !important;
+}
+
+/* A chip row with nothing in it should take up no space at all. */
+.chips:empty,
+.chips--picked:empty {
+  display: none;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
 }
@@ -1084,6 +1097,27 @@ input:user-invalid {
 .combo__input:disabled {
   opacity: 0.55;
   cursor: not-allowed;
+}
+
+/* Affordance that the field is a picker. Needed now that it no longer springs
+   open on focus: without it the input reads as free text. */
+.combo::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 21px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--text-faint);
+  border-bottom: 2px solid var(--text-faint);
+  transform: rotate(45deg);
+  pointer-events: none;
+  transition: transform 0.2s var(--ease);
+}
+
+.combo:focus-within::after {
+  transform: rotate(225deg) translate(-2px, -2px);
+  border-color: var(--accent);
 }
 
 .combo__list {
