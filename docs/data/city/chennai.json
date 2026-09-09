@@ -1,7 +1,7 @@
 {
  "city": "chennai",
  "name": "Chennai",
- "sampled_date": "20260909",
+ "sampled_date": "20260910",
  "venues": [
   {
    "code": "ACON",
@@ -26,6 +26,10 @@
   {
    "code": "PVES",
    "name": "HDFC Millennia PVR: Escape-Express Avenue Mall"
+  },
+  {
+   "code": "FMCN",
+   "name": "INOX National: Arcot Road"
   },
   {
    "code": "INCH",
@@ -106,7 +110,497 @@
  "languages": [
   "Hindi",
   "Malayalam",
-  "English"
+  "English",
+  "Telugu"
  ],
- "generated_at": "2026-09-08T10:30:59+00:00"
+ "movies": [
+  {
+   "code": "ET00003076",
+   "title": "Andaz Apna Apna",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CBMC"
+   ]
+  },
+  {
+   "code": "ET00502829",
+   "title": "Bethlehem Kudumba Unit",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AGSM",
+    "ACTN",
+    "CBMC",
+    "PVES",
+    "FMCN",
+    "INCH",
+    "INPR",
+    "INTO",
+    "MAYJ",
+    "PABC",
+    "PVHC",
+    "PGRA"
+   ]
+  },
+  {
+   "code": "ET00515243",
+   "title": "Bethlehem Kudumba Unit",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "ACVM",
+    "CBMC",
+    "FMCN",
+    "INCH",
+    "INPR",
+    "INTO",
+    "MAYJ",
+    "PVHC"
+   ]
+  },
+  {
+   "code": "ET00515244",
+   "title": "Bethlehem Kudumba Unit",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "MAYJ"
+   ]
+  },
+  {
+   "code": "ET00508106",
+   "title": "DC",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "INPR"
+   ]
+  },
+  {
+   "code": "ET00507738",
+   "title": "Hanuman Ansh",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CBMC",
+    "PVES",
+    "INCH",
+    "INPR",
+    "INTO",
+    "MMPR",
+    "PABC",
+    "PVHC",
+    "PGRA"
+   ]
+  },
+  {
+   "code": "ET00509196",
+   "title": "Hi (2026)",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AGSM",
+    "ACTN",
+    "CBMC",
+    "PVES",
+    "INCH",
+    "INPR",
+    "INTO",
+    "MAYJ",
+    "MCSK",
+    "PABC",
+    "PVHC",
+    "PGRA"
+   ]
+  },
+  {
+   "code": "ET00473215",
+   "title": "I'm Game",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "MAYJ"
+   ]
+  },
+  {
+   "code": "ET00511703",
+   "title": "I'm Game",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACVM",
+    "PVES",
+    "INPR",
+    "INTO",
+    "MAYJ"
+   ]
+  },
+  {
+   "code": "ET00513702",
+   "title": "Immortal",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "CBMC",
+    "PVES",
+    "FMCN",
+    "INCH",
+    "INPR",
+    "INTO",
+    "MAYJ",
+    "MCSK",
+    "PABC",
+    "PVHC",
+    "PGRA"
+   ]
+  },
+  {
+   "code": "ET00493836",
+   "title": "Insidious: Out of The Further",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "INPR"
+   ]
+  },
+  {
+   "code": "ET00487933",
+   "title": "Irumudi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "INPR"
+   ]
+  },
+  {
+   "code": "ET00513137",
+   "title": "Irumudi",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "MAYJ"
+   ]
+  },
+  {
+   "code": "ET00442702",
+   "title": "Mandaadi",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "CBMC",
+    "PVES",
+    "FMCN",
+    "INCH",
+    "INPR",
+    "INTO",
+    "MAYJ",
+    "MCSK",
+    "MMPR",
+    "PABC",
+    "PVHC",
+    "PGRA"
+   ]
+  },
+  {
+   "code": "ET00514261",
+   "title": "Mandaadi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON"
+   ]
+  },
+  {
+   "code": "ET00512020",
+   "title": "Maremma",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES",
+    "INTO"
+   ]
+  },
+  {
+   "code": "ET00417686",
+   "title": "Mirzapur: The Movie",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AGSM",
+    "ACTN",
+    "PVES",
+    "INPR",
+    "INTO",
+    "MMPR",
+    "PABC",
+    "PVHC",
+    "PGRA"
+   ]
+  },
+  {
+   "code": "ET00511827",
+   "title": "Modha Rathri",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACVM",
+    "CBMC",
+    "PVES",
+    "FMCN",
+    "INCH",
+    "INPR",
+    "INTO",
+    "MAYJ",
+    "MCSK",
+    "PVHC",
+    "PGRA"
+   ]
+  },
+  {
+   "code": "ET00511335",
+   "title": "Once More",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "MAYJ"
+   ]
+  },
+  {
+   "code": "ET00440190",
+   "title": "Sardar 2",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "PVES",
+    "FMCN",
+    "INCH",
+    "INPR",
+    "INTO",
+    "MAYJ",
+    "MCSK",
+    "MMPR",
+    "PABC",
+    "PVHC",
+    "PGRA"
+   ]
+  },
+  {
+   "code": "ET00502600",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "PVES",
+    "INPR",
+    "INTO"
+   ]
+  },
+  {
+   "code": "ET00502621",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "INTO"
+   ]
+  },
+  {
+   "code": "ET00511400",
+   "title": "The Magic Faraway Tree",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES",
+    "INPR",
+    "INTO"
+   ]
+  },
+  {
+   "code": "ET00452034",
+   "title": "The Odyssey",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES",
+    "INPR"
+   ]
+  },
+  {
+   "code": "ET00510575",
+   "title": "Tony (2026)",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES",
+    "INPR"
+   ]
+  },
+  {
+   "code": "ET00489815",
+   "title": "Vishwanath and Sons",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES",
+    "FMCN",
+    "INCH",
+    "INPR",
+    "INTO",
+    "MAYJ",
+    "MCSK",
+    "PVHC",
+    "PGRA"
+   ]
+  },
+  {
+   "code": "ET00515800",
+   "title": "Wild Tamil Nadu",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES",
+    "INPR"
+   ]
+  },
+  {
+   "code": "ET00515801",
+   "title": "Wild Tamil Nadu",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVHC"
+   ]
+  }
+ ],
+ "generated_at": "2026-09-09T00:37:25+00:00"
 }

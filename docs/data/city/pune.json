@@ -1,7 +1,7 @@
 {
  "city": "pune",
  "name": "Pune",
- "sampled_date": "20260909",
+ "sampled_date": "20260910",
  "venues": [
   {
    "code": "CPAR",
@@ -201,37 +201,511 @@
   "DOLBY 7.1",
   "QSC 7.1",
   "LASER & 7.1",
-  "DIRECTORS CUT",
   "DOLBY ATMOS",
   "Atmos",
-  "Renovated",
+  "DIRECTORS CUT",
   "4K DOLBY",
+  "ATMOS",
   "GOLD",
   "KOTAK INSIGNIA",
   "INSIGNIA",
-  "QSC 7.1 RECLINER",
-  "ATMOS",
   "DOLBY 950",
-  "4K ATMOS",
+  "Renovated",
   "SPECTRA X",
-  "KIDDLES",
+  "QSC 7.1 RECLINER",
   "PREMIER",
-  "4K DOLBY ATMOS",
-  "DOLBY ATMOS 4K LASER",
+  "4K ATMOS",
+  "KIDDLES",
   "EPIQ ATMOS 64 CH",
+  "4K DOLBY ATMOS",
   "PXL",
   "4K DOLBY 7.1",
   "Newly Opened",
-  "ELEGANZA",
+  "DOLBY ATMOS 4K LASER",
   "ELEGANZA ATMOS",
   "Now Renovated",
-  "DOLBY CINEMA",
-  "COUPLE SEATS"
+  "ELEGANZA",
+  "COUPLE SEATS",
+  "DOLBY CINEMA"
  ],
  "languages": [
   "Hindi",
   "English",
-  "Malayalam"
+  "Malayalam",
+  "Telugu"
  ],
- "generated_at": "2026-09-08T10:30:59+00:00"
+ "movies": [
+  {
+   "code": "ET00003076",
+   "title": "Andaz Apna Apna",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CNWE",
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00439318",
+   "title": "Awarapan 2",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "PUNB",
+    "CYKR",
+    "CTMP"
+   ]
+  },
+  {
+   "code": "ET00502829",
+   "title": "Bethlehem Kudumba Unit",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CNWE",
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00515244",
+   "title": "Bethlehem Kudumba Unit",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ESBW",
+    "CNWE",
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00452553",
+   "title": "Dhamaal 4",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00510459",
+   "title": "Dwidha",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CTMP"
+   ]
+  },
+  {
+   "code": "ET00507738",
+   "title": "Hanuman Ansh",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "ESBW",
+    "CMVP",
+    "CKPP",
+    "CNWE",
+    "PUNB",
+    "PUVB",
+    "CPRP",
+    "CYKR",
+    "CPKT",
+    "CTMP",
+    "CTSR",
+    "CLTP"
+   ]
+  },
+  {
+   "code": "ET00511704",
+   "title": "I'm Game",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "CLTP"
+   ]
+  },
+  {
+   "code": "ET00493836",
+   "title": "Insidious: Out of The Further",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CNWE",
+    "CYKR",
+    "CPKT"
+   ]
+  },
+  {
+   "code": "ET00493837",
+   "title": "Insidious: Out of The Further",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "PUNB",
+    "CTMP"
+   ]
+  },
+  {
+   "code": "ET00511201",
+   "title": "Insidious: Out of The Further",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00487933",
+   "title": "Irumudi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CTMP"
+   ]
+  },
+  {
+   "code": "ET00502501",
+   "title": "Jeevan Ya Bheema Con?",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00500543",
+   "title": "Mahaprabhu Jagannath",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00442702",
+   "title": "Mandaadi",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00515682",
+   "title": "Mandaadi",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "IMAX 2D"
+   ],
+   "venues": [
+    "CNWE"
+   ]
+  },
+  {
+   "code": "ET00417686",
+   "title": "Mirzapur: The Movie",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "ASHC",
+    "ESBW",
+    "CKPP",
+    "CNWE",
+    "PUNB",
+    "PUVB",
+    "CEPO",
+    "CPRP",
+    "CYKR",
+    "CPKT",
+    "CTMP",
+    "CTRD",
+    "CTSR",
+    "CLTP"
+   ]
+  },
+  {
+   "code": "ET00506677",
+   "title": "Ohh My Dog",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00515389",
+   "title": "Onslaught",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00502386",
+   "title": "PAW Patrol: The Dino Movie",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CLTP"
+   ]
+  },
+  {
+   "code": "ET00514473",
+   "title": "Romanchakam",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00508213",
+   "title": "Sammarth",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "CPKT",
+    "CTMP"
+   ]
+  },
+  {
+   "code": "ET00492095",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00502600",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "CNWE",
+    "CPKT",
+    "CLTP"
+   ]
+  },
+  {
+   "code": "ET00502620",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "CPAR",
+    "CNWE",
+    "CTMP"
+   ]
+  },
+  {
+   "code": "ET00502630",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX 3D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00502631",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "4DX 3D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00502689",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 3D"
+   ],
+   "venues": [
+    "CYKR"
+   ]
+  },
+  {
+   "code": "ET00511400",
+   "title": "The Magic Faraway Tree",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00452034",
+   "title": "The Odyssey",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00504055",
+   "title": "The Odyssey",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "CYKR"
+   ]
+  },
+  {
+   "code": "ET00379311",
+   "title": "Toxic: A Fairy Tale for Grown-ups",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "CKPP",
+    "CNWE",
+    "PUNB",
+    "CPRP",
+    "CYKR",
+    "CPKT",
+    "CTMP",
+    "CTRD",
+    "CLTP"
+   ]
+  }
+ ],
+ "generated_at": "2026-09-09T00:37:25+00:00"
 }

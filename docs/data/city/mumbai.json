@@ -1,7 +1,7 @@
 {
  "city": "mumbai",
  "name": "Mumbai",
- "sampled_date": "20260909",
+ "sampled_date": "20260910",
  "venues": [
   {
    "code": "ONEB",
@@ -456,8 +456,368 @@
   "JIO DRIVEIN"
  ],
  "languages": [
+  "Malayalam",
   "Hindi",
   "English"
  ],
- "generated_at": "2026-09-08T10:30:59+00:00"
+ "movies": [
+  {
+   "code": "ET00003076",
+   "title": "Andaz Apna Apna",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00502829",
+   "title": "Bethlehem Kudumba Unit",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "BMXC",
+    "THAB",
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00507738",
+   "title": "Hanuman Ansh",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ONEB",
+    "AAAS",
+    "KKMB",
+    "BMXC",
+    "BMXA",
+    "CTRR",
+    "CAGL",
+    "FNAN",
+    "THAB",
+    "CPVM",
+    "CPNM",
+    "CSWO",
+    "CPVV"
+   ]
+  },
+  {
+   "code": "ET00473215",
+   "title": "I'm Game",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KKMB",
+    "BMXC",
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00511702",
+   "title": "I'm Game",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KURL"
+   ]
+  },
+  {
+   "code": "ET00511704",
+   "title": "I'm Game",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KURL"
+   ]
+  },
+  {
+   "code": "ET00493836",
+   "title": "Insidious: Out of The Further",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CAGL",
+    "FNAN"
+   ]
+  },
+  {
+   "code": "ET00493837",
+   "title": "Insidious: Out of The Further",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00511201",
+   "title": "Insidious: Out of The Further",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "CPVM"
+   ]
+  },
+  {
+   "code": "ET00502501",
+   "title": "Jeevan Ya Bheema Con?",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "FNAN",
+    "CPVM"
+   ]
+  },
+  {
+   "code": "ET00500543",
+   "title": "Mahaprabhu Jagannath",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM"
+   ]
+  },
+  {
+   "code": "ET00442702",
+   "title": "Mandaadi",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KKMB"
+   ]
+  },
+  {
+   "code": "ET00515682",
+   "title": "Mandaadi",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "IMAX 2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00417686",
+   "title": "Mirzapur: The Movie",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ONEB",
+    "AAAS",
+    "AETE",
+    "BRVP",
+    "KURL",
+    "KKMB",
+    "BMXC",
+    "BMXA",
+    "CTRR",
+    "CAGL",
+    "FNAN",
+    "THAB",
+    "CPVM",
+    "CPNM",
+    "CSWO",
+    "CPVV"
+   ]
+  },
+  {
+   "code": "ET00506677",
+   "title": "Ohh My Dog",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM"
+   ]
+  },
+  {
+   "code": "ET00440190",
+   "title": "Sardar 2",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "BMXC",
+    "CAGL"
+   ]
+  },
+  {
+   "code": "ET00502600",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "CPVV"
+   ]
+  },
+  {
+   "code": "ET00502620",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "KKMB"
+   ]
+  },
+  {
+   "code": "ET00502630",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX 3D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00502631",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "4DX 3D"
+   ],
+   "venues": [
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00511400",
+   "title": "The Magic Faraway Tree",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM"
+   ]
+  },
+  {
+   "code": "ET00480917",
+   "title": "The Odyssey",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "IMAX 2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00510575",
+   "title": "Tony (2026)",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM"
+   ]
+  },
+  {
+   "code": "ET00379311",
+   "title": "Toxic: A Fairy Tale for Grown-ups",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KURL",
+    "KKMB",
+    "BMXC",
+    "BMXA",
+    "CPVM",
+    "CSWO"
+   ]
+  }
+ ],
+ "generated_at": "2026-09-09T00:37:25+00:00"
 }

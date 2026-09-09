@@ -1,7 +1,7 @@
 {
  "city": "national-capital-region-ncr",
  "name": "Delhi NCR",
- "sampled_date": "20260909",
+ "sampled_date": "20260910",
  "venues": [
   {
    "code": "ONEG",
@@ -626,8 +626,217 @@
   "JUNIOR"
  ],
  "languages": [
+  "Malayalam",
   "Hindi",
   "English"
  ],
- "generated_at": "2026-09-08T10:30:59+00:00"
+ "movies": [
+  {
+   "code": "ET00439318",
+   "title": "Awarapan 2",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CIPS",
+    "CPGV"
+   ]
+  },
+  {
+   "code": "ET00507738",
+   "title": "Hanuman Ansh",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ONEG",
+    "AKRC",
+    "AKRF",
+    "BCWG",
+    "CRGM",
+    "CUNT",
+    "FNSD",
+    "CIPS",
+    "CPGV",
+    "CNVG",
+    "CIJA",
+    "SPIA",
+    "CPMF",
+    "CPNS"
+   ]
+  },
+  {
+   "code": "ET00493836",
+   "title": "Insidious: Out of The Further",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPNS"
+   ]
+  },
+  {
+   "code": "ET00511201",
+   "title": "Insidious: Out of The Further",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "CIPS"
+   ]
+  },
+  {
+   "code": "ET00502501",
+   "title": "Jeevan Ya Bheema Con?",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CIPS",
+    "CPNS"
+   ]
+  },
+  {
+   "code": "ET00500543",
+   "title": "Mahaprabhu Jagannath",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CRGM",
+    "CUNT",
+    "FNSD",
+    "CIPS",
+    "SPIA",
+    "CPNS"
+   ]
+  },
+  {
+   "code": "ET00417686",
+   "title": "Mirzapur: The Movie",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ONEG",
+    "AKRC",
+    "AKRF",
+    "AMCD",
+    "BCWG",
+    "BTFD",
+    "CRGM",
+    "CUNT",
+    "FNSD",
+    "CIPS",
+    "CPGV",
+    "CNVG",
+    "CIJA",
+    "SPIA",
+    "CPMF",
+    "CPNS"
+   ]
+  },
+  {
+   "code": "ET00502386",
+   "title": "PAW Patrol: The Dino Movie",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CRGM"
+   ]
+  },
+  {
+   "code": "ET00502600",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "CRGM",
+    "CPNS"
+   ]
+  },
+  {
+   "code": "ET00502620",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "CRGM"
+   ]
+  },
+  {
+   "code": "ET00502630",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX 3D"
+   ],
+   "venues": [
+    "CIPS"
+   ]
+  },
+  {
+   "code": "ET00511400",
+   "title": "The Magic Faraway Tree",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CIPS"
+   ]
+  },
+  {
+   "code": "ET00379311",
+   "title": "Toxic: A Fairy Tale for Grown-ups",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AKRC",
+    "CPNS"
+   ]
+  }
+ ],
+ "generated_at": "2026-09-09T00:37:25+00:00"
 }

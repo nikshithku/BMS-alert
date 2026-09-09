@@ -1,7 +1,7 @@
 {
  "city": "bengaluru",
  "name": "Bengaluru",
- "sampled_date": "20260909",
+ "sampled_date": "20260910",
  "venues": [
   {
    "code": "ATGN",
@@ -360,6 +360,10 @@
    "name": "Sri Vinayaka Theatre: Harohalli"
   },
   {
+   "code": "SDCS",
+   "name": "Srinivasa Cinema 4K Dolby Atmos SG Palya:Screen1"
+  },
+  {
    "code": "PTBC",
    "name": "Swagath Poornima 4K Dolby Atmos: JC Road (New)"
   },
@@ -415,17 +419,17 @@
  "formats": [
   "2D",
   "DOLBY 7.1",
-  "GOLD",
   "LASER",
   "2K LASER DOLBY 7.1",
   "4K DOLBY 7.1",
+  "GOLD",
   "4K ATMOS",
   "ATMOS",
   "INSIGNIA",
   "Couple Seats",
   "PLAYHOUSE",
-  "LASER ATMOS",
   "QSC 5.1",
+  "LASER ATMOS",
   "LUXE",
   "Atmos",
   "JUNIOR",
@@ -439,10 +443,10 @@
   "CLUB",
   "KOTAK INSIGNIA",
   "DINE-IN",
+  "4K RGB LASER",
   "LASER DOLBY ATMOS",
   "LASER DOLBY 7.1",
   "RGB LASER 4K ATMOS",
-  "4K RGB LASER",
   "BIGPIX",
   "ONYX LED SCREEN",
   "4K DOLBY 7.1 A/C",
@@ -463,9 +467,577 @@
   "1.90:1 LARGE SCREEN FORMAT"
  ],
  "languages": [
+  "Malayalam",
   "Hindi",
   "Kannada",
   "English"
  ],
- "generated_at": "2026-09-08T10:30:59+00:00"
+ "movies": [
+  {
+   "code": "ET00515064",
+   "title": "A Date",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00511528",
+   "title": "America America 2",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00439318",
+   "title": "Awarapan 2",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ATGN"
+   ]
+  },
+  {
+   "code": "ET00502829",
+   "title": "Bethlehem Kudumba Unit",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CEHR",
+    "CVLG",
+    "CLGM",
+    "CFBS",
+    "CPOE",
+    "CNRM",
+    "CPJR"
+   ]
+  },
+  {
+   "code": "ET00515244",
+   "title": "Bethlehem Kudumba Unit",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00515338",
+   "title": "Epic",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "BKDV",
+    "CEHR"
+   ]
+  },
+  {
+   "code": "ET00507738",
+   "title": "Hanuman Ansh",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ATGN",
+    "ACKB",
+    "CEHR",
+    "CVLG",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE",
+    "CNRM",
+    "CPJR"
+   ]
+  },
+  {
+   "code": "ET00509196",
+   "title": "Hi (2026)",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CLGM",
+    "CFBS",
+    "CPOE",
+    "CNRM"
+   ]
+  },
+  {
+   "code": "ET00473215",
+   "title": "I'm Game",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CEHR"
+   ]
+  },
+  {
+   "code": "ET00511702",
+   "title": "I'm Game",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00513702",
+   "title": "Immortal",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CEHR",
+    "CLGM",
+    "CFBS",
+    "CPOE",
+    "CNRM",
+    "CPJR"
+   ]
+  },
+  {
+   "code": "ET00493836",
+   "title": "Insidious: Out of The Further",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CLGM",
+    "CNRM"
+   ]
+  },
+  {
+   "code": "ET00511201",
+   "title": "Insidious: Out of The Further",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00487933",
+   "title": "Irumudi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "BHAC",
+    "BKDV",
+    "CLGM",
+    "CFBS",
+    "CNRM"
+   ]
+  },
+  {
+   "code": "ET00514112",
+   "title": "Life Ellind Ellige",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00500543",
+   "title": "Mahaprabhu Jagannath",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00442702",
+   "title": "Mandaadi",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "BHAC",
+    "BKDV",
+    "CHTH",
+    "CEHR"
+   ]
+  },
+  {
+   "code": "ET00514261",
+   "title": "Mandaadi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00515683",
+   "title": "Mandaadi",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00516197",
+   "title": "Mandaadi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00512020",
+   "title": "Maremma",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00417686",
+   "title": "Mirzapur: The Movie",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CEHR",
+    "CVLG",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE",
+    "CNRM",
+    "CPJR"
+   ]
+  },
+  {
+   "code": "ET00515389",
+   "title": "Onslaught",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00502386",
+   "title": "PAW Patrol: The Dino Movie",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CLGM",
+    "CFBS",
+    "CNRM"
+   ]
+  },
+  {
+   "code": "ET00509671",
+   "title": "Ramba Oorvasi Menaka",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00514473",
+   "title": "Romanchakam",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CLGM",
+    "CFBS",
+    "CNRM"
+   ]
+  },
+  {
+   "code": "ET00440190",
+   "title": "Sardar 2",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "BHAC",
+    "CHTH",
+    "CEHR",
+    "CLGM"
+   ]
+  },
+  {
+   "code": "ET00440191",
+   "title": "Sardar 2",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CHTH"
+   ]
+  },
+  {
+   "code": "ET00516195",
+   "title": "Sardar 2",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00516196",
+   "title": "Sardar 2",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00502600",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "CLGM",
+    "CPOE",
+    "CNRM",
+    "CPJR"
+   ]
+  },
+  {
+   "code": "ET00502630",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX 3D"
+   ],
+   "venues": [
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00511400",
+   "title": "The Magic Faraway Tree",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00378770",
+   "title": "Toxic: A Fairy Tale for Grown-ups",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ADCR",
+    "ACKB",
+    "ASTB",
+    "CEHR",
+    "CVLG",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE",
+    "CNRM",
+    "CPJR",
+    "DKTI"
+   ]
+  },
+  {
+   "code": "ET00379311",
+   "title": "Toxic: A Fairy Tale for Grown-ups",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPEB",
+    "CFBS",
+    "CPJR"
+   ]
+  },
+  {
+   "code": "ET00513510",
+   "title": "Toxic: A Fairy Tale for Grown-ups",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00489815",
+   "title": "Vishwanath and Sons",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPJR"
+   ]
+  },
+  {
+   "code": "ET00510230",
+   "title": "Vishwanath and Sons",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CLGM"
+   ]
+  }
+ ],
+ "generated_at": "2026-09-09T00:37:25+00:00"
 }

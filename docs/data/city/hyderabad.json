@@ -1,7 +1,7 @@
 {
  "city": "hyderabad",
  "name": "Hyderabad",
- "sampled_date": "20260909",
+ "sampled_date": "20260910",
  "venues": [
   {
    "code": "ACAS",
@@ -22,6 +22,10 @@
   {
    "code": "APNS",
    "name": "Aparna Cinemas: Shamshabad"
+  },
+  {
+   "code": "ARJU",
+   "name": "Arjun 70MM: Kukatpally"
   },
   {
    "code": "ACEV",
@@ -48,12 +52,24 @@
    "name": "Asian Mukta A2 Sensation Cinema: Kairathabad"
   },
   {
+   "code": "AMCM",
+   "name": "Asian Mukund Cinema: Medchal"
+  },
+  {
    "code": "ARMH",
    "name": "Asian Radhika Multiplex: ECIL"
   },
   {
+   "code": "ARYH",
+   "name": "Asian Rajya Lakshmi: Uppal"
+  },
+  {
    "code": "ACHI",
    "name": "Asian Sha & Shahensha: Chintal"
+  },
+  {
+   "code": "SPCB",
+   "name": "Asian Super Cinema: Balapur"
   },
   {
    "code": "TRHY",
@@ -92,6 +108,14 @@
    "name": "CONNPLEX Luxuriance Cinemas: Mpm Mall, Banjara Hil"
   },
   {
+   "code": "DVRR",
+   "name": "Devi 70MM 4K Laser & Dolby Atmos: RTC X Roads"
+  },
+  {
+   "code": "GPRH",
+   "name": "GPR Multiplex: Nizampet, Hyderabad"
+  },
+  {
    "code": "VRKC",
    "name": "Indra Venkataramana Padmavati Cinema: Kachiguda"
   },
@@ -122,6 +146,10 @@
   {
    "code": "ISTN",
    "name": "INOX: Sattva Necklace Mall, Kavadiguda"
+  },
+  {
+   "code": "IVNM",
+   "name": "INOX: SMR Vinay Metro Mall, Dolby ATMOS: Miyapur"
   },
   {
    "code": "JJPP",
@@ -158,6 +186,10 @@
   {
    "code": "MMAH",
    "name": "MovieMax: AMR, ECIL Secunderabad"
+  },
+  {
+   "code": "PSMJ",
+   "name": "Movietime Cinemas: SKY Mall, Erragadda X Road"
   },
   {
    "code": "MTHY",
@@ -212,12 +244,32 @@
    "name": "PVR: RK Cineplex, Hyderabad"
   },
   {
+   "code": "RKMH",
+   "name": "Rama Krishna 70mm: Abids"
+  },
+  {
    "code": "RMKN",
    "name": "Ramakrishna 35mm: Abids"
   },
   {
    "code": "RCNH",
    "name": "ROONGTA CINEMAS: NOVUM, NAMPALLY"
+  },
+  {
+   "code": "SNIB",
+   "name": "Santosh Theatre: Ibrahimpatnam"
+  },
+  {
+   "code": "SRCH",
+   "name": "Sree Ramana Gold 4K & Dolby 7.1: Amberpet"
+  },
+  {
+   "code": "SRMO",
+   "name": "Sree Ramulu 70mm 4K Laser: Moosapet"
+  },
+  {
+   "code": "SKTA",
+   "name": "Sri Krishna Theatre: Aliabad (Shameerpet)"
   },
   {
    "code": "TVHY",
@@ -232,22 +284,22 @@
   "2D",
   "ATMOS",
   "DOLBY 7.1",
-  "VIP SCREEN",
-  "BARCO FLAGSHIP LASER DOLBY ATMOS",
-  "PLAYHOUSE",
   "RECLINER",
+  "BARCO FLAGSHIP LASER DOLBY ATMOS",
+  "VIP SCREEN",
+  "PLAYHOUSE",
   "LASER DOLBY 7.1",
   "BARCO LASER 4K ATMOS",
-  "DOLBY ATMOS",
   "PCX SCREEN",
+  "DOLBY ATMOS",
+  "4K DOLBY ATMOS",
   "INFINITY VISION DOLBY ATMOS",
   "2K",
   "4K DOLBY 7.1",
-  "4K DOLBY ATMOS",
   "PXL",
+  "4K",
   "Infinity Vision Dolby Atmos",
   "LASER & 7.1",
-  "4K",
   "2K AIR COOLED",
   "Barco Dolby 7.1",
   "BARCO 4K SMART LASER",
@@ -257,15 +309,320 @@
   "4K ATMOS",
   "MACRO XE",
   "Atmos",
+  "LUXE",
+  "ATMOS + LASER",
   "LALITHA AIR CONDITIONED",
+  "LAXMIKALA DOLBY ATMOS BARCO LASER",
+  "Gold 4K & Dolby 7.1",
   "LED SCREEN DOLBY ATMOS",
   "LASER DOLBY DIGITAL 7.1",
-  "SCREEN 3"
+  "SCREEN 3",
+  "CHANDRAKALA AIR COOLED",
+  "Dolby Atmos"
  ],
  "languages": [
   "Hindi",
+  "Telugu",
   "English",
   "Malayalam"
  ],
- "generated_at": "2026-09-08T10:30:59+00:00"
+ "movies": [
+  {
+   "code": "ET00515244",
+   "title": "Bethlehem Kudumba Unit",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN",
+    "APNS",
+    "ACPM",
+    "SNKH"
+   ]
+  },
+  {
+   "code": "ET00515338",
+   "title": "Epic",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "ACEV"
+   ]
+  },
+  {
+   "code": "ET00507738",
+   "title": "Hanuman Ansh",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ACPM",
+    "SNKH"
+   ]
+  },
+  {
+   "code": "ET00473215",
+   "title": "I'm Game",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN"
+   ]
+  },
+  {
+   "code": "ET00511702",
+   "title": "I'm Game",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN",
+    "APNS"
+   ]
+  },
+  {
+   "code": "ET00487933",
+   "title": "Irumudi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN",
+    "APNS",
+    "ARJU",
+    "ACPM",
+    "SNKH",
+    "AMCM",
+    "ARYH"
+   ]
+  },
+  {
+   "code": "ET00500543",
+   "title": "Mahaprabhu Jagannath",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN"
+   ]
+  },
+  {
+   "code": "ET00500545",
+   "title": "Mahaprabhu Jagannath",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "APNS"
+   ]
+  },
+  {
+   "code": "ET00514261",
+   "title": "Mandaadi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACPM"
+   ]
+  },
+  {
+   "code": "ET00512020",
+   "title": "Maremma",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "AMBH",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "ARMH",
+    "ACHI"
+   ]
+  },
+  {
+   "code": "ET00417686",
+   "title": "Mirzapur: The Movie",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "SNKH"
+   ]
+  },
+  {
+   "code": "ET00510304",
+   "title": "Mirzapur: The Movie",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ACEV",
+    "ACPM"
+   ]
+  },
+  {
+   "code": "ET00502386",
+   "title": "PAW Patrol: The Dino Movie",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN"
+   ]
+  },
+  {
+   "code": "ET00514473",
+   "title": "Romanchakam",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ACPM",
+    "SNKH"
+   ]
+  },
+  {
+   "code": "ET00440190",
+   "title": "Sardar 2",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "AMBH"
+   ]
+  },
+  {
+   "code": "ET00440191",
+   "title": "Sardar 2",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "AMBH",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "AMCM",
+    "ARMH",
+    "ACHI"
+   ]
+  },
+  {
+   "code": "ET00516331",
+   "title": "Sardar 2",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "EPIQ"
+   ],
+   "venues": [
+    "ACEV"
+   ]
+  },
+  {
+   "code": "ET00447840",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN"
+   ]
+  },
+  {
+   "code": "ET00510230",
+   "title": "Vishwanath and Sons",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN",
+    "APNS"
+   ]
+  }
+ ],
+ "generated_at": "2026-09-09T00:37:25+00:00"
 }
