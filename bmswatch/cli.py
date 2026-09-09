@@ -62,8 +62,18 @@ def watches_from_issues(gh: GitHub) -> list[Watch]:
                 watch_from_issue(issue.get("body") or "", number, issue.get("title") or "")
             )
         except IssueFormError as e:
-            # Don't let one malformed issue stop the whole run.
+            # Don't let one malformed issue stop the whole run — but don't skip
+            # it silently either. Until this was labelled, a watch that failed
+            # to parse was ignored on every run while the dashboard still showed
+            # it as "watching", so there was nothing anywhere saying why no
+            # alerts arrived. The label is what makes it visible; because an
+            # already-labelled issue is skipped above, the comment happens once.
             log.warning("issue #%s is not a usable watch: %s", number, e)
+            try:
+                gh.comment(number, notify.markdown_invalid(str(e)))
+                gh.add_labels(number, [WATCH_LABEL, INVALID_LABEL])
+            except GitHubError as label_err:
+                log.warning("could not flag issue #%s as invalid: %s", number, label_err)
     return watches
 
 
@@ -176,6 +186,10 @@ class CollectResult(NamedTuple):
     movie: str
     listed: int  # total listed across dates, before filtering
     problems: list[str]
+    # True when the watch can no longer match anything, e.g. its pinned dates
+    # have passed. Recorded in state so the dashboard can flag it instead of
+    # showing a healthy-looking "0 found".
+    stale: bool = False
 
 
 def cmd_catalog(args: argparse.Namespace) -> int:
@@ -240,7 +254,7 @@ def collect(watch: Watch) -> CollectResult:
             f"every date on this watch has passed ({', '.join(watch.dates)}); "
             "nothing will be checked until the dates are updated"
         )
-        return CollectResult([], "", 0, problems)
+        return CollectResult([], "", 0, problems, stale=True)
 
     for i, date in enumerate(dates):
         if i:
@@ -321,7 +335,12 @@ def cmd_check(args: argparse.Namespace) -> int:
 
         problems += [f"{watch.name} {p}" for p in result.problems]
         store.note_run(
-            watch.slug, listed=result.listed, matched=len(result.shows), movie=result.movie
+            watch.slug,
+            listed=result.listed,
+            matched=len(result.shows),
+            movie=result.movie,
+            stale=result.stale,
+            note=result.problems[0] if (result.stale and result.problems) else "",
         )
 
         seen = store.seen_keys(watch.slug)

@@ -66,13 +66,30 @@ class Store:
             "format": show.format_label,
         }
 
-    def note_run(self, watch_slug: str, *, listed: int, matched: int, movie: str = "") -> None:
+    def note_run(
+        self,
+        watch_slug: str,
+        *,
+        listed: int,
+        matched: int,
+        movie: str = "",
+        stale: bool = False,
+        note: str = "",
+    ) -> None:
         bucket = self.data["watches"].setdefault(watch_slug, {"seen": {}})
         bucket["last_checked"] = _now()
         bucket["last_listed"] = listed
         bucket["last_matched"] = matched
         if movie:
             bucket["movie"] = movie
+        # Surfaced on the dashboard: a stale watch reports zeros forever, which
+        # is indistinguishable from "not listed yet" unless it's flagged.
+        if stale:
+            bucket["stale"] = True
+            bucket["note"] = note or "This watch can no longer match anything."
+        else:
+            bucket.pop("stale", None)
+            bucket.pop("note", None)
 
     def forget_watch(self, watch_slug: str) -> None:
         """Drop state for a watch whose issue was closed."""

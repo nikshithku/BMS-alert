@@ -765,11 +765,18 @@ function watchCard(issue, idx, stats) {
     ]),
 
     el("div", { className: "card__foot" }, [
-      invalid
-        ? el("span", { className: "badge badge--warn" }, [
-            el("span", { className: "badge__dot", ariaHidden: "true" }),
-            "needs fixing",
-          ])
+      invalid || bucket?.stale
+        ? el(
+            "span",
+            {
+              className: "badge badge--warn",
+              title: bucket?.note || "This watch needs fixing before it can alert.",
+            },
+            [
+              el("span", { className: "badge__dot", ariaHidden: "true" }),
+              bucket?.stale ? "dates passed" : "needs fixing",
+            ]
+          )
         : el("span", { className: "badge badge--live" }, [
             el("span", { className: "badge__dot", ariaHidden: "true" }),
             "watching",
