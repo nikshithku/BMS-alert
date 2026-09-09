@@ -468,9 +468,9 @@
  ],
  "languages": [
   "Malayalam",
+  "English",
   "Hindi",
-  "Kannada",
-  "English"
+  "Kannada"
  ],
  "movies": [
   {
@@ -555,6 +555,7 @@
     "2D"
    ],
    "venues": [
+    "ACKB",
     "BKDV",
     "CEHR"
    ]
@@ -591,6 +592,7 @@
     "2D"
    ],
    "venues": [
+    "CPEB",
     "CLGM",
     "CFBS",
     "CPOE",
@@ -635,6 +637,7 @@
    "venues": [
     "ACKB",
     "CEHR",
+    "CPEB",
     "CLGM",
     "CFBS",
     "CPOE",
@@ -682,6 +685,7 @@
     "ACKB",
     "BHAC",
     "BKDV",
+    "CPEB",
     "CLGM",
     "CFBS",
     "CNRM"
@@ -727,7 +731,13 @@
     "BHAC",
     "BKDV",
     "CHTH",
-    "CEHR"
+    "CEHR",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE",
+    "CNRM",
+    "CPJR"
    ]
   },
   {
@@ -741,6 +751,19 @@
    ],
    "venues": [
     "ACKB"
+   ]
+  },
+  {
+   "code": "ET00515682",
+   "title": "Mandaadi",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "IMAX 2D"
+   ],
+   "venues": [
+    "CFBS"
    ]
   },
   {
@@ -855,9 +878,9 @@
    ],
    "venues": [
     "ACKB",
-    "CLGM",
     "CFBS",
-    "CNRM"
+    "CNRM",
+    "CLGM"
    ]
   },
   {
@@ -874,7 +897,13 @@
     "BHAC",
     "CHTH",
     "CEHR",
-    "CLGM"
+    "CVLG",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE",
+    "CNRM",
+    "CPJR"
    ]
   },
   {
@@ -888,7 +917,8 @@
    ],
    "venues": [
     "ACKB",
-    "CHTH"
+    "CHTH",
+    "CFBS"
    ]
   },
   {
@@ -960,6 +990,19 @@
    ]
   },
   {
+   "code": "ET00480917",
+   "title": "The Odyssey",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "IMAX 2D"
+   ],
+   "venues": [
+    "CFBS"
+   ]
+  },
+  {
    "code": "ET00378770",
    "title": "Toxic: A Fairy Tale for Grown-ups",
    "languages": [
@@ -1021,6 +1064,7 @@
     "2D"
    ],
    "venues": [
+    "CPEB",
     "CPJR"
    ]
   },
@@ -1039,5 +1083,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-09T00:37:25+00:00"
+ "generated_at": "2026-09-09T09:25:38+00:00"
 }

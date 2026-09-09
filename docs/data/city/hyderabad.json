@@ -289,8 +289,8 @@
   "VIP SCREEN",
   "PLAYHOUSE",
   "LASER DOLBY 7.1",
-  "BARCO LASER 4K ATMOS",
   "PCX SCREEN",
+  "BARCO LASER 4K ATMOS",
   "DOLBY ATMOS",
   "4K DOLBY ATMOS",
   "INFINITY VISION DOLBY ATMOS",
@@ -321,9 +321,9 @@
   "Dolby Atmos"
  ],
  "languages": [
+  "English",
   "Hindi",
   "Telugu",
-  "English",
   "Malayalam"
  ],
  "movies": [
@@ -337,9 +337,16 @@
     "2D"
    ],
    "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
     "AACN",
     "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
     "ACPM",
+    "AMCA",
     "SNKH"
    ]
   },
@@ -356,6 +363,7 @@
     "ACAS",
     "ALUC",
     "AMBH",
+    "AACN",
     "ACEV"
    ]
   },
@@ -370,11 +378,15 @@
    ],
    "venues": [
     "ACAS",
+    "ALUC",
     "AMBH",
     "AACN",
     "APNS",
     "ACEV",
+    "ASHN",
+    "CPHY",
     "ACPM",
+    "AMCA",
     "SNKH"
    ]
   },
@@ -401,6 +413,10 @@
     "2D"
    ],
    "venues": [
+    "ACAS",
+    "AMBH",
+    "ACEV",
+    "ASHN",
     "AACN",
     "APNS"
    ]
@@ -415,13 +431,34 @@
     "2D"
    ],
    "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
     "AACN",
     "APNS",
     "ARJU",
+    "ACEV",
+    "ASHN",
+    "CPHY",
     "ACPM",
+    "AMCA",
     "SNKH",
     "AMCM",
-    "ARYH"
+    "ARYH",
+    "ACHI"
+   ]
+  },
+  {
+   "code": "ET00513087",
+   "title": "Irumudi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "EPIQ"
+   ],
+   "venues": [
+    "ACEV"
    ]
   },
   {
@@ -451,6 +488,21 @@
    ]
   },
   {
+   "code": "ET00442702",
+   "title": "Mandaadi",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH",
+    "AACN",
+    "APNS"
+   ]
+  },
+  {
    "code": "ET00514261",
    "title": "Mandaadi",
    "languages": [
@@ -460,7 +512,44 @@
     "2D"
    ],
    "venues": [
-    "ACPM"
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "ARMH",
+    "ACHI"
+   ]
+  },
+  {
+   "code": "ET00516311",
+   "title": "Mandaadi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "HDR By Barco"
+   ],
+   "venues": [
+    "AMBH"
+   ]
+  },
+  {
+   "code": "ET00516384",
+   "title": "Mandaadi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "EPIQ"
+   ],
+   "venues": [
+    "ACEV"
    ]
   },
   {
@@ -475,6 +564,8 @@
    "venues": [
     "ACAS",
     "AMBH",
+    "AACN",
+    "APNS",
     "ACEV",
     "ASHN",
     "CPHY",
@@ -494,10 +585,12 @@
     "2D"
    ],
    "venues": [
+    "ALUC",
     "AMBH",
     "AACN",
     "APNS",
     "ACEV",
+    "AMCA",
     "SNKH"
    ]
   },
@@ -513,6 +606,8 @@
    "venues": [
     "ACAS",
     "ACEV",
+    "ASHN",
+    "CPHY",
     "ACPM"
    ]
   },
@@ -530,6 +625,19 @@
    ]
   },
   {
+   "code": "ET00509671",
+   "title": "Ramba Oorvasi Menaka",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH"
+   ]
+  },
+  {
    "code": "ET00514473",
    "title": "Romanchakam",
    "languages": [
@@ -540,11 +648,28 @@
    ],
    "venues": [
     "ACAS",
+    "AMBH",
     "AACN",
     "APNS",
     "ACEV",
+    "ASHN",
+    "CPHY",
     "ACPM",
+    "AMCA",
     "SNKH"
+   ]
+  },
+  {
+   "code": "ET00514054",
+   "title": "Sahaa - Life of Sanju",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACEV"
    ]
   },
   {
@@ -558,7 +683,9 @@
    ],
    "venues": [
     "ACAS",
-    "AMBH"
+    "AMBH",
+    "AACN",
+    "APNS"
    ]
   },
   {
@@ -572,7 +699,10 @@
    ],
    "venues": [
     "ACAS",
+    "ALUC",
     "AMBH",
+    "AACN",
+    "APNS",
     "ACEV",
     "ASHN",
     "CPHY",
@@ -594,6 +724,19 @@
    ],
    "venues": [
     "ACEV"
+   ]
+  },
+  {
+   "code": "ET00300238",
+   "title": "Spider-Man",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN"
    ]
   },
   {
@@ -624,5 +767,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-09T00:37:25+00:00"
+ "generated_at": "2026-09-09T09:25:38+00:00"
 }

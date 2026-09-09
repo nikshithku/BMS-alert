@@ -626,9 +626,9 @@
   "JUNIOR"
  ],
  "languages": [
+  "English",
   "Malayalam",
-  "Hindi",
-  "English"
+  "Hindi"
  ],
  "movies": [
   {
@@ -641,8 +641,8 @@
     "2D"
    ],
    "venues": [
-    "CIPS",
-    "CPGV"
+    "CPGV",
+    "CIPS"
    ]
   },
   {
@@ -727,6 +727,20 @@
     "CIPS",
     "SPIA",
     "CPNS"
+   ]
+  },
+  {
+   "code": "ET00442702",
+   "title": "Mandaadi",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CRGM",
+    "SPIA"
    ]
   },
   {
@@ -838,5 +852,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-09T00:37:25+00:00"
+ "generated_at": "2026-09-09T09:25:38+00:00"
 }

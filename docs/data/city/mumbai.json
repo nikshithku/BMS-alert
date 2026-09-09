@@ -492,6 +492,19 @@
    ]
   },
   {
+   "code": "ET00513649",
+   "title": "Bhata",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KKMB"
+   ]
+  },
+  {
    "code": "ET00507738",
    "title": "Hanuman Ansh",
    "languages": [
@@ -704,7 +717,10 @@
    ],
    "venues": [
     "BMXC",
-    "CAGL"
+    "CAGL",
+    "THAB",
+    "CPVM",
+    "CSWO"
    ]
   },
   {
@@ -819,5 +835,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-09T00:37:25+00:00"
+ "generated_at": "2026-09-09T09:25:38+00:00"
 }

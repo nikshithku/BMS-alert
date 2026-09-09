@@ -201,21 +201,21 @@
   "DOLBY 7.1",
   "QSC 7.1",
   "LASER & 7.1",
-  "DOLBY ATMOS",
-  "Atmos",
   "DIRECTORS CUT",
   "4K DOLBY",
-  "ATMOS",
+  "DOLBY ATMOS",
+  "Atmos",
   "GOLD",
-  "KOTAK INSIGNIA",
-  "INSIGNIA",
-  "DOLBY 950",
   "Renovated",
+  "KOTAK INSIGNIA",
+  "DOLBY 950",
+  "ATMOS",
+  "INSIGNIA",
   "SPECTRA X",
-  "QSC 7.1 RECLINER",
   "PREMIER",
-  "4K ATMOS",
+  "QSC 7.1 RECLINER",
   "KIDDLES",
+  "4K ATMOS",
   "EPIQ ATMOS 64 CH",
   "4K DOLBY ATMOS",
   "PXL",
@@ -370,8 +370,8 @@
    ],
    "venues": [
     "CNWE",
-    "CYKR",
-    "CPKT"
+    "CPKT",
+    "CYKR"
    ]
   },
   {
@@ -564,6 +564,34 @@
    ]
   },
   {
+   "code": "ET00440190",
+   "title": "Sardar 2",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CNWE",
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00440191",
+   "title": "Sardar 2",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ESBW",
+    "PUNB"
+   ]
+  },
+  {
    "code": "ET00492095",
    "title": "Spider-Man: Brand New Day",
    "languages": [
@@ -707,5 +735,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-09T00:37:25+00:00"
+ "generated_at": "2026-09-09T09:25:38+00:00"
 }
