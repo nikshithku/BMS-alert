@@ -210,6 +210,21 @@ function relativeTime(iso) {
 
 const STORE_KEY = "bms-alert:config";
 
+/** The repository that owns this deployed Pages site, independent of saved settings. */
+function pagesRepository() {
+  const host = location.hostname.match(/^([^.]+)\.github\.io$/i);
+  if (!host) return null;
+  const repo = location.pathname.split("/").filter(Boolean)[0];
+  return {
+    slug: repo ? `${host[1]}/${repo}` : `${host[1]}/${host[1]}.github.io`,
+    branch: "main",
+  };
+}
+
+function catalogRepository() {
+  return pagesRepository() || { slug: config.slug, branch: config.branch };
+}
+
 const config = {
   owner: "",
   repo: "",
@@ -1437,14 +1452,24 @@ function initCombos() {
 }
 
 async function loadCatalog() {
-  const ok = await catalog.load(config.slug, config.branch);
+  cityCombo.clear();
+  cityCombo.setItems([], { enabled: false, hint: "Loading cities…" });
+  $("#city-note").textContent = "Loading the latest city and movie catalog…";
+
+  const source = catalogRepository();
+  const ok = await catalog.load(source.slug, source.branch);
   if (!ok) {
+    cityCombo.setItems([], { enabled: false, hint: "City catalog unavailable" });
     $("#city-note").textContent =
-      "Catalog hasn't been built yet. Run the “Refresh catalog” workflow once.";
+      "Couldn't load the city catalog. Check your connection, then reload this page.";
     return;
   }
 
-  cityCombo.setItems(catalog.cities);
+  cityCombo.setItems(catalog.cities, {
+    enabled: true,
+    hint: `Search ${catalog.cities.length} cities…`,
+  });
+  $("#city-note").textContent = `${catalog.cities.length.toLocaleString()} cities ready. Start typing to search.`;
   const age = catalog.ageHours;
   $("#hero-status").textContent =
     age < 1
@@ -1492,7 +1517,8 @@ async function refreshCatalog() {
   while (Date.now() < deadline) {
     await new Promise((r) => setTimeout(r, 15000));
     const previousMovies = catalog.movies.length;
-    await catalog.load(config.slug, config.branch);
+    const source = catalogRepository();
+    await catalog.load(source.slug, source.branch);
     if (catalog.generatedAt && catalog.generatedAt !== before) {
       cityCombo.setItems(catalog.cities);
       catalog.cityData.clear(); // per-city files were rebuilt too

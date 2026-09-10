@@ -20,26 +20,41 @@ export const catalog = {
   cachedCities: new Set(),
   generatedAt: null,
 
-  /** Read the published catalog. Falls back gracefully if it isn't built yet. */
+  /** Read the newest available catalog, with the deployed Pages copy as fallback. */
   async load(slug, branch = "main") {
-    const base = `https://raw.githubusercontent.com/${slug}/${branch}/docs/data`;
-    // Cache-bust so a fresh build is visible immediately rather than after the
-    // CDN's TTL.
-    const bust = `?t=${Date.now()}`;
+    const bases = [];
+    if (slug) bases.push(`https://raw.githubusercontent.com/${slug}/${branch}/docs/data`);
+    if (typeof location !== "undefined") {
+      const deployed = new URL("./data", location.href).href.replace(/\/$/, "");
+      if (!bases.includes(deployed)) bases.push(deployed);
+    }
 
-    const [cities, movies, index] = await Promise.all([
-      fetchJson(`${base}/cities.json${bust}`),
-      fetchJson(`${base}/movies.json${bust}`),
-      fetchJson(`${base}/city/index.json${bust}`),
-    ]);
+    for (const base of bases) {
+      // Cache-bust so a fresh build is visible immediately rather than after
+      // the CDN's TTL.
+      const bust = `?t=${Date.now()}`;
+      const [cities, movies, index] = await Promise.all([
+        fetchJson(`${base}/cities.json${bust}`),
+        fetchJson(`${base}/movies.json${bust}`),
+        fetchJson(`${base}/city/index.json${bust}`),
+      ]);
 
-    this.cities = cities?.cities || [];
-    this.movies = movies?.movies || [];
-    this.cachedCities = new Set(index?.cities || []);
-    this.generatedAt = movies?.generated_at || cities?.generated_at || null;
-    this._base = base;
+      if (!Array.isArray(cities?.cities) || !Array.isArray(movies?.movies)) continue;
 
-    return this.ready;
+      this.cities = cities.cities;
+      this.movies = movies.movies;
+      this.cachedCities = new Set(Array.isArray(index?.cities) ? index.cities : []);
+      this.generatedAt = movies.generated_at || cities.generated_at || null;
+      this._base = base;
+      return this.ready;
+    }
+
+    this.cities = [];
+    this.movies = [];
+    this.cachedCities = new Set();
+    this.generatedAt = null;
+    this._base = null;
+    return false;
   },
 
   get ready() {
