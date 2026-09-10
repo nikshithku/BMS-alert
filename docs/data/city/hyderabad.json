@@ -1,7 +1,7 @@
 {
  "city": "hyderabad",
  "name": "Hyderabad",
- "sampled_date": "20260910",
+ "sampled_date": "20260911",
  "venues": [
   {
    "code": "ACAS",
@@ -282,26 +282,26 @@
  ],
  "formats": [
   "2D",
-  "ATMOS",
   "DOLBY 7.1",
-  "RECLINER",
+  "ATMOS",
   "BARCO FLAGSHIP LASER DOLBY ATMOS",
   "VIP SCREEN",
+  "RECLINER",
   "PLAYHOUSE",
   "LASER DOLBY 7.1",
   "PCX SCREEN",
   "BARCO LASER 4K ATMOS",
+  "INFINITY VISION DOLBY ATMOS",
   "DOLBY ATMOS",
   "4K DOLBY ATMOS",
-  "INFINITY VISION DOLBY ATMOS",
-  "2K",
   "4K DOLBY 7.1",
+  "2K",
   "PXL",
   "4K",
   "Infinity Vision Dolby Atmos",
   "LASER & 7.1",
-  "2K AIR COOLED",
   "Barco Dolby 7.1",
+  "2K AIR COOLED",
   "BARCO 4K SMART LASER",
   "SCREEN 4",
   "AIR COOLED",
@@ -314,15 +314,17 @@
   "LALITHA AIR CONDITIONED",
   "LAXMIKALA DOLBY ATMOS BARCO LASER",
   "Gold 4K & Dolby 7.1",
-  "LED SCREEN DOLBY ATMOS",
   "LASER DOLBY DIGITAL 7.1",
+  "LED SCREEN DOLBY ATMOS",
   "SCREEN 3",
   "CHANDRAKALA AIR COOLED",
-  "Dolby Atmos"
+  "Dolby Atmos",
+  "DOLBY ATMOS RGB LASER",
+  "Barco Flat 7.1"
  ],
  "languages": [
-  "English",
   "Hindi",
+  "English",
   "Telugu",
   "Malayalam"
  ],
@@ -337,13 +339,13 @@
     "2D"
    ],
    "venues": [
-    "ACAS",
     "ALUC",
     "AMBH",
     "AACN",
     "APNS",
     "ACEV",
     "ASHN",
+    "ACAS",
     "CPHY",
     "ACPM",
     "AMCA",
@@ -364,7 +366,64 @@
     "ALUC",
     "AMBH",
     "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "SNKH",
+    "ARMH",
+    "ACHI"
+   ]
+  },
+  {
+   "code": "ET00516535",
+   "title": "Epic",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "EPIQ"
+   ],
+   "venues": [
     "ACEV"
+   ]
+  },
+  {
+   "code": "ET00506419",
+   "title": "Fall 2: Deadpoint",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH"
+   ]
+  },
+  {
+   "code": "ET00506432",
+   "title": "Haiwaan",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "SNKH",
+    "ARMH"
    ]
   },
   {
@@ -383,11 +442,11 @@
     "AACN",
     "APNS",
     "ACEV",
-    "ASHN",
     "CPHY",
-    "ACPM",
     "AMCA",
-    "SNKH"
+    "SNKH",
+    "ASHN",
+    "ACPM"
    ]
   },
   {
@@ -413,8 +472,8 @@
     "2D"
    ],
    "venues": [
-    "ACAS",
     "AMBH",
+    "ACAS",
     "ACEV",
     "ASHN",
     "AACN",
@@ -442,10 +501,11 @@
     "CPHY",
     "ACPM",
     "AMCA",
-    "SNKH",
     "AMCM",
+    "ARMH",
     "ARYH",
-    "ACHI"
+    "ACHI",
+    "SNKH"
    ]
   },
   {
@@ -459,6 +519,19 @@
    ],
    "venues": [
     "ACEV"
+   ]
+  },
+  {
+   "code": "ET00515521",
+   "title": "Last Man in Tower",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN"
    ]
   },
   {
@@ -488,6 +561,30 @@
    ]
   },
   {
+   "code": "ET00434922",
+   "title": "Mahendragiri Varahi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "SNKH",
+    "ARMH",
+    "ACHI"
+   ]
+  },
+  {
    "code": "ET00442702",
    "title": "Mandaadi",
    "languages": [
@@ -497,9 +594,9 @@
     "2D"
    ],
    "venues": [
-    "AMBH",
     "AACN",
-    "APNS"
+    "APNS",
+    "AMBH"
    ]
   },
   {
@@ -517,13 +614,13 @@
     "AMBH",
     "AACN",
     "APNS",
-    "ACEV",
     "ASHN",
     "CPHY",
     "ACPM",
     "AMCA",
     "ARMH",
-    "ACHI"
+    "ACHI",
+    "ACEV"
    ]
   },
   {
@@ -563,6 +660,7 @@
    ],
    "venues": [
     "ACAS",
+    "ALUC",
     "AMBH",
     "AACN",
     "APNS",
@@ -586,12 +684,13 @@
    ],
    "venues": [
     "ALUC",
-    "AMBH",
     "AACN",
     "APNS",
-    "ACEV",
+    "ASHN",
     "AMCA",
-    "SNKH"
+    "SNKH",
+    "AMBH",
+    "ACEV"
    ]
   },
   {
@@ -604,10 +703,10 @@
     "2D"
    ],
    "venues": [
+    "CPHY",
     "ACAS",
     "ACEV",
     "ASHN",
-    "CPHY",
     "ACPM"
    ]
   },
@@ -616,6 +715,19 @@
    "title": "PAW Patrol: The Dino Movie",
    "languages": [
     "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN"
+   ]
+  },
+  {
+   "code": "ET00512696",
+   "title": "Pradhama Drishtiya Kuttakkar",
+   "languages": [
+    "Malayalam"
    ],
    "dimensions": [
     "2D"
@@ -653,8 +765,9 @@
     "APNS",
     "ACEV",
     "ASHN",
-    "CPHY",
     "ACPM",
+    "ARMH",
+    "CPHY",
     "AMCA",
     "SNKH"
    ]
@@ -669,6 +782,7 @@
     "2D"
    ],
    "venues": [
+    "ACPM",
     "ACEV"
    ]
   },
@@ -682,9 +796,9 @@
     "2D"
    ],
    "venues": [
-    "ACAS",
     "AMBH",
     "AACN",
+    "ACAS",
     "APNS"
    ]
   },
@@ -708,6 +822,7 @@
     "CPHY",
     "ACPM",
     "AMCA",
+    "SNKH",
     "AMCM",
     "ARMH",
     "ACHI"
@@ -767,5 +882,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-09T09:25:38+00:00"
+ "generated_at": "2026-09-10T00:35:20+00:00"
 }

@@ -1,7 +1,7 @@
 {
  "city": "mumbai",
  "name": "Mumbai",
- "sampled_date": "20260910",
+ "sampled_date": "20260911",
  "venues": [
   {
    "code": "ONEB",
@@ -82,6 +82,10 @@
   {
    "code": "FNCM",
    "name": "Fun Cinemas: K Star Mall, Chembur"
+  },
+  {
+   "code": "FQSA",
+   "name": "Fun Square Cinema: Sanpada"
   },
   {
    "code": "GDTH",
@@ -170,6 +174,10 @@
   {
    "code": "KTMV",
    "name": "KT Vision Cinema: Vasai (Screens)"
+  },
+  {
+   "code": "KKUI",
+   "name": "KT Vision Cinema: Vasai(Screen 1)"
   },
   {
    "code": "IMJW",
@@ -418,35 +426,35 @@
  ],
  "formats": [
   "2D",
+  "Renovated",
   "INSIGNIA",
   "LASER",
-  "Renovated",
   "Atmos",
   "KOTAK INSIGNIA",
-  "2K LASER DOLBY 7.1",
-  "LUXE",
-  "Dolby 5.1",
   "Newly Renovated",
+  "LUXE",
   "ATMOS",
+  "2K LASER DOLBY 7.1",
   "4K LASER DOLBY",
-  "KOTAK LUXE",
-  "AUROMAX",
-  "DOLBY ATMOS",
+  "Dolby 5.1",
   "PXL",
+  "KOTAK LUXE",
+  "IMAX",
+  "DOLBY ATMOS",
   "DOLBY 7.1",
-  "KIDDLES",
-  "PLAYHOUSE",
-  "AQUA",
+  "AUROMAX",
   "MAXUS PLUS",
+  "PLAYHOUSE",
+  "KIDDLES",
+  "AQUA",
+  "AMPLIX",
   "Gold Class",
   "DOLBY - SOFA",
   "ONYX DINER",
-  "AMPLIX",
-  "Emerald Class",
   "AMOR BY DEVGN CINEX",
+  "Emerald Class",
   "DIRECTOR LOUNGE",
   "Sofa Seat",
-  "IMAX",
   "DOLBY 9.5",
   "Madhuban",
   "LASER / DOLBY 7.1",
@@ -456,8 +464,8 @@
   "JIO DRIVEIN"
  ],
  "languages": [
-  "Malayalam",
   "Hindi",
+  "Malayalam",
   "English"
  ],
  "movies": [
@@ -485,10 +493,10 @@
     "2D"
    ],
    "venues": [
-    "BMXC",
-    "THAB",
     "CPVM",
-    "CSWO"
+    "CSWO",
+    "BMXC",
+    "THAB"
    ]
   },
   {
@@ -505,6 +513,42 @@
    ]
   },
   {
+   "code": "ET00510459",
+   "title": "Dwidha",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "BRVP"
+   ]
+  },
+  {
+   "code": "ET00506432",
+   "title": "Haiwaan",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KURL",
+    "KKMB",
+    "BMXC",
+    "BMXA",
+    "CAGL",
+    "FNAN",
+    "THAB",
+    "CPVM",
+    "CPNM",
+    "CSWO",
+    "CPVV"
+   ]
+  },
+  {
    "code": "ET00507738",
    "title": "Hanuman Ansh",
    "languages": [
@@ -518,7 +562,6 @@
     "AAAS",
     "KKMB",
     "BMXC",
-    "BMXA",
     "CTRR",
     "CAGL",
     "FNAN",
@@ -526,7 +569,8 @@
     "CPVM",
     "CPNM",
     "CSWO",
-    "CPVV"
+    "CPVV",
+    "BMXA"
    ]
   },
   {
@@ -608,7 +652,8 @@
     "4DX"
    ],
    "venues": [
-    "CPVM"
+    "CPVM",
+    "CSWO"
    ]
   },
   {
@@ -639,6 +684,20 @@
    ]
   },
   {
+   "code": "ET00434922",
+   "title": "Mahendragiri Varahi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
    "code": "ET00442702",
    "title": "Mandaadi",
    "languages": [
@@ -648,6 +707,8 @@
     "2D"
    ],
    "venues": [
+    "CPVM",
+    "CSWO",
     "KKMB"
    ]
   },
@@ -716,11 +777,12 @@
     "2D"
    ],
    "venues": [
-    "BMXC",
-    "CAGL",
     "THAB",
     "CPVM",
-    "CSWO"
+    "CPNM",
+    "CSWO",
+    "BMXC",
+    "CAGL"
    ]
   },
   {
@@ -773,6 +835,7 @@
     "4DX 3D"
    ],
    "venues": [
+    "CPVM",
     "CSWO"
    ]
   },
@@ -826,14 +889,14 @@
     "2D"
    ],
    "venues": [
+    "CPVM",
+    "CSWO",
     "KURL",
     "KKMB",
     "BMXC",
-    "BMXA",
-    "CPVM",
-    "CSWO"
+    "BMXA"
    ]
   }
  ],
- "generated_at": "2026-09-09T09:25:38+00:00"
+ "generated_at": "2026-09-10T00:35:20+00:00"
 }

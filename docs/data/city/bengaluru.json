@@ -1,7 +1,7 @@
 {
  "city": "bengaluru",
  "name": "Bengaluru",
- "sampled_date": "20260910",
+ "sampled_date": "20260911",
  "venues": [
   {
    "code": "ATGN",
@@ -154,6 +154,10 @@
   {
    "code": "KCBI",
    "name": "Kamakya 4K Dolby Atmos 3D A/C Cinema: Banashankari"
+  },
+  {
+   "code": "KINO",
+   "name": "Kino Cinemas: Seegehalli Kadugodi, Bengaluru"
   },
   {
    "code": "SMHP",
@@ -419,40 +423,40 @@
  "formats": [
   "2D",
   "DOLBY 7.1",
+  "GOLD",
+  "ATMOS",
   "LASER",
   "2K LASER DOLBY 7.1",
   "4K DOLBY 7.1",
-  "GOLD",
   "4K ATMOS",
-  "ATMOS",
-  "INSIGNIA",
   "Couple Seats",
+  "LASER ATMOS",
+  "INSIGNIA",
+  "PXL",
+  "LUXE",
   "PLAYHOUSE",
   "QSC 5.1",
-  "LASER ATMOS",
-  "LUXE",
-  "Atmos",
-  "JUNIOR",
-  "PXL",
   "4K LASER DOLBY 7.1",
-  "SCREEN X",
+  "JUNIOR",
+  "Atmos",
   "4K DOLBY ATMOS",
+  "SCREEN X",
   "4K LASER ATMOS MACRO XE",
-  "DOLBY 7.1 (2K PROJECTER)",
   "BARCO LASER PROJECTION",
-  "CLUB",
   "KOTAK INSIGNIA",
+  "DOLBY 7.1 (2K PROJECTER)",
+  "CLUB",
   "DINE-IN",
+  "BIGPIX",
   "4K RGB LASER",
   "LASER DOLBY ATMOS",
   "LASER DOLBY 7.1",
   "RGB LASER 4K ATMOS",
-  "BIGPIX",
   "ONYX LED SCREEN",
   "4K DOLBY 7.1 A/C",
+  "BARCO LASER DOLBY ATMOS",
   "4K Dolby 11.5",
   "KIDDLES",
-  "BARCO LASER DOLBY ATMOS",
   "4K QSC 7.1",
   "4K QSC 5.1",
   "ATMOS REAL D",
@@ -464,12 +468,13 @@
   "LASER QSC 7.1",
   "IMAX",
   "4K DOLBY  ATMOS",
+  "LASER 2K",
   "1.90:1 LARGE SCREEN FORMAT"
  ],
  "languages": [
+  "Hindi",
   "Malayalam",
   "English",
-  "Hindi",
   "Kannada"
  ],
  "movies": [
@@ -487,6 +492,20 @@
    ]
   },
   {
+   "code": "ET00516253",
+   "title": "Aasha",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CLGM",
+    "CFBS"
+   ]
+  },
+  {
    "code": "ET00511528",
    "title": "America America 2",
    "languages": [
@@ -496,7 +515,15 @@
     "2D"
    ],
    "venues": [
-    "ACKB"
+    "ACKB",
+    "ASTB",
+    "CEHR",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE",
+    "CNRM",
+    "CPJR"
    ]
   },
   {
@@ -524,12 +551,12 @@
    "venues": [
     "ACKB",
     "CEHR",
-    "CVLG",
     "CLGM",
     "CFBS",
     "CPOE",
     "CNRM",
-    "CPJR"
+    "CPJR",
+    "CVLG"
    ]
   },
   {
@@ -543,6 +570,19 @@
    ],
    "venues": [
     "ACKB"
+   ]
+  },
+  {
+   "code": "ET00509404",
+   "title": "Dahaan: The Evil Within",
+   "languages": [
+    "Odia"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CFBS"
    ]
   },
   {
@@ -561,6 +601,26 @@
    ]
   },
   {
+   "code": "ET00506432",
+   "title": "Haiwaan",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CEHR",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE",
+    "CNRM",
+    "CPJR"
+   ]
+  },
+  {
    "code": "ET00507738",
    "title": "Hanuman Ansh",
    "languages": [
@@ -573,13 +633,13 @@
     "ATGN",
     "ACKB",
     "CEHR",
-    "CVLG",
     "CPEB",
     "CLGM",
     "CFBS",
     "CPOE",
     "CNRM",
-    "CPJR"
+    "CPJR",
+    "CVLG"
    ]
   },
   {
@@ -593,10 +653,10 @@
    ],
    "venues": [
     "CPEB",
-    "CLGM",
     "CFBS",
     "CPOE",
-    "CNRM"
+    "CNRM",
+    "CLGM"
    ]
   },
   {
@@ -609,6 +669,8 @@
     "2D"
    ],
    "venues": [
+    "CLGM",
+    "CFBS",
     "CEHR"
    ]
   },
@@ -636,12 +698,12 @@
    ],
    "venues": [
     "ACKB",
-    "CEHR",
     "CPEB",
     "CLGM",
     "CFBS",
     "CPOE",
     "CNRM",
+    "CEHR",
     "CPJR"
    ]
   },
@@ -656,6 +718,7 @@
    ],
    "venues": [
     "CLGM",
+    "CPOE",
     "CNRM"
    ]
   },
@@ -688,7 +751,8 @@
     "CPEB",
     "CLGM",
     "CFBS",
-    "CNRM"
+    "CNRM",
+    "CPJR"
    ]
   },
   {
@@ -718,6 +782,25 @@
    ]
   },
   {
+   "code": "ET00434922",
+   "title": "Mahendragiri Varahi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CEHR",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CNRM",
+    "CPJR"
+   ]
+  },
+  {
    "code": "ET00442702",
    "title": "Mandaadi",
    "languages": [
@@ -734,10 +817,10 @@
     "CEHR",
     "CPEB",
     "CLGM",
-    "CFBS",
     "CPOE",
     "CNRM",
-    "CPJR"
+    "CPJR",
+    "CFBS"
    ]
   },
   {
@@ -822,8 +905,21 @@
     "CLGM",
     "CFBS",
     "CPOE",
-    "CNRM",
-    "CPJR"
+    "CPJR",
+    "CNRM"
+   ]
+  },
+  {
+   "code": "ET00513400",
+   "title": "Namma Range Rover",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPEB"
    ]
   },
   {
@@ -849,9 +945,22 @@
     "2D"
    ],
    "venues": [
-    "CLGM",
     "CFBS",
+    "CLGM",
     "CNRM"
+   ]
+  },
+  {
+   "code": "ET00512696",
+   "title": "Pradhama Drishtiya Kuttakkar",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CEHR"
    ]
   },
   {
@@ -884,6 +993,19 @@
    ]
   },
   {
+   "code": "ET00512390",
+   "title": "Saalagaarara Sahakara Sangha",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
    "code": "ET00440190",
    "title": "Sardar 2",
    "languages": [
@@ -897,13 +1019,13 @@
     "BHAC",
     "CHTH",
     "CEHR",
-    "CVLG",
     "CPEB",
     "CLGM",
     "CFBS",
     "CPOE",
-    "CNRM",
-    "CPJR"
+    "CPJR",
+    "CVLG",
+    "CNRM"
    ]
   },
   {
@@ -958,8 +1080,8 @@
    ],
    "venues": [
     "CLGM",
-    "CPOE",
     "CNRM",
+    "CPOE",
     "CPJR"
    ]
   },
@@ -1055,6 +1177,24 @@
    ]
   },
   {
+   "code": "ET00514378",
+   "title": "Video",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CEHR",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPJR"
+   ]
+  },
+  {
    "code": "ET00489815",
    "title": "Vishwanath and Sons",
    "languages": [
@@ -1083,5 +1223,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-09T09:25:38+00:00"
+ "generated_at": "2026-09-10T00:35:20+00:00"
 }

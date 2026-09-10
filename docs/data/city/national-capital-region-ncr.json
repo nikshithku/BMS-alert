@@ -1,7 +1,7 @@
 {
  "city": "national-capital-region-ncr",
  "name": "Delhi NCR",
- "sampled_date": "20260910",
+ "sampled_date": "20260911",
  "venues": [
   {
    "code": "ONEG",
@@ -552,83 +552,83 @@
   "2D",
   "2K LASER DOLBY 7.1",
   "DIRECTORS CUT",
-  "LASER",
   "INSIGNIA",
-  "Laser Projector",
-  "2K DOLBY 7.1",
-  "GOLD",
   "KOTAK INSIGNIA",
-  "Laser & 7.1",
+  "LASER",
   "IMAX",
+  "Laser & 7.1",
+  "GOLD",
+  "PXL",
   "DOLBY 7.1",
   "EMINENCE CUT RECLINER",
   "EUROPA LUX",
   "DOLBY SLS 7.1",
-  "Renovated",
-  "PXL",
-  "DOLBY ATMOS",
   "ATMOS",
+  "Renovated",
+  "Laser Projector",
+  "2K DOLBY 7.1",
+  "DOLBY ATMOS",
   "4K DOLBY",
-  "DOLBY 7.1 (2K PROJECTOR",
-  "2K DOLBY",
-  "Laser",
+  "LASER & 7.1",
   "PLAYHOUSE",
   "Atmos",
   "NORMAL",
-  "LASER & 7.1",
+  "DOLBY 7.1 (2K PROJECTOR",
+  "2K DOLBY",
+  "Laser",
   "LASER 2K",
   "2K LASER",
-  "7.1",
-  "KOTAK LUXE",
-  "ICE",
-  "LUXE",
   "LASER DOLBY ATMOS",
   "MAXX SCREEN",
+  "LUXE",
+  "KOTAK LUXE",
+  "ICE",
   "AMOR BY DEVGN CINEX",
+  "7.1",
   "DOLBY",
   "LASER DOLBY",
+  "RITZ DOLBY 7.1",
+  "4K ATMOS",
   "Laser Dolby",
   "Largest Screen",
-  "RITZ DOLBY 7.1",
+  "OPERA DOLBY 7.1",
   "RECLINER LASER ATMOS",
-  "4K ATMOS",
   "New Audi",
   "EMINENCE-CUT RECLINER",
   "RECLINER ATMOS",
-  "OPERA DOLBY 7.1",
   "Maximum-Atmos",
   "SIGNATURE RECLINER",
   "4DX",
   "BROADWAY DOLBY 7.1",
   "LARGEST SCN DOLBY",
-  "DTSx",
   "ONYX",
-  "4K LASER ATMOS",
   "BIGPIX",
+  "DTSx",
+  "4K LASER ATMOS",
   "VIP GOLD CLASS",
   "Laser Atmos",
   "MACRO XE",
   "2K BIG SCREEN",
-  "4K",
   "Dolby Atmos",
+  "4K",
   "Gold Class",
   "LEGACY DOLBY 7.1",
+  "LASER 9K",
   "LASER & DOLBY",
   "4K LASER",
   "Dolby Digital",
   "LARGE SCREEN",
-  "LASER 9K",
   "4K DOLBY OG 7.1",
+  "DIAMOND",
   "5.1",
   "Elysium By Cineport",
   "2K/Dolby",
-  "DIAMOND",
   "JUNIOR"
  ],
  "languages": [
+  "Hindi",
   "English",
-  "Malayalam",
-  "Hindi"
+  "Malayalam"
  ],
  "movies": [
   {
@@ -643,6 +643,29 @@
    "venues": [
     "CPGV",
     "CIPS"
+   ]
+  },
+  {
+   "code": "ET00506432",
+   "title": "Haiwaan",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMCD",
+    "CRGM",
+    "CUNT",
+    "FNSD",
+    "CIPS",
+    "CPGV",
+    "CNVG",
+    "CIJA",
+    "SPIA",
+    "CPMF",
+    "CPNS"
    ]
   },
   {
@@ -740,6 +763,7 @@
    ],
    "venues": [
     "CRGM",
+    "CIPS",
     "SPIA"
    ]
   },
@@ -757,7 +781,6 @@
     "AKRC",
     "AKRF",
     "AMCD",
-    "BCWG",
     "BTFD",
     "CRGM",
     "CUNT",
@@ -768,7 +791,8 @@
     "CIJA",
     "SPIA",
     "CPMF",
-    "CPNS"
+    "CPNS",
+    "BCWG"
    ]
   },
   {
@@ -782,6 +806,20 @@
    ],
    "venues": [
     "CRGM"
+   ]
+  },
+  {
+   "code": "ET00440190",
+   "title": "Sardar 2",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CRGM",
+    "CIPS"
    ]
   },
   {
@@ -808,6 +846,7 @@
     "3D"
    ],
    "venues": [
+    "CPNS",
     "CRGM"
    ]
   },
@@ -852,5 +891,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-09T09:25:38+00:00"
+ "generated_at": "2026-09-10T00:35:20+00:00"
 }

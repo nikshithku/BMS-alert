@@ -1,7 +1,7 @@
 {
  "city": "pune",
  "name": "Pune",
- "sampled_date": "20260910",
+ "sampled_date": "20260911",
  "venues": [
   {
    "code": "CPAR",
@@ -202,39 +202,54 @@
   "QSC 7.1",
   "LASER & 7.1",
   "DIRECTORS CUT",
-  "4K DOLBY",
   "DOLBY ATMOS",
-  "Atmos",
-  "GOLD",
   "Renovated",
+  "Atmos",
+  "4K DOLBY",
   "KOTAK INSIGNIA",
-  "DOLBY 950",
   "ATMOS",
+  "QSC 7.1 RECLINER",
   "INSIGNIA",
+  "GOLD",
   "SPECTRA X",
   "PREMIER",
-  "QSC 7.1 RECLINER",
-  "KIDDLES",
   "4K ATMOS",
+  "DOLBY 950",
+  "KIDDLES",
   "EPIQ ATMOS 64 CH",
-  "4K DOLBY ATMOS",
   "PXL",
-  "4K DOLBY 7.1",
   "Newly Opened",
+  "4K DOLBY 7.1",
   "DOLBY ATMOS 4K LASER",
+  "4K DOLBY ATMOS",
   "ELEGANZA ATMOS",
   "Now Renovated",
-  "ELEGANZA",
   "COUPLE SEATS",
+  "IMAX",
+  "ELEGANZA",
   "DOLBY CINEMA"
  ],
  "languages": [
   "Hindi",
   "English",
+  "Tamil",
   "Malayalam",
   "Telugu"
  ],
  "movies": [
+  {
+   "code": "ET00516253",
+   "title": "Aasha",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
   {
    "code": "ET00003076",
    "title": "Andaz Apna Apna",
@@ -259,8 +274,8 @@
     "2D"
    ],
    "venues": [
-    "CPAR",
     "PUNB",
+    "CPAR",
     "CYKR",
     "CTMP"
    ]
@@ -295,6 +310,19 @@
    ]
   },
   {
+   "code": "ET00513649",
+   "title": "Bhata",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR"
+   ]
+  },
+  {
    "code": "ET00452553",
    "title": "Dhamaal 4",
    "languages": [
@@ -321,6 +349,31 @@
    ]
   },
   {
+   "code": "ET00506432",
+   "title": "Haiwaan",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "ASHC",
+    "ESBW",
+    "CKPP",
+    "CNWE",
+    "PUNB",
+    "PUVB",
+    "CPRP",
+    "CYKR",
+    "CTMP",
+    "CTRD",
+    "CTSR",
+    "CLTP"
+   ]
+  },
+  {
    "code": "ET00507738",
    "title": "Hanuman Ansh",
    "languages": [
@@ -331,7 +384,7 @@
    ],
    "venues": [
     "CPAR",
-    "ESBW",
+    "ASHC",
     "CMVP",
     "CKPP",
     "CNWE",
@@ -342,7 +395,8 @@
     "CPKT",
     "CTMP",
     "CTSR",
-    "CLTP"
+    "CLTP",
+    "ESBW"
    ]
   },
   {
@@ -370,6 +424,7 @@
    ],
    "venues": [
     "CNWE",
+    "PUNB",
     "CPKT",
     "CYKR"
    ]
@@ -403,6 +458,19 @@
    ]
   },
   {
+   "code": "ET00511235",
+   "title": "Insidious: Out of The Further",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
    "code": "ET00487933",
    "title": "Irumudi",
    "languages": [
@@ -413,6 +481,24 @@
    ],
    "venues": [
     "CTMP"
+   ]
+  },
+  {
+   "code": "ET00505232",
+   "title": "Jayanti 2",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "CKPP",
+    "CPRP",
+    "CYKR",
+    "CTMP",
+    "CTSR"
    ]
   },
   {
@@ -430,6 +516,20 @@
    ]
   },
   {
+   "code": "ET00515521",
+   "title": "Last Man in Tower",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "CYKR"
+   ]
+  },
+  {
    "code": "ET00500543",
    "title": "Mahaprabhu Jagannath",
    "languages": [
@@ -444,6 +544,32 @@
    ]
   },
   {
+   "code": "ET00434922",
+   "title": "Mahendragiri Varahi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00514739",
+   "title": "Mahendragiri Varahi",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CYKR"
+   ]
+  },
+  {
    "code": "ET00442702",
    "title": "Mandaadi",
    "languages": [
@@ -453,6 +579,7 @@
     "2D"
    ],
    "venues": [
+    "CNWE",
     "PUNB"
    ]
   },
@@ -480,8 +607,6 @@
    ],
    "venues": [
     "CPAR",
-    "ASHC",
-    "ESBW",
     "CKPP",
     "CNWE",
     "PUNB",
@@ -493,7 +618,9 @@
     "CTMP",
     "CTRD",
     "CTSR",
-    "CLTP"
+    "CLTP",
+    "ASHC",
+    "ESBW"
    ]
   },
   {
@@ -574,7 +701,8 @@
    ],
    "venues": [
     "CNWE",
-    "PUNB"
+    "PUNB",
+    "CYKR"
    ]
   },
   {
@@ -614,8 +742,8 @@
     "3D"
    ],
    "venues": [
-    "CNWE",
     "CPKT",
+    "CNWE",
     "CLTP"
    ]
   },
@@ -629,8 +757,8 @@
     "3D"
    ],
    "venues": [
-    "CPAR",
     "CNWE",
+    "CPAR",
     "CTMP"
    ]
   },
@@ -700,6 +828,19 @@
    ]
   },
   {
+   "code": "ET00480917",
+   "title": "The Odyssey",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "IMAX 2D"
+   ],
+   "venues": [
+    "CNWE"
+   ]
+  },
+  {
    "code": "ET00504055",
    "title": "The Odyssey",
    "languages": [
@@ -723,17 +864,17 @@
    ],
    "venues": [
     "CPAR",
-    "CKPP",
-    "CNWE",
     "PUNB",
-    "CPRP",
     "CYKR",
     "CPKT",
     "CTMP",
+    "CKPP",
+    "CNWE",
+    "CPRP",
     "CTRD",
     "CLTP"
    ]
   }
  ],
- "generated_at": "2026-09-09T09:25:38+00:00"
+ "generated_at": "2026-09-10T00:35:20+00:00"
 }
