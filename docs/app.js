@@ -18,10 +18,12 @@ import { CONTRACT, fromIssueBody, parseLink, toIssueBody } from "./issue-body.js
  * Exists because the city list is ~2,000 entries: a plain <select> is unusable
  * at that size, and a <datalist> can't show poster art or be styled.
  */
-function combobox(rootId, inputId, listId, { onPick, render, placeholder }) {
+function combobox(rootId, inputId, listId, { onPick, onInput, render, placeholder }) {
   const root = $(`#${rootId}`);
   const input = $(`#${inputId}`);
   const list = $(`#${listId}`);
+  const status = el("span", { className: "visually-hidden", role: "status", ariaLive: "polite" });
+  root.append(status);
   let items = [];
   let filtered = [];
   let active = -1;
@@ -29,11 +31,11 @@ function combobox(rootId, inputId, listId, { onPick, render, placeholder }) {
   const close = () => {
     list.hidden = true;
     input.setAttribute("aria-expanded", "false");
+    input.removeAttribute("aria-activedescendant");
     active = -1;
   };
 
   const open = () => {
-    if (!filtered.length) return;
     list.hidden = false;
     input.setAttribute("aria-expanded", "true");
   };
@@ -41,12 +43,25 @@ function combobox(rootId, inputId, listId, { onPick, render, placeholder }) {
   function draw() {
     list.replaceChildren();
     if (!filtered.length) {
-      list.append(el("li", { className: "combo__opt combo__opt--empty", textContent: "No matches" }));
+      list.append(
+        el("li", {
+          className: "combo__opt combo__opt--empty",
+          role: "option",
+          ariaDisabled: "true",
+          textContent: "No matches",
+        })
+      );
+      input.removeAttribute("aria-activedescendant");
+      status.textContent = "No matches";
       open();
       return;
     }
-    filtered.slice(0, 60).forEach((item, i) => {
+
+    const visible = filtered.slice(0, 60);
+    visible.forEach((item, i) => {
+      const optionId = `${listId}-option-${i}`;
       const li = el("li", {
+        id: optionId,
         className: "combo__opt",
         role: "option",
         ariaSelected: String(i === active),
@@ -59,6 +74,11 @@ function combobox(rootId, inputId, listId, { onPick, render, placeholder }) {
       render(li, item);
       list.append(li);
     });
+    if (active >= 0) input.setAttribute("aria-activedescendant", `${listId}-option-${active}`);
+    else input.removeAttribute("aria-activedescendant");
+    status.textContent = `${visible.length} result${visible.length === 1 ? "" : "s"}${
+      filtered.length > visible.length ? ` shown of ${filtered.length}` : ""
+    }`;
     open();
   }
 
@@ -67,7 +87,7 @@ function combobox(rootId, inputId, listId, { onPick, render, placeholder }) {
     filtered = !needle
       ? items
       : items.filter((it) => api.text(it).toLowerCase().includes(needle));
-    active = filtered.length ? 0 : -1;
+    active = -1;
     draw();
   }
 
@@ -80,7 +100,10 @@ function combobox(rootId, inputId, listId, { onPick, render, placeholder }) {
   // Deliberately no open-on-focus. With ~2,000 cities, dropping the whole list
   // open the moment the field is focused reads as a broken page rather than a
   // helpful one. Typing filters; ArrowDown opens deliberately.
-  input.addEventListener("input", () => filter(input.value));
+  input.addEventListener("input", () => {
+    onInput?.();
+    filter(input.value);
+  });
   input.addEventListener("blur", () => setTimeout(close, 120));
 
   input.addEventListener("keydown", (e) => {
@@ -107,11 +130,12 @@ function combobox(rootId, inputId, listId, { onPick, render, placeholder }) {
   const api = {
     text: (item) => String(item),
     setItems(next, { enabled = true, hint } = {}) {
-      items = next;
-      filtered = next;
+      items = Array.isArray(next) ? next : [];
+      filtered = items;
       input.disabled = !enabled;
       if (hint !== undefined) input.placeholder = hint;
       else if (placeholder) input.placeholder = placeholder;
+      close();
     },
     setText(v) {
       input.value = v || "";
@@ -394,7 +418,10 @@ const state = {
   editing: null,
   confirmFn: null,
   city: null, // chosen city slug
+  cityData: null, // dynamically loaded per-city catalog
+  cityLoadId: 0, // guards against slow, stale city requests
   movie: null, // chosen movie object
+  movieOptions: [],
   venues: [], // chosen venue names
 };
 
@@ -402,17 +429,35 @@ let cityCombo;
 let movieCombo;
 let venueCombo;
 
+function uniqueValues(values) {
+  const seen = new Set();
+  return (values || [])
+    .map((value) => String(value || "").trim().replace(/\s+/g, " "))
+    .filter((value) => {
+      const key = value.toLocaleLowerCase();
+      if (!value || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+}
+
+function prioritizedValues(primary, all) {
+  return uniqueValues([...(primary || []), ...(all || [])]);
+}
+
 /** Toggle chips built from a list of strings. */
-function buildChipGroup(boxId, values, { scroll = false } = {}) {
+function buildChipGroup(boxId, values, { scroll = false, selected = [] } = {}) {
   const box = $(`#${boxId}`);
-  box.classList.toggle("chips--scroll", scroll && values.length > 14);
+  const selectedKeys = new Set(selected.map((value) => value.toLocaleLowerCase()));
+  const options = uniqueValues(values);
+  box.classList.toggle("chips--scroll", scroll && options.length > 14);
   box.replaceChildren(
-    ...values.map((v) =>
+    ...options.map((value) =>
       el("button", {
         type: "button",
         className: "chip",
-        textContent: v,
-        ariaPressed: "false",
+        textContent: value,
+        ariaPressed: String(selectedKeys.has(value.toLocaleLowerCase())),
         onclick(e) {
           const on = e.currentTarget.getAttribute("aria-pressed") === "true";
           e.currentTarget.setAttribute("aria-pressed", String(!on));
@@ -422,6 +467,25 @@ function buildChipGroup(boxId, values, { scroll = false } = {}) {
   );
 }
 
+function addSelectedChip(boxId, value) {
+  const clean = uniqueValues([value])[0];
+  if (!clean) return;
+  const box = $(`#${boxId}`);
+  const existing = $$(".chip", box).find(
+    (chip) => chip.textContent.toLocaleLowerCase() === clean.toLocaleLowerCase()
+  );
+  if (existing) {
+    existing.setAttribute("aria-pressed", "true");
+    return;
+  }
+  const selected = chosenChips(boxId);
+  const values = $$(".chip", box).map((chip) => chip.textContent);
+  buildChipGroup(boxId, [...values, clean], {
+    scroll: values.length >= 14,
+    selected: [...selected, clean],
+  });
+}
+
 function chosenChips(boxId) {
   return $$(`#${boxId} .chip[aria-pressed=true]`).map((c) => c.dataset.value ?? c.textContent);
 }
@@ -429,8 +493,9 @@ function chosenChips(boxId) {
 /** Future-only date chips. No free text, so a past date can't be entered. */
 function buildDateChips() {
   const box = $("#f-dates");
+  const dates = upcomingDates(21);
   box.replaceChildren(
-    ...upcomingDates(21).map((d) =>
+    ...dates.map((d) =>
       el(
         "button",
         {
@@ -447,7 +512,7 @@ function buildDateChips() {
       )
     )
   );
-  $$("#f-dates .chip").forEach((c, i) => (c.dataset.value = upcomingDates(21)[i].value));
+  $$("#f-dates .chip").forEach((c, i) => (c.dataset.value = dates[i].value));
 }
 
 /** Chosen cinemas, shown as removable chips. */
@@ -489,36 +554,166 @@ function renderVenueChips() {
   );
 }
 
-/** Load a city's cinemas/formats/languages into the pickers. */
-async function applyCity(slug) {
-  state.city = slug;
-  const note = $("#city-note");
+function movieMetadata(movie) {
+  return uniqueValues([...(movie.languages || []), ...(movie.dimensions || [])]).join(" · ");
+}
 
-  // Movies are national, so they're available the moment a city is chosen.
-  movieCombo.setItems(catalog.moviesForDisplay(), { hint: "Search for a movie…" });
+function moviesForCity(data) {
+  const nationalByCode = new Map(catalog.movies.map((movie) => [movie.code, movie]));
+  const local = (data?.movies || []).map((movie) => ({
+    ...nationalByCode.get(movie.code),
+    ...movie,
+    cityObserved: true,
+  }));
+  const localCodes = new Set(local.map((movie) => movie.code));
+  const national = catalog.movies
+    .filter((movie) => !localCodes.has(movie.code))
+    .map((movie) => ({ ...movie, cityObserved: false }));
+  return [...local, ...national].sort(
+    (a, b) => Number(b.cityObserved) - Number(a.cityObserved) || a.title.localeCompare(b.title)
+  );
+}
+
+function applyMovieFilters(movie, { preserve = false } = {}) {
+  if (!state.cityData) {
+    $("#movie-note").textContent = "This city is not cached yet; add filters manually if needed.";
+    return;
+  }
+
+  const data = state.cityData;
+  const selectedFormats = preserve ? chosenChips("f-formats") : [];
+  const selectedLanguages = preserve ? chosenChips("f-languages") : [];
+  if (!preserve) {
+    state.venues = [];
+    renderVenueChips();
+  }
+
+  const movieFormats = movie?.dimensions || [];
+  const movieLanguages = movie?.languages || [];
+  const venueCodes = new Set(movie?.venues || []);
+  const movieVenues = (data.venues || []).filter((venue) => venueCodes.has(venue.code));
+  const otherVenues = (data.venues || []).filter((venue) => !venueCodes.has(venue.code));
+
+  buildChipGroup("f-formats", prioritizedValues(movieFormats, data.formats), {
+    scroll: true,
+    selected: selectedFormats,
+  });
+  buildChipGroup("f-languages", prioritizedValues(movieLanguages, data.languages), {
+    selected: selectedLanguages,
+  });
+  venueCombo.setItems([...movieVenues, ...otherVenues], {
+    enabled: data.venues.length > 0,
+    hint: data.venues.length ? `Search ${data.venues.length} cinemas…` : "No cinemas reported",
+  });
+
+  if (!movie) {
+    $("#movie-note").textContent = "Choose a movie variant to prioritize its known filters.";
+  } else if (movie.cityObserved) {
+    $("#movie-note").textContent =
+      "This variant was seen in the selected city; its known filters are listed first.";
+  } else {
+    $("#movie-note").textContent =
+      "This movie is in the national catalog; city-wide filters remain available.";
+  }
+  $("#formats-note").textContent = movieFormats.length
+    ? `${movieFormats.length} format${movieFormats.length === 1 ? "" : "s"} seen for this variant, followed by other city formats.`
+    : `${data.formats.length} formats reported across this city.`;
+  $("#languages-note").textContent = movieLanguages.length
+    ? `${movieLanguages.length} language${movieLanguages.length === 1 ? "" : "s"} seen for this variant, followed by other city languages.`
+    : `${data.languages.length} languages reported across this city.`;
+  $("#venues-note").textContent = movieVenues.length
+    ? `${movieVenues.length} cinema${movieVenues.length === 1 ? "" : "s"} seen for this variant, followed by other city cinemas.`
+    : `${data.venues.length} cinemas reported across this city.`;
+}
+
+/** Load a city's movies, cinemas, formats, and languages into the pickers. */
+async function applyCity(slug) {
+  const loadId = ++state.cityLoadId;
+  state.city = slug;
+  state.cityData = null;
+  state.movie = null;
+  state.movieOptions = [];
+  state.venues = [];
+  $("#f-format-manual").value = "";
+  $("#f-venue-manual").value = "";
+  $("#f-language-manual").value = "";
+
+  movieCombo.clear();
+  movieCombo.setItems([], { enabled: false, hint: "Loading city movies…" });
+  venueCombo.clear();
+  venueCombo.setItems([], { enabled: false, hint: "Loading cinemas…" });
+  buildChipGroup("f-formats", []);
+  buildChipGroup("f-languages", []);
+  renderPickedMovie();
+  renderVenueChips();
+  $("#city-note").textContent = "Loading this city's live catalog…";
+  $("#movie-note").textContent = "Loading movie variants…";
+  $("#formats-note").textContent = "Loading formats reported by this city's screens…";
+  $("#languages-note").textContent = "Loading languages reported by this city's movies…";
+  $("#venues-note").textContent = "Loading cinemas…";
+  $("#lang-field").hidden = false;
 
   if (!catalog.hasCity(slug)) {
-    note.textContent =
-      "No cinema list for this city yet. Formats and cinemas will be open text until the catalog picks it up — or hit Refresh catalog in Settings.";
-    buildChipGroup("f-formats", CONTRACT.formats, { scroll: true });
-    buildChipGroup("f-languages", ["Hindi", "English", "Tamil", "Telugu", "Kannada", "Malayalam"]);
-    venueCombo.setItems([], { enabled: false, hint: "No cinema list for this city yet" });
+    state.movieOptions = catalog.moviesForDisplay();
+    movieCombo.setItems(state.movieOptions, {
+      enabled: state.movieOptions.length > 0,
+      hint: "Search the national movie catalog…",
+    });
+    $("#city-note").textContent =
+      "This city is not cached yet. Movies remain searchable; add formats, cinemas, or languages manually while its catalog is built.";
+    $("#movie-note").textContent = "Showing the dynamically generated national movie catalog.";
+    $("#formats-note").textContent = "No city formats are available yet; add one manually if you need a filter.";
+    $("#languages-note").textContent = "No city languages are available yet; add one manually if you need a filter.";
+    $("#venues-note").textContent = "No city cinemas are available yet; add one manually if you need a filter.";
     maybeRequestCity(slug);
     return;
   }
 
   const data = await catalog.city(slug);
+  if (loadId !== state.cityLoadId || slug !== state.city) return;
   if (!data) {
-    note.textContent = "Couldn't load this city's cinemas.";
+    state.movieOptions = catalog.moviesForDisplay();
+    movieCombo.setItems(state.movieOptions, {
+      enabled: state.movieOptions.length > 0,
+      hint: "Search the national movie catalog…",
+    });
+    $("#city-note").textContent =
+      "Couldn't load this city's catalog. Movies are still available; filters can be added manually.";
+    $("#movie-note").textContent = "Showing the dynamically generated national movie catalog.";
+    $("#formats-note").textContent = "City formats failed to load; add one manually if needed.";
+    $("#languages-note").textContent = "City languages failed to load; add one manually if needed.";
+    $("#venues-note").textContent = "City cinemas failed to load; add one manually if needed.";
     return;
   }
 
-  note.textContent = `${data.venues.length} cinemas · ${data.formats.length} formats seen here`;
-  buildChipGroup("f-formats", data.formats, { scroll: true });
-  buildChipGroup("f-languages", data.languages.length ? data.languages : ["Hindi", "English"]);
-  $("#lang-field").hidden = data.languages.length === 0;
-  venueCombo.setItems(data.venues, { hint: `Search ${data.venues.length} cinemas…` });
-  $("#formats-note").textContent = `Taken from what ${data.venues.length} screens in this city actually run.`;
+  state.cityData = {
+    ...data,
+    venues: Array.isArray(data.venues) ? data.venues : [],
+    formats: Array.isArray(data.formats) ? data.formats : [],
+    languages: Array.isArray(data.languages) ? data.languages : [],
+    movies: Array.isArray(data.movies) ? data.movies : [],
+  };
+  state.movieOptions = moviesForCity(state.cityData);
+  movieCombo.setItems(state.movieOptions, {
+    enabled: state.movieOptions.length > 0,
+    hint: `Search ${state.movieOptions.length} movie variants…`,
+  });
+  buildChipGroup("f-formats", state.cityData.formats, { scroll: true });
+  buildChipGroup("f-languages", state.cityData.languages);
+  venueCombo.setItems(state.cityData.venues, {
+    enabled: state.cityData.venues.length > 0,
+    hint: state.cityData.venues.length
+      ? `Search ${state.cityData.venues.length} cinemas…`
+      : "No cinemas reported",
+  });
+
+  $("#city-note").textContent =
+    `${state.cityData.movies.length} local movie variants · ${state.cityData.venues.length} cinemas · ` +
+    `${state.cityData.formats.length} formats · ${state.cityData.languages.length} languages`;
+  $("#movie-note").textContent = "City-observed variants are listed first, followed by the national catalog.";
+  $("#formats-note").textContent = `${state.cityData.formats.length} formats reported across this city.`;
+  $("#languages-note").textContent = `${state.cityData.languages.length} languages reported across this city.`;
+  $("#venues-note").textContent = `${state.cityData.venues.length} cinemas reported across this city.`;
 }
 
 /** Ask the catalog workflow to build a city we don't have yet. */
@@ -590,6 +785,18 @@ function readForm() {
   const usingDates = $("#f-datemode button[aria-checked=true]")?.dataset.mode === "dates";
   const code = state.movie?.code || "";
   const city = state.city || "";
+  const formats = uniqueValues([
+    ...chosenChips("f-formats"),
+    ...csv($("#f-format-manual").value),
+  ]);
+  const venues = uniqueValues([
+    ...state.venues,
+    ...lines($("#f-venue-manual").value),
+  ]);
+  const languages = uniqueValues([
+    ...chosenChips("f-languages"),
+    ...csv($("#f-language-manual").value),
+  ]);
 
   return {
     // Synthesised rather than typed. The slug segment is cosmetic — BookMyShow
@@ -597,10 +804,12 @@ function readForm() {
     // movie and a city is enough to build a link the parser accepts.
     url: code && city ? `https://in.bookmyshow.com/movies/${city}/x/${code}` : "",
     city,
-    formats: chosenChips("f-formats"),
+    formats,
+    // toIssueBody separates dynamic formats from the issue form's fixed
+    // checkbox options and safely persists them through Other formats.
     formatsOther: "",
-    venues: state.venues.join("\n"),
-    languages: chosenChips("f-languages").join(", "),
+    venues: venues.join("\n"),
+    languages: languages.join(", "),
     days: $("#f-days button[aria-checked=true]")?.dataset.value || CONTRACT.days[1],
     dates: usingDates ? chosenChips("f-dates").join(", ") : "",
     alert: $("#f-alert .option[aria-checked=true]")?.dataset.value || CONTRACT.alerts[2],
@@ -611,7 +820,11 @@ async function fillForm(w) {
   const { region, eventCode } = parseLink(w.url || "");
   const city = w.city || region || "";
 
-  // City first: it decides which cinemas and formats are offered.
+  $("#f-format-manual").value = "";
+  $("#f-venue-manual").value = "";
+  $("#f-language-manual").value = "";
+
+  // City first: it decides which movie variants, cinemas, and filters are offered.
   if (city) {
     const known = catalog.cities.find((c) => c.slug === city);
     cityCombo.setText(known ? known.name : city);
@@ -621,42 +834,23 @@ async function fillForm(w) {
     state.city = null;
   }
 
-  const movie = catalog.movies.find((m) => m.code === eventCode);
+  const movie = state.movieOptions.find((item) => item.code === eventCode)
+    || catalog.movies.find((item) => item.code === eventCode);
   state.movie = movie || (eventCode ? { code: eventCode, title: eventCode, poster: "" } : null);
-  movieCombo.setText(state.movie ? state.movie.title : "");
+  if (state.movie) applyMovieFilters(state.movie, { preserve: true });
+  movieCombo.setText(state.movie ? movieCombo.text(state.movie) : "");
   renderPickedMovie();
 
-  // Formats from the issue may include values this city no longer reports, so
-  // add any missing ones rather than dropping the user's existing filter.
-  const wanted = [...(w.formats || []), ...csv(w.formatsOther)];
-  const present = $$("#f-formats .chip").map((c) => c.textContent);
-  for (const f of wanted) {
-    if (!present.includes(f)) {
-      $("#f-formats").append(
-        el("button", {
-          type: "button",
-          className: "chip",
-          textContent: f,
-          ariaPressed: "false",
-          onclick(e) {
-            const on = e.currentTarget.getAttribute("aria-pressed") === "true";
-            e.currentTarget.setAttribute("aria-pressed", String(!on));
-          },
-        })
-      );
-    }
-  }
-  $$("#f-formats .chip").forEach((c) =>
-    c.setAttribute("aria-pressed", String(wanted.includes(c.textContent)))
-  );
+  // Values from an existing issue may no longer be in the sampled catalog.
+  // Append and select them instead of silently losing the user's filters.
+  const wantedFormats = [...(w.formats || []), ...csv(w.formatsOther)];
+  wantedFormats.forEach((format) => addSelectedChip("f-formats", format));
 
-  state.venues = lines(w.venues);
+  state.venues = uniqueValues(lines(w.venues));
   renderVenueChips();
 
-  const langs = csv(w.languages);
-  $$("#f-languages .chip").forEach((c) =>
-    c.setAttribute("aria-pressed", String(langs.includes(c.textContent)))
-  );
+  const wantedLanguages = csv(w.languages);
+  wantedLanguages.forEach((language) => addSelectedChip("f-languages", language));
 
   const hasDates = Boolean((w.dates || "").trim());
   setDateMode(hasDates ? "dates" : "window");
@@ -687,6 +881,9 @@ function renderPickedMovie() {
       : el("div", { className: "picked__ph", ariaHidden: "true", textContent: "🎬" }),
     el("div", { className: "picked__meta" }, [
       el("strong", { textContent: state.movie.title }),
+      movieMetadata(state.movie)
+        ? el("span", { className: "hint", textContent: movieMetadata(state.movie) })
+        : null,
       el("code", { textContent: state.movie.code }),
     ])
   );
@@ -887,24 +1084,35 @@ async function refresh() {
 async function startCreate() {
   state.editing = null;
   state.movie = null;
+  state.movieOptions = [];
   state.venues = [];
   state.city = null;
+  state.cityData = null;
+  state.cityLoadId += 1;
   $("#modal-watch-title").textContent = "New watch";
   $(".btn__label", $("#btn-save")).textContent = "Create watch";
   $("#form-error").hidden = true;
   cityCombo.clear();
   movieCombo.clear();
   movieCombo.setItems([], { enabled: false, hint: "Choose a city first" });
+  venueCombo.clear();
   venueCombo.setItems([], { enabled: false, hint: "Choose a city first" });
   renderPickedMovie();
   renderVenueChips();
   buildChipGroup("f-formats", []);
   buildChipGroup("f-languages", []);
+  $("#f-format-manual").value = "";
+  $("#f-venue-manual").value = "";
+  $("#f-language-manual").value = "";
   setDateMode("window");
   $$("#f-days button").forEach((b, i) => b.setAttribute("aria-checked", String(i === 1)));
   $$("#f-alert .option").forEach((b, i) => b.setAttribute("aria-checked", String(i === 2)));
   $$("#f-dates .chip").forEach((c) => c.setAttribute("aria-pressed", "false"));
   $("#city-note").textContent = "Pick a city to load its movies and cinemas.";
+  $("#movie-note").textContent = "Language and format variants come from the selected city's catalog.";
+  $("#formats-note").textContent = "Pick a city to load formats reported by its screens.";
+  $("#languages-note").textContent = "Pick a city to load languages reported by its movies.";
+  $("#venues-note").textContent = "Pick a city to load cinemas.";
   openModal("#modal-watch");
 }
 
@@ -939,6 +1147,24 @@ async function busy(btn, fn) {
   }
 }
 
+function wireManualEntry(inputId, buttonId, add) {
+  const input = $(`#${inputId}`);
+  const commit = () => {
+    const value = input.value.trim();
+    if (!value) return;
+    add(value);
+    input.value = "";
+    input.focus();
+  };
+  $(`#${buttonId}`).addEventListener("click", commit);
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      commit();
+    }
+  });
+}
+
 /* --- wiring -------------------------------------------------------------- */
 
 function wire() {
@@ -948,6 +1174,17 @@ function wire() {
 
   $$("[data-action=new]").forEach((b) => b.addEventListener("click", startCreate));
   $$("[data-action=settings]").forEach((b) => b.addEventListener("click", openSettings));
+
+  wireManualEntry("f-format-manual", "btn-add-format", (value) =>
+    csv(value).forEach((format) => addSelectedChip("f-formats", format))
+  );
+  wireManualEntry("f-language-manual", "btn-add-language", (value) =>
+    csv(value).forEach((language) => addSelectedChip("f-languages", language))
+  );
+  wireManualEntry("f-venue-manual", "btn-add-venue", (value) => {
+    state.venues = uniqueValues([...state.venues, value]);
+    renderVenueChips();
+  });
 
   // date mode toggle
   $$("#f-datemode button").forEach((b) =>
@@ -1126,8 +1363,25 @@ function initCombos() {
     render: (li, c) => {
       li.append(el("strong", { textContent: c.name }));
       if (catalog.hasCity(c.slug)) {
-        li.append(el("small", { textContent: "cinemas ready" }));
+        li.append(el("small", { textContent: "catalog ready" }));
       }
+    },
+    onInput: () => {
+      state.cityLoadId += 1;
+      state.city = null;
+      state.cityData = null;
+      state.movie = null;
+      state.movieOptions = [];
+      state.venues = [];
+      movieCombo.clear();
+      movieCombo.setItems([], { enabled: false, hint: "Pick a city from the results" });
+      venueCombo.clear();
+      venueCombo.setItems([], { enabled: false, hint: "Choose a city first" });
+      buildChipGroup("f-formats", []);
+      buildChipGroup("f-languages", []);
+      renderPickedMovie();
+      renderVenueChips();
+      $("#city-note").textContent = "Pick a city from the matching results.";
     },
     onPick: (c) => applyCity(c.slug),
   });
@@ -1135,34 +1389,51 @@ function initCombos() {
 
   movieCombo = combobox("combo-movie", "f-movie", "movie-list", {
     placeholder: "Search for a movie…",
-    render: (li, m) => {
+    render: (li, movie) => {
       li.append(
-        m.poster
-          ? el("img", { src: m.poster, alt: "", loading: "lazy" })
+        movie.poster
+          ? el("img", { src: movie.poster, alt: "", loading: "lazy" })
           : el("span", { textContent: "🎬", ariaHidden: "true" })
       );
-      li.append(el("strong", { textContent: m.title }));
+      const metadata = movieMetadata(movie);
+      li.append(
+        el("span", { className: "combo__meta" }, [
+          el("strong", { textContent: movie.title }),
+          metadata
+            ? el("small", { textContent: metadata })
+            : el("small", { textContent: movie.cityObserved ? "seen in this city" : "national catalog" }),
+        ])
+      );
     },
-    onPick: (m) => {
-      state.movie = m;
+    onInput: () => {
+      state.movie = null;
+      renderPickedMovie();
+      applyMovieFilters(null);
+    },
+    onPick: (movie) => {
+      state.movie = movie;
+      applyMovieFilters(movie);
       renderPickedMovie();
     },
   });
-  movieCombo.text = (m) => m.title;
+  movieCombo.text = (movie) => {
+    const metadata = movieMetadata(movie);
+    return metadata ? `${movie.title} — ${metadata}` : movie.title;
+  };
 
   venueCombo = combobox("combo-venue", "f-venue-search", "venue-list", {
     placeholder: "Search cinemas…",
-    render: (li, v) => {
-      li.append(el("strong", { textContent: v.name }));
-      li.append(el("small", { textContent: v.code }));
+    render: (li, venue) => {
+      li.append(el("strong", { textContent: venue.name }));
+      li.append(el("small", { textContent: venue.code }));
     },
-    onPick: (v) => {
-      if (!state.venues.includes(v.name)) state.venues.push(v.name);
+    onPick: (venue) => {
+      if (!state.venues.includes(venue.name)) state.venues.push(venue.name);
       renderVenueChips();
       venueCombo.clear();
     },
   });
-  venueCombo.text = (v) => v.name;
+  venueCombo.text = (venue) => venue.name;
 }
 
 async function loadCatalog() {

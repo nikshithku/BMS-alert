@@ -70,15 +70,31 @@ export function toIssueBody(w) {
   const L = CONTRACT.labels;
   const section = (label, value) => `### ${label}\n\n${value || CONTRACT.noResponse}\n`;
 
+  // The catalog can discover formats that are not fixed options in GitHub's
+  // issue form. Keep known values as checkboxes and route every discovered
+  // value through "Other formats" so the Python watcher receives all of them.
+  const knownFormats = new Set();
+  const discoveredFormats = [];
+  for (const value of w.formats || []) {
+    const format = String(value).trim();
+    const known = CONTRACT.formats.find((item) => item.toLowerCase() === format.toLowerCase());
+    if (known) knownFormats.add(known);
+    else if (format) discoveredFormats.push(format);
+  }
+  const otherFormats = [...String(w.formatsOther || "").split(","), ...discoveredFormats]
+    .map((value) => value.trim())
+    .filter((value, index, values) => value && values.indexOf(value) === index)
+    .join(", ");
+
   const checkboxes = CONTRACT.formats
-    .map((f) => `- [${(w.formats || []).includes(f) ? "x" : " "}] ${f}`)
+    .map((f) => `- [${knownFormats.has(f) ? "x" : " "}] ${f}`)
     .join("\n");
 
   return [
     section(L.url, w.url),
     section(L.city, w.city),
     `### ${L.formats}\n\n${checkboxes}\n`,
-    section(L.formatsOther, w.formatsOther),
+    section(L.formatsOther, otherFormats),
     section(L.venues, w.venues),
     section(L.languages, w.languages),
     section(L.days, w.days),

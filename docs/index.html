@@ -220,6 +220,7 @@
                 role="combobox"
                 aria-expanded="false"
                 aria-controls="city-list"
+                aria-describedby="city-note"
                 aria-autocomplete="list"
                 autocomplete="off"
                 spellcheck="false"
@@ -227,7 +228,7 @@
               />
               <ul class="combo__list" id="city-list" role="listbox" aria-label="Cities" hidden></ul>
             </div>
-            <p class="hint" id="city-note">Pick a city to load its movies and cinemas.</p>
+            <p class="hint" id="city-note" role="status">Pick a city to load its movies and cinemas.</p>
           </div>
 
           <!-- movie -->
@@ -240,6 +241,7 @@
                 role="combobox"
                 aria-expanded="false"
                 aria-controls="movie-list"
+                aria-describedby="movie-note"
                 aria-autocomplete="list"
                 autocomplete="off"
                 spellcheck="false"
@@ -248,19 +250,25 @@
               />
               <ul class="combo__list combo__list--rich" id="movie-list" role="listbox" aria-label="Movies" hidden></ul>
             </div>
+            <p class="hint" id="movie-note">Language and format variants come from the selected city's catalog.</p>
             <div class="picked" id="movie-picked" hidden></div>
           </div>
 
           <!-- formats -->
           <fieldset class="field">
             <legend>Formats <span class="opt">any, if none picked</span></legend>
-            <p class="hint" id="formats-note">Taken from what this city's screens actually run.</p>
+            <p class="hint" id="formats-note">Pick a city to load formats reported by its screens.</p>
             <div class="chips" id="f-formats" role="group" aria-label="Formats"></div>
+            <div class="input-row filter-add">
+              <input id="f-format-manual" aria-label="Add another format" placeholder="Add a format not listed" />
+              <button class="btn btn--ghost btn--sm" id="btn-add-format" type="button">Add</button>
+            </div>
           </fieldset>
 
           <!-- cinemas -->
           <fieldset class="field">
             <legend>Cinemas <span class="opt">any, if none picked</span></legend>
+            <p class="hint" id="venues-note">Pick a city to load cinemas.</p>
             <div class="combo" id="combo-venue">
               <input
                 id="f-venue-search"
@@ -268,6 +276,7 @@
                 role="combobox"
                 aria-expanded="false"
                 aria-controls="venue-list"
+                aria-describedby="venues-note"
                 aria-autocomplete="list"
                 autocomplete="off"
                 spellcheck="false"
@@ -277,12 +286,21 @@
               <ul class="combo__list" id="venue-list" role="listbox" aria-label="Cinemas" hidden></ul>
             </div>
             <div class="chips chips--picked" id="f-venues" role="group" aria-label="Chosen cinemas"></div>
+            <div class="input-row filter-add">
+              <input id="f-venue-manual" aria-label="Add another cinema" placeholder="Add a cinema not listed" />
+              <button class="btn btn--ghost btn--sm" id="btn-add-venue" type="button">Add</button>
+            </div>
           </fieldset>
 
           <!-- languages -->
           <fieldset class="field" id="lang-field">
             <legend>Languages <span class="opt">any, if none picked</span></legend>
+            <p class="hint" id="languages-note">Pick a city to load languages reported by its movies.</p>
             <div class="chips" id="f-languages" role="group" aria-label="Languages"></div>
+            <div class="input-row filter-add">
+              <input id="f-language-manual" aria-label="Add another language" placeholder="Add a language not listed" />
+              <button class="btn btn--ghost btn--sm" id="btn-add-language" type="button">Add</button>
+            </div>
           </fieldset>
 
           <!-- when -->
