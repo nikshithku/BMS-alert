@@ -1,7 +1,7 @@
 {
  "city": "bengaluru",
  "name": "Bengaluru",
- "sampled_date": "20260911",
+ "sampled_date": "20260912",
  "venues": [
   {
    "code": "ATGN",
@@ -423,9 +423,9 @@
  "formats": [
   "2D",
   "DOLBY 7.1",
+  "LASER",
   "GOLD",
   "ATMOS",
-  "LASER",
   "2K LASER DOLBY 7.1",
   "4K DOLBY 7.1",
   "4K ATMOS",
@@ -434,27 +434,27 @@
   "INSIGNIA",
   "PXL",
   "LUXE",
+  "4K LASER DOLBY 7.1",
+  "Atmos",
   "PLAYHOUSE",
   "QSC 5.1",
-  "4K LASER DOLBY 7.1",
   "JUNIOR",
-  "Atmos",
-  "4K DOLBY ATMOS",
-  "SCREEN X",
-  "4K LASER ATMOS MACRO XE",
   "BARCO LASER PROJECTION",
+  "4K DOLBY ATMOS",
   "KOTAK INSIGNIA",
   "DOLBY 7.1 (2K PROJECTER)",
-  "CLUB",
+  "SCREEN X",
+  "4K LASER ATMOS MACRO XE",
   "DINE-IN",
   "BIGPIX",
+  "CLUB",
   "4K RGB LASER",
   "LASER DOLBY ATMOS",
   "LASER DOLBY 7.1",
+  "BARCO LASER DOLBY ATMOS",
   "RGB LASER 4K ATMOS",
   "ONYX LED SCREEN",
   "4K DOLBY 7.1 A/C",
-  "BARCO LASER DOLBY ATMOS",
   "4K Dolby 11.5",
   "KIDDLES",
   "4K QSC 7.1",
@@ -463,12 +463,13 @@
   "2K LASER",
   "MB LUXE",
   "RGB LASER 4K DOLBY ATMOS",
+  "LASER QSC 7.1",
   "4K DOLBY A/C",
   "ICE",
-  "LASER QSC 7.1",
   "IMAX",
   "4K DOLBY  ATMOS",
   "LASER 2K",
+  "1.85:1  FLAT ASPECT RATIO",
   "1.90:1 LARGE SCREEN FORMAT"
  ],
  "languages": [
@@ -517,13 +518,14 @@
    "venues": [
     "ACKB",
     "ASTB",
-    "CEHR",
+    "BHAC",
     "CPEB",
     "CLGM",
     "CFBS",
     "CPOE",
     "CNRM",
-    "CPJR"
+    "CPJR",
+    "CEHR"
    ]
   },
   {
@@ -597,7 +599,54 @@
    "venues": [
     "ACKB",
     "BKDV",
+    "CHTH",
+    "CVLG",
+    "CLGM",
+    "CFBS",
+    "CPOE",
+    "CNRM",
+    "CPJR",
     "CEHR"
+   ]
+  },
+  {
+   "code": "ET00516730",
+   "title": "Epic",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00506419",
+   "title": "Fall 2: Deadpoint",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CVLG",
+    "CLGM"
+   ]
+  },
+  {
+   "code": "ET00516399",
+   "title": "Fall 2: Deadpoint",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "CFBS"
    ]
   },
   {
@@ -610,8 +659,10 @@
     "2D"
    ],
    "venues": [
+    "ATGN",
     "ACKB",
     "CEHR",
+    "CVLG",
     "CPEB",
     "CLGM",
     "CFBS",
@@ -633,13 +684,13 @@
     "ATGN",
     "ACKB",
     "CEHR",
+    "CVLG",
     "CPEB",
     "CLGM",
     "CFBS",
     "CPOE",
     "CNRM",
-    "CPJR",
-    "CVLG"
+    "CPJR"
    ]
   },
   {
@@ -746,12 +797,26 @@
    ],
    "venues": [
     "ACKB",
-    "BHAC",
     "BKDV",
     "CPEB",
     "CLGM",
     "CFBS",
     "CNRM",
+    "CPJR",
+    "BHAC"
+   ]
+  },
+  {
+   "code": "ET00515521",
+   "title": "Last Man in Tower",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPEB",
     "CPJR"
    ]
   },
@@ -792,12 +857,13 @@
    ],
    "venues": [
     "ACKB",
-    "CEHR",
+    "BKDV",
     "CPEB",
     "CLGM",
     "CFBS",
     "CNRM",
-    "CPJR"
+    "CPJR",
+    "CEHR"
    ]
   },
   {
@@ -815,6 +881,7 @@
     "BKDV",
     "CHTH",
     "CEHR",
+    "CVLG",
     "CPEB",
     "CLGM",
     "CPOE",
@@ -905,8 +972,8 @@
     "CLGM",
     "CFBS",
     "CPOE",
-    "CPJR",
-    "CNRM"
+    "CNRM",
+    "CPJR"
    ]
   },
   {
@@ -919,6 +986,7 @@
     "2D"
    ],
    "venues": [
+    "ATGN",
     "CPEB"
    ]
   },
@@ -960,6 +1028,10 @@
     "2D"
    ],
    "venues": [
+    "CLGM",
+    "CPOE",
+    "CNRM",
+    "CPJR",
     "CEHR"
    ]
   },
@@ -1002,7 +1074,8 @@
     "2D"
    ],
    "venues": [
-    "ACKB"
+    "ACKB",
+    "DKTI"
    ]
   },
   {
@@ -1017,15 +1090,15 @@
    "venues": [
     "ACKB",
     "BHAC",
-    "CHTH",
     "CEHR",
+    "CVLG",
     "CPEB",
     "CLGM",
     "CFBS",
     "CPOE",
+    "CNRM",
     "CPJR",
-    "CVLG",
-    "CNRM"
+    "CHTH"
    ]
   },
   {
@@ -1038,8 +1111,8 @@
     "2D"
    ],
    "venues": [
-    "ACKB",
     "CHTH",
+    "ACKB",
     "CFBS"
    ]
   },
@@ -1081,8 +1154,8 @@
    "venues": [
     "CLGM",
     "CNRM",
-    "CPOE",
-    "CPJR"
+    "CPJR",
+    "CPOE"
    ]
   },
   {
@@ -1134,10 +1207,8 @@
     "2D"
    ],
    "venues": [
-    "ADCR",
     "ACKB",
     "ASTB",
-    "CEHR",
     "CVLG",
     "CPEB",
     "CLGM",
@@ -1145,6 +1216,8 @@
     "CPOE",
     "CNRM",
     "CPJR",
+    "ADCR",
+    "CEHR",
     "DKTI"
    ]
   },
@@ -1187,11 +1260,12 @@
    ],
    "venues": [
     "ACKB",
-    "CEHR",
     "CPEB",
     "CLGM",
     "CFBS",
-    "CPJR"
+    "CNRM",
+    "CPJR",
+    "CEHR"
    ]
   },
   {
@@ -1204,8 +1278,8 @@
     "2D"
    ],
    "venues": [
-    "CPEB",
-    "CPJR"
+    "CPJR",
+    "CPEB"
    ]
   },
   {
@@ -1219,9 +1293,10 @@
    ],
    "venues": [
     "ACKB",
+    "CNRM",
     "CLGM"
    ]
   }
  ],
- "generated_at": "2026-09-10T00:35:20+00:00"
+ "generated_at": "2026-09-11T00:32:51+00:00"
 }

@@ -1,7 +1,7 @@
 {
  "city": "pune",
  "name": "Pune",
- "sampled_date": "20260911",
+ "sampled_date": "20260912",
  "venues": [
   {
    "code": "CPAR",
@@ -201,40 +201,40 @@
   "DOLBY 7.1",
   "QSC 7.1",
   "LASER & 7.1",
-  "DIRECTORS CUT",
   "DOLBY ATMOS",
+  "DIRECTORS CUT",
+  "4K DOLBY",
   "Renovated",
   "Atmos",
-  "4K DOLBY",
-  "KOTAK INSIGNIA",
   "ATMOS",
   "QSC 7.1 RECLINER",
+  "KOTAK INSIGNIA",
   "INSIGNIA",
   "GOLD",
+  "DOLBY 950",
+  "4K ATMOS",
   "SPECTRA X",
   "PREMIER",
-  "4K ATMOS",
-  "DOLBY 950",
-  "KIDDLES",
+  "Newly Opened",
   "EPIQ ATMOS 64 CH",
   "PXL",
-  "Newly Opened",
+  "KIDDLES",
   "4K DOLBY 7.1",
   "DOLBY ATMOS 4K LASER",
-  "4K DOLBY ATMOS",
   "ELEGANZA ATMOS",
+  "IMAX",
   "Now Renovated",
   "COUPLE SEATS",
-  "IMAX",
+  "4K DOLBY ATMOS",
   "ELEGANZA",
   "DOLBY CINEMA"
  ],
  "languages": [
   "Hindi",
   "English",
+  "Telugu",
   "Tamil",
-  "Malayalam",
-  "Telugu"
+  "Malayalam"
  ],
  "movies": [
   {
@@ -247,6 +247,7 @@
     "2D"
    ],
    "venues": [
+    "CNWE",
     "PUNB"
    ]
   },
@@ -319,7 +320,8 @@
     "2D"
    ],
    "venues": [
-    "CPAR"
+    "CPAR",
+    "PUNB"
    ]
   },
   {
@@ -349,6 +351,46 @@
    ]
   },
   {
+   "code": "ET00515338",
+   "title": "Epic",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ESBW",
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00506419",
+   "title": "Fall 2: Deadpoint",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00516399",
+   "title": "Fall 2: Deadpoint",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
    "code": "ET00506432",
    "title": "Haiwaan",
    "languages": [
@@ -365,12 +407,14 @@
     "CNWE",
     "PUNB",
     "PUVB",
+    "CEPO",
     "CPRP",
     "CYKR",
+    "CPKT",
     "CTMP",
     "CTRD",
-    "CTSR",
-    "CLTP"
+    "CLTP",
+    "CTSR"
    ]
   },
   {
@@ -385,7 +429,7 @@
    "venues": [
     "CPAR",
     "ASHC",
-    "CMVP",
+    "ESBW",
     "CKPP",
     "CNWE",
     "PUNB",
@@ -396,7 +440,7 @@
     "CTMP",
     "CTSR",
     "CLTP",
-    "ESBW"
+    "CMVP"
    ]
   },
   {
@@ -494,9 +538,12 @@
    ],
    "venues": [
     "CPAR",
+    "ESBW",
     "CKPP",
+    "PUNB",
     "CPRP",
     "CYKR",
+    "CPKT",
     "CTMP",
     "CTSR"
    ]
@@ -526,7 +573,11 @@
    ],
    "venues": [
     "CPAR",
-    "CYKR"
+    "CNWE",
+    "PUNB",
+    "CYKR",
+    "CPKT",
+    "CTMP"
    ]
   },
   {
@@ -566,7 +617,9 @@
     "2D"
    ],
    "venues": [
-    "CYKR"
+    "PUNB",
+    "CYKR",
+    "CTMP"
    ]
   },
   {
@@ -607,6 +660,7 @@
    ],
    "venues": [
     "CPAR",
+    "ESBW",
     "CKPP",
     "CNWE",
     "PUNB",
@@ -619,8 +673,7 @@
     "CTRD",
     "CTSR",
     "CLTP",
-    "ASHC",
-    "ESBW"
+    "ASHC"
    ]
   },
   {
@@ -663,6 +716,20 @@
    ]
   },
   {
+   "code": "ET00512696",
+   "title": "Pradhama Drishtiya Kuttakkar",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CNWE",
+    "PUNB"
+   ]
+  },
+  {
    "code": "ET00514473",
    "title": "Romanchakam",
    "languages": [
@@ -700,6 +767,7 @@
     "2D"
    ],
    "venues": [
+    "ESBW",
     "CNWE",
     "PUNB",
     "CYKR"
@@ -757,8 +825,8 @@
     "3D"
    ],
    "venues": [
-    "CNWE",
     "CPAR",
+    "CNWE",
     "CTMP"
    ]
   },
@@ -876,5 +944,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-10T00:35:20+00:00"
+ "generated_at": "2026-09-11T00:32:51+00:00"
 }

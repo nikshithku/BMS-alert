@@ -1,7 +1,7 @@
 {
  "city": "chennai",
  "name": "Chennai",
- "sampled_date": "20260911",
+ "sampled_date": "20260912",
  "venues": [
   {
    "code": "ACON",
@@ -219,9 +219,9 @@
  "formats": [
   "2D",
   "4K DOLBY 7.1",
+  "4K LASER DOLBY 7.1",
   "4K DOLBY ATMOS",
   "Atmos",
-  "4K LASER DOLBY 7.1",
   "DOLBY ATMOS",
   "PXL",
   "4K/ATMOS",
@@ -238,8 +238,8 @@
   "4K ATMOS"
  ],
  "languages": [
-  "Tamil",
   "Hindi",
+  "Tamil",
   "Malayalam",
   "English",
   "Telugu"
@@ -285,10 +285,10 @@
    "venues": [
     "AGSM",
     "ACTN",
+    "CBMC",
     "PVES",
     "INPR",
     "INTO",
-    "CBMC",
     "FMCN",
     "INCH",
     "MAYJ",
@@ -356,7 +356,10 @@
    "venues": [
     "ACON",
     "AGSM",
-    "INPR"
+    "CBMC",
+    "PVES",
+    "INPR",
+    "INTO"
    ]
   },
   {
@@ -369,6 +372,7 @@
     "2D"
    ],
    "venues": [
+    "PVES",
     "INPR",
     "INTO"
    ]
@@ -388,6 +392,7 @@
     "ACTN",
     "ACVM",
     "CBMC",
+    "PVES",
     "INCH",
     "INPR",
     "INTO"
@@ -538,6 +543,20 @@
    ]
   },
   {
+   "code": "ET00515521",
+   "title": "Last Man in Tower",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES",
+    "INPR"
+   ]
+  },
+  {
    "code": "ET00442702",
    "title": "Mandaadi",
    "languages": [
@@ -670,6 +689,7 @@
     "2D"
    ],
    "venues": [
+    "CBMC",
     "INPR",
     "INTO"
    ]
@@ -718,6 +738,7 @@
     "3D"
    ],
    "venues": [
+    "CBMC",
     "PVES",
     "INPR",
     "INTO"
@@ -813,8 +834,8 @@
     "2D"
    ],
    "venues": [
-    "INPR",
-    "PVES"
+    "PVES",
+    "INPR"
    ]
   },
   {
@@ -831,5 +852,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-10T00:35:20+00:00"
+ "generated_at": "2026-09-11T00:32:51+00:00"
 }

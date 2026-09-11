@@ -1,11 +1,11 @@
 {
  "city": "mumbai",
  "name": "Mumbai",
- "sampled_date": "20260911",
+ "sampled_date": "20260912",
  "venues": [
   {
    "code": "ONEB",
-   "name": "1 Cinema Powered by Mukta A2: Bharatmata"
+   "name": "1 Cinema by Mukta A2: Bharatmata (Newly Renovated)"
   },
   {
    "code": "AAAS",
@@ -192,6 +192,10 @@
    "name": "Maison PVR: Jio World Drive-IN, Mumbai"
   },
   {
+   "code": "MMMC",
+   "name": "Maratha Mandir: Mumbai Central (Metro At DoorStep)"
+  },
+  {
    "code": "MXBY",
    "name": "Maxus Cinemas: Bhayander"
   },
@@ -214,6 +218,10 @@
   {
    "code": "MACE",
    "name": "Miraj Cinemas: Anupam Mall Goregaon (E)"
+  },
+  {
+   "code": "MCAA",
+   "name": "Miraj Cinemas: Ashok Anil Multiplex, Ulhasnagar"
   },
   {
    "code": "CCMP",
@@ -426,42 +434,43 @@
  ],
  "formats": [
   "2D",
-  "Renovated",
   "INSIGNIA",
-  "LASER",
   "Atmos",
+  "Renovated",
+  "LASER",
   "KOTAK INSIGNIA",
-  "Newly Renovated",
   "LUXE",
+  "Newly Renovated",
+  "Dolby 5.1",
+  "IMAX",
   "ATMOS",
   "2K LASER DOLBY 7.1",
   "4K LASER DOLBY",
-  "Dolby 5.1",
+  "DOLBY ATMOS",
   "PXL",
   "KOTAK LUXE",
-  "IMAX",
-  "DOLBY ATMOS",
-  "DOLBY 7.1",
   "AUROMAX",
+  "DOLBY 7.1",
   "MAXUS PLUS",
-  "PLAYHOUSE",
-  "KIDDLES",
-  "AQUA",
   "AMPLIX",
   "Gold Class",
-  "DOLBY - SOFA",
+  "PLAYHOUSE",
+  "KIDDLES",
   "ONYX DINER",
+  "AQUA",
+  "DOLBY - SOFA",
   "AMOR BY DEVGN CINEX",
   "Emerald Class",
-  "DIRECTOR LOUNGE",
   "Sofa Seat",
-  "DOLBY 9.5",
+  "DIRECTOR LOUNGE",
   "Madhuban",
+  "DOLBY 9.5",
   "LASER / DOLBY 7.1",
-  "Dolby 7.1/5.1",
   "Pooja",
+  "Dolby 7.1/5.1",
   "RECLINER",
-  "JIO DRIVEIN"
+  "JIO DRIVEIN",
+  "4DX"
  ],
  "languages": [
   "Hindi",
@@ -469,6 +478,20 @@
   "English"
  ],
  "movies": [
+  {
+   "code": "ET00516253",
+   "title": "Aasha",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
   {
    "code": "ET00003076",
    "title": "Andaz Apna Apna",
@@ -513,6 +536,19 @@
    ]
   },
   {
+   "code": "ET00493378",
+   "title": "Dulhaniya Le Aaeegi",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "FNAN"
+   ]
+  },
+  {
    "code": "ET00510459",
    "title": "Dwidha",
    "languages": [
@@ -526,6 +562,49 @@
    ]
   },
   {
+   "code": "ET00515338",
+   "title": "Epic",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KKMB",
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00506419",
+   "title": "Fall 2: Deadpoint",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO",
+    "CPVV"
+   ]
+  },
+  {
+   "code": "ET00516399",
+   "title": "Fall 2: Deadpoint",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
    "code": "ET00506432",
    "title": "Haiwaan",
    "languages": [
@@ -535,10 +614,13 @@
     "2D"
    ],
    "venues": [
+    "ONEB",
+    "BRVP",
     "KURL",
     "KKMB",
     "BMXC",
     "BMXA",
+    "CTRR",
     "CAGL",
     "FNAN",
     "THAB",
@@ -562,6 +644,7 @@
     "AAAS",
     "KKMB",
     "BMXC",
+    "BMXA",
     "CTRR",
     "CAGL",
     "FNAN",
@@ -569,8 +652,7 @@
     "CPVM",
     "CPNM",
     "CSWO",
-    "CPVV",
-    "BMXA"
+    "CPVV"
    ]
   },
   {
@@ -625,8 +707,8 @@
     "2D"
    ],
    "venues": [
-    "CAGL",
-    "FNAN"
+    "FNAN",
+    "CAGL"
    ]
   },
   {
@@ -657,6 +739,20 @@
    ]
   },
   {
+   "code": "ET00505232",
+   "title": "Jayanti 2",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ONEB",
+    "CPNM"
+   ]
+  },
+  {
    "code": "ET00502501",
    "title": "Jeevan Ya Bheema Con?",
    "languages": [
@@ -668,6 +764,20 @@
    "venues": [
     "FNAN",
     "CPVM"
+   ]
+  },
+  {
+   "code": "ET00515521",
+   "title": "Last Man in Tower",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
    ]
   },
   {
@@ -695,6 +805,19 @@
    "venues": [
     "CPVM",
     "CSWO"
+   ]
+  },
+  {
+   "code": "ET00514739",
+   "title": "Mahendragiri Varahi",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM"
    ]
   },
   {
@@ -755,6 +878,20 @@
    ]
   },
   {
+   "code": "ET00452562",
+   "title": "Na Ik Duje Ton Ghat Singh Vs Kaur 2 Na Ik Duje Ton Wake",
+   "languages": [
+    "Punjabi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
    "code": "ET00506677",
    "title": "Ohh My Dog",
    "languages": [
@@ -768,6 +905,19 @@
    ]
   },
   {
+   "code": "ET00512696",
+   "title": "Pradhama Drishtiya Kuttakkar",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPNM"
+   ]
+  },
+  {
    "code": "ET00440190",
    "title": "Sardar 2",
    "languages": [
@@ -777,12 +927,25 @@
     "2D"
    ],
    "venues": [
+    "CAGL",
     "THAB",
     "CPVM",
     "CPNM",
     "CSWO",
-    "BMXC",
-    "CAGL"
+    "BMXC"
+   ]
+  },
+  {
+   "code": "ET00440191",
+   "title": "Sardar 2",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CSWO"
    ]
   },
   {
@@ -876,7 +1039,8 @@
     "2D"
    ],
    "venues": [
-    "CPVM"
+    "CPVM",
+    "CSWO"
    ]
   },
   {
@@ -898,5 +1062,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-10T00:35:20+00:00"
+ "generated_at": "2026-09-11T00:32:51+00:00"
 }

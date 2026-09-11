@@ -1,7 +1,7 @@
 {
  "city": "hyderabad",
  "name": "Hyderabad",
- "sampled_date": "20260911",
+ "sampled_date": "20260912",
  "venues": [
   {
    "code": "ACAS",
@@ -102,6 +102,10 @@
   {
    "code": "CTNR",
    "name": "Cinepolis: TNR North City, Suchitra, Hyderabad"
+  },
+  {
+   "code": "CVMU",
+   "name": "Cineverse Multiplex: Uppal"
   },
   {
    "code": "CPLK",
@@ -268,6 +272,10 @@
    "name": "Sree Ramulu 70mm 4K Laser: Moosapet"
   },
   {
+   "code": "SSRJ",
+   "name": "Sree Sai Raja Theatre: Musheerabad"
+  },
+  {
    "code": "SKTA",
    "name": "Sri Krishna Theatre: Aliabad (Shameerpet)"
   },
@@ -284,34 +292,34 @@
   "2D",
   "DOLBY 7.1",
   "ATMOS",
+  "RECLINER",
   "BARCO FLAGSHIP LASER DOLBY ATMOS",
   "VIP SCREEN",
-  "RECLINER",
-  "PLAYHOUSE",
   "LASER DOLBY 7.1",
   "PCX SCREEN",
-  "BARCO LASER 4K ATMOS",
   "INFINITY VISION DOLBY ATMOS",
+  "PLAYHOUSE",
   "DOLBY ATMOS",
-  "4K DOLBY ATMOS",
+  "BARCO LASER 4K ATMOS",
   "4K DOLBY 7.1",
+  "4K DOLBY ATMOS",
   "2K",
-  "PXL",
   "4K",
-  "Infinity Vision Dolby Atmos",
   "LASER & 7.1",
+  "Infinity Vision Dolby Atmos",
+  "PXL",
   "Barco Dolby 7.1",
   "2K AIR COOLED",
-  "BARCO 4K SMART LASER",
   "SCREEN 4",
+  "BARCO 4K SMART LASER",
   "AIR COOLED",
+  "LUXE",
   "BARCO 4K LASER",
   "4K ATMOS",
   "MACRO XE",
   "Atmos",
-  "LUXE",
-  "ATMOS + LASER",
   "LALITHA AIR CONDITIONED",
+  "ATMOS + LASER",
   "LAXMIKALA DOLBY ATMOS BARCO LASER",
   "Gold 4K & Dolby 7.1",
   "LASER DOLBY DIGITAL 7.1",
@@ -319,8 +327,11 @@
   "SCREEN 3",
   "CHANDRAKALA AIR COOLED",
   "Dolby Atmos",
+  "7.1 DOLBY",
   "DOLBY ATMOS RGB LASER",
-  "Barco Flat 7.1"
+  "Barco Flat 7.1",
+  "HDR BY BARCO",
+  "RECLINERS"
  ],
  "languages": [
   "Hindi",
@@ -414,6 +425,7 @@
    ],
    "venues": [
     "ACAS",
+    "ALUC",
     "AMBH",
     "AACN",
     "APNS",
@@ -442,10 +454,10 @@
     "AACN",
     "APNS",
     "ACEV",
+    "ASHN",
     "CPHY",
     "AMCA",
     "SNKH",
-    "ASHN",
     "ACPM"
    ]
   },
@@ -571,6 +583,7 @@
    ],
    "venues": [
     "ACAS",
+    "ALUC",
     "AMBH",
     "AACN",
     "APNS",
@@ -614,13 +627,13 @@
     "AMBH",
     "AACN",
     "APNS",
+    "ACEV",
     "ASHN",
     "CPHY",
     "ACPM",
     "AMCA",
     "ARMH",
-    "ACHI",
-    "ACEV"
+    "ACHI"
    ]
   },
   {
@@ -659,15 +672,15 @@
     "2D"
    ],
    "venues": [
-    "ACAS",
-    "ALUC",
     "AMBH",
     "AACN",
     "APNS",
+    "ACPM",
+    "ACAS",
+    "ALUC",
     "ACEV",
     "ASHN",
     "CPHY",
-    "ACPM",
     "AMCA",
     "ARMH",
     "ACHI"
@@ -684,13 +697,13 @@
    ],
    "venues": [
     "ALUC",
+    "AMBH",
     "AACN",
     "APNS",
-    "ASHN",
+    "ACEV",
     "AMCA",
     "SNKH",
-    "AMBH",
-    "ACEV"
+    "ASHN"
    ]
   },
   {
@@ -703,10 +716,10 @@
     "2D"
    ],
    "venues": [
-    "CPHY",
     "ACAS",
     "ACEV",
     "ASHN",
+    "CPHY",
     "ACPM"
    ]
   },
@@ -765,9 +778,9 @@
     "APNS",
     "ACEV",
     "ASHN",
+    "CPHY",
     "ACPM",
     "ARMH",
-    "CPHY",
     "AMCA",
     "SNKH"
    ]
@@ -882,5 +895,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-10T00:35:20+00:00"
+ "generated_at": "2026-09-11T00:32:51+00:00"
 }

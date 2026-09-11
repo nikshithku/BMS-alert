@@ -1,11 +1,15 @@
 {
  "city": "national-capital-region-ncr",
  "name": "Delhi NCR",
- "sampled_date": "20260911",
+ "sampled_date": "20260912",
  "venues": [
   {
    "code": "ONEG",
    "name": "1 Cinema Powered by Mukta A2, Star Mall: Gurugram"
+  },
+  {
+   "code": "CNEV",
+   "name": "1 Cinemas: Spectrum Metro Mall, Noida"
   },
   {
    "code": "AKRC",
@@ -296,6 +300,10 @@
    "name": "Miraj Maximum: Metropollis Mall, Gurgaon"
   },
   {
+   "code": "MMOC",
+   "name": "Movie Magic Cinema: Ghaziabad"
+  },
+  {
    "code": "MERM",
    "name": "MovieMax Edition (Luxe): Rcube Monad Mall, Noida"
   },
@@ -496,6 +504,10 @@
    "name": "RR Cinema: Omaxe Gurgaon Mall, Gurgaon"
   },
   {
+   "code": "STWA",
+   "name": "Satyam VS Cinema: Pilkhuwa"
+  },
+  {
    "code": "SCGZ",
    "name": "Silvercity Multiplex: Ghaziabad"
   },
@@ -550,79 +562,80 @@
  ],
  "formats": [
   "2D",
-  "2K LASER DOLBY 7.1",
   "DIRECTORS CUT",
+  "2K LASER DOLBY 7.1",
+  "LASER",
   "INSIGNIA",
   "KOTAK INSIGNIA",
-  "LASER",
-  "IMAX",
-  "Laser & 7.1",
   "GOLD",
+  "Laser Projector",
+  "IMAX",
+  "2K DOLBY 7.1",
+  "Laser & 7.1",
   "PXL",
   "DOLBY 7.1",
+  "DOLBY SLS 7.1",
+  "Renovated",
+  "DOLBY ATMOS",
+  "ATMOS",
   "EMINENCE CUT RECLINER",
   "EUROPA LUX",
-  "DOLBY SLS 7.1",
-  "ATMOS",
-  "Renovated",
-  "Laser Projector",
-  "2K DOLBY 7.1",
-  "DOLBY ATMOS",
-  "4K DOLBY",
   "LASER & 7.1",
-  "PLAYHOUSE",
+  "4K DOLBY",
   "Atmos",
   "NORMAL",
   "DOLBY 7.1 (2K PROJECTOR",
   "2K DOLBY",
+  "PLAYHOUSE",
   "Laser",
   "LASER 2K",
   "2K LASER",
   "LASER DOLBY ATMOS",
-  "MAXX SCREEN",
-  "LUXE",
   "KOTAK LUXE",
+  "LUXE",
+  "MAXX SCREEN",
   "ICE",
   "AMOR BY DEVGN CINEX",
-  "7.1",
   "DOLBY",
   "LASER DOLBY",
-  "RITZ DOLBY 7.1",
-  "4K ATMOS",
-  "Laser Dolby",
+  "7.1",
   "Largest Screen",
-  "OPERA DOLBY 7.1",
+  "RITZ DOLBY 7.1",
+  "Laser Dolby",
   "RECLINER LASER ATMOS",
+  "4K ATMOS",
   "New Audi",
-  "EMINENCE-CUT RECLINER",
   "RECLINER ATMOS",
+  "OPERA DOLBY 7.1",
   "Maximum-Atmos",
   "SIGNATURE RECLINER",
-  "4DX",
+  "EMINENCE-CUT RECLINER",
   "BROADWAY DOLBY 7.1",
   "LARGEST SCN DOLBY",
-  "ONYX",
+  "4DX",
   "BIGPIX",
-  "DTSx",
   "4K LASER ATMOS",
+  "ONYX",
   "VIP GOLD CLASS",
   "Laser Atmos",
+  "DTSx",
   "MACRO XE",
   "2K BIG SCREEN",
   "Dolby Atmos",
   "4K",
   "Gold Class",
-  "LEGACY DOLBY 7.1",
   "LASER 9K",
   "LASER & DOLBY",
-  "4K LASER",
   "Dolby Digital",
+  "LEGACY DOLBY 7.1",
+  "4K LASER",
   "LARGE SCREEN",
-  "4K DOLBY OG 7.1",
-  "DIAMOND",
   "5.1",
+  "DIAMOND",
   "Elysium By Cineport",
+  "4K DOLBY OG 7.1",
   "2K/Dolby",
+  "2K/ DOLBY",
   "JUNIOR"
  ],
  "languages": [
@@ -646,6 +659,33 @@
    ]
   },
   {
+   "code": "ET00493378",
+   "title": "Dulhaniya Le Aaeegi",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CIPS",
+    "SPIA"
+   ]
+  },
+  {
+   "code": "ET00516399",
+   "title": "Fall 2: Deadpoint",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "CIPS"
+   ]
+  },
+  {
    "code": "ET00506432",
    "title": "Haiwaan",
    "languages": [
@@ -655,7 +695,12 @@
     "2D"
    ],
    "venues": [
+    "ONEG",
+    "CNEV",
+    "AKRC",
+    "AKRF",
     "AMCD",
+    "BCWG",
     "CRGM",
     "CUNT",
     "FNSD",
@@ -679,6 +724,7 @@
    ],
    "venues": [
     "ONEG",
+    "CNEV",
     "AKRC",
     "AKRF",
     "BCWG",
@@ -735,6 +781,20 @@
    ]
   },
   {
+   "code": "ET00515521",
+   "title": "Last Man in Tower",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CRGM",
+    "SPIA"
+   ]
+  },
+  {
    "code": "ET00500543",
    "title": "Mahaprabhu Jagannath",
    "languages": [
@@ -750,6 +810,19 @@
     "CIPS",
     "SPIA",
     "CPNS"
+   ]
+  },
+  {
+   "code": "ET00514739",
+   "title": "Mahendragiri Varahi",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "SPIA"
    ]
   },
   {
@@ -778,9 +851,11 @@
    ],
    "venues": [
     "ONEG",
+    "CNEV",
     "AKRC",
     "AKRF",
     "AMCD",
+    "BCWG",
     "BTFD",
     "CRGM",
     "CUNT",
@@ -791,8 +866,28 @@
     "CIJA",
     "SPIA",
     "CPMF",
-    "CPNS",
-    "BCWG"
+    "CPNS"
+   ]
+  },
+  {
+   "code": "ET00452562",
+   "title": "Na Ik Duje Ton Ghat Singh Vs Kaur 2 Na Ik Duje Ton Wake",
+   "languages": [
+    "Punjabi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CRGM",
+    "CUNT",
+    "FNSD",
+    "CIPS",
+    "CPGV",
+    "CNVG",
+    "CIJA",
+    "SPIA",
+    "CPMF"
    ]
   },
   {
@@ -891,5 +986,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-10T00:35:20+00:00"
+ "generated_at": "2026-09-11T00:32:51+00:00"
 }
