@@ -1,7 +1,7 @@
 {
  "city": "chennai",
  "name": "Chennai",
- "sampled_date": "20260912",
+ "sampled_date": "20260913",
  "venues": [
   {
    "code": "ACON",
@@ -28,6 +28,10 @@
    "name": "Anand Theatre Madhuranthagam RGB LASER 4k"
   },
   {
+   "code": "AMTT",
+   "name": "Arul Muruga Theatre 4K: Thiruporur"
+  },
+  {
    "code": "AVMT",
    "name": "AVM Cinemas: Uthukkottai"
   },
@@ -44,8 +48,16 @@
    "name": "Gayathiri Cinemas A/C Dolby Atmos: Maduranthakam"
   },
   {
+   "code": "GKCP",
+   "name": "GK Cinemas RGB + Laser SRL 4D: Porur"
+  },
+  {
    "code": "GAHC",
    "name": "Gopalakrishna A/C 2K DOLBY 7.1-Karanodai(Redhills)"
+  },
+  {
+   "code": "GCRP",
+   "name": "Green Cinemas 4K Atmos, PLF: Padi"
   },
   {
    "code": "PVES",
@@ -88,6 +100,10 @@
    "name": "Kumaran Theatre PROVA 4K DOLBY ATMOS: Madipakkam"
   },
   {
+   "code": "LKOP",
+   "name": "Lathaa Cinemas A/C Atmos 2K 3D: Chengalpattu"
+  },
+  {
    "code": "MTLM",
    "name": "Mani Talkies 2K RGB Laser ATMOS: Minjur"
   },
@@ -118,6 +134,10 @@
   {
    "code": "NLTC",
    "name": "National Theatre 4K Dolby Atmos: Tambaram"
+  },
+  {
+   "code": "OMTT",
+   "name": "Odiyan Mani Theatre 2k A/c Dolby: Thiruvottiyur"
   },
   {
    "code": "PABC",
@@ -172,8 +192,16 @@
    "name": "Rohini Silver Screens: Koyambedu"
   },
   {
+   "code": "SBTR",
+   "name": "SB Cinemas (Sri Bhagavathi) 4K Atmos: Poonamallee"
+  },
+  {
    "code": "RDMP",
    "name": "Shree Radha Movie Park 4K Dolby Atmos: Redhills"
+  },
+  {
+   "code": "SSCC",
+   "name": "Sivasakthi Cinemas RGB 4K Laser: Padi"
   },
   {
    "code": "SLMP",
@@ -204,6 +232,10 @@
    "name": "VETRIVEL RGB DOLBY:NANGANALLUR (NEWLY RENOVATED)"
   },
   {
+   "code": "SVWT",
+   "name": "Vigneshwara Theatre RGB Laser: Poonamallee"
+  },
+  {
    "code": "VRCP",
    "name": "VR Cinemas RGB 4K LASER DOLBY ATMOS: Pattabiram"
   },
@@ -219,29 +251,38 @@
  "formats": [
   "2D",
   "4K DOLBY 7.1",
-  "4K LASER DOLBY 7.1",
   "4K DOLBY ATMOS",
   "Atmos",
   "DOLBY ATMOS",
+  "4K LASER DOLBY 7.1",
+  "RGB ATMOS",
   "PXL",
   "4K/ATMOS",
-  "RGB ATMOS",
   "BIGPIX",
   "DolbyAtmos",
   "4K  ATMOS ENABLED",
+  "SCREEN 2",
   "SC 3 DOLBY ATMOS",
   "SCREEN 1",
-  "SCREEN 2",
+  "RGB/ATMOS",
   "LASER DOLBY 7.1",
   "DOLBY ATMOS/4K",
   "4K M-MAX(PLF)",
-  "4K ATMOS"
+  "4K ATMOS",
+  "4K RGB",
+  "SC 1 DOLBY ATMOS",
+  "SCREEN 5",
+  "RGB ATMOS SC2",
+  "PLF ENG SUBTITLE",
+  "4K DOLBY",
+  "7.1 SCREEN 2",
+  "SCREEN 6"
  ],
  "languages": [
-  "Hindi",
   "Tamil",
-  "Malayalam",
+  "Hindi",
   "English",
+  "Malayalam",
   "Telugu"
  ],
  "movies": [
@@ -491,6 +532,8 @@
     "ACTN",
     "ACVM",
     "CBMC",
+    "GKCP",
+    "GCRP",
     "PVES",
     "FMCN",
     "INCH",
@@ -571,11 +614,14 @@
     "ACTN",
     "ACVM",
     "ATMG",
+    "AMTT",
     "AVMT",
     "CBMC",
     "GRTC",
     "GKGM",
+    "GKCP",
     "GAHC",
+    "GCRP",
     "PVES",
     "FMCN",
     "INCH",
@@ -710,11 +756,14 @@
     "ACVM",
     "ASGG",
     "ATMG",
+    "AMTT",
     "AVMT",
     "CBMC",
     "GRTC",
     "GKGM",
+    "GKCP",
     "GAHC",
+    "GCRP",
     "PVES",
     "FMCN",
     "INCH",
@@ -852,5 +901,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-11T00:32:51+00:00"
+ "generated_at": "2026-09-12T00:38:00+00:00"
 }

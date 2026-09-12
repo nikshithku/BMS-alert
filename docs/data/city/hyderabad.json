@@ -1,7 +1,7 @@
 {
  "city": "hyderabad",
  "name": "Hyderabad",
- "sampled_date": "20260912",
+ "sampled_date": "20260913",
  "venues": [
   {
    "code": "ACAS",
@@ -296,24 +296,24 @@
   "BARCO FLAGSHIP LASER DOLBY ATMOS",
   "VIP SCREEN",
   "LASER DOLBY 7.1",
-  "PCX SCREEN",
   "INFINITY VISION DOLBY ATMOS",
-  "PLAYHOUSE",
+  "PCX SCREEN",
   "DOLBY ATMOS",
+  "PLAYHOUSE",
   "BARCO LASER 4K ATMOS",
   "4K DOLBY 7.1",
   "4K DOLBY ATMOS",
+  "LASER & 7.1",
   "2K",
   "4K",
-  "LASER & 7.1",
   "Infinity Vision Dolby Atmos",
   "PXL",
   "Barco Dolby 7.1",
-  "2K AIR COOLED",
   "SCREEN 4",
-  "BARCO 4K SMART LASER",
+  "2K AIR COOLED",
   "AIR COOLED",
   "LUXE",
+  "BARCO 4K SMART LASER",
   "BARCO 4K LASER",
   "4K ATMOS",
   "MACRO XE",
@@ -322,12 +322,12 @@
   "ATMOS + LASER",
   "LAXMIKALA DOLBY ATMOS BARCO LASER",
   "Gold 4K & Dolby 7.1",
-  "LASER DOLBY DIGITAL 7.1",
   "LED SCREEN DOLBY ATMOS",
+  "LASER DOLBY DIGITAL 7.1",
   "SCREEN 3",
   "CHANDRAKALA AIR COOLED",
-  "Dolby Atmos",
   "7.1 DOLBY",
+  "Dolby Atmos",
   "DOLBY ATMOS RGB LASER",
   "Barco Flat 7.1",
   "HDR BY BARCO",
@@ -351,11 +351,11 @@
    ],
    "venues": [
     "ALUC",
-    "AMBH",
     "AACN",
     "APNS",
     "ACEV",
     "ASHN",
+    "AMBH",
     "ACAS",
     "CPHY",
     "ACPM",
@@ -458,6 +458,7 @@
     "CPHY",
     "AMCA",
     "SNKH",
+    "ARMH",
     "ACPM"
    ]
   },
@@ -632,8 +633,22 @@
     "CPHY",
     "ACPM",
     "AMCA",
+    "AMCM",
     "ARMH",
     "ACHI"
+   ]
+  },
+  {
+   "code": "ET00516197",
+   "title": "Mandaadi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ALUC"
    ]
   },
   {
@@ -673,12 +688,12 @@
    ],
    "venues": [
     "AMBH",
-    "AACN",
     "APNS",
+    "ACEV",
     "ACPM",
+    "AACN",
     "ACAS",
     "ALUC",
-    "ACEV",
     "ASHN",
     "CPHY",
     "AMCA",
@@ -746,7 +761,8 @@
     "2D"
    ],
    "venues": [
-    "AACN"
+    "AACN",
+    "APNS"
    ]
   },
   {
@@ -774,13 +790,13 @@
    "venues": [
     "ACAS",
     "AMBH",
-    "AACN",
     "APNS",
     "ACEV",
     "ASHN",
     "CPHY",
     "ACPM",
     "ARMH",
+    "AACN",
     "AMCA",
     "SNKH"
    ]
@@ -809,8 +825,8 @@
     "2D"
    ],
    "venues": [
-    "AMBH",
     "AACN",
+    "AMBH",
     "ACAS",
     "APNS"
    ]
@@ -836,9 +852,9 @@
     "ACPM",
     "AMCA",
     "SNKH",
-    "AMCM",
     "ARMH",
-    "ACHI"
+    "ACHI",
+    "AMCM"
    ]
   },
   {
@@ -895,5 +911,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-11T00:32:51+00:00"
+ "generated_at": "2026-09-12T00:38:00+00:00"
 }

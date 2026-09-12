@@ -1,7 +1,7 @@
 {
  "city": "national-capital-region-ncr",
  "name": "Delhi NCR",
- "sampled_date": "20260912",
+ "sampled_date": "20260913",
  "venues": [
   {
    "code": "ONEG",
@@ -563,79 +563,79 @@
  "formats": [
   "2D",
   "DIRECTORS CUT",
-  "2K LASER DOLBY 7.1",
   "LASER",
+  "2K LASER DOLBY 7.1",
   "INSIGNIA",
-  "KOTAK INSIGNIA",
-  "GOLD",
   "Laser Projector",
-  "IMAX",
   "2K DOLBY 7.1",
+  "GOLD",
+  "KOTAK INSIGNIA",
   "Laser & 7.1",
-  "PXL",
-  "DOLBY 7.1",
+  "IMAX",
   "DOLBY SLS 7.1",
+  "DOLBY 7.1",
   "Renovated",
   "DOLBY ATMOS",
-  "ATMOS",
+  "PXL",
   "EMINENCE CUT RECLINER",
-  "EUROPA LUX",
   "LASER & 7.1",
-  "4K DOLBY",
+  "ATMOS",
+  "EUROPA LUX",
   "Atmos",
   "NORMAL",
-  "DOLBY 7.1 (2K PROJECTOR",
+  "4K DOLBY",
   "2K DOLBY",
-  "PLAYHOUSE",
-  "Laser",
+  "DOLBY 7.1 (2K PROJECTOR",
   "LASER 2K",
   "2K LASER",
-  "LASER DOLBY ATMOS",
+  "PLAYHOUSE",
+  "Laser",
   "KOTAK LUXE",
+  "LASER DOLBY ATMOS",
   "LUXE",
+  "LASER DOLBY",
   "MAXX SCREEN",
+  "DOLBY",
   "ICE",
   "AMOR BY DEVGN CINEX",
-  "DOLBY",
-  "LASER DOLBY",
   "7.1",
   "Largest Screen",
   "RITZ DOLBY 7.1",
-  "Laser Dolby",
   "RECLINER LASER ATMOS",
-  "4K ATMOS",
   "New Audi",
+  "Laser Dolby",
+  "4K ATMOS",
   "RECLINER ATMOS",
-  "OPERA DOLBY 7.1",
   "Maximum-Atmos",
-  "SIGNATURE RECLINER",
   "EMINENCE-CUT RECLINER",
+  "OPERA DOLBY 7.1",
+  "SIGNATURE RECLINER",
   "BROADWAY DOLBY 7.1",
   "LARGEST SCN DOLBY",
   "4DX",
-  "BIGPIX",
   "4K LASER ATMOS",
+  "BIGPIX",
   "ONYX",
   "VIP GOLD CLASS",
   "Laser Atmos",
   "DTSx",
-  "MACRO XE",
   "2K BIG SCREEN",
   "Dolby Atmos",
+  "MACRO XE",
+  "Dolby Digital",
   "4K",
   "Gold Class",
   "LASER 9K",
   "LASER & DOLBY",
-  "Dolby Digital",
+  "5.1",
   "LEGACY DOLBY 7.1",
   "4K LASER",
+  "4K DOLBY OG 7.1",
   "LARGE SCREEN",
-  "5.1",
   "DIAMOND",
   "Elysium By Cineport",
-  "4K DOLBY OG 7.1",
-  "2K/Dolby",
   "2K/ DOLBY",
+  "2K/Dolby",
   "JUNIOR"
  ],
  "languages": [
@@ -701,6 +701,7 @@
     "AKRF",
     "AMCD",
     "BCWG",
+    "BTFD",
     "CRGM",
     "CUNT",
     "FNSD",
@@ -790,6 +791,7 @@
     "2D"
    ],
    "venues": [
+    "CNEV",
     "CRGM",
     "SPIA"
    ]
@@ -805,9 +807,9 @@
    ],
    "venues": [
     "CRGM",
+    "CIPS",
     "CUNT",
     "FNSD",
-    "CIPS",
     "SPIA",
     "CPNS"
    ]
@@ -822,6 +824,7 @@
     "2D"
    ],
    "venues": [
+    "CRGM",
     "SPIA"
    ]
   },
@@ -881,11 +884,11 @@
    "venues": [
     "CRGM",
     "CUNT",
+    "CIJA",
     "FNSD",
     "CIPS",
     "CPGV",
     "CNVG",
-    "CIJA",
     "SPIA",
     "CPMF"
    ]
@@ -901,6 +904,19 @@
    ],
    "venues": [
     "CRGM"
+   ]
+  },
+  {
+   "code": "ET00512696",
+   "title": "Pradhama Drishtiya Kuttakkar",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CIPS"
    ]
   },
   {
@@ -986,5 +1002,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-11T00:32:51+00:00"
+ "generated_at": "2026-09-12T00:38:00+00:00"
 }

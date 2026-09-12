@@ -1,7 +1,7 @@
 {
  "city": "pune",
  "name": "Pune",
- "sampled_date": "20260912",
+ "sampled_date": "20260913",
  "venues": [
   {
    "code": "CPAR",
@@ -201,15 +201,15 @@
   "DOLBY 7.1",
   "QSC 7.1",
   "LASER & 7.1",
-  "DOLBY ATMOS",
   "DIRECTORS CUT",
-  "4K DOLBY",
+  "DOLBY ATMOS",
   "Renovated",
   "Atmos",
-  "ATMOS",
   "QSC 7.1 RECLINER",
-  "KOTAK INSIGNIA",
   "INSIGNIA",
+  "4K DOLBY",
+  "KOTAK INSIGNIA",
+  "ATMOS",
   "GOLD",
   "DOLBY 950",
   "4K ATMOS",
@@ -217,24 +217,26 @@
   "PREMIER",
   "Newly Opened",
   "EPIQ ATMOS 64 CH",
-  "PXL",
   "KIDDLES",
+  "PXL",
   "4K DOLBY 7.1",
   "DOLBY ATMOS 4K LASER",
   "ELEGANZA ATMOS",
   "IMAX",
-  "Now Renovated",
   "COUPLE SEATS",
+  "Now Renovated",
   "4K DOLBY ATMOS",
   "ELEGANZA",
-  "DOLBY CINEMA"
+  "DOLBY CINEMA",
+  "4DX"
  ],
  "languages": [
   "Hindi",
-  "English",
-  "Telugu",
+  "Marathi",
   "Tamil",
-  "Malayalam"
+  "English",
+  "Malayalam",
+  "Telugu"
  ],
  "movies": [
   {
@@ -247,8 +249,8 @@
     "2D"
    ],
    "venues": [
-    "CNWE",
-    "PUNB"
+    "PUNB",
+    "CNWE"
    ]
   },
   {
@@ -321,6 +323,19 @@
    ],
    "venues": [
     "CPAR",
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00509404",
+   "title": "Dahaan: The Evil Within",
+   "languages": [
+    "Odia"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
     "PUNB"
    ]
   },
@@ -413,8 +428,8 @@
     "CPKT",
     "CTMP",
     "CTRD",
-    "CLTP",
-    "CTSR"
+    "CTSR",
+    "CLTP"
    ]
   },
   {
@@ -573,11 +588,11 @@
    ],
    "venues": [
     "CPAR",
-    "CNWE",
     "PUNB",
     "CYKR",
-    "CPKT",
-    "CTMP"
+    "CTMP",
+    "CNWE",
+    "CPKT"
    ]
   },
   {
@@ -617,8 +632,10 @@
     "2D"
    ],
    "venues": [
+    "CPAR",
     "PUNB",
     "CYKR",
+    "CPKT",
     "CTMP"
    ]
   },
@@ -767,10 +784,10 @@
     "2D"
    ],
    "venues": [
-    "ESBW",
     "CNWE",
     "PUNB",
-    "CYKR"
+    "CYKR",
+    "ESBW"
    ]
   },
   {
@@ -944,5 +961,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-11T00:32:51+00:00"
+ "generated_at": "2026-09-12T00:38:00+00:00"
 }
