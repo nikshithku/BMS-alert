@@ -1,7 +1,7 @@
 {
  "city": "pune",
  "name": "Pune",
- "sampled_date": "20260913",
+ "sampled_date": "20260914",
  "venues": [
   {
    "code": "CPAR",
@@ -201,40 +201,40 @@
   "DOLBY 7.1",
   "QSC 7.1",
   "LASER & 7.1",
-  "DIRECTORS CUT",
   "DOLBY ATMOS",
+  "DIRECTORS CUT",
   "Renovated",
-  "Atmos",
   "QSC 7.1 RECLINER",
-  "INSIGNIA",
-  "4K DOLBY",
-  "KOTAK INSIGNIA",
+  "Atmos",
   "ATMOS",
-  "GOLD",
+  "4K DOLBY",
+  "INSIGNIA",
   "DOLBY 950",
   "4K ATMOS",
+  "KOTAK INSIGNIA",
   "SPECTRA X",
   "PREMIER",
-  "Newly Opened",
+  "GOLD",
   "EPIQ ATMOS 64 CH",
-  "KIDDLES",
   "PXL",
+  "Newly Opened",
   "4K DOLBY 7.1",
+  "KIDDLES",
   "DOLBY ATMOS 4K LASER",
-  "ELEGANZA ATMOS",
   "IMAX",
   "COUPLE SEATS",
-  "Now Renovated",
+  "ELEGANZA ATMOS",
   "4K DOLBY ATMOS",
   "ELEGANZA",
+  "Now Renovated",
   "DOLBY CINEMA",
   "4DX"
  ],
  "languages": [
   "Hindi",
+  "English",
   "Marathi",
   "Tamil",
-  "English",
   "Malayalam",
   "Telugu"
  ],
@@ -415,13 +415,10 @@
     "2D"
    ],
    "venues": [
-    "CPAR",
-    "ASHC",
     "ESBW",
     "CKPP",
     "CNWE",
     "PUNB",
-    "PUVB",
     "CEPO",
     "CPRP",
     "CYKR",
@@ -429,7 +426,10 @@
     "CTMP",
     "CTRD",
     "CTSR",
-    "CLTP"
+    "CLTP",
+    "CPAR",
+    "ASHC",
+    "PUVB"
    ]
   },
   {
@@ -552,7 +552,6 @@
     "2D"
    ],
    "venues": [
-    "CPAR",
     "ESBW",
     "CKPP",
     "PUNB",
@@ -560,7 +559,8 @@
     "CYKR",
     "CPKT",
     "CTMP",
-    "CTSR"
+    "CTSR",
+    "CPAR"
    ]
   },
   {
@@ -587,10 +587,10 @@
     "2D"
    ],
    "venues": [
-    "CPAR",
     "PUNB",
-    "CYKR",
     "CTMP",
+    "CPAR",
+    "CYKR",
     "CNWE",
     "CPKT"
    ]
@@ -632,11 +632,11 @@
     "2D"
    ],
    "venues": [
+    "CYKR",
+    "CTMP",
     "CPAR",
     "PUNB",
-    "CYKR",
-    "CPKT",
-    "CTMP"
+    "CPKT"
    ]
   },
   {
@@ -677,6 +677,7 @@
    ],
    "venues": [
     "CPAR",
+    "ASHC",
     "ESBW",
     "CKPP",
     "CNWE",
@@ -689,8 +690,7 @@
     "CTMP",
     "CTRD",
     "CTSR",
-    "CLTP",
-    "ASHC"
+    "CLTP"
    ]
   },
   {
@@ -742,8 +742,8 @@
     "2D"
    ],
    "venues": [
-    "CNWE",
-    "PUNB"
+    "PUNB",
+    "CNWE"
    ]
   },
   {
@@ -769,8 +769,8 @@
     "2D"
    ],
    "venues": [
-    "CPAR",
     "CPKT",
+    "CPAR",
     "CTMP"
    ]
   },
@@ -842,8 +842,8 @@
     "3D"
    ],
    "venues": [
-    "CPAR",
     "CNWE",
+    "CPAR",
     "CTMP"
    ]
   },
@@ -948,11 +948,11 @@
     "2D"
    ],
    "venues": [
-    "CPAR",
     "PUNB",
     "CYKR",
     "CPKT",
     "CTMP",
+    "CPAR",
     "CKPP",
     "CNWE",
     "CPRP",
@@ -961,5 +961,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-12T00:38:00+00:00"
+ "generated_at": "2026-09-13T00:20:17+00:00"
 }

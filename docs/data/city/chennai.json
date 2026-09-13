@@ -1,7 +1,7 @@
 {
  "city": "chennai",
  "name": "Chennai",
- "sampled_date": "20260913",
+ "sampled_date": "20260914",
  "venues": [
   {
    "code": "ACON",
@@ -279,8 +279,8 @@
   "SCREEN 6"
  ],
  "languages": [
-  "Tamil",
   "Hindi",
+  "Tamil",
   "English",
   "Malayalam",
   "Telugu"
@@ -413,6 +413,7 @@
     "2D"
    ],
    "venues": [
+    "CBMC",
     "PVES",
     "INPR",
     "INTO"
@@ -507,10 +508,10 @@
     "2D"
    ],
    "venues": [
-    "ACON",
     "AGSM",
     "ACTN",
     "ACVM",
+    "ACON",
     "PVES",
     "INPR",
     "INTO",
@@ -527,14 +528,14 @@
     "2D"
    ],
    "venues": [
-    "ACON",
     "AGSM",
     "ACTN",
     "ACVM",
     "CBMC",
     "GKCP",
-    "GCRP",
     "PVES",
+    "ACON",
+    "GCRP",
     "FMCN",
     "INCH",
     "INPR",
@@ -901,5 +902,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-12T00:38:00+00:00"
+ "generated_at": "2026-09-13T00:20:17+00:00"
 }

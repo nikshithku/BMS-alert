@@ -1,7 +1,7 @@
 {
  "city": "national-capital-region-ncr",
  "name": "Delhi NCR",
- "sampled_date": "20260913",
+ "sampled_date": "20260914",
  "venues": [
   {
    "code": "ONEG",
@@ -562,81 +562,81 @@
  ],
  "formats": [
   "2D",
-  "DIRECTORS CUT",
-  "LASER",
   "2K LASER DOLBY 7.1",
   "INSIGNIA",
-  "Laser Projector",
-  "2K DOLBY 7.1",
-  "GOLD",
-  "KOTAK INSIGNIA",
+  "DIRECTORS CUT",
+  "LASER",
   "Laser & 7.1",
   "IMAX",
   "DOLBY SLS 7.1",
+  "PXL",
   "DOLBY 7.1",
   "Renovated",
-  "DOLBY ATMOS",
-  "PXL",
   "EMINENCE CUT RECLINER",
-  "LASER & 7.1",
-  "ATMOS",
+  "GOLD",
   "EUROPA LUX",
+  "Laser Projector",
+  "2K DOLBY 7.1",
+  "DOLBY ATMOS",
+  "LASER & 7.1",
+  "KOTAK INSIGNIA",
   "Atmos",
-  "NORMAL",
+  "ATMOS",
   "4K DOLBY",
-  "2K DOLBY",
-  "DOLBY 7.1 (2K PROJECTOR",
   "LASER 2K",
   "2K LASER",
+  "NORMAL",
   "PLAYHOUSE",
-  "Laser",
   "KOTAK LUXE",
+  "2K DOLBY",
+  "LASER DOLBY",
+  "DOLBY 7.1 (2K PROJECTOR",
   "LASER DOLBY ATMOS",
   "LUXE",
-  "LASER DOLBY",
+  "Laser",
   "MAXX SCREEN",
-  "DOLBY",
   "ICE",
+  "DOLBY",
   "AMOR BY DEVGN CINEX",
   "7.1",
+  "New Audi",
   "Largest Screen",
   "RITZ DOLBY 7.1",
-  "RECLINER LASER ATMOS",
-  "New Audi",
   "Laser Dolby",
-  "4K ATMOS",
-  "RECLINER ATMOS",
-  "Maximum-Atmos",
   "EMINENCE-CUT RECLINER",
+  "RECLINER LASER ATMOS",
+  "4K ATMOS",
   "OPERA DOLBY 7.1",
-  "SIGNATURE RECLINER",
+  "Maximum-Atmos",
+  "RECLINER ATMOS",
   "BROADWAY DOLBY 7.1",
-  "LARGEST SCN DOLBY",
   "4DX",
-  "4K LASER ATMOS",
+  "SIGNATURE RECLINER",
   "BIGPIX",
+  "LARGEST SCN DOLBY",
   "ONYX",
+  "4K LASER ATMOS",
+  "DTSx",
   "VIP GOLD CLASS",
   "Laser Atmos",
-  "DTSx",
-  "2K BIG SCREEN",
-  "Dolby Atmos",
-  "MACRO XE",
   "Dolby Digital",
+  "2K BIG SCREEN",
+  "MACRO XE",
+  "Dolby Atmos",
   "4K",
   "Gold Class",
   "LASER 9K",
-  "LASER & DOLBY",
-  "5.1",
-  "LEGACY DOLBY 7.1",
   "4K LASER",
+  "LASER & DOLBY",
+  "LEGACY DOLBY 7.1",
+  "5.1",
   "4K DOLBY OG 7.1",
   "LARGE SCREEN",
   "DIAMOND",
   "Elysium By Cineport",
   "2K/ DOLBY",
-  "2K/Dolby",
-  "JUNIOR"
+  "JUNIOR",
+  "2K/Dolby"
  ],
  "languages": [
   "Hindi",
@@ -668,8 +668,9 @@
     "2D"
    ],
    "venues": [
-    "CIPS",
-    "SPIA"
+    "CPGV",
+    "SPIA",
+    "CIPS"
    ]
   },
   {
@@ -701,7 +702,6 @@
     "AKRF",
     "AMCD",
     "BCWG",
-    "BTFD",
     "CRGM",
     "CUNT",
     "FNSD",
@@ -711,6 +711,7 @@
     "CIJA",
     "SPIA",
     "CPMF",
+    "BTFD",
     "CPNS"
    ]
   },
@@ -728,7 +729,9 @@
     "CNEV",
     "AKRC",
     "AKRF",
+    "AMCD",
     "BCWG",
+    "BTFD",
     "CRGM",
     "CUNT",
     "FNSD",
@@ -791,8 +794,8 @@
     "2D"
    ],
    "venues": [
-    "CNEV",
     "CRGM",
+    "CNEV",
     "SPIA"
    ]
   },
@@ -838,8 +841,8 @@
     "2D"
    ],
    "venues": [
-    "CRGM",
     "CIPS",
+    "CRGM",
     "SPIA"
    ]
   },
@@ -882,10 +885,10 @@
     "2D"
    ],
    "venues": [
+    "FNSD",
     "CRGM",
     "CUNT",
     "CIJA",
-    "FNSD",
     "CIPS",
     "CPGV",
     "CNVG",
@@ -1002,5 +1005,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-12T00:38:00+00:00"
+ "generated_at": "2026-09-13T00:20:17+00:00"
 }

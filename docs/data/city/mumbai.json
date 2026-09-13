@@ -1,7 +1,7 @@
 {
  "city": "mumbai",
  "name": "Mumbai",
- "sampled_date": "20260913",
+ "sampled_date": "20260914",
  "venues": [
   {
    "code": "ONEB",
@@ -435,38 +435,38 @@
  "formats": [
   "2D",
   "INSIGNIA",
-  "Atmos",
   "Renovated",
   "LASER",
+  "IMAX",
   "KOTAK INSIGNIA",
-  "Dolby 5.1",
-  "LUXE",
+  "Atmos",
   "Newly Renovated",
   "ATMOS",
   "2K LASER DOLBY 7.1",
-  "IMAX",
-  "4K LASER DOLBY",
-  "DOLBY ATMOS",
+  "LUXE",
   "AUROMAX",
-  "PXL",
   "DOLBY 7.1",
+  "Dolby 5.1",
+  "4K LASER DOLBY",
   "KOTAK LUXE",
+  "DOLBY ATMOS",
+  "PXL",
   "Gold Class",
-  "MAXUS PLUS",
-  "AMPLIX",
   "PLAYHOUSE",
-  "KIDDLES",
-  "ONYX DINER",
+  "MAXUS PLUS",
   "DOLBY - SOFA",
+  "AMPLIX",
+  "ONYX DINER",
+  "KIDDLES",
+  "AMOR BY DEVGN CINEX",
   "Sofa Seat",
   "AQUA",
-  "AMOR BY DEVGN CINEX",
   "DIRECTOR LOUNGE",
   "Emerald Class",
+  "RECLINER",
   "Madhuban",
   "Pooja",
   "DOLBY 9.5",
-  "RECLINER",
   "LASER / DOLBY 7.1",
   "Dolby 7.1/5.1",
   "JIO DRIVEIN",
@@ -930,7 +930,10 @@
     "2D"
    ],
    "venues": [
-    "CPNM"
+    "CAGL",
+    "CPVM",
+    "CPNM",
+    "CSWO"
    ]
   },
   {
@@ -944,10 +947,10 @@
    ],
    "venues": [
     "BMXC",
+    "CPNM",
     "CAGL",
     "THAB",
     "CPVM",
-    "CPNM",
     "CSWO"
    ]
   },
@@ -1078,5 +1081,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-12T00:38:00+00:00"
+ "generated_at": "2026-09-13T00:20:17+00:00"
 }

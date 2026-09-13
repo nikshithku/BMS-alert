@@ -1,7 +1,7 @@
 {
  "city": "hyderabad",
  "name": "Hyderabad",
- "sampled_date": "20260913",
+ "sampled_date": "20260914",
  "venues": [
   {
    "code": "ACAS",
@@ -292,46 +292,47 @@
   "2D",
   "DOLBY 7.1",
   "ATMOS",
+  "VIP SCREEN",
   "RECLINER",
   "BARCO FLAGSHIP LASER DOLBY ATMOS",
-  "VIP SCREEN",
   "LASER DOLBY 7.1",
-  "INFINITY VISION DOLBY ATMOS",
-  "PCX SCREEN",
   "DOLBY ATMOS",
-  "PLAYHOUSE",
-  "BARCO LASER 4K ATMOS",
+  "INFINITY VISION DOLBY ATMOS",
   "4K DOLBY 7.1",
+  "PCX SCREEN",
   "4K DOLBY ATMOS",
   "LASER & 7.1",
+  "PLAYHOUSE",
+  "BARCO LASER 4K ATMOS",
   "2K",
+  "PXL",
   "4K",
   "Infinity Vision Dolby Atmos",
-  "PXL",
-  "Barco Dolby 7.1",
   "SCREEN 4",
+  "Barco Dolby 7.1",
+  "LUXE",
   "2K AIR COOLED",
   "AIR COOLED",
-  "LUXE",
-  "BARCO 4K SMART LASER",
-  "BARCO 4K LASER",
   "4K ATMOS",
+  "BARCO 4K SMART LASER",
   "MACRO XE",
+  "BARCO 4K LASER",
   "Atmos",
   "LALITHA AIR CONDITIONED",
   "ATMOS + LASER",
   "LAXMIKALA DOLBY ATMOS BARCO LASER",
-  "Gold 4K & Dolby 7.1",
-  "LED SCREEN DOLBY ATMOS",
   "LASER DOLBY DIGITAL 7.1",
   "SCREEN 3",
+  "Gold 4K & Dolby 7.1",
+  "LED SCREEN DOLBY ATMOS",
   "CHANDRAKALA AIR COOLED",
   "7.1 DOLBY",
-  "Dolby Atmos",
-  "DOLBY ATMOS RGB LASER",
-  "Barco Flat 7.1",
   "HDR BY BARCO",
-  "RECLINERS"
+  "Dolby Atmos",
+  "Barco Flat 7.1",
+  "DOLBY ATMOS RGB LASER",
+  "RECLINERS",
+  "DOLBY CINEMA"
  ],
  "languages": [
   "Hindi",
@@ -351,11 +352,11 @@
    ],
    "venues": [
     "ALUC",
+    "AMBH",
     "AACN",
     "APNS",
     "ACEV",
     "ASHN",
-    "AMBH",
     "ACAS",
     "CPHY",
     "ACPM",
@@ -424,17 +425,17 @@
     "2D"
    ],
    "venues": [
-    "ACAS",
-    "ALUC",
     "AMBH",
     "AACN",
     "APNS",
-    "ACEV",
     "ASHN",
     "CPHY",
-    "ACPM",
     "AMCA",
     "SNKH",
+    "ACAS",
+    "ALUC",
+    "ACEV",
+    "ACPM",
     "ARMH"
    ]
   },
@@ -628,14 +629,14 @@
     "AMBH",
     "AACN",
     "APNS",
-    "ACEV",
     "ASHN",
     "CPHY",
     "ACPM",
     "AMCA",
     "AMCM",
     "ARMH",
-    "ACHI"
+    "ACHI",
+    "ACEV"
    ]
   },
   {
@@ -688,8 +689,8 @@
    ],
    "venues": [
     "AMBH",
-    "APNS",
     "ACEV",
+    "APNS",
     "ACPM",
     "AACN",
     "ACAS",
@@ -790,12 +791,12 @@
    "venues": [
     "ACAS",
     "AMBH",
-    "APNS",
     "ACEV",
     "ASHN",
+    "ARMH",
+    "APNS",
     "CPHY",
     "ACPM",
-    "ARMH",
     "AACN",
     "AMCA",
     "SNKH"
@@ -852,8 +853,8 @@
     "ACPM",
     "AMCA",
     "SNKH",
-    "ARMH",
     "ACHI",
+    "ARMH",
     "AMCM"
    ]
   },
@@ -911,5 +912,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-12T00:38:00+00:00"
+ "generated_at": "2026-09-13T00:20:17+00:00"
 }
