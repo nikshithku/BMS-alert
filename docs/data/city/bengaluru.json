@@ -1,7 +1,7 @@
 {
  "city": "bengaluru",
  "name": "Bengaluru",
- "sampled_date": "20260914",
+ "sampled_date": "20260915",
  "venues": [
   {
    "code": "ATGN",
@@ -448,22 +448,22 @@
   "QSC 5.1",
   "JUNIOR",
   "KOTAK INSIGNIA",
-  "BARCO LASER PROJECTION",
   "4K DOLBY ATMOS",
   "4K LASER ATMOS MACRO XE",
-  "BIGPIX",
   "DOLBY 7.1 (2K PROJECTER)",
+  "BARCO LASER PROJECTION",
+  "BIGPIX",
   "DINE-IN",
+  "BARCO LASER DOLBY ATMOS",
   "SCREEN X",
   "CLUB",
-  "BARCO LASER DOLBY ATMOS",
   "4K RGB LASER",
-  "LASER DOLBY ATMOS",
   "LASER DOLBY 7.1",
+  "LASER DOLBY ATMOS",
   "ONYX LED SCREEN",
   "RGB LASER 4K ATMOS",
-  "4K DOLBY 7.1 A/C",
   "KIDDLES",
+  "4K DOLBY 7.1 A/C",
   "4K Dolby 11.5",
   "4K QSC 7.1",
   "4K QSC 5.1",
@@ -473,10 +473,10 @@
   "MB LUXE",
   "RGB LASER 4K DOLBY ATMOS",
   "4K DOLBY A/C",
+  "LASER 2K",
   "ICE",
   "IMAX",
   "4K DOLBY  ATMOS",
-  "LASER 2K",
   "1.85:1  FLAT ASPECT RATIO",
   "1.90:1 LARGE SCREEN FORMAT"
  ],
@@ -641,8 +641,8 @@
     "2D"
    ],
    "venues": [
-    "CVLG",
-    "CLGM"
+    "CLGM",
+    "CVLG"
    ]
   },
   {
@@ -669,7 +669,6 @@
    ],
    "venues": [
     "ATGN",
-    "ACKB",
     "CEHR",
     "CVLG",
     "CPEB",
@@ -677,7 +676,8 @@
     "CFBS",
     "CPOE",
     "CNRM",
-    "CPJR"
+    "CPJR",
+    "ACKB"
    ]
   },
   {
@@ -1038,6 +1038,7 @@
    ],
    "venues": [
     "CLGM",
+    "CFBS",
     "CPOE",
     "CNRM",
     "CPJR",
@@ -1270,12 +1271,12 @@
    "venues": [
     "ACKB",
     "BHAC",
+    "CEHR",
     "CPEB",
     "CLGM",
     "CFBS",
     "CNRM",
-    "CPJR",
-    "CEHR"
+    "CPJR"
    ]
   },
   {
@@ -1302,8 +1303,8 @@
     "2D"
    ],
    "venues": [
-    "ACKB",
     "CNRM",
+    "ACKB",
     "CLGM"
    ]
   },
@@ -1321,5 +1322,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-13T00:20:17+00:00"
+ "generated_at": "2026-09-14T00:26:41+00:00"
 }

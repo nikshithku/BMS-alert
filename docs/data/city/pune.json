@@ -1,7 +1,7 @@
 {
  "city": "pune",
  "name": "Pune",
- "sampled_date": "20260914",
+ "sampled_date": "20260915",
  "venues": [
   {
    "code": "CPAR",
@@ -203,31 +203,31 @@
   "LASER & 7.1",
   "DOLBY ATMOS",
   "DIRECTORS CUT",
-  "Renovated",
-  "QSC 7.1 RECLINER",
-  "Atmos",
-  "ATMOS",
   "4K DOLBY",
-  "INSIGNIA",
+  "Renovated",
+  "Atmos",
+  "QSC 7.1 RECLINER",
+  "ATMOS",
   "DOLBY 950",
+  "INSIGNIA",
   "4K ATMOS",
   "KOTAK INSIGNIA",
+  "GOLD",
   "SPECTRA X",
   "PREMIER",
-  "GOLD",
+  "Newly Opened",
   "EPIQ ATMOS 64 CH",
   "PXL",
-  "Newly Opened",
   "4K DOLBY 7.1",
-  "KIDDLES",
   "DOLBY ATMOS 4K LASER",
   "IMAX",
   "COUPLE SEATS",
+  "KIDDLES",
   "ELEGANZA ATMOS",
   "4K DOLBY ATMOS",
   "ELEGANZA",
-  "Now Renovated",
   "DOLBY CINEMA",
+  "Now Renovated",
   "4DX"
  ],
  "languages": [
@@ -415,9 +415,9 @@
     "2D"
    ],
    "venues": [
+    "CPAR",
     "ESBW",
     "CKPP",
-    "CNWE",
     "PUNB",
     "CEPO",
     "CPRP",
@@ -427,7 +427,7 @@
     "CTRD",
     "CTSR",
     "CLTP",
-    "CPAR",
+    "CNWE",
     "ASHC",
     "PUVB"
    ]
@@ -552,6 +552,7 @@
     "2D"
    ],
    "venues": [
+    "CPAR",
     "ESBW",
     "CKPP",
     "PUNB",
@@ -559,8 +560,7 @@
     "CYKR",
     "CPKT",
     "CTMP",
-    "CTSR",
-    "CPAR"
+    "CTSR"
    ]
   },
   {
@@ -587,9 +587,9 @@
     "2D"
    ],
    "venues": [
+    "CPAR",
     "PUNB",
     "CTMP",
-    "CPAR",
     "CYKR",
     "CNWE",
     "CPKT"
@@ -632,9 +632,9 @@
     "2D"
    ],
    "venues": [
+    "CPAR",
     "CYKR",
     "CTMP",
-    "CPAR",
     "PUNB",
     "CPKT"
    ]
@@ -769,8 +769,8 @@
     "2D"
    ],
    "venues": [
-    "CPKT",
     "CPAR",
+    "CPKT",
     "CTMP"
    ]
   },
@@ -842,8 +842,8 @@
     "3D"
    ],
    "venues": [
-    "CNWE",
     "CPAR",
+    "CNWE",
     "CTMP"
    ]
   },
@@ -948,11 +948,11 @@
     "2D"
    ],
    "venues": [
+    "CPAR",
     "PUNB",
     "CYKR",
     "CPKT",
     "CTMP",
-    "CPAR",
     "CKPP",
     "CNWE",
     "CPRP",
@@ -961,5 +961,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-13T00:20:17+00:00"
+ "generated_at": "2026-09-14T00:26:41+00:00"
 }

@@ -1,7 +1,7 @@
 {
  "city": "chennai",
  "name": "Chennai",
- "sampled_date": "20260914",
+ "sampled_date": "20260915",
  "venues": [
   {
    "code": "ACON",
@@ -253,8 +253,8 @@
   "4K DOLBY 7.1",
   "4K DOLBY ATMOS",
   "Atmos",
-  "DOLBY ATMOS",
   "4K LASER DOLBY 7.1",
+  "DOLBY ATMOS",
   "RGB ATMOS",
   "PXL",
   "4K/ATMOS",
@@ -296,6 +296,8 @@
     "2D"
    ],
    "venues": [
+    "AGSM",
+    "ACTN",
     "CBMC",
     "PVES",
     "INPR"
@@ -396,8 +398,8 @@
    ],
    "venues": [
     "ACON",
-    "AGSM",
     "CBMC",
+    "AGSM",
     "PVES",
     "INPR",
     "INTO"
@@ -430,11 +432,11 @@
    ],
    "venues": [
     "ACON",
+    "CBMC",
+    "PVES",
     "AGSM",
     "ACTN",
     "ACVM",
-    "CBMC",
-    "PVES",
     "INCH",
     "INPR",
     "INTO"
@@ -532,11 +534,11 @@
     "ACTN",
     "ACVM",
     "CBMC",
-    "GKCP",
     "PVES",
+    "FMCN",
+    "GKCP",
     "ACON",
     "GCRP",
-    "FMCN",
     "INCH",
     "INPR",
     "INTO",
@@ -619,12 +621,12 @@
     "AVMT",
     "CBMC",
     "GRTC",
-    "GKGM",
     "GKCP",
     "GAHC",
     "GCRP",
     "PVES",
     "FMCN",
+    "GKGM",
     "INCH",
     "INPR",
     "INTO",
@@ -675,9 +677,9 @@
    ],
    "venues": [
     "AGSM",
-    "ACVM",
     "CBMC",
     "PVES",
+    "ACVM",
     "INPR",
     "INTO",
     "ACTN",
@@ -736,6 +738,10 @@
     "2D"
    ],
    "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
     "CBMC",
     "INPR",
     "INTO"
@@ -761,12 +767,12 @@
     "AVMT",
     "CBMC",
     "GRTC",
-    "GKGM",
     "GKCP",
     "GAHC",
     "GCRP",
     "PVES",
     "FMCN",
+    "GKGM",
     "INCH",
     "INPR",
     "INTO",
@@ -902,5 +908,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-13T00:20:17+00:00"
+ "generated_at": "2026-09-14T00:26:41+00:00"
 }

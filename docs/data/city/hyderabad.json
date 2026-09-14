@@ -1,7 +1,7 @@
 {
  "city": "hyderabad",
  "name": "Hyderabad",
- "sampled_date": "20260914",
+ "sampled_date": "20260915",
  "venues": [
   {
    "code": "ACAS",
@@ -297,42 +297,43 @@
   "BARCO FLAGSHIP LASER DOLBY ATMOS",
   "LASER DOLBY 7.1",
   "DOLBY ATMOS",
-  "INFINITY VISION DOLBY ATMOS",
   "4K DOLBY 7.1",
-  "PCX SCREEN",
+  "INFINITY VISION DOLBY ATMOS",
   "4K DOLBY ATMOS",
   "LASER & 7.1",
-  "PLAYHOUSE",
+  "PCX SCREEN",
   "BARCO LASER 4K ATMOS",
+  "PLAYHOUSE",
   "2K",
   "PXL",
   "4K",
   "Infinity Vision Dolby Atmos",
   "SCREEN 4",
-  "Barco Dolby 7.1",
   "LUXE",
-  "2K AIR COOLED",
+  "Barco Dolby 7.1",
   "AIR COOLED",
   "4K ATMOS",
-  "BARCO 4K SMART LASER",
+  "2K AIR COOLED",
   "MACRO XE",
-  "BARCO 4K LASER",
+  "BARCO 4K SMART LASER",
   "Atmos",
+  "BARCO 4K LASER",
   "LALITHA AIR CONDITIONED",
-  "ATMOS + LASER",
-  "LAXMIKALA DOLBY ATMOS BARCO LASER",
   "LASER DOLBY DIGITAL 7.1",
   "SCREEN 3",
+  "ATMOS + LASER",
+  "LAXMIKALA DOLBY ATMOS BARCO LASER",
+  "7.1 DOLBY",
   "Gold 4K & Dolby 7.1",
   "LED SCREEN DOLBY ATMOS",
-  "CHANDRAKALA AIR COOLED",
-  "7.1 DOLBY",
   "HDR BY BARCO",
-  "Dolby Atmos",
+  "CHANDRAKALA AIR COOLED",
   "Barco Flat 7.1",
-  "DOLBY ATMOS RGB LASER",
+  "Dolby Atmos",
   "RECLINERS",
-  "DOLBY CINEMA"
+  "DOLBY ATMOS RGB LASER",
+  "DOLBY CINEMA",
+  "M B LUXE"
  ],
  "languages": [
   "Hindi",
@@ -461,6 +462,19 @@
     "SNKH",
     "ARMH",
     "ACPM"
+   ]
+  },
+  {
+   "code": "ET00508816",
+   "title": "Happy Journey",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH"
    ]
   },
   {
@@ -688,8 +702,8 @@
     "2D"
    ],
    "venues": [
-    "AMBH",
     "ACEV",
+    "AMBH",
     "APNS",
     "ACPM",
     "AACN",
@@ -762,6 +776,7 @@
     "2D"
    ],
    "venues": [
+    "AMBH",
     "AACN",
     "APNS"
    ]
@@ -912,5 +927,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-13T00:20:17+00:00"
+ "generated_at": "2026-09-14T00:26:41+00:00"
 }

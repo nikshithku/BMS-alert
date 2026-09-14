@@ -1,7 +1,7 @@
 {
  "city": "mumbai",
  "name": "Mumbai",
- "sampled_date": "20260914",
+ "sampled_date": "20260915",
  "venues": [
   {
    "code": "ONEB",
@@ -435,38 +435,39 @@
  "formats": [
   "2D",
   "INSIGNIA",
-  "Renovated",
   "LASER",
+  "Renovated",
   "IMAX",
   "KOTAK INSIGNIA",
-  "Atmos",
   "Newly Renovated",
   "ATMOS",
-  "2K LASER DOLBY 7.1",
-  "LUXE",
-  "AUROMAX",
+  "Atmos",
   "DOLBY 7.1",
+  "2K LASER DOLBY 7.1",
+  "AUROMAX",
   "Dolby 5.1",
+  "LUXE",
   "4K LASER DOLBY",
   "KOTAK LUXE",
   "DOLBY ATMOS",
+  "MAXUS PLUS",
+  "PLAYHOUSE",
+  "DOLBY - SOFA",
   "PXL",
   "Gold Class",
-  "PLAYHOUSE",
-  "MAXUS PLUS",
-  "DOLBY - SOFA",
-  "AMPLIX",
   "ONYX DINER",
-  "KIDDLES",
   "AMOR BY DEVGN CINEX",
-  "Sofa Seat",
   "AQUA",
+  "AMPLIX",
+  "Sofa Seat",
   "DIRECTOR LOUNGE",
-  "Emerald Class",
+  "KIDDLES",
   "RECLINER",
+  "Emerald Class",
+  "NEWLY  RENOVAT",
+  "DOLBY 9.5",
   "Madhuban",
   "Pooja",
-  "DOLBY 9.5",
   "LASER / DOLBY 7.1",
   "Dolby 7.1/5.1",
   "JIO DRIVEIN",
@@ -489,6 +490,7 @@
    ],
    "venues": [
     "CPVM",
+    "CPNM",
     "CSWO"
    ]
   },
@@ -628,7 +630,6 @@
     "2D"
    ],
    "venues": [
-    "BRVP",
     "KURL",
     "KKMB",
     "BMXC",
@@ -641,6 +642,7 @@
     "CPNM",
     "CSWO",
     "CPVV",
+    "BRVP",
     "ONEB"
    ]
   },
@@ -846,9 +848,9 @@
     "2D"
    ],
    "venues": [
-    "KKMB",
     "CPVM",
-    "CSWO"
+    "CSWO",
+    "KKMB"
    ]
   },
   {
@@ -876,6 +878,7 @@
    ],
    "venues": [
     "ONEB",
+    "AAAS",
     "AETE",
     "BRVP",
     "KURL",
@@ -889,8 +892,7 @@
     "CPVM",
     "CPNM",
     "CSWO",
-    "CPVV",
-    "AAAS"
+    "CPVV"
    ]
   },
   {
@@ -1081,5 +1083,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-13T00:20:17+00:00"
+ "generated_at": "2026-09-14T00:26:41+00:00"
 }
