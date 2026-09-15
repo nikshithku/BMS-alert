@@ -1,7 +1,7 @@
 {
  "city": "pune",
  "name": "Pune",
- "sampled_date": "20260915",
+ "sampled_date": "20260916",
  "venues": [
   {
    "code": "CPAR",
@@ -198,43 +198,43 @@
  ],
  "formats": [
   "2D",
-  "DOLBY 7.1",
   "QSC 7.1",
+  "DOLBY 7.1",
   "LASER & 7.1",
   "DOLBY ATMOS",
-  "DIRECTORS CUT",
   "4K DOLBY",
-  "Renovated",
+  "DIRECTORS CUT",
   "Atmos",
-  "QSC 7.1 RECLINER",
+  "Renovated",
   "ATMOS",
+  "QSC 7.1 RECLINER",
   "DOLBY 950",
-  "INSIGNIA",
   "4K ATMOS",
   "KOTAK INSIGNIA",
+  "INSIGNIA",
   "GOLD",
-  "SPECTRA X",
   "PREMIER",
   "Newly Opened",
-  "EPIQ ATMOS 64 CH",
   "PXL",
+  "SPECTRA X",
+  "EPIQ ATMOS 64 CH",
   "4K DOLBY 7.1",
   "DOLBY ATMOS 4K LASER",
   "IMAX",
-  "COUPLE SEATS",
-  "KIDDLES",
   "ELEGANZA ATMOS",
   "4K DOLBY ATMOS",
+  "COUPLE SEATS",
+  "KIDDLES",
   "ELEGANZA",
   "DOLBY CINEMA",
-  "Now Renovated",
-  "4DX"
+  "4DX",
+  "Now Renovated"
  ],
  "languages": [
   "Hindi",
+  "Tamil",
   "English",
   "Marathi",
-  "Tamil",
   "Malayalam",
   "Telugu"
  ],
@@ -418,6 +418,7 @@
     "CPAR",
     "ESBW",
     "CKPP",
+    "CNWE",
     "PUNB",
     "CEPO",
     "CPRP",
@@ -427,7 +428,6 @@
     "CTRD",
     "CTSR",
     "CLTP",
-    "CNWE",
     "ASHC",
     "PUVB"
    ]
@@ -633,8 +633,8 @@
    ],
    "venues": [
     "CPAR",
-    "CYKR",
     "CTMP",
+    "CYKR",
     "PUNB",
     "CPKT"
    ]
@@ -742,8 +742,8 @@
     "2D"
    ],
    "venues": [
-    "PUNB",
-    "CNWE"
+    "CNWE",
+    "PUNB"
    ]
   },
   {
@@ -961,5 +961,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-14T00:26:41+00:00"
+ "generated_at": "2026-09-15T00:54:37+00:00"
 }

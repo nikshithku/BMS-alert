@@ -1,7 +1,7 @@
 {
  "city": "national-capital-region-ncr",
  "name": "Delhi NCR",
- "sampled_date": "20260915",
+ "sampled_date": "20260916",
  "venues": [
   {
    "code": "ONEG",
@@ -639,6 +639,7 @@
   "Elysium By Cineport"
  ],
  "languages": [
+  "Tamil",
   "Hindi",
   "English",
   "Malayalam"
@@ -1007,5 +1008,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-14T00:26:41+00:00"
+ "generated_at": "2026-09-15T00:54:37+00:00"
 }

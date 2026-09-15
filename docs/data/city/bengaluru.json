@@ -1,7 +1,7 @@
 {
  "city": "bengaluru",
  "name": "Bengaluru",
- "sampled_date": "20260915",
+ "sampled_date": "20260916",
  "venues": [
   {
    "code": "ATGN",
@@ -16,8 +16,20 @@
    "name": "AMB Cinemas Kapali: Bengaluru"
   },
   {
+   "code": "AMRT",
+   "name": "Amruth Digital 2K A/C Cinema: Lingarajapuram"
+  },
+  {
+   "code": "ARTS",
+   "name": "Aruna Theatre A/C 4K 7.1 Dolby 3D: Srirampuram"
+  },
+  {
    "code": "ASTB",
    "name": "Ashoka Cinemas - Dolby Laser: Chikkabanavara"
+  },
+  {
+   "code": "BALT",
+   "name": "Balaji Theatre:Tavarekere(Next to Lakshmi Theatre)"
   },
   {
    "code": "BHAC",
@@ -212,6 +224,10 @@
    "name": "Prasanna Digital 4K Cinema: Magadi Road"
   },
   {
+   "code": "PTBK",
+   "name": "Pushpanjali B N Pura: A/C 2K Dolby 7.1"
+  },
+  {
    "code": "PDYA",
    "name": "Pushpanjali Sultanpalya:AC 2K LASER 3D Dolby Atmos"
   },
@@ -276,6 +292,10 @@
    "name": "PVR: VR Bengaluru, Whitefield Road"
   },
   {
+   "code": "RTEA",
+   "name": "Ravi Digital 2K Dolby 7.1 HD Screen: Ejipura"
+  },
+  {
    "code": "RATK",
    "name": "Robin Theater 4K Dolby Atmos: Kengeri Upanagara"
   },
@@ -286,6 +306,10 @@
   {
    "code": "ROON",
    "name": "Roopa Cinema 4K Dolby Atmos 3D A/C: Nelamangala"
+  },
+  {
+   "code": "SAMP",
+   "name": "Sampige Digital 2k Cinema: Malleshwaram"
   },
   {
    "code": "STGR",
@@ -312,6 +336,10 @@
    "name": "SLN Theatre RGB Laser Projector: Hesaraghatta"
   },
   {
+   "code": "BALJ",
+   "name": "Sri Balaji 2K Dolby Atmos 7.1: Viveknagar"
+  },
+  {
    "code": "SBCR",
    "name": "Sri Balaji 4K A/C Dolby Atmos: Dommasandra"
   },
@@ -322,6 +350,10 @@
   {
    "code": "SLTB",
    "name": "Sri Lakshmi A/C 4k Dolby 7.1: Gottigere"
+  },
+  {
+   "code": "SLTR",
+   "name": "Sri Lakshmi A/C 4K Projection: Rammurthy Nagar"
   },
   {
    "code": "SKHK",
@@ -338,6 +370,10 @@
   {
    "code": "RKTB",
    "name": "Sri Radhakrishna Theatre, 4K Dolby Atmos: RT Nagar"
+  },
+  {
+   "code": "RTHT",
+   "name": "Sri Raghavendra Cinemas: Hoskote"
   },
   {
    "code": "SRHK",
@@ -412,8 +448,20 @@
    "name": "Veeresh Cinemas: Magadi Road"
   },
   {
+   "code": "VECI",
+   "name": "Venkateshwara Cinemas 2K, A/C Screen2: Gollarahati"
+  },
+  {
    "code": "VECG",
    "name": "Venkateshwara Cinemas 4K, A/C Screen1: Gollarahati"
+  },
+  {
+   "code": "SVKT",
+   "name": "Venkateshwara Digital 4K Dolby Atmos A/C: Kengeri"
+  },
+  {
+   "code": "VNKA",
+   "name": "Venkateshwara Theatre - Konappana Agrahara (E.City"
   },
   {
    "code": "VCCB",
@@ -432,55 +480,57 @@
   "2D",
   "DOLBY 7.1",
   "LASER",
-  "GOLD",
-  "ATMOS",
   "2K LASER DOLBY 7.1",
-  "4K DOLBY 7.1",
-  "Couple Seats",
+  "GOLD",
   "4K ATMOS",
+  "4K DOLBY 7.1",
+  "ATMOS",
   "LASER ATMOS",
-  "INSIGNIA",
-  "PXL",
-  "4K LASER DOLBY 7.1",
-  "LUXE",
+  "Couple Seats",
   "Atmos",
-  "PLAYHOUSE",
+  "INSIGNIA",
+  "4K DOLBY ATMOS",
+  "PXL",
+  "LUXE",
+  "4K LASER DOLBY 7.1",
   "QSC 5.1",
+  "PLAYHOUSE",
+  "BARCO LASER PROJECTION",
   "JUNIOR",
   "KOTAK INSIGNIA",
-  "4K DOLBY ATMOS",
   "4K LASER ATMOS MACRO XE",
   "DOLBY 7.1 (2K PROJECTER)",
-  "BARCO LASER PROJECTION",
   "BIGPIX",
   "DINE-IN",
-  "BARCO LASER DOLBY ATMOS",
-  "SCREEN X",
-  "CLUB",
   "4K RGB LASER",
-  "LASER DOLBY 7.1",
-  "LASER DOLBY ATMOS",
-  "ONYX LED SCREEN",
+  "SCREEN X",
+  "BARCO LASER DOLBY ATMOS",
   "RGB LASER 4K ATMOS",
+  "CLUB",
+  "LASER DOLBY 7.1",
+  "ONYX LED SCREEN",
+  "LASER DOLBY ATMOS",
+  "4K Dolby 11.5",
   "KIDDLES",
   "4K DOLBY 7.1 A/C",
-  "4K Dolby 11.5",
   "4K QSC 7.1",
   "4K QSC 5.1",
   "ATMOS REAL D",
   "LASER QSC 7.1",
+  "RGB LASER 4K DOLBY ATMOS",
   "2K LASER",
   "MB LUXE",
-  "RGB LASER 4K DOLBY ATMOS",
   "4K DOLBY A/C",
   "LASER 2K",
   "ICE",
   "IMAX",
   "4K DOLBY  ATMOS",
   "1.85:1  FLAT ASPECT RATIO",
-  "1.90:1 LARGE SCREEN FORMAT"
+  "1.90:1 LARGE SCREEN FORMAT",
+  "DOLBY ATMOS / 4K RGB LASER"
  ],
  "languages": [
+  "Tamil",
   "Hindi",
   "Malayalam",
   "English",
@@ -560,12 +610,12 @@
    ],
    "venues": [
     "ACKB",
+    "CEHR",
     "CLGM",
     "CFBS",
     "CPOE",
     "CNRM",
     "CPJR",
-    "CEHR",
     "CVLG"
    ]
   },
@@ -670,11 +720,11 @@
    "venues": [
     "ATGN",
     "CEHR",
-    "CVLG",
     "CPEB",
     "CLGM",
     "CFBS",
     "CPOE",
+    "CVLG",
     "CNRM",
     "CPJR",
     "ACKB"
@@ -886,6 +936,9 @@
    ],
    "venues": [
     "ACKB",
+    "AMRT",
+    "ARTS",
+    "BALT",
     "BHAC",
     "BKDV",
     "CHTH",
@@ -995,8 +1048,8 @@
     "2D"
    ],
    "venues": [
-    "CPEB",
-    "ATGN"
+    "ATGN",
+    "CPEB"
    ]
   },
   {
@@ -1037,6 +1090,7 @@
     "2D"
    ],
    "venues": [
+    "CVLG",
     "CLGM",
     "CFBS",
     "CPOE",
@@ -1098,6 +1152,9 @@
     "2D"
    ],
    "venues": [
+    "AMRT",
+    "ARTS",
+    "BALT",
     "CEHR",
     "CPEB",
     "CLGM",
@@ -1322,5 +1379,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-14T00:26:41+00:00"
+ "generated_at": "2026-09-15T00:54:37+00:00"
 }

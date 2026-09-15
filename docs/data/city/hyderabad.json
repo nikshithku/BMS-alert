@@ -1,7 +1,7 @@
 {
  "city": "hyderabad",
  "name": "Hyderabad",
- "sampled_date": "20260915",
+ "sampled_date": "20260916",
  "venues": [
   {
    "code": "ACAS",
@@ -290,8 +290,8 @@
  ],
  "formats": [
   "2D",
-  "DOLBY 7.1",
   "ATMOS",
+  "DOLBY 7.1",
   "VIP SCREEN",
   "RECLINER",
   "BARCO FLAGSHIP LASER DOLBY ATMOS",
@@ -336,6 +336,7 @@
   "M B LUXE"
  ],
  "languages": [
+  "Tamil",
   "Hindi",
   "English",
   "Telugu",
@@ -927,5 +928,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-14T00:26:41+00:00"
+ "generated_at": "2026-09-15T00:54:37+00:00"
 }

@@ -1,7 +1,7 @@
 {
  "city": "chennai",
  "name": "Chennai",
- "sampled_date": "20260915",
+ "sampled_date": "20260916",
  "venues": [
   {
    "code": "ACON",
@@ -188,6 +188,10 @@
    "name": "Rakki RGB Laser 4K: Thiruvallur"
   },
   {
+   "code": "REMC",
+   "name": "Remy Cinemas A/C DTS 2K 3D Laser: Avadi"
+  },
+  {
    "code": "RSSC",
    "name": "Rohini Silver Screens: Koyambedu"
   },
@@ -251,36 +255,36 @@
  "formats": [
   "2D",
   "4K DOLBY 7.1",
-  "4K DOLBY ATMOS",
   "Atmos",
+  "4K DOLBY ATMOS",
   "4K LASER DOLBY 7.1",
   "DOLBY ATMOS",
   "RGB ATMOS",
   "PXL",
+  "RGB/ATMOS",
   "4K/ATMOS",
+  "SCREEN 2",
   "BIGPIX",
   "DolbyAtmos",
   "4K  ATMOS ENABLED",
-  "SCREEN 2",
   "SC 3 DOLBY ATMOS",
   "SCREEN 1",
-  "RGB/ATMOS",
   "LASER DOLBY 7.1",
   "DOLBY ATMOS/4K",
-  "4K M-MAX(PLF)",
   "4K ATMOS",
   "4K RGB",
   "SC 1 DOLBY ATMOS",
-  "SCREEN 5",
+  "4K M-MAX(PLF)",
   "RGB ATMOS SC2",
   "PLF ENG SUBTITLE",
   "4K DOLBY",
+  "SCREEN 5",
   "7.1 SCREEN 2",
   "SCREEN 6"
  ],
  "languages": [
-  "Hindi",
   "Tamil",
+  "Hindi",
   "English",
   "Malayalam",
   "Telugu"
@@ -534,9 +538,9 @@
     "ACTN",
     "ACVM",
     "CBMC",
+    "GKCP",
     "PVES",
     "FMCN",
-    "GKCP",
     "ACON",
     "GCRP",
     "INCH",
@@ -621,12 +625,12 @@
     "AVMT",
     "CBMC",
     "GRTC",
+    "GKGM",
     "GKCP",
     "GAHC",
     "GCRP",
     "PVES",
     "FMCN",
-    "GKGM",
     "INCH",
     "INPR",
     "INTO",
@@ -761,18 +765,18 @@
     "AGSM",
     "ACTN",
     "ACVM",
-    "ASGG",
     "ATMG",
     "AMTT",
     "AVMT",
     "CBMC",
     "GRTC",
+    "GKGM",
     "GKCP",
     "GAHC",
     "GCRP",
     "PVES",
     "FMCN",
-    "GKGM",
+    "ASGG",
     "INCH",
     "INPR",
     "INTO",
@@ -908,5 +912,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-14T00:26:41+00:00"
+ "generated_at": "2026-09-15T00:54:37+00:00"
 }
