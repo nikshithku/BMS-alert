@@ -1,7 +1,7 @@
 {
  "city": "mumbai",
  "name": "Mumbai",
- "sampled_date": "20260916",
+ "sampled_date": "20260918",
  "venues": [
   {
    "code": "ONEB",
@@ -86,6 +86,10 @@
   {
    "code": "FQSA",
    "name": "Fun Square Cinema: Sanpada"
+  },
+  {
+   "code": "MIFU",
+   "name": "Funcity Big Cinema:UNR (OPEN 4 NEW RECLINER SCRNS)"
   },
   {
    "code": "GDTH",
@@ -261,7 +265,7 @@
   },
   {
    "code": "MMET",
-   "name": "MovieMax: Eternity Mall, Thane (Seats Renovated)"
+   "name": "MovieMax: Eternity Mall, Thane (Newly Renovated)"
   },
   {
    "code": "MMHA",
@@ -434,48 +438,49 @@
  ],
  "formats": [
   "2D",
-  "LASER",
   "INSIGNIA",
-  "Renovated",
-  "IMAX",
-  "KOTAK INSIGNIA",
-  "Newly Renovated",
-  "ATMOS",
+  "LASER",
   "Atmos",
-  "DOLBY 7.1",
+  "Renovated",
+  "KOTAK INSIGNIA",
   "2K LASER DOLBY 7.1",
-  "AUROMAX",
+  "ATMOS",
   "Dolby 5.1",
+  "Newly Renovated",
+  "DOLBY 7.1",
+  "IMAX",
+  "AUROMAX",
   "LUXE",
   "4K LASER DOLBY",
   "KOTAK LUXE",
   "DOLBY ATMOS",
+  "RECLINER",
+  "DOLBY - SOFA",
   "MAXUS PLUS",
   "PLAYHOUSE",
-  "DOLBY - SOFA",
+  "AQUA",
   "PXL",
   "Gold Class",
-  "ONYX DINER",
   "AMOR BY DEVGN CINEX",
-  "AQUA",
   "AMPLIX",
+  "ONYX DINER",
   "Sofa Seat",
-  "DIRECTOR LOUNGE",
-  "KIDDLES",
-  "RECLINER",
   "Emerald Class",
   "NEWLY  RENOVAT",
-  "DOLBY 9.5",
+  "DIRECTOR LOUNGE",
+  "KIDDLES",
   "Madhuban",
+  "DOLBY 9.5",
   "Pooja",
-  "LASER / DOLBY 7.1",
   "Dolby 7.1/5.1",
+  "NORMAL",
+  "LASER / DOLBY 7.1",
   "JIO DRIVEIN",
   "4DX"
  ],
  "languages": [
-  "Tamil",
   "Hindi",
+  "Tamil",
   "Malayalam",
   "English"
  ],
@@ -491,8 +496,21 @@
    ],
    "venues": [
     "CPVM",
-    "CPNM",
-    "CSWO"
+    "CSWO",
+    "CPNM"
+   ]
+  },
+  {
+   "code": "ET00511528",
+   "title": "America America 2",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM"
    ]
   },
   {
@@ -526,6 +544,19 @@
    ]
   },
   {
+   "code": "ET00510319",
+   "title": "Bharat Desh Hai Mera",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM"
+   ]
+  },
+  {
    "code": "ET00513649",
    "title": "Bhata",
    "languages": [
@@ -536,6 +567,45 @@
    ],
    "venues": [
     "KKMB"
+   ]
+  },
+  {
+   "code": "ET00513462",
+   "title": "Chatni",
+   "languages": [
+    "Gujarati"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AAAS",
+    "BRVP",
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00464392",
+   "title": "Daayra",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KURL",
+    "KKMB",
+    "BMXC",
+    "BMXA",
+    "CAGL",
+    "FNAN",
+    "THAB",
+    "CPVM",
+    "CPNM",
+    "CSWO",
+    "CPVV"
    ]
   },
   {
@@ -578,6 +648,20 @@
    ]
   },
   {
+   "code": "ET00515665",
+   "title": "Enna Vilai",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
    "code": "ET00515338",
    "title": "Epic",
    "languages": [
@@ -601,9 +685,9 @@
     "2D"
    ],
    "venues": [
+    "CSWO",
     "FNAN",
     "CPVM",
-    "CSWO",
     "CPVV"
    ]
   },
@@ -622,6 +706,23 @@
    ]
   },
   {
+   "code": "ET00470536",
+   "title": "Firki",
+   "languages": [
+    "Gujarati"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AAAS",
+    "BRVP",
+    "CPVM",
+    "CPNM",
+    "CSWO"
+   ]
+  },
+  {
    "code": "ET00506432",
    "title": "Haiwaan",
    "languages": [
@@ -631,6 +732,8 @@
     "2D"
    ],
    "venues": [
+    "CPVM",
+    "CSWO",
     "KURL",
     "KKMB",
     "BMXC",
@@ -639,9 +742,7 @@
     "CAGL",
     "FNAN",
     "THAB",
-    "CPVM",
     "CPNM",
-    "CSWO",
     "CPVV",
     "BRVP",
     "ONEB"
@@ -657,8 +758,8 @@
     "2D"
    ],
    "venues": [
-    "ONEB",
     "AAAS",
+    "KURL",
     "KKMB",
     "BMXC",
     "BMXA",
@@ -669,7 +770,8 @@
     "CPVM",
     "CPNM",
     "CSWO",
-    "CPVV"
+    "CPVV",
+    "ONEB"
    ]
   },
   {
@@ -724,6 +826,7 @@
     "2D"
    ],
    "venues": [
+    "CPVM",
     "FNAN",
     "CAGL"
    ]
@@ -756,6 +859,22 @@
    ]
   },
   {
+   "code": "ET00515245",
+   "title": "It's a Medical Miracle",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CAGL",
+    "THAB",
+    "CPVM",
+    "CPNM"
+   ]
+  },
+  {
    "code": "ET00505232",
    "title": "Jayanti 2",
    "languages": [
@@ -766,10 +885,13 @@
    ],
    "venues": [
     "ONEB",
-    "KKMB",
+    "AETE",
+    "CTRR",
+    "THAB",
     "CPVM",
     "CPNM",
-    "CSWO"
+    "CSWO",
+    "KKMB"
    ]
   },
   {
@@ -784,6 +906,19 @@
    "venues": [
     "FNAN",
     "CPVM"
+   ]
+  },
+  {
+   "code": "ET00515882",
+   "title": "L&O - Law and Order",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CSWO"
    ]
   },
   {
@@ -850,6 +985,7 @@
     "2D"
    ],
    "venues": [
+    "CAGL",
     "CPVM",
     "CSWO",
     "KKMB"
@@ -870,6 +1006,25 @@
    ]
   },
   {
+   "code": "ET00514748",
+   "title": "Manjar",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ONEB",
+    "KKMB",
+    "BMXC",
+    "BMXA",
+    "THAB",
+    "CPVM",
+    "CPNM"
+   ]
+  },
+  {
    "code": "ET00417686",
    "title": "Mirzapur: The Movie",
    "languages": [
@@ -879,22 +1034,22 @@
     "2D"
    ],
    "venues": [
-    "ONEB",
-    "AAAS",
     "AETE",
-    "BRVP",
     "KURL",
     "KKMB",
     "BMXC",
     "BMXA",
-    "CTRR",
     "CAGL",
     "FNAN",
     "THAB",
     "CPVM",
     "CPNM",
     "CSWO",
-    "CPVV"
+    "CPVV",
+    "ONEB",
+    "AAAS",
+    "BRVP",
+    "CTRR"
    ]
   },
   {
@@ -925,6 +1080,38 @@
    ]
   },
   {
+   "code": "ET00517490",
+   "title": "Om Ka Hari",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CAGL",
+    "FNAN",
+    "THAB",
+    "CPVM",
+    "CPNM",
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00496198",
+   "title": "Practical Magic 2",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CPVV"
+   ]
+  },
+  {
    "code": "ET00512696",
    "title": "Pradhama Drishtiya Kuttakkar",
    "languages": [
@@ -935,8 +1122,74 @@
    ],
    "venues": [
     "CAGL",
+    "THAB",
     "CPVM",
+    "CSWO",
+    "CPNM"
+   ]
+  },
+  {
+   "code": "ET00498183",
+   "title": "Resident Evil",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KKMB",
+    "BMXC",
+    "BMXA",
+    "CAGL",
+    "FNAN",
+    "THAB",
     "CPNM",
+    "CPVV"
+   ]
+  },
+  {
+   "code": "ET00498186",
+   "title": "Resident Evil",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KKMB",
+    "BMXC",
+    "BMXA",
+    "CAGL",
+    "THAB",
+    "CPNM"
+   ]
+  },
+  {
+   "code": "ET00512867",
+   "title": "Resident Evil",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "IMAX 2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00517424",
+   "title": "Resident Evil",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
     "CSWO"
    ]
   },
@@ -1054,6 +1307,34 @@
    ]
   },
   {
+   "code": "ET00505787",
+   "title": "The Odyssey",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "IMAX 2D"
+   ],
+   "venues": [
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00508355",
+   "title": "The Uprising",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO",
+    "CPVV"
+   ]
+  },
+  {
    "code": "ET00510575",
    "title": "Tony (2026)",
    "languages": [
@@ -1084,7 +1365,30 @@
     "BMXC",
     "BMXA"
    ]
+  },
+  {
+   "code": "ET00506465",
+   "title": "VIBE",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KKMB",
+    "BMXC",
+    "BMXA",
+    "CTRR",
+    "CAGL",
+    "FNAN",
+    "THAB",
+    "CPVM",
+    "CPNM",
+    "CSWO",
+    "CPVV"
+   ]
   }
  ],
- "generated_at": "2026-09-15T00:54:37+00:00"
+ "generated_at": "2026-09-17T15:23:55+00:00"
 }

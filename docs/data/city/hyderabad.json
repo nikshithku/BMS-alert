@@ -1,7 +1,7 @@
 {
  "city": "hyderabad",
  "name": "Hyderabad",
- "sampled_date": "20260916",
+ "sampled_date": "20260918",
  "venues": [
   {
    "code": "ACAS",
@@ -290,36 +290,36 @@
  ],
  "formats": [
   "2D",
-  "ATMOS",
   "DOLBY 7.1",
-  "VIP SCREEN",
   "RECLINER",
+  "ATMOS",
+  "VIP SCREEN",
   "BARCO FLAGSHIP LASER DOLBY ATMOS",
+  "INFINITY VISION DOLBY ATMOS",
   "LASER DOLBY 7.1",
+  "4K DOLBY ATMOS",
   "DOLBY ATMOS",
   "4K DOLBY 7.1",
-  "INFINITY VISION DOLBY ATMOS",
-  "4K DOLBY ATMOS",
   "LASER & 7.1",
-  "PCX SCREEN",
   "BARCO LASER 4K ATMOS",
+  "PCX SCREEN",
   "PLAYHOUSE",
+  "4K",
   "2K",
   "PXL",
-  "4K",
   "Infinity Vision Dolby Atmos",
-  "SCREEN 4",
   "LUXE",
+  "SCREEN 4",
   "Barco Dolby 7.1",
   "AIR COOLED",
   "4K ATMOS",
   "2K AIR COOLED",
   "MACRO XE",
-  "BARCO 4K SMART LASER",
-  "Atmos",
   "BARCO 4K LASER",
-  "LALITHA AIR CONDITIONED",
+  "BARCO 4K SMART LASER",
   "LASER DOLBY DIGITAL 7.1",
+  "Atmos",
+  "LALITHA AIR CONDITIONED",
   "SCREEN 3",
   "ATMOS + LASER",
   "LAXMIKALA DOLBY ATMOS BARCO LASER",
@@ -336,8 +336,8 @@
   "M B LUXE"
  ],
  "languages": [
-  "Tamil",
   "Hindi",
+  "Tamil",
   "English",
   "Telugu",
   "Malayalam"
@@ -354,16 +354,50 @@
    ],
    "venues": [
     "ALUC",
-    "AMBH",
     "AACN",
     "APNS",
     "ACEV",
+    "AMBH",
     "ASHN",
     "ACAS",
     "CPHY",
     "ACPM",
     "AMCA",
     "SNKH"
+   ]
+  },
+  {
+   "code": "ET00464392",
+   "title": "Daayra",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "ACEV",
+    "AMCA"
+   ]
+  },
+  {
+   "code": "ET00517578",
+   "title": "Ee Paata Korinavaaru Nemalipaalem Nundi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACEV",
+    "ASHN",
+    "ACPM",
+    "AMCA"
    ]
   },
   {
@@ -377,17 +411,17 @@
    ],
    "venues": [
     "ACAS",
-    "ALUC",
     "AMBH",
-    "AACN",
-    "APNS",
     "ACEV",
     "ASHN",
     "CPHY",
-    "ACPM",
     "AMCA",
-    "SNKH",
     "ARMH",
+    "ALUC",
+    "AACN",
+    "APNS",
+    "ACPM",
+    "SNKH",
     "ACHI"
    ]
   },
@@ -462,6 +496,7 @@
     "AMCA",
     "SNKH",
     "ARMH",
+    "ACHI",
     "ACPM"
    ]
   },
@@ -475,7 +510,15 @@
     "2D"
    ],
    "venues": [
-    "AMBH"
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM"
    ]
   },
   {
@@ -510,6 +553,30 @@
    ]
   },
   {
+   "code": "ET00517645",
+   "title": "Immortal (Telugu)",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "ARMH",
+    "ACHI"
+   ]
+  },
+  {
    "code": "ET00487933",
    "title": "Irumudi",
    "languages": [
@@ -526,13 +593,13 @@
     "APNS",
     "ARJU",
     "ACEV",
+    "AMCM",
+    "ARMH",
+    "ARYH",
     "ASHN",
     "CPHY",
     "ACPM",
     "AMCA",
-    "AMCM",
-    "ARMH",
-    "ARYH",
     "ACHI",
     "SNKH"
    ]
@@ -548,6 +615,55 @@
    ],
    "venues": [
     "ACEV"
+   ]
+  },
+  {
+   "code": "ET00515245",
+   "title": "It's a Medical Miracle",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN",
+    "APNS"
+   ]
+  },
+  {
+   "code": "ET00507706",
+   "title": "Kaagitham Padavalu",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA"
+   ]
+  },
+  {
+   "code": "ET00515882",
+   "title": "L&O - Law and Order",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN",
+    "APNS"
    ]
   },
   {
@@ -609,9 +725,9 @@
     "CPHY",
     "ACPM",
     "AMCA",
-    "SNKH",
     "ARMH",
-    "ACHI"
+    "ACHI",
+    "SNKH"
    ]
   },
   {
@@ -644,14 +760,15 @@
     "AMBH",
     "AACN",
     "APNS",
+    "ACEV",
     "ASHN",
     "CPHY",
     "ACPM",
     "AMCA",
+    "SNKH",
     "AMCM",
     "ARMH",
-    "ACHI",
-    "ACEV"
+    "ACHI"
    ]
   },
   {
@@ -731,9 +848,9 @@
     "AMBH",
     "AACN",
     "APNS",
-    "ACEV",
     "AMCA",
     "SNKH",
+    "ACEV",
     "ASHN"
    ]
   },
@@ -755,6 +872,41 @@
    ]
   },
   {
+   "code": "ET00516860",
+   "title": "Missing Meghana",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "ARMH"
+   ]
+  },
+  {
+   "code": "ET00516371",
+   "title": "Okka Chuputho",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ASHN"
+   ]
+  },
+  {
    "code": "ET00502386",
    "title": "PAW Patrol: The Dino Movie",
    "languages": [
@@ -764,6 +916,36 @@
     "2D"
    ],
    "venues": [
+    "AACN"
+   ]
+  },
+  {
+   "code": "ET00516763",
+   "title": "Pithapuramlo Ala Modalaindi",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ASHN",
+    "ACPM",
+    "AMCM",
+    "ARMH"
+   ]
+  },
+  {
+   "code": "ET00496198",
+   "title": "Practical Magic 2",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH",
     "AACN"
    ]
   },
@@ -793,6 +975,80 @@
    ],
    "venues": [
     "AMBH"
+   ]
+  },
+  {
+   "code": "ET00498183",
+   "title": "Resident Evil",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "AMCA",
+    "ARMH"
+   ]
+  },
+  {
+   "code": "ET00498185",
+   "title": "Resident Evil",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACPM",
+    "ACHI"
+   ]
+  },
+  {
+   "code": "ET00498186",
+   "title": "Resident Evil",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "SNKH"
+   ]
+  },
+  {
+   "code": "ET00517121",
+   "title": "Resident Evil",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ALUC"
+   ]
+  },
+  {
+   "code": "ET00517176",
+   "title": "Resident Evil",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "EPIQ"
+   ],
+   "venues": [
+    "ACEV"
    ]
   },
   {
@@ -858,12 +1114,12 @@
     "2D"
    ],
    "venues": [
+    "ACEV",
     "ACAS",
     "ALUC",
     "AMBH",
     "AACN",
     "APNS",
-    "ACEV",
     "ASHN",
     "CPHY",
     "ACPM",
@@ -885,6 +1141,26 @@
    ],
    "venues": [
     "ACEV"
+   ]
+  },
+  {
+   "code": "ET00464932",
+   "title": "Secret Soldier",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY"
    ]
   },
   {
@@ -914,6 +1190,50 @@
    ]
   },
   {
+   "code": "ET00502689",
+   "title": "Spider-Man: Brand New Day",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 3D"
+   ],
+   "venues": [
+    "ALUC"
+   ]
+  },
+  {
+   "code": "ET00508355",
+   "title": "The Uprising",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH"
+   ]
+  },
+  {
+   "code": "ET00506465",
+   "title": "VIBE",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "AMCA"
+   ]
+  },
+  {
    "code": "ET00510230",
    "title": "Vishwanath and Sons",
    "languages": [
@@ -928,5 +1248,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-15T00:54:37+00:00"
+ "generated_at": "2026-09-17T15:23:55+00:00"
 }

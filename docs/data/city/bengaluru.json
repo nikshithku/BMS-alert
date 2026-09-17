@@ -1,7 +1,7 @@
 {
  "city": "bengaluru",
  "name": "Bengaluru",
- "sampled_date": "20260916",
+ "sampled_date": "20260918",
  "venues": [
   {
    "code": "ATGN",
@@ -479,27 +479,27 @@
  "formats": [
   "2D",
   "DOLBY 7.1",
+  "GOLD",
   "LASER",
   "2K LASER DOLBY 7.1",
-  "GOLD",
-  "4K ATMOS",
-  "4K DOLBY 7.1",
   "ATMOS",
+  "4K DOLBY 7.1",
   "LASER ATMOS",
   "Couple Seats",
+  "4K ATMOS",
   "Atmos",
   "INSIGNIA",
+  "LUXE",
   "4K DOLBY ATMOS",
   "PXL",
-  "LUXE",
-  "4K LASER DOLBY 7.1",
   "QSC 5.1",
-  "PLAYHOUSE",
+  "4K LASER DOLBY 7.1",
   "BARCO LASER PROJECTION",
+  "PLAYHOUSE",
   "JUNIOR",
   "KOTAK INSIGNIA",
-  "4K LASER ATMOS MACRO XE",
   "DOLBY 7.1 (2K PROJECTER)",
+  "4K LASER ATMOS MACRO XE",
   "BIGPIX",
   "DINE-IN",
   "4K RGB LASER",
@@ -507,19 +507,19 @@
   "BARCO LASER DOLBY ATMOS",
   "RGB LASER 4K ATMOS",
   "CLUB",
-  "LASER DOLBY 7.1",
   "ONYX LED SCREEN",
+  "LASER DOLBY 7.1",
   "LASER DOLBY ATMOS",
   "4K Dolby 11.5",
   "KIDDLES",
   "4K DOLBY 7.1 A/C",
+  "ATMOS REAL D",
   "4K QSC 7.1",
   "4K QSC 5.1",
-  "ATMOS REAL D",
   "LASER QSC 7.1",
+  "MB LUXE",
   "RGB LASER 4K DOLBY ATMOS",
   "2K LASER",
-  "MB LUXE",
   "4K DOLBY A/C",
   "LASER 2K",
   "ICE",
@@ -530,8 +530,8 @@
   "DOLBY ATMOS / 4K RGB LASER"
  ],
  "languages": [
-  "Tamil",
   "Hindi",
+  "Tamil",
   "Malayalam",
   "English",
   "Kannada"
@@ -565,6 +565,22 @@
    ]
   },
   {
+   "code": "ET00513616",
+   "title": "Amartha",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "ASTB",
+    "CPEB",
+    "CLGM"
+   ]
+  },
+  {
    "code": "ET00511528",
    "title": "America America 2",
    "languages": [
@@ -575,15 +591,30 @@
    ],
    "venues": [
     "ACKB",
+    "CLGM",
+    "CFBS",
     "ASTB",
     "BHAC",
     "CEHR",
     "CPEB",
-    "CLGM",
-    "CFBS",
     "CPOE",
     "CNRM",
     "CPJR"
+   ]
+  },
+  {
+   "code": "ET00513285",
+   "title": "Anireekshita Atithigalu",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CPEB",
+    "CLGM"
    ]
   },
   {
@@ -597,6 +628,20 @@
    ],
    "venues": [
     "ATGN"
+   ]
+  },
+  {
+   "code": "ET00516852",
+   "title": "Bentlee: The Brave Boy",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CPEB"
    ]
   },
   {
@@ -633,6 +678,98 @@
    ]
   },
   {
+   "code": "ET00512852",
+   "title": "Chasing Rahul",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CLGM",
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00510578",
+   "title": "Citylights",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "ASTB",
+    "BALT",
+    "BHAC",
+    "BKDV",
+    "CEHR",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE"
+   ]
+  },
+  {
+   "code": "ET00516476",
+   "title": "Cold Call",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00502822",
+   "title": "Con City",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CEHR"
+   ]
+  },
+  {
+   "code": "ET00464392",
+   "title": "Daayra",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CEHR",
+    "CPEB",
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00514825",
+   "title": "Daayra",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
    "code": "ET00509404",
    "title": "Dahaan: The Evil Within",
    "languages": [
@@ -646,6 +783,20 @@
    ]
   },
   {
+   "code": "ET00515665",
+   "title": "Enna Vilai",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPEB",
+    "CFBS"
+   ]
+  },
+  {
    "code": "ET00515338",
    "title": "Epic",
    "languages": [
@@ -655,6 +806,7 @@
     "2D"
    ],
    "venues": [
+    "ATGN",
     "ACKB",
     "BKDV",
     "CHTH",
@@ -691,8 +843,8 @@
     "2D"
    ],
    "venues": [
-    "CLGM",
-    "CVLG"
+    "CVLG",
+    "CLGM"
    ]
   },
   {
@@ -740,16 +892,31 @@
     "2D"
    ],
    "venues": [
-    "ATGN",
     "ACKB",
+    "BKDV",
     "CEHR",
     "CVLG",
     "CPEB",
     "CLGM",
     "CFBS",
     "CPOE",
+    "ATGN",
     "CNRM",
     "CPJR"
+   ]
+  },
+  {
+   "code": "ET00508816",
+   "title": "Happy Journey",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CFBS"
    ]
   },
   {
@@ -818,6 +985,19 @@
    ]
   },
   {
+   "code": "ET00517645",
+   "title": "Immortal (Telugu)",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CHTH"
+   ]
+  },
+  {
    "code": "ET00493836",
    "title": "Insidious: Out of The Further",
    "languages": [
@@ -866,6 +1046,82 @@
    ]
   },
   {
+   "code": "ET00515245",
+   "title": "It's a Medical Miracle",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "BALT",
+    "BKDV",
+    "CEHR",
+    "CLGM",
+    "CFBS",
+    "CPOE"
+   ]
+  },
+  {
+   "code": "ET00495643",
+   "title": "Jadi: The Untold Side of If",
+   "languages": [
+    "Odia"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00507706",
+   "title": "Kaagitham Padavalu",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00517025",
+   "title": "Kaandhari",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CPEB"
+   ]
+  },
+  {
+   "code": "ET00515882",
+   "title": "L&O - Law and Order",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CEHR",
+    "CLGM",
+    "CFBS",
+    "CPOE"
+   ]
+  },
+  {
    "code": "ET00515521",
    "title": "Last Man in Tower",
    "languages": [
@@ -882,6 +1138,19 @@
   {
    "code": "ET00514112",
    "title": "Life Ellind Ellige",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00517027",
+   "title": "Mahakavi",
    "languages": [
     "Kannada"
    ],
@@ -938,18 +1207,18 @@
     "ACKB",
     "AMRT",
     "ARTS",
-    "BALT",
-    "BHAC",
     "BKDV",
     "CHTH",
     "CEHR",
     "CVLG",
     "CPEB",
     "CLGM",
+    "CFBS",
     "CPOE",
+    "BALT",
+    "BHAC",
     "CNRM",
-    "CPJR",
-    "CFBS"
+    "CPJR"
    ]
   },
   {
@@ -1039,6 +1308,19 @@
    ]
   },
   {
+   "code": "ET00516483",
+   "title": "Nallapadam",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMRT"
+   ]
+  },
+  {
    "code": "ET00513400",
    "title": "Namma Range Rover",
    "languages": [
@@ -1050,6 +1332,21 @@
    "venues": [
     "ATGN",
     "CPEB"
+   ]
+  },
+  {
+   "code": "ET00517490",
+   "title": "Om Ka Hari",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CEHR",
+    "CPEB",
+    "CFBS"
    ]
   },
   {
@@ -1066,6 +1363,38 @@
    ]
   },
   {
+   "code": "ET00517403",
+   "title": "Ottam Thullal",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CEHR",
+    "CVLG",
+    "CPOE"
+   ]
+  },
+  {
+   "code": "ET00517109",
+   "title": "Paris Cafe",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CEHR",
+    "CPEB",
+    "CFBS"
+   ]
+  },
+  {
    "code": "ET00502386",
    "title": "PAW Patrol: The Dino Movie",
    "languages": [
@@ -1078,6 +1407,20 @@
     "CFBS",
     "CLGM",
     "CNRM"
+   ]
+  },
+  {
+   "code": "ET00496198",
+   "title": "Practical Magic 2",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CLGM",
+    "CFBS"
    ]
   },
   {
@@ -1113,6 +1456,76 @@
    ]
   },
   {
+   "code": "ET00498183",
+   "title": "Resident Evil",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CEHR",
+    "CVLG",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE"
+   ]
+  },
+  {
+   "code": "ET00498184",
+   "title": "Resident Evil",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMRT"
+   ]
+  },
+  {
+   "code": "ET00512867",
+   "title": "Resident Evil",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "IMAX 2D"
+   ],
+   "venues": [
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00517121",
+   "title": "Resident Evil",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00517400",
+   "title": "Resident Evil",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "CFBS"
+   ]
+  },
+  {
    "code": "ET00514473",
    "title": "Romanchakam",
    "languages": [
@@ -1140,6 +1553,22 @@
    "venues": [
     "ACKB",
     "DKTI"
+   ]
+  },
+  {
+   "code": "ET00517571",
+   "title": "Sandakari",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "AMRT",
+    "ARTS",
+    "BALT"
    ]
   },
   {
@@ -1210,6 +1639,19 @@
    ]
   },
   {
+   "code": "ET00464932",
+   "title": "Secret Soldier",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
    "code": "ET00502600",
    "title": "Spider-Man: Brand New Day",
    "languages": [
@@ -1220,6 +1662,7 @@
    ],
    "venues": [
     "CLGM",
+    "CFBS",
     "CNRM",
     "CPJR",
     "CPOE"
@@ -1265,6 +1708,35 @@
    ]
   },
   {
+   "code": "ET00508355",
+   "title": "The Uprising",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CLGM",
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00514426",
+   "title": "Toss",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CLGM",
+    "CPOE"
+   ]
+  },
+  {
    "code": "ET00378770",
    "title": "Toxic: A Fairy Tale for Grown-ups",
    "languages": [
@@ -1275,10 +1747,10 @@
    ],
    "venues": [
     "ACKB",
+    "CLGM",
     "ASTB",
     "CVLG",
     "CPEB",
-    "CLGM",
     "CFBS",
     "CPOE",
     "CNRM",
@@ -1317,6 +1789,25 @@
    ]
   },
   {
+   "code": "ET00506465",
+   "title": "VIBE",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CEHR",
+    "CVLG",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE"
+   ]
+  },
+  {
    "code": "ET00514378",
    "title": "Video",
    "languages": [
@@ -1326,12 +1817,14 @@
     "2D"
    ],
    "venues": [
+    "ADCR",
     "ACKB",
-    "BHAC",
+    "CHTH",
     "CEHR",
     "CPEB",
     "CLGM",
     "CFBS",
+    "BHAC",
     "CNRM",
     "CPJR"
    ]
@@ -1366,6 +1859,19 @@
    ]
   },
   {
+   "code": "ET00514185",
+   "title": "Warrior (2026)",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
    "code": "ET00508935",
    "title": "Winkle Twinkle",
    "languages": [
@@ -1379,5 +1885,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-15T00:54:37+00:00"
+ "generated_at": "2026-09-17T15:23:55+00:00"
 }

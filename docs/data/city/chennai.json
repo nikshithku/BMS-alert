@@ -1,7 +1,7 @@
 {
  "city": "chennai",
  "name": "Chennai",
- "sampled_date": "20260916",
+ "sampled_date": "20260918",
  "venues": [
   {
    "code": "ACON",
@@ -283,8 +283,8 @@
   "SCREEN 6"
  ],
  "languages": [
-  "Tamil",
   "Hindi",
+  "Tamil",
   "English",
   "Malayalam",
   "Telugu"
@@ -300,10 +300,10 @@
     "2D"
    ],
    "venues": [
-    "AGSM",
-    "ACTN",
     "CBMC",
     "PVES",
+    "AGSM",
+    "ACTN",
     "INPR"
    ]
   },
@@ -312,6 +312,19 @@
    "title": "Andaz Apna Apna",
    "languages": [
     "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CBMC"
+   ]
+  },
+  {
+   "code": "ET00514849",
+   "title": "BeeP",
+   "languages": [
+    "Tamil"
    ],
    "dimensions": [
     "2D"
@@ -379,6 +392,49 @@
    ]
   },
   {
+   "code": "ET00516476",
+   "title": "Cold Call",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON"
+   ]
+  },
+  {
+   "code": "ET00464392",
+   "title": "Daayra",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CBMC",
+    "PVES"
+   ]
+  },
+  {
+   "code": "ET00514825",
+   "title": "Daayra",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "CBMC"
+   ]
+  },
+  {
    "code": "ET00508106",
    "title": "DC",
    "languages": [
@@ -389,6 +445,27 @@
    ],
    "venues": [
     "INPR"
+   ]
+  },
+  {
+   "code": "ET00515665",
+   "title": "Enna Vilai",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "CBMC",
+    "GKCP",
+    "GCRP",
+    "PVES",
+    "FMCN"
    ]
   },
   {
@@ -468,6 +545,20 @@
    ]
   },
   {
+   "code": "ET00508816",
+   "title": "Happy Journey",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CBMC",
+    "PVES"
+   ]
+  },
+  {
    "code": "ET00509196",
    "title": "Hi (2026)",
    "languages": [
@@ -534,10 +625,10 @@
     "2D"
    ],
    "venues": [
+    "CBMC",
     "AGSM",
     "ACTN",
     "ACVM",
-    "CBMC",
     "GKCP",
     "PVES",
     "FMCN",
@@ -593,6 +684,35 @@
    ]
   },
   {
+   "code": "ET00515245",
+   "title": "It's a Medical Miracle",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AGSM",
+    "ACVM",
+    "CBMC",
+    "PVES"
+   ]
+  },
+  {
+   "code": "ET00515882",
+   "title": "L&O - Law and Order",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CBMC"
+   ]
+  },
+  {
    "code": "ET00515521",
    "title": "Last Man in Tower",
    "languages": [
@@ -621,7 +741,6 @@
     "ACTN",
     "ACVM",
     "ATMG",
-    "AMTT",
     "AVMT",
     "CBMC",
     "GRTC",
@@ -631,6 +750,7 @@
     "GCRP",
     "PVES",
     "FMCN",
+    "AMTT",
     "INCH",
     "INPR",
     "INTO",
@@ -680,9 +800,9 @@
     "2D"
    ],
    "venues": [
-    "AGSM",
     "CBMC",
     "PVES",
+    "AGSM",
     "ACVM",
     "INPR",
     "INTO",
@@ -720,6 +840,33 @@
    ]
   },
   {
+   "code": "ET00516483",
+   "title": "Nallapadam",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AGSM",
+    "ACVM"
+   ]
+  },
+  {
+   "code": "ET00517490",
+   "title": "Om Ka Hari",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CBMC"
+   ]
+  },
+  {
    "code": "ET00511335",
    "title": "Once More",
    "languages": [
@@ -730,6 +877,36 @@
    ],
    "venues": [
     "MAYJ"
+   ]
+  },
+  {
+   "code": "ET00517109",
+   "title": "Paris Cafe",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AGSM",
+    "ACVM",
+    "CBMC",
+    "FMCN"
+   ]
+  },
+  {
+   "code": "ET00496198",
+   "title": "Practical Magic 2",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CBMC",
+    "PVES"
    ]
   },
   {
@@ -747,8 +924,47 @@
     "ACTN",
     "ACVM",
     "CBMC",
+    "PVES",
     "INPR",
     "INTO"
+   ]
+  },
+  {
+   "code": "ET00498183",
+   "title": "Resident Evil",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "CBMC",
+    "PVES"
+   ]
+  },
+  {
+   "code": "ET00498184",
+   "title": "Resident Evil",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "CBMC",
+    "GKCP",
+    "GCRP",
+    "FMCN"
    ]
   },
   {
@@ -765,18 +981,18 @@
     "AGSM",
     "ACTN",
     "ACVM",
+    "ASGG",
+    "CBMC",
+    "GCRP",
+    "PVES",
+    "FMCN",
     "ATMG",
     "AMTT",
     "AVMT",
-    "CBMC",
     "GRTC",
     "GKGM",
     "GKCP",
     "GAHC",
-    "GCRP",
-    "PVES",
-    "FMCN",
-    "ASGG",
     "INCH",
     "INPR",
     "INTO",
@@ -798,8 +1014,8 @@
     "3D"
    ],
    "venues": [
-    "CBMC",
     "PVES",
+    "CBMC",
     "INPR",
     "INTO"
    ]
@@ -815,6 +1031,20 @@
    ],
    "venues": [
     "INTO"
+   ]
+  },
+  {
+   "code": "ET00515005",
+   "title": "The Dark Heaven",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES",
+    "FMCN"
    ]
   },
   {
@@ -847,6 +1077,19 @@
    ]
   },
   {
+   "code": "ET00508355",
+   "title": "The Uprising",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES"
+   ]
+  },
+  {
    "code": "ET00510575",
    "title": "Tony (2026)",
    "languages": [
@@ -861,6 +1104,19 @@
    ]
   },
   {
+   "code": "ET00506465",
+   "title": "VIBE",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES"
+   ]
+  },
+  {
    "code": "ET00489815",
    "title": "Vishwanath and Sons",
    "languages": [
@@ -870,10 +1126,10 @@
     "2D"
    ],
    "venues": [
+    "PVES",
     "AGSM",
     "ACVM",
     "CBMC",
-    "PVES",
     "FMCN",
     "INCH",
     "INPR",
@@ -912,5 +1168,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-15T00:54:37+00:00"
+ "generated_at": "2026-09-17T15:23:55+00:00"
 }
