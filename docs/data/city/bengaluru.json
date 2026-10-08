@@ -1,7 +1,7 @@
 {
  "city": "bengaluru",
  "name": "Bengaluru",
- "sampled_date": "20260918",
+ "sampled_date": "20261009",
  "venues": [
   {
    "code": "ATGN",
@@ -479,43 +479,43 @@
  "formats": [
   "2D",
   "DOLBY 7.1",
-  "GOLD",
   "LASER",
+  "GOLD",
   "2K LASER DOLBY 7.1",
   "ATMOS",
-  "4K DOLBY 7.1",
   "LASER ATMOS",
   "Couple Seats",
   "4K ATMOS",
-  "Atmos",
+  "4K DOLBY 7.1",
   "INSIGNIA",
   "LUXE",
-  "4K DOLBY ATMOS",
-  "PXL",
+  "Atmos",
   "QSC 5.1",
   "4K LASER DOLBY 7.1",
+  "4K DOLBY ATMOS",
+  "PXL",
   "BARCO LASER PROJECTION",
   "PLAYHOUSE",
   "JUNIOR",
-  "KOTAK INSIGNIA",
   "DOLBY 7.1 (2K PROJECTER)",
+  "KOTAK INSIGNIA",
   "4K LASER ATMOS MACRO XE",
-  "BIGPIX",
   "DINE-IN",
+  "BIGPIX",
+  "BARCO LASER DOLBY ATMOS",
   "4K RGB LASER",
   "SCREEN X",
-  "BARCO LASER DOLBY ATMOS",
   "RGB LASER 4K ATMOS",
   "CLUB",
   "ONYX LED SCREEN",
   "LASER DOLBY 7.1",
+  "KIDDLES",
   "LASER DOLBY ATMOS",
   "4K Dolby 11.5",
-  "KIDDLES",
   "4K DOLBY 7.1 A/C",
   "ATMOS REAL D",
-  "4K QSC 7.1",
   "4K QSC 5.1",
+  "4K QSC 7.1",
   "LASER QSC 7.1",
   "MB LUXE",
   "RGB LASER 4K DOLBY ATMOS",
@@ -603,6 +603,21 @@
    ]
   },
   {
+   "code": "ET00518059",
+   "title": "Anbil Avan",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CLGM",
+    "CFBS",
+    "CPOE"
+   ]
+  },
+  {
    "code": "ET00513285",
    "title": "Anireekshita Atithigalu",
    "languages": [
@@ -618,6 +633,58 @@
    ]
   },
   {
+   "code": "ET00514163",
+   "title": "Avengers Endgame: Encore",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00516729",
+   "title": "Avengers Endgame: Encore",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX 3D"
+   ],
+   "venues": [
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00516731",
+   "title": "Avengers Endgame: Encore",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "CLGM"
+   ]
+  },
+  {
+   "code": "ET00516734",
+   "title": "Avengers Endgame: Encore",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "IMAX 2D"
+   ],
+   "venues": [
+    "CFBS"
+   ]
+  },
+  {
    "code": "ET00439318",
    "title": "Awarapan 2",
    "languages": [
@@ -628,6 +695,54 @@
    ],
    "venues": [
     "ATGN"
+   ]
+  },
+  {
+   "code": "ET00465242",
+   "title": "Baa Baa Black Sheep",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00517163",
+   "title": "Bail",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CPEB",
+    "CLGM"
+   ]
+  },
+  {
+   "code": "ET00515520",
+   "title": "Baththa",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "AMRT",
+    "ARTS",
+    "BALT",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE"
    ]
   },
   {
@@ -669,6 +784,33 @@
    "title": "Bethlehem Kudumba Unit",
    "languages": [
     "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00515208",
+   "title": "Beware Boiuna",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CLGM",
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00419437",
+   "title": "Bingo",
+   "languages": [
+    "Kannada"
    ],
    "dimensions": [
     "2D"
@@ -728,6 +870,23 @@
    ]
   },
   {
+   "code": "ET00519564",
+   "title": "Comrade Kalyan",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE"
+   ]
+  },
+  {
    "code": "ET00502822",
    "title": "Con City",
    "languages": [
@@ -777,6 +936,98 @@
    ],
    "dimensions": [
     "2D"
+   ],
+   "venues": [
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00514646",
+   "title": "Don't Trouble The Trouble",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00507337",
+   "title": "Doraemon: Castle of the Undersea Devil",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CVLG",
+    "CPEB",
+    "CLGM",
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00518039",
+   "title": "Dorothy",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE"
+   ]
+  },
+  {
+   "code": "ET00477911",
+   "title": "Drishyam The Conclusion",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CEHR",
+    "CVLG",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE"
+   ]
+  },
+  {
+   "code": "ET00519396",
+   "title": "Drishyam The Conclusion",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00520056",
+   "title": "Drishyam The Conclusion",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "IMAX 2D"
    ],
    "venues": [
     "CFBS"
@@ -893,16 +1144,30 @@
    ],
    "venues": [
     "ACKB",
-    "BKDV",
-    "CEHR",
     "CVLG",
     "CPEB",
     "CLGM",
     "CFBS",
     "CPOE",
+    "BKDV",
+    "CEHR",
     "ATGN",
     "CNRM",
     "CPJR"
+   ]
+  },
+  {
+   "code": "ET00520716",
+   "title": "Hanuman Ansh",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ADCR",
+    "ACKB"
    ]
   },
   {
@@ -916,6 +1181,21 @@
    ],
    "venues": [
     "ACKB",
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00504928",
+   "title": "Heart of the Beast",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CLGM",
     "CFBS"
    ]
   },
@@ -1105,6 +1385,19 @@
    ]
   },
   {
+   "code": "ET00513897",
+   "title": "Kitti",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
    "code": "ET00515882",
    "title": "L&O - Law and Order",
    "languages": [
@@ -1287,6 +1580,23 @@
    ]
   },
   {
+   "code": "ET00516813",
+   "title": "Meesaya Murukku 2",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE"
+   ]
+  },
+  {
    "code": "ET00417686",
    "title": "Mirzapur: The Movie",
    "languages": [
@@ -1443,6 +1753,57 @@
    ]
   },
   {
+   "code": "ET00412717",
+   "title": "Premada Oorali",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "ASTB",
+    "BALT",
+    "BHAC",
+    "BKDV",
+    "CHTH",
+    "CEHR",
+    "CVLG",
+    "CPEB",
+    "CLGM",
+    "CFBS",
+    "CPOE"
+   ]
+  },
+  {
+   "code": "ET00519792",
+   "title": "Premada Oorali",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00514345",
+   "title": "Primetime",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CLGM",
+    "CFBS"
+   ]
+  },
+  {
    "code": "ET00509671",
    "title": "Ramba Oorvasi Menaka",
    "languages": [
@@ -1465,11 +1826,11 @@
     "2D"
    ],
    "venues": [
+    "CLGM",
+    "CFBS",
     "CEHR",
     "CVLG",
     "CPEB",
-    "CLGM",
-    "CFBS",
     "CPOE"
    ]
   },
@@ -1539,6 +1900,19 @@
     "CFBS",
     "CNRM",
     "CLGM"
+   ]
+  },
+  {
+   "code": "ET00518216",
+   "title": "Rudrabhishekam",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ATGN"
    ]
   },
   {
@@ -1652,6 +2026,33 @@
    ]
   },
   {
+   "code": "ET00506232",
+   "title": "Sigma",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMRT",
+    "ARTS"
+   ]
+  },
+  {
+   "code": "ET00506233",
+   "title": "Sigma",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
    "code": "ET00502600",
    "title": "Spider-Man: Brand New Day",
    "languages": [
@@ -1708,6 +2109,60 @@
    ]
   },
   {
+   "code": "ET00436621",
+   "title": "The Paradise",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00436631",
+   "title": "The Paradise",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ATGN"
+   ]
+  },
+  {
+   "code": "ET00506449",
+   "title": "The Social Reckoning",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CVLG",
+    "CLGM"
+   ]
+  },
+  {
+   "code": "ET00521246",
+   "title": "The Social Reckoning",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
    "code": "ET00508355",
    "title": "The Uprising",
    "languages": [
@@ -1719,6 +2174,47 @@
    "venues": [
     "CLGM",
     "CFBS"
+   ]
+  },
+  {
+   "code": "ET00444235",
+   "title": "The Vvaan - Force of the Forrest",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPEB",
+    "CLGM",
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00518692",
+   "title": "Thella Kaagitham",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB"
+   ]
+  },
+  {
+   "code": "ET00520666",
+   "title": "Thenmavin Kombath",
+   "languages": [
+    "Malayalam"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CLGM"
    ]
   },
   {
@@ -1786,6 +2282,34 @@
    ],
    "venues": [
     "ACKB"
+   ]
+  },
+  {
+   "code": "ET00497246",
+   "title": "Verity",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACKB",
+    "CLGM",
+    "CFBS"
+   ]
+  },
+  {
+   "code": "ET00519665",
+   "title": "Verity",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "CFBS"
    ]
   },
   {
@@ -1883,7 +2407,20 @@
    "venues": [
     "CFBS"
    ]
+  },
+  {
+   "code": "ET00342249",
+   "title": "Yezhu Kadal Yezhu Malai",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ARTS"
+   ]
   }
  ],
- "generated_at": "2026-09-17T15:23:55+00:00"
+ "generated_at": "2026-10-08T02:16:10+00:00"
 }

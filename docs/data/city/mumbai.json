@@ -1,7 +1,7 @@
 {
  "city": "mumbai",
  "name": "Mumbai",
- "sampled_date": "20260918",
+ "sampled_date": "20261009",
  "venues": [
   {
    "code": "ONEB",
@@ -68,6 +68,10 @@
    "name": "Cinepolis: VIP Lake Shore, Thane (EX Viviana Mall)"
   },
   {
+   "code": "CLMM",
+   "name": "Citylight Cinema: Mahim"
+  },
+  {
    "code": "NYMD",
    "name": "Devgn Cinex: Mulund"
   },
@@ -94,6 +98,10 @@
   {
    "code": "GDTH",
    "name": "Gold  Cinema: Shivaji Road, Thane (W)"
+  },
+  {
+   "code": "GDCD",
+   "name": "Gold Cinema: Dadar (E)"
   },
   {
    "code": "GCMG",
@@ -144,10 +152,6 @@
    "name": "INOX: Megaplex, Inorbit Mall, Malad"
   },
   {
-   "code": "FMKY",
-   "name": "INOX: Metro Mall Junction, Kalyan (E)"
-  },
-  {
    "code": "FMDR",
    "name": "INOX: Nakshatra Mall, Dadar (W) (Newly Renovated)"
   },
@@ -166,6 +170,10 @@
   {
    "code": "FMDA",
    "name": "INOX: Thakur Mall, Dahisar"
+  },
+  {
+   "code": "FMKY",
+   "name": "INOX:Metro Mall Junction,Kalyan(Newly Renovated)"
   },
   {
    "code": "KMMV",
@@ -412,6 +420,10 @@
    "name": "Regal Cinema: Colaba"
   },
   {
+   "code": "MCRC",
+   "name": "Roxy Cinema: Charni Road"
+  },
+  {
    "code": "STER",
    "name": "Sterling Cineplex: Fort"
   },
@@ -440,41 +452,41 @@
   "2D",
   "INSIGNIA",
   "LASER",
-  "Atmos",
   "Renovated",
+  "Atmos",
   "KOTAK INSIGNIA",
   "2K LASER DOLBY 7.1",
   "ATMOS",
-  "Dolby 5.1",
   "Newly Renovated",
-  "DOLBY 7.1",
-  "IMAX",
+  "4K LASER DOLBY",
+  "DOLBY ATMOS",
   "AUROMAX",
   "LUXE",
-  "4K LASER DOLBY",
+  "Dolby 5.1",
+  "DOLBY 7.1",
   "KOTAK LUXE",
-  "DOLBY ATMOS",
+  "IMAX",
   "RECLINER",
+  "PXL",
   "DOLBY - SOFA",
   "MAXUS PLUS",
+  "NEWLY  RENOVAT",
   "PLAYHOUSE",
-  "AQUA",
-  "PXL",
-  "Gold Class",
   "AMOR BY DEVGN CINEX",
   "AMPLIX",
-  "ONYX DINER",
+  "AQUA",
   "Sofa Seat",
-  "Emerald Class",
-  "NEWLY  RENOVAT",
-  "DIRECTOR LOUNGE",
-  "KIDDLES",
+  "Gold Class",
+  "ONYX DINER",
   "Madhuban",
+  "Emerald Class",
   "DOLBY 9.5",
-  "Pooja",
+  "KIDDLES",
+  "DIRECTOR LOUNGE",
   "Dolby 7.1/5.1",
-  "NORMAL",
   "LASER / DOLBY 7.1",
+  "Pooja",
+  "NORMAL",
   "JIO DRIVEIN",
   "4DX"
  ],
@@ -498,6 +510,21 @@
     "CPVM",
     "CSWO",
     "CPNM"
+   ]
+  },
+  {
+   "code": "ET00514241",
+   "title": "Afratafri",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CPNM",
+    "CSWO"
    ]
   },
   {
@@ -528,6 +555,48 @@
    ]
   },
   {
+   "code": "ET00516729",
+   "title": "Avengers Endgame: Encore",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX 3D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00516731",
+   "title": "Avengers Endgame: Encore",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO",
+    "CPVV"
+   ]
+  },
+  {
+   "code": "ET00515520",
+   "title": "Baththa",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CSWO"
+   ]
+  },
+  {
    "code": "ET00502829",
    "title": "Bethlehem Kudumba Unit",
    "languages": [
@@ -541,6 +610,20 @@
     "CSWO",
     "BMXC",
     "THAB"
+   ]
+  },
+  {
+   "code": "ET00515208",
+   "title": "Beware Boiuna",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
    ]
   },
   {
@@ -618,6 +701,94 @@
     "2D"
    ],
    "venues": [
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00520563",
+   "title": "Dhappa",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM"
+   ]
+  },
+  {
+   "code": "ET00507337",
+   "title": "Doraemon: Castle of the Undersea Devil",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KKMB",
+    "BMXC",
+    "FNAN",
+    "THAB",
+    "CPNM",
+    "CSWO",
+    "CPVV"
+   ]
+  },
+  {
+   "code": "ET00519690",
+   "title": "Doraemon: Castle of the Undersea Devil",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
+   "code": "ET00477911",
+   "title": "Drishyam The Conclusion",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ONEB",
+    "AAAS",
+    "AETE",
+    "BRVP",
+    "KURL",
+    "KKMB",
+    "BMXC",
+    "BMXA",
+    "CTRR",
+    "CAGL",
+    "FNAN",
+    "THAB",
+    "CPVM",
+    "CPNM",
+    "CSWO",
+    "CPVV"
+   ]
+  },
+  {
+   "code": "ET00520056",
+   "title": "Drishyam The Conclusion",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "IMAX 2D"
+   ],
+   "venues": [
+    "CPVM",
     "CSWO"
    ]
   },
@@ -723,6 +894,34 @@
    ]
   },
   {
+   "code": "ET00516789",
+   "title": "Gaman",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ONEB",
+    "AETE"
+   ]
+  },
+  {
+   "code": "ET00465382",
+   "title": "Gondhal",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
    "code": "ET00506432",
    "title": "Haiwaan",
    "languages": [
@@ -758,20 +957,34 @@
     "2D"
    ],
    "venues": [
-    "AAAS",
-    "KURL",
     "KKMB",
     "BMXC",
-    "BMXA",
-    "CTRR",
-    "CAGL",
     "FNAN",
     "THAB",
     "CPVM",
-    "CPNM",
     "CSWO",
+    "AAAS",
+    "KURL",
+    "BMXA",
+    "CTRR",
+    "CAGL",
+    "CPNM",
     "CPVV",
     "ONEB"
+   ]
+  },
+  {
+   "code": "ET00518793",
+   "title": "Heart of the Beast",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "4DX"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
    ]
   },
   {
@@ -1034,6 +1247,7 @@
     "2D"
    ],
    "venues": [
+    "CSWO",
     "AETE",
     "KURL",
     "KKMB",
@@ -1044,7 +1258,6 @@
     "THAB",
     "CPVM",
     "CPNM",
-    "CSWO",
     "CPVV",
     "ONEB",
     "AAAS",
@@ -1098,6 +1311,23 @@
    ]
   },
   {
+   "code": "ET00515070",
+   "title": "Paach Futacha Bachchan",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KKMB",
+    "BMXC",
+    "BMXA",
+    "CPVM",
+    "CSWO"
+   ]
+  },
+  {
    "code": "ET00496198",
    "title": "Practical Magic 2",
    "languages": [
@@ -1126,6 +1356,20 @@
     "CPVM",
     "CSWO",
     "CPNM"
+   ]
+  },
+  {
+   "code": "ET00412717",
+   "title": "Premada Oorali",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPVM",
+    "CSWO"
    ]
   },
   {
@@ -1191,6 +1435,19 @@
    ],
    "venues": [
     "CSWO"
+   ]
+  },
+  {
+   "code": "ET00518227",
+   "title": "Sahal",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "BMXA"
    ]
   },
   {
@@ -1320,6 +1577,36 @@
    ]
   },
   {
+   "code": "ET00436631",
+   "title": "The Paradise",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KURL"
+   ]
+  },
+  {
+   "code": "ET00506449",
+   "title": "The Social Reckoning",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "BMXC",
+    "FNAN",
+    "CPVM",
+    "CPNM",
+    "CSWO"
+   ]
+  },
+  {
    "code": "ET00508355",
    "title": "The Uprising",
    "languages": [
@@ -1330,6 +1617,27 @@
    ],
    "venues": [
     "CPVM",
+    "CSWO",
+    "CPVV"
+   ]
+  },
+  {
+   "code": "ET00444235",
+   "title": "The Vvaan - Force of the Forrest",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "KURL",
+    "KKMB",
+    "BMXC",
+    "BMXA",
+    "THAB",
+    "CPVM",
+    "CPNM",
     "CSWO",
     "CPVV"
    ]
@@ -1367,6 +1675,23 @@
    ]
   },
   {
+   "code": "ET00497246",
+   "title": "Verity",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "FNAN",
+    "CPVM",
+    "CPNM",
+    "CSWO",
+    "CPVV"
+   ]
+  },
+  {
    "code": "ET00506465",
    "title": "VIBE",
    "languages": [
@@ -1390,5 +1715,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-17T15:23:55+00:00"
+ "generated_at": "2026-10-08T02:16:10+00:00"
 }

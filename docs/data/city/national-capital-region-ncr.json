@@ -1,7 +1,7 @@
 {
  "city": "national-capital-region-ncr",
  "name": "Delhi NCR",
- "sampled_date": "20260918",
+ "sampled_date": "20261009",
  "venues": [
   {
    "code": "ONEG",
@@ -38,6 +38,10 @@
   {
    "code": "CUNT",
    "name": "Cinepolis: City Centre Dwarka,Delhi (Newly Opened)"
+  },
+  {
+   "code": "CYMF",
+   "name": "Cinepolis: City Life Mall, Faridabad"
   },
   {
    "code": "FNSD",
@@ -566,71 +570,71 @@
  ],
  "formats": [
   "2D",
-  "DIRECTORS CUT",
   "2K LASER DOLBY 7.1",
+  "DIRECTORS CUT",
   "INSIGNIA",
   "LASER",
-  "Laser Projector",
   "Laser & 7.1",
+  "GOLD",
+  "Laser Projector",
   "DOLBY SLS 7.1",
   "2K DOLBY 7.1",
+  "KOTAK INSIGNIA",
   "EMINENCE CUT RECLINER",
+  "PXL",
   "DOLBY 7.1",
-  "GOLD",
-  "IMAX",
   "Renovated",
   "EUROPA LUX",
-  "PXL",
-  "DOLBY ATMOS",
-  "KOTAK INSIGNIA",
   "LASER & 7.1",
-  "NORMAL",
-  "4K DOLBY",
-  "LASER 2K",
-  "2K DOLBY",
+  "DOLBY ATMOS",
   "Atmos",
+  "NORMAL",
+  "IMAX",
+  "ATMOS",
+  "LASER 2K",
+  "KOTAK LUXE",
+  "4K DOLBY",
+  "PLAYHOUSE",
+  "DOLBY 7.1 (2K PROJECTOR",
+  "MAXX SCREEN",
+  "2K DOLBY",
+  "LASER DOLBY ATMOS",
   "LASER DOLBY",
   "2K LASER",
-  "DOLBY 7.1 (2K PROJECTOR",
-  "PLAYHOUSE",
-  "ATMOS",
-  "KOTAK LUXE",
-  "Laser",
   "LUXE",
-  "MAXX SCREEN",
-  "LASER DOLBY ATMOS",
-  "7.1",
-  "DOLBY",
+  "Laser",
   "ICE",
   "AMOR BY DEVGN CINEX",
-  "Laser Dolby",
-  "New Audi",
-  "EMINENCE-CUT RECLINER",
-  "Largest Screen",
-  "RITZ DOLBY 7.1",
-  "OPERA DOLBY 7.1",
+  "7.1",
   "RECLINER LASER ATMOS",
-  "4K ATMOS",
+  "DOLBY",
+  "New Audi",
+  "RITZ DOLBY 7.1",
+  "EMINENCE-CUT RECLINER",
+  "Laser Dolby",
+  "OPERA DOLBY 7.1",
+  "Largest Screen",
   "BROADWAY DOLBY 7.1",
-  "Maximum-Atmos",
   "RECLINER ATMOS",
-  "4DX",
+  "4K ATMOS",
   "BIGPIX",
+  "Maximum-Atmos",
+  "4DX",
   "SIGNATURE RECLINER",
+  "4K LASER ATMOS",
   "LARGEST SCN DOLBY",
   "ONYX",
   "DTSx",
   "Dolby Digital",
-  "4K LASER ATMOS",
-  "2K BIG SCREEN",
   "VIP GOLD CLASS",
-  "Laser Atmos",
   "MACRO XE",
   "Dolby Atmos",
   "4K DOLBY OG 7.1",
+  "2K BIG SCREEN",
+  "Laser Atmos",
+  "4K",
   "4K LASER",
   "Gold Class",
-  "4K",
   "LASER & DOLBY",
   "LASER 9K",
   "5.1",
@@ -638,9 +642,9 @@
   "2K/ DOLBY",
   "LARGE SCREEN",
   "2K/Dolby",
+  "JUNIOR",
   "DIAMOND",
-  "Elysium By Cineport",
-  "JUNIOR"
+  "Elysium By Cineport"
  ],
  "languages": [
   "Hindi",
@@ -659,6 +663,20 @@
     "2D"
    ],
    "venues": [
+    "SPIA"
+   ]
+  },
+  {
+   "code": "ET00516731",
+   "title": "Avengers Endgame: Encore",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "CRGM",
     "SPIA"
    ]
   },
@@ -690,6 +708,19 @@
    ]
   },
   {
+   "code": "ET00515208",
+   "title": "Beware Boiuna",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CIPS"
+   ]
+  },
+  {
    "code": "ET00464392",
    "title": "Daayra",
    "languages": [
@@ -705,6 +736,65 @@
     "FNSD",
     "CIPS",
     "CPGV",
+    "CIJA",
+    "SPIA"
+   ]
+  },
+  {
+   "code": "ET00477243",
+   "title": "Digger",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CNEV"
+   ]
+  },
+  {
+   "code": "ET00507337",
+   "title": "Doraemon: Castle of the Undersea Devil",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CRGM",
+    "FNSD",
+    "CIPS",
+    "CPGV",
+    "CIJA",
+    "SPIA"
+   ]
+  },
+  {
+   "code": "ET00477911",
+   "title": "Drishyam The Conclusion",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ONEG",
+    "CNEV",
+    "AKRC",
+    "AKRF",
+    "AMCD",
+    "BCWG",
+    "BTFD",
+    "CRGM",
+    "CUNT",
+    "CYMF",
+    "FNSD",
+    "CIPS",
+    "CPGV",
+    "CNVG",
     "CIJA",
     "SPIA"
    ]
@@ -776,22 +866,22 @@
     "2D"
    ],
    "venues": [
-    "ONEG",
     "CNEV",
     "AKRC",
-    "AMCD",
+    "AKRF",
     "BCWG",
-    "BTFD",
     "CRGM",
-    "CUNT",
-    "FNSD",
     "CIPS",
     "CPGV",
     "CNVG",
     "CIJA",
     "SPIA",
+    "ONEG",
+    "AMCD",
+    "BTFD",
+    "CUNT",
+    "FNSD",
     "CPMF",
-    "AKRF",
     "CPNS"
    ]
   },
@@ -920,10 +1010,10 @@
     "2D"
    ],
    "venues": [
+    "AKRF",
     "ONEG",
     "CNEV",
     "AKRC",
-    "AKRF",
     "AMCD",
     "BCWG",
     "BTFD",
@@ -1015,6 +1105,19 @@
     "CRGM",
     "CIPS",
     "SPIA"
+   ]
+  },
+  {
+   "code": "ET00512226",
+   "title": "Prem Keetanu",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AKRC"
    ]
   },
   {
@@ -1145,6 +1248,42 @@
    ]
   },
   {
+   "code": "ET00506449",
+   "title": "The Social Reckoning",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CRGM",
+    "CNVG",
+    "SPIA"
+   ]
+  },
+  {
+   "code": "ET00444235",
+   "title": "The Vvaan - Force of the Forrest",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CNEV",
+    "AKRC",
+    "BCWG",
+    "CRGM",
+    "FNSD",
+    "CIPS",
+    "CPGV",
+    "CIJA",
+    "SPIA"
+   ]
+  },
+  {
    "code": "ET00379311",
    "title": "Toxic: A Fairy Tale for Grown-ups",
    "languages": [
@@ -1156,6 +1295,23 @@
    "venues": [
     "AKRC",
     "CPNS"
+   ]
+  },
+  {
+   "code": "ET00497246",
+   "title": "Verity",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CNEV",
+    "CRGM",
+    "CIPS",
+    "CNVG",
+    "SPIA"
    ]
   },
   {
@@ -1184,5 +1340,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-17T15:23:55+00:00"
+ "generated_at": "2026-10-08T02:16:10+00:00"
 }

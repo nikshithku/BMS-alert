@@ -1,7 +1,7 @@
 {
  "city": "chennai",
  "name": "Chennai",
- "sampled_date": "20260918",
+ "sampled_date": "20261009",
  "venues": [
   {
    "code": "ACON",
@@ -291,6 +291,21 @@
  ],
  "movies": [
   {
+   "code": "ET00053595",
+   "title": "96",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AGSM",
+    "PVES",
+    "FMCN"
+   ]
+  },
+  {
    "code": "ET00516253",
    "title": "Aasha",
    "languages": [
@@ -308,6 +323,42 @@
    ]
   },
   {
+   "code": "ET00516832",
+   "title": "All Pass",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AGSM",
+    "ACVM"
+   ]
+  },
+  {
+   "code": "ET00518059",
+   "title": "Anbil Avan",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "CBMC",
+    "GKGM",
+    "GKCP",
+    "GCRP",
+    "PVES",
+    "FMCN"
+   ]
+  },
+  {
    "code": "ET00003076",
    "title": "Andaz Apna Apna",
    "languages": [
@@ -318,6 +369,31 @@
    ],
    "venues": [
     "CBMC"
+   ]
+  },
+  {
+   "code": "ET00515520",
+   "title": "Baththa",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "ATMG",
+    "AMTT",
+    "AVMT",
+    "CBMC",
+    "GKCP",
+    "GAHC",
+    "GCRP",
+    "PVES",
+    "FMCN"
    ]
   },
   {
@@ -392,6 +468,19 @@
    ]
   },
   {
+   "code": "ET00515208",
+   "title": "Beware Boiuna",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES"
+   ]
+  },
+  {
    "code": "ET00516476",
    "title": "Cold Call",
    "languages": [
@@ -402,6 +491,19 @@
    ],
    "venues": [
     "ACON"
+   ]
+  },
+  {
+   "code": "ET00519564",
+   "title": "Comrade Kalyan",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "GKCP"
    ]
   },
   {
@@ -445,6 +547,77 @@
    ],
    "venues": [
     "INPR"
+   ]
+  },
+  {
+   "code": "ET00507337",
+   "title": "Doraemon: Castle of the Undersea Devil",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES"
+   ]
+  },
+  {
+   "code": "ET00516268",
+   "title": "Doraemon: Castle of the Undersea Devil",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "CBMC",
+    "GKCP",
+    "FMCN"
+   ]
+  },
+  {
+   "code": "ET00518039",
+   "title": "Dorothy",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "ASGG",
+    "AVMT",
+    "CBMC",
+    "GKGM",
+    "GKCP",
+    "GCRP",
+    "PVES",
+    "FMCN"
+   ]
+  },
+  {
+   "code": "ET00477911",
+   "title": "Drishyam The Conclusion",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CBMC",
+    "PVES",
+    "FMCN"
    ]
   },
   {
@@ -533,8 +706,8 @@
     "2D"
    ],
    "venues": [
-    "CBMC",
     "PVES",
+    "CBMC",
     "INPR",
     "INTO",
     "INCH",
@@ -549,6 +722,20 @@
    "title": "Happy Journey",
    "languages": [
     "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CBMC",
+    "PVES"
+   ]
+  },
+  {
+   "code": "ET00504928",
+   "title": "Heart of the Beast",
+   "languages": [
+    "English"
    ],
    "dimensions": [
     "2D"
@@ -741,15 +928,15 @@
     "ACTN",
     "ACVM",
     "ATMG",
-    "AVMT",
     "CBMC",
+    "PVES",
+    "FMCN",
+    "AVMT",
     "GRTC",
     "GKGM",
     "GKCP",
     "GAHC",
     "GCRP",
-    "PVES",
-    "FMCN",
     "AMTT",
     "INCH",
     "INPR",
@@ -788,6 +975,28 @@
    "venues": [
     "PVES",
     "INTO"
+   ]
+  },
+  {
+   "code": "ET00516813",
+   "title": "Meesaya Murukku 2",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "AMTT",
+    "CBMC",
+    "GRTC",
+    "GCRP",
+    "PVES",
+    "FMCN"
    ]
   },
   {
@@ -880,6 +1089,21 @@
    ]
   },
   {
+   "code": "ET00506964",
+   "title": "Other Mommy",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AGSM",
+    "GKCP",
+    "PVES"
+   ]
+  },
+  {
    "code": "ET00517109",
    "title": "Paris Cafe",
    "languages": [
@@ -927,6 +1151,20 @@
     "PVES",
     "INPR",
     "INTO"
+   ]
+  },
+  {
+   "code": "ET00412717",
+   "title": "Premada Oorali",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CBMC",
+    "PVES"
    ]
   },
   {
@@ -1005,6 +1243,27 @@
    ]
   },
   {
+   "code": "ET00506232",
+   "title": "Sigma",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACON",
+    "AGSM",
+    "ACTN",
+    "ACVM",
+    "ATMG",
+    "CBMC",
+    "GCRP",
+    "PVES",
+    "FMCN"
+   ]
+  },
+  {
    "code": "ET00502600",
    "title": "Spider-Man: Brand New Day",
    "languages": [
@@ -1077,10 +1336,36 @@
    ]
   },
   {
+   "code": "ET00506449",
+   "title": "The Social Reckoning",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES"
+   ]
+  },
+  {
    "code": "ET00508355",
    "title": "The Uprising",
    "languages": [
     "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES"
+   ]
+  },
+  {
+   "code": "ET00520666",
+   "title": "Thenmavin Kombath",
+   "languages": [
+    "Malayalam"
    ],
    "dimensions": [
     "2D"
@@ -1101,6 +1386,19 @@
    "venues": [
     "PVES",
     "INPR"
+   ]
+  },
+  {
+   "code": "ET00497246",
+   "title": "Verity",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PVES"
    ]
   },
   {
@@ -1168,5 +1466,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-17T15:23:55+00:00"
+ "generated_at": "2026-10-08T02:16:10+00:00"
 }

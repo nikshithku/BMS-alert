@@ -1,7 +1,7 @@
 {
  "city": "pune",
  "name": "Pune",
- "sampled_date": "20260918",
+ "sampled_date": "20261009",
  "venues": [
   {
    "code": "CPAR",
@@ -200,33 +200,34 @@
   "2D",
   "DOLBY 7.1",
   "QSC 7.1",
-  "DIRECTORS CUT",
   "LASER & 7.1",
   "DOLBY ATMOS",
+  "DIRECTORS CUT",
+  "4K DOLBY",
   "Renovated",
   "ATMOS",
   "QSC 7.1 RECLINER",
-  "4K DOLBY",
+  "Atmos",
   "INSIGNIA",
   "DOLBY 950",
-  "4K ATMOS",
   "GOLD",
-  "Atmos",
   "KOTAK INSIGNIA",
+  "4K ATMOS",
   "PREMIER",
   "4K DOLBY 7.1",
-  "Newly Opened",
   "PXL",
   "SPECTRA X",
   "EPIQ ATMOS 64 CH",
   "4K DOLBY ATMOS",
+  "Newly Opened",
   "ELEGANZA ATMOS",
   "DOLBY ATMOS 4K LASER",
-  "IMAX",
-  "COUPLE SEATS",
   "KIDDLES",
+  "COUPLE SEATS",
   "ELEGANZA",
   "Now Renovated",
+  "IMAX",
+  "Edition-All Recliner",
   "DOLBY CINEMA",
   "4DX"
  ],
@@ -236,7 +237,8 @@
   "Tamil",
   "Marathi",
   "Malayalam",
-  "Telugu"
+  "Telugu",
+  "Gujarati"
  ],
  "movies": [
   {
@@ -251,6 +253,24 @@
    "venues": [
     "PUNB",
     "CNWE"
+   ]
+  },
+  {
+   "code": "ET00514241",
+   "title": "Afratafri",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "CNWE",
+    "PUNB",
+    "CPRP",
+    "CYKR",
+    "CTSR"
    ]
   },
   {
@@ -281,6 +301,32 @@
    ]
   },
   {
+   "code": "ET00516731",
+   "title": "Avengers Endgame: Encore",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "CNWE"
+   ]
+  },
+  {
+   "code": "ET00517111",
+   "title": "Avengers Endgame: Encore",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 3D"
+   ],
+   "venues": [
+    "CYKR"
+   ]
+  },
+  {
    "code": "ET00439318",
    "title": "Awarapan 2",
    "languages": [
@@ -294,6 +340,20 @@
     "CPAR",
     "CYKR",
     "CTMP"
+   ]
+  },
+  {
+   "code": "ET00515520",
+   "title": "Baththa",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CNWE",
+    "PUNB"
    ]
   },
   {
@@ -431,6 +491,96 @@
    ]
   },
   {
+   "code": "ET00520563",
+   "title": "Dhappa",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "ESBW",
+    "PUNB",
+    "CYKR",
+    "CPKT"
+   ]
+  },
+  {
+   "code": "ET00477243",
+   "title": "Digger",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CYKR",
+    "CPKT"
+   ]
+  },
+  {
+   "code": "ET00507337",
+   "title": "Doraemon: Castle of the Undersea Devil",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "CNWE",
+    "PUNB",
+    "PUVB",
+    "CYKR",
+    "CPKT",
+    "CLTP"
+   ]
+  },
+  {
+   "code": "ET00477911",
+   "title": "Drishyam The Conclusion",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "ASHC",
+    "ESBW",
+    "CKPP",
+    "CNWE",
+    "PUNB",
+    "PUVB",
+    "CEPO",
+    "CPRP",
+    "CYKR",
+    "CPKT",
+    "CTMP",
+    "CTRD",
+    "CTSR",
+    "CLTP"
+   ]
+  },
+  {
+   "code": "ET00520056",
+   "title": "Drishyam The Conclusion",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "IMAX 2D"
+   ],
+   "venues": [
+    "CNWE"
+   ]
+  },
+  {
    "code": "ET00510459",
    "title": "Dwidha",
    "languages": [
@@ -511,6 +661,19 @@
    ]
   },
   {
+   "code": "ET00465382",
+   "title": "Gondhal",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "PUNB"
+   ]
+  },
+  {
    "code": "ET00506432",
    "title": "Haiwaan",
    "languages": [
@@ -549,18 +712,34 @@
    "venues": [
     "CPAR",
     "ESBW",
-    "CKPP",
     "CNWE",
     "PUNB",
-    "PUVB",
     "CPRP",
-    "CYKR",
     "CPKT",
-    "CTMP",
     "CTSR",
     "CLTP",
+    "CKPP",
+    "PUVB",
+    "CYKR",
+    "CTMP",
     "ASHC",
     "CMVP"
+   ]
+  },
+  {
+   "code": "ET00504928",
+   "title": "Heart of the Beast",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CNWE",
+    "PUNB",
+    "CYKR",
+    "CPKT"
    ]
   },
   {
@@ -835,11 +1014,11 @@
     "2D"
    ],
    "venues": [
+    "PUNB",
     "CPAR",
     "ESBW",
     "CKPP",
     "CNWE",
-    "PUNB",
     "PUVB",
     "CPRP",
     "CYKR",
@@ -895,6 +1074,40 @@
    ]
   },
   {
+   "code": "ET00506964",
+   "title": "Other Mommy",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "CYKR",
+    "CPKT"
+   ]
+  },
+  {
+   "code": "ET00515070",
+   "title": "Paach Futacha Bachchan",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "ESBW",
+    "CPRP",
+    "CYKR",
+    "CPKT",
+    "CTSR",
+    "CLTP"
+   ]
+  },
+  {
    "code": "ET00502386",
    "title": "PAW Patrol: The Dino Movie",
    "languages": [
@@ -935,6 +1148,19 @@
    ],
    "venues": [
     "CNWE",
+    "PUNB"
+   ]
+  },
+  {
+   "code": "ET00412717",
+   "title": "Premada Oorali",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
     "PUNB"
    ]
   },
@@ -1027,6 +1253,23 @@
    ],
    "venues": [
     "PUNB"
+   ]
+  },
+  {
+   "code": "ET00518227",
+   "title": "Sahal",
+   "languages": [
+    "Marathi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "ESBW",
+    "CYKR",
+    "CPKT",
+    "CLTP"
    ]
   },
   {
@@ -1209,6 +1452,54 @@
    ]
   },
   {
+   "code": "ET00506449",
+   "title": "The Social Reckoning",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ESBW",
+    "CNWE",
+    "PUNB",
+    "CPKT"
+   ]
+  },
+  {
+   "code": "ET00521246",
+   "title": "The Social Reckoning",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "CYKR"
+   ]
+  },
+  {
+   "code": "ET00444235",
+   "title": "The Vvaan - Force of the Forrest",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "CPAR",
+    "ESBW",
+    "CNWE",
+    "PUNB",
+    "CYKR",
+    "CPKT",
+    "CLTP"
+   ]
+  },
+  {
    "code": "ET00379311",
    "title": "Toxic: A Fairy Tale for Grown-ups",
    "languages": [
@@ -1231,6 +1522,36 @@
    ]
   },
   {
+   "code": "ET00497246",
+   "title": "Verity",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ESBW",
+    "CNWE",
+    "PUNB",
+    "PUVB",
+    "CPKT"
+   ]
+  },
+  {
+   "code": "ET00519666",
+   "title": "Verity",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "CYKR"
+   ]
+  },
+  {
    "code": "ET00506465",
    "title": "VIBE",
    "languages": [
@@ -1240,6 +1561,7 @@
     "2D"
    ],
    "venues": [
+    "CYKR",
     "CPAR",
     "ESBW",
     "CKPP",
@@ -1247,7 +1569,6 @@
     "PUNB",
     "PUVB",
     "CPRP",
-    "CYKR",
     "CPKT",
     "CTMP",
     "CTSR",
@@ -1255,5 +1576,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-17T15:23:55+00:00"
+ "generated_at": "2026-10-08T02:16:10+00:00"
 }

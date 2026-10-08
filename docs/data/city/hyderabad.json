@@ -1,7 +1,7 @@
 {
  "city": "hyderabad",
  "name": "Hyderabad",
- "sampled_date": "20260918",
+ "sampled_date": "20261009",
  "venues": [
   {
    "code": "ACAS",
@@ -290,50 +290,55 @@
  ],
  "formats": [
   "2D",
+  "ATMOS",
   "DOLBY 7.1",
   "RECLINER",
-  "ATMOS",
-  "VIP SCREEN",
   "BARCO FLAGSHIP LASER DOLBY ATMOS",
+  "VIP SCREEN",
   "INFINITY VISION DOLBY ATMOS",
   "LASER DOLBY 7.1",
   "4K DOLBY ATMOS",
   "DOLBY ATMOS",
   "4K DOLBY 7.1",
+  "PXL",
   "LASER & 7.1",
-  "BARCO LASER 4K ATMOS",
-  "PCX SCREEN",
   "PLAYHOUSE",
   "4K",
+  "BARCO LASER 4K ATMOS",
+  "PCX SCREEN",
   "2K",
-  "PXL",
   "Infinity Vision Dolby Atmos",
   "LUXE",
   "SCREEN 4",
   "Barco Dolby 7.1",
+  "BARCO 4K LASER",
   "AIR COOLED",
   "4K ATMOS",
   "2K AIR COOLED",
-  "MACRO XE",
-  "BARCO 4K LASER",
-  "BARCO 4K SMART LASER",
-  "LASER DOLBY DIGITAL 7.1",
   "Atmos",
+  "MACRO XE",
+  "LASER DOLBY DIGITAL 7.1",
+  "BARCO 4K SMART LASER",
+  "ATMOS + LASER",
   "LALITHA AIR CONDITIONED",
   "SCREEN 3",
-  "ATMOS + LASER",
-  "LAXMIKALA DOLBY ATMOS BARCO LASER",
   "7.1 DOLBY",
+  "LAXMIKALA DOLBY ATMOS BARCO LASER",
+  "HDR BY BARCO",
   "Gold 4K & Dolby 7.1",
   "LED SCREEN DOLBY ATMOS",
-  "HDR BY BARCO",
   "CHANDRAKALA AIR COOLED",
+  "DOLBY ATMOS RGB LASER",
   "Barco Flat 7.1",
+  "2K LASER DOLBY 7.1",
   "Dolby Atmos",
   "RECLINERS",
-  "DOLBY ATMOS RGB LASER",
   "DOLBY CINEMA",
-  "M B LUXE"
+  "LASER 4K ATMOS",
+  "LASER + ATMOS",
+  "M B LUXE",
+  "2K DOLBY",
+  "SCREEN 2"
  ],
  "languages": [
   "Hindi",
@@ -343,6 +348,87 @@
   "Malayalam"
  ],
  "movies": [
+  {
+   "code": "ET00514163",
+   "title": "Avengers Endgame: Encore",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "AACN",
+    "APNS"
+   ]
+  },
+  {
+   "code": "ET00516224",
+   "title": "Avengers Endgame: Encore",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "MS - Infinity Vision"
+   ],
+   "venues": [
+    "AMBH"
+   ]
+  },
+  {
+   "code": "ET00516731",
+   "title": "Avengers Endgame: Encore",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "3D"
+   ],
+   "venues": [
+    "ACEV"
+   ]
+  },
+  {
+   "code": "ET00465242",
+   "title": "Baa Baa Black Sheep",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "ARMH"
+   ]
+  },
+  {
+   "code": "ET00515520",
+   "title": "Baththa",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "APNS"
+   ]
+  },
   {
    "code": "ET00515244",
    "title": "Bethlehem Kudumba Unit",
@@ -367,6 +453,45 @@
    ]
   },
   {
+   "code": "ET00519564",
+   "title": "Comrade Kalyan",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "SNKH",
+    "AMCM",
+    "ARMH",
+    "ACHI"
+   ]
+  },
+  {
+   "code": "ET00521154",
+   "title": "Comrade Kalyan",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "EPIQ"
+   ],
+   "venues": [
+    "ACEV"
+   ]
+  },
+  {
    "code": "ET00464392",
    "title": "Daayra",
    "languages": [
@@ -382,6 +507,128 @@
     "AACN",
     "ACEV",
     "AMCA"
+   ]
+  },
+  {
+   "code": "ET00514646",
+   "title": "Don't Trouble The Trouble",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV"
+   ]
+  },
+  {
+   "code": "ET00507337",
+   "title": "Doraemon: Castle of the Undersea Devil",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH",
+    "AACN",
+    "AMCA"
+   ]
+  },
+  {
+   "code": "ET00516269",
+   "title": "Doraemon: Castle of the Undersea Devil",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "ARMH"
+   ]
+  },
+  {
+   "code": "ET00520474",
+   "title": "Doraemon: Castle of the Undersea Devil",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "EPIQ"
+   ],
+   "venues": [
+    "ACEV"
+   ]
+  },
+  {
+   "code": "ET00518039",
+   "title": "Dorothy",
+   "languages": [
+    "Tamil"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH"
+   ]
+  },
+  {
+   "code": "ET00519781",
+   "title": "Dorothy (Telugu)",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "ARMH"
+   ]
+  },
+  {
+   "code": "ET00477911",
+   "title": "Drishyam The Conclusion",
+   "languages": [
+    "Hindi"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "SNKH",
+    "ARMH",
+    "ACHI"
    ]
   },
   {
@@ -452,6 +699,21 @@
    ]
   },
   {
+   "code": "ET00516322",
+   "title": "Good Time",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AACN",
+    "APNS",
+    "ARMH"
+   ]
+  },
+  {
    "code": "ET00506432",
    "title": "Haiwaan",
    "languages": [
@@ -485,11 +747,11 @@
     "2D"
    ],
    "venues": [
-    "ACAS",
-    "ALUC",
     "AMBH",
     "AACN",
     "APNS",
+    "ACAS",
+    "ALUC",
     "ACEV",
     "ASHN",
     "CPHY",
@@ -498,6 +760,46 @@
     "ARMH",
     "ACHI",
     "ACPM"
+   ]
+  },
+  {
+   "code": "ET00520716",
+   "title": "Hanuman Ansh",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "SNKH",
+    "AMCM",
+    "ARMH",
+    "ARYH",
+    "ACHI"
+   ]
+  },
+  {
+   "code": "ET00521340",
+   "title": "Hanuman Ansh",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "EPIQ"
+   ],
+   "venues": [
+    "ACEV"
    ]
   },
   {
@@ -519,6 +821,35 @@
     "ASHN",
     "CPHY",
     "ACPM"
+   ]
+  },
+  {
+   "code": "ET00504928",
+   "title": "Heart of the Beast",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV"
+   ]
+  },
+  {
+   "code": "ET00518866",
+   "title": "Heart of the Beast",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ALUC"
    ]
   },
   {
@@ -907,6 +1238,21 @@
    ]
   },
   {
+   "code": "ET00506964",
+   "title": "Other Mommy",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ALUC",
+    "AMBH",
+    "AACN"
+   ]
+  },
+  {
    "code": "ET00502386",
    "title": "PAW Patrol: The Dino Movie",
    "languages": [
@@ -962,6 +1308,19 @@
     "AMBH",
     "AACN",
     "APNS"
+   ]
+  },
+  {
+   "code": "ET00412717",
+   "title": "Premada Oorali",
+   "languages": [
+    "Kannada"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ALUC"
    ]
   },
   {
@@ -1164,6 +1523,20 @@
    ]
   },
   {
+   "code": "ET00506233",
+   "title": "Sigma",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH",
+    "ARJU"
+   ]
+  },
+  {
    "code": "ET00300238",
    "title": "Spider-Man",
    "languages": [
@@ -1203,6 +1576,61 @@
    ]
   },
   {
+   "code": "ET00436621",
+   "title": "The Paradise",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "ACPM",
+    "AMCA",
+    "ARMH",
+    "ARYH"
+   ]
+  },
+  {
+   "code": "ET00506449",
+   "title": "The Social Reckoning",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ACEV"
+   ]
+  },
+  {
+   "code": "ET00521246",
+   "title": "The Social Reckoning",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "DOLBY CINEMA 2D"
+   ],
+   "venues": [
+    "ALUC"
+   ]
+  },
+  {
    "code": "ET00508355",
    "title": "The Uprising",
    "languages": [
@@ -1213,6 +1641,44 @@
    ],
    "venues": [
     "AMBH"
+   ]
+  },
+  {
+   "code": "ET00518692",
+   "title": "Thella Kaagitham",
+   "languages": [
+    "Telugu"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "ACAS",
+    "ALUC",
+    "AMBH",
+    "AACN",
+    "APNS",
+    "ARJU",
+    "ACEV",
+    "ASHN",
+    "CPHY",
+    "AMCA",
+    "ARMH"
+   ]
+  },
+  {
+   "code": "ET00497246",
+   "title": "Verity",
+   "languages": [
+    "English"
+   ],
+   "dimensions": [
+    "2D"
+   ],
+   "venues": [
+    "AMBH",
+    "AACN",
+    "APNS"
    ]
   },
   {
@@ -1248,5 +1714,5 @@
    ]
   }
  ],
- "generated_at": "2026-09-17T15:23:55+00:00"
+ "generated_at": "2026-10-08T02:16:10+00:00"
 }

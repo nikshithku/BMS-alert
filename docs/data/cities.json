@@ -317,6 +317,10 @@
    "name": "Anthiyur"
   },
   {
+   "slug": "anuppur",
+   "name": "Anuppur"
+  },
+  {
    "slug": "anuradhapura",
    "name": "Anuradhapura"
   },
@@ -905,6 +909,10 @@
    "name": "Betberia"
   },
   {
+   "slug": "bethamangala",
+   "name": "Bethamangala"
+  },
+  {
    "slug": "bethamcherla",
    "name": "Bethamcherla"
   },
@@ -1271,6 +1279,10 @@
   {
    "slug": "buldana",
    "name": "Buldana"
+  },
+  {
+   "slug": "bundi",
+   "name": "Bundi"
   },
   {
    "slug": "bundu",
@@ -2549,6 +2561,10 @@
    "name": "Gownipalli"
   },
   {
+   "slug": "gudalur",
+   "name": "Gudalur"
+  },
+  {
    "slug": "gudivada",
    "name": "Gudivada"
   },
@@ -2677,6 +2693,10 @@
    "name": "Hampi"
   },
   {
+   "slug": "hanamkonda",
+   "name": "Hanamkonda"
+  },
+  {
    "slug": "handwara",
    "name": "Handwara"
   },
@@ -2767,10 +2787,6 @@
   {
    "slug": "hindupur",
    "name": "Hindupur"
-  },
-  {
-   "slug": "hindupuram",
-   "name": "Hindupuram"
   },
   {
    "slug": "hinganghat",
@@ -3327,6 +3343,10 @@
   {
    "slug": "kalluru",
    "name": "Kalluru"
+  },
+  {
+   "slug": "kalluvathukkal",
+   "name": "Kalluvathukkal"
   },
   {
    "slug": "kalna",
@@ -5029,6 +5049,10 @@
    "name": "Mundra"
   },
   {
+   "slug": "munger",
+   "name": "Munger"
+  },
+  {
    "slug": "mungra-badshahpur",
    "name": "Mungra Badshahpur"
   },
@@ -5831,6 +5855,10 @@
   {
    "slug": "pasara",
    "name": "Pasara"
+  },
+  {
+   "slug": "paschim-medinipur",
+   "name": "Paschim Medinipur"
   },
   {
    "slug": "pasighat",
@@ -7649,6 +7677,10 @@
    "name": "Tihu"
   },
   {
+   "slug": "tikamgarh",
+   "name": "Tikamgarh"
+  },
+  {
    "slug": "tilda-neora",
    "name": "Tilda Neora"
   },
@@ -8089,6 +8121,10 @@
    "name": "Vijapur"
   },
   {
+   "slug": "vijayamangalam",
+   "name": "Vijayamangalam"
+  },
+  {
    "slug": "vijayapura-bengaluru-rural",
    "name": "Vijayapura Bengaluru Rural"
   },
@@ -8213,6 +8249,10 @@
    "name": "Warora"
   },
   {
+   "slug": "warud",
+   "name": "Warud"
+  },
+  {
    "slug": "washim",
    "name": "Washim"
   },
@@ -8321,5 +8361,5 @@
    "name": "Ziro"
   }
  ],
- "generated_at": "2026-09-17T15:23:55+00:00"
+ "generated_at": "2026-10-08T02:16:10+00:00"
 }
